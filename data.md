@@ -70,4 +70,4 @@ The included script requires Python 3.11 or later and uses only the standard lib
 python amazon_data_10k/prepare_10k.py --source amazon_data --output amazon_data_10k_reproduced --seed 42
 ```
 
-Full 10,000-record project dataset: [Download amazon_data_10k.tar.gz (GitHub Release)](https://github.com/jieryin/cis530-image2mass/releases/download/untagged-b0834176464a154e3c3c/amazon_data_10k.tar.gz).
+Full 10,000-record project dataset: [Download amazon_data_10k.tar.gz (GitHub Release)](https://github.com/jieryin/cis530-image2mass/releases/download/v1.0.0/amazon_data_10k.tar.gz).
