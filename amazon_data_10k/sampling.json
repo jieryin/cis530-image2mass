@@ -1,0 +1,72 @@
+{
+  "seed": 42,
+  "python_version": "3.11.9",
+  "record_unit": "individual object record, not object pair",
+  "selection_method": "uniform random sampling without replacement within each original split",
+  "selection_implementation": "one random.Random(seed); source filenames sorted lexicographically; train, dev, test sampled in that order",
+  "source_counts": {
+    "train_data": 141950,
+    "val_data": 6529,
+    "test_data": 1435
+  },
+  "project_counts": {
+    "train": 8000,
+    "dev": 1000,
+    "test": 1000
+  },
+  "input_fields": [
+    "image_data",
+    "dimensions",
+    "thickness_mask"
+  ],
+  "target_field": "weight",
+  "tracking_only": "id",
+  "similarity_filtering": false,
+  "deduplication": false,
+  "relabeling": false,
+  "copy_policy": "original compressed .pklz bytes preserved; every selected file checked against the full audit and its copy",
+  "pairwise_policy": "construct pairs only within the same object split; never split generated pairs across object splits",
+  "original_field_values_preserved": true,
+  "source_split_assignment_preserved": true,
+  "unique_selected_ids": 10000,
+  "manifest_sha256": "cd406ee4778a678b0c4f3de8183d6a728d3ed3ca2175a2f9e6a8bed659d13418",
+  "stats": {
+    "train": {
+      "count": 8000,
+      "min_lb": 0.01,
+      "q25_lb": 0.35,
+      "median_lb": 0.9,
+      "q75_lb": 2.5,
+      "mean_lb": 2.05621,
+      "max_lb": 14.0
+    },
+    "dev": {
+      "count": 1000,
+      "min_lb": 0.01,
+      "q25_lb": 0.3775,
+      "median_lb": 1.0,
+      "q75_lb": 2.6625,
+      "mean_lb": 2.12458,
+      "max_lb": 14.0
+    },
+    "test": {
+      "count": 1000,
+      "min_lb": 0.01,
+      "q25_lb": 0.35,
+      "median_lb": 0.895,
+      "q75_lb": 2.45,
+      "mean_lb": 1.9895900000000002,
+      "max_lb": 13.01
+    }
+  },
+  "overall_weight_lb": {
+    "count": 10000,
+    "min_lb": 0.01,
+    "q25_lb": 0.35,
+    "median_lb": 0.9,
+    "q75_lb": 2.5,
+    "mean_lb": 2.0563849999999997,
+    "max_lb": 14.0
+  },
+  "record_bytes": 204894205
+}

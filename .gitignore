@@ -1,0 +1,13 @@
+# Large datasets are distributed through GitHub Releases or the source Drive link.
+amazon_data/
+amazon_data_10k/train/
+amazon_data_10k/dev/
+amazon_data_10k/test/
+*.pklz
+*.tar.gz
+*.zip
+
+# Local Python caches.
+__pycache__/
+*.py[cod]
+.github_publish/
