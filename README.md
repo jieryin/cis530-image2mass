@@ -12,7 +12,7 @@ Inputs are the RGB image, physical dimensions, and supplied thickness mask. The 
 
 ## Downloads
 
-- Project 10k subset: [amazon_data_10k.tar.gz](https://github.com/jieryin/cis530-image2mass/releases/download/untagged-b0834176464a154e3c3c/amazon_data_10k.tar.gz).
+- Project 10k subset: [amazon_data_10k.tar.gz](https://github.com/jieryin/cis530-image2mass/releases/download/v1.0.0/amazon_data_10k.tar.gz).
 - Full original download: [amazon_data.zip on Google Drive](https://drive.google.com/file/d/1EnL_sSfZBgxUiL63W6UHWIsp00-rID_A/view?usp=drive_link).
 
 The 10k archive is distributed as a Release asset rather than committed to Git. The full original data stays on Google Drive.
