@@ -1,0 +1,22 @@
+{
+  "seed": 42,
+  "min_ratio": 1.25,
+  "manifest": "amazon_data_10k/manifest.csv",
+  "stats": {
+    "train": {
+      "pairs": 8000,
+      "label_A_share": 0.4988,
+      "unique_objects": 6945
+    },
+    "dev": {
+      "pairs": 1000,
+      "label_A_share": 0.496,
+      "unique_objects": 869
+    },
+    "test": {
+      "pairs": 1000,
+      "label_A_share": 0.507,
+      "unique_objects": 882
+    }
+  }
+}
