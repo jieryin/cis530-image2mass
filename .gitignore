@@ -8,6 +8,8 @@ amazon_data_10k/test/
 *.zip
 
 # Local Python caches.
+.venv/
 __pycache__/
 *.py[cod]
 .github_publish/
+.idea/

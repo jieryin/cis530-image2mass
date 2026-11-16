@@ -12,6 +12,8 @@ from pathlib import Path
 import lz4.block
 from PIL import Image
 
+# Pickle can execute arbitrary imported globals. The source records only need
+# these NumPy constructors, so everything else is rejected during unpickling.
 ALLOWED = {("numpy.core.multiarray", "_reconstruct"), ("numpy", "ndarray"), ("numpy", "dtype")}
 
 
@@ -23,6 +25,8 @@ class _Unpickler(pickle.Unpickler):
 
 
 def load_record(path):
+    """Safely decompress one record and convert common fields to model-friendly types."""
+    # image_data stays in memory: no temporary image file is created.
     raw = _Unpickler(io.BytesIO(lz4.block.decompress(Path(path).read_bytes()))).load()
     return {"id": int(raw["id"]),
             "image": Image.open(io.BytesIO(raw["image_data"])).convert("RGB"),
@@ -37,6 +41,8 @@ def main():
     parser.add_argument("--n", type=int, default=5)
     args = parser.parse_args()
     with args.pairs.open(encoding="utf-8") as handle:
+        # zip(..., range(n)) streams only the requested prefix instead of
+        # loading a potentially large pair file in full.
         pairs = [json.loads(line) for line, _ in zip(handle, range(args.n))]
     for pair in pairs:
         for side in ("a", "b"):

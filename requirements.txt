@@ -1,0 +1,5 @@
+# score.py, make_pairs.py, prepare_10k.py, and the simple baselines use only
+# the Python standard library. These packages are required by load_record.py.
+lz4>=4.3,<5
+numpy>=1.26,<3
+Pillow>=10,<13

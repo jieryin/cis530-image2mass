@@ -21,12 +21,16 @@ import tarfile
 from pathlib import Path
 
 
+# Source split names differ from the public project split names, so the mapping
+# and requested counts live in one immutable table.
 BASE = Path(__file__).resolve().parent
 SPLITS = (("train", "train_data", 8000), ("dev", "val_data", 1000), ("test", "test_data", 1000))
 
 
 def select_records(source, seed=42):
     """Match the original sampling order: sorted files, one RNG, train/dev/test."""
+    # Sorting before sampling removes filesystem traversal order as a source of
+    # nondeterminism across machines.
     rng = random.Random(seed)
     selected, source_counts = [], {}
     for project_split, source_split, count in SPLITS:
@@ -59,6 +63,8 @@ def main():
     archive = output.with_name(output.name + ".tar.gz")
     if output == source or source in output.parents:
         parser.error("Output must be outside the original data directory")
+    # Refuse to overwrite either artifact so a reproduction run cannot damage
+    # an existing audited subset.
     if output.exists() or archive.exists():
         parser.error("Output already exists. Use --dry-run or choose a new --output directory")
 
@@ -67,6 +73,7 @@ def main():
     rows = []
     for path, project_split, source_split in selected:
         target = output / project_split / path.name
+        # Verify byte-for-byte preservation after every copy.
         source_hash = sha256(path)
         shutil.copyfile(path, target)
         if sha256(target) != source_hash:
@@ -97,6 +104,7 @@ def main():
         f"```sh\npython prepare_10k.py --source ../amazon_data --output ../amazon_data_10k_reproduced --seed {args.seed}\n```\n\n"
         "Use --dry-run to preview the selection. Existing outputs are never overwritten.\n",
         encoding="utf-8")
+    # x:gz also refuses to overwrite an archive that appeared during the run.
     with tarfile.open(archive, "x:gz") as handle:
         handle.add(output, arcname=output.name)
     print(f"Saved {len(rows):,} records to {output}")
