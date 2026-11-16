@@ -98,8 +98,3 @@ Class  Precision  Recall      F1  Support
     B     0.4930  1.0000  0.6604      493
 ```
 
-## Experimental policy
-
-The training split is used to fit a model or determine statistics such as the majority label. The development split is used for prompt design, hyperparameter selection, and choosing between candidate configurations. Test labels must not be used to change prompts, thresholds, model settings, or tie-breaking rules. The test split is evaluated only after the configuration has been frozen.
-
-Pointwise systems may first estimate a mass for each object, but they must convert the two estimates to a final A/B prediction before using this scorer. If the estimated masses are equal, the system must use a deterministic tie policy documented with that system.
