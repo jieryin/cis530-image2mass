@@ -11,6 +11,7 @@ from pathlib import Path
 
 
 def load_objects(manifest):
+    """Load model-facing object metadata and group it by the preserved split."""
     objects = {}
     with Path(manifest).open(encoding="utf-8-sig", newline="") as handle:
         for row in csv.DictReader(handle):
@@ -24,6 +25,9 @@ def load_objects(manifest):
 
 
 def make_pairs(split, objects, count, min_ratio, seed):
+    """Sample unique, sufficiently different-weight pairs within one split."""
+    # Including the split in the seed gives each split an independent but fully
+    # reproducible random stream.
     rng = random.Random(f"{seed}-{split}")
     pairs, seen, attempts = [], set(), 0
     while len(pairs) < count:
@@ -31,10 +35,13 @@ def make_pairs(split, objects, count, min_ratio, seed):
         if attempts > 100 * count:
             raise RuntimeError(f"{split}: found only {len(pairs)} valid pairs")
         a, b = rng.sample(objects, 2)
+        # frozenset treats (A, B) and (B, A) as the same underlying pair.
         key = frozenset((a["id"], b["id"]))
         if key in seen or max(a["weight"], b["weight"]) < min_ratio * min(a["weight"], b["weight"]):
             continue
         seen.add(key)
+        # The sampled order is retained: it determines which object is A and
+        # prevents the labels from acquiring a systematic position bias.
         pairs.append({"pair_id": f"{split}-{len(pairs):05d}", "id_a": a["id"], "id_b": b["id"],
                       "path_a": a["path"], "path_b": b["path"], "dims_a": a["dims"], "dims_b": b["dims"],
                       "weight_a": a["weight"], "weight_b": b["weight"],
