@@ -13,3 +13,6 @@ __pycache__/
 *.py[cod]
 .github_publish/
 .idea/
+
+# Local API credentials.
+.env
