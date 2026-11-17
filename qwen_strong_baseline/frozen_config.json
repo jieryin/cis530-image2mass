@@ -1,0 +1,165 @@
+{
+  "frozen_at_utc": "2026-11-17T22:26:39.910978+00:00",
+  "repository_baseline_commit": "7455cbcbbff047d544b9020ca953c62c9b2ce0e5",
+  "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "policy": "Frozen after complete dev before any test inference; both methods retained; no test tuning",
+  "configs": {
+    "pairwise": {
+      "mode": "pairwise",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "prompt": "Compare objects A and B using their images and physical dimensions in inches. Consider each object's size, likely material, and construction to decide which is heavier. Return A if object A is heavier, otherwise B. Return only A or B, with no explanation.",
+      "dtype": "bfloat16",
+      "device": "cuda:0",
+      "batch_size": 1,
+      "do_sample": false,
+      "max_new_tokens": 32,
+      "format_constraint": null,
+      "attention_implementation": "sdpa",
+      "dimension_unit": "inches",
+      "weight_unit": "pounds",
+      "tie_label": "B",
+      "processor": "AutoProcessor standard settings from the pinned revision",
+      "invalid_output_policy": "save raw output and abort; no retries or fallback labels",
+      "dependencies": {
+        "python": "3.11.9",
+        "torch": "2.10.0+cu128",
+        "torchvision": "0.25.0+cu128",
+        "transformers": "4.57.3",
+        "accelerate": "1.11.0",
+        "huggingface-hub": "0.36.0",
+        "numpy": "1.26.4",
+        "Pillow": "12.0.0",
+        "lz4": "4.4.5",
+        "safetensors": "0.8.0",
+        "tokenizers": "0.22.2"
+      },
+      "source_sha256": {
+        "qwen_strong_baseline\\model.py": "20252780b37a2869baefd554c4f5f8e55bbb2fc10f6d775b849fd49a19596480",
+        "qwen_strong_baseline\\pairwise\\predict.py": "8fa245931eaff6f8acb13351c58d53faa373d8e2fd63e1f43b938e91cd5bee41",
+        "qwen_strong_baseline\\runner.py": "206d92cf4d72913b5b5608694130e5dac6ef5f7b3ec37fff0ed68e9e9c4f61f5",
+        "load_record.py": "7d85235c36a1c2749ed7b3882109e1cb6e3c7b92cdec2889b95e46aa117c0bb4",
+        "openai_strong_baseline\\runner.py": "01e400b5762e8cde487542e807bf64b2c84ab60d0b56b997b78fb69bfa53095e",
+        "openai_strong_baseline\\api.py": "4b7c1eee37b35a2481301dbbe49986957a467f495fd87b50bcfe5e32acea8feb"
+      }
+    },
+    "pointwise": {
+      "mode": "pointwise",
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "prompt": "Estimate the product's weight in pounds from its image and physical dimensions in inches. Consider its size, likely material, and construction, and give your best estimate. Return only one positive number, with no units or explanation.",
+      "dtype": "bfloat16",
+      "device": "cuda:0",
+      "batch_size": 1,
+      "do_sample": false,
+      "max_new_tokens": 32,
+      "format_constraint": "positive_json_number_v1",
+      "attention_implementation": "sdpa",
+      "dimension_unit": "inches",
+      "weight_unit": "pounds",
+      "tie_label": "B",
+      "processor": "AutoProcessor standard settings from the pinned revision",
+      "invalid_output_policy": "save raw output and abort; no retries or fallback labels",
+      "dependencies": {
+        "python": "3.11.9",
+        "torch": "2.10.0+cu128",
+        "torchvision": "0.25.0+cu128",
+        "transformers": "4.57.3",
+        "accelerate": "1.11.0",
+        "huggingface-hub": "0.36.0",
+        "numpy": "1.26.4",
+        "Pillow": "12.0.0",
+        "lz4": "4.4.5",
+        "safetensors": "0.8.0",
+        "tokenizers": "0.22.2"
+      },
+      "source_sha256": {
+        "qwen_strong_baseline\\model.py": "20252780b37a2869baefd554c4f5f8e55bbb2fc10f6d775b849fd49a19596480",
+        "qwen_strong_baseline\\pointwise\\predict.py": "9dbe67ca4d5531995ed23c2e81f1230ab065fc26ff62386c7698552a52487f40",
+        "qwen_strong_baseline\\runner.py": "206d92cf4d72913b5b5608694130e5dac6ef5f7b3ec37fff0ed68e9e9c4f61f5",
+        "load_record.py": "7d85235c36a1c2749ed7b3882109e1cb6e3c7b92cdec2889b95e46aa117c0bb4",
+        "openai_strong_baseline\\runner.py": "01e400b5762e8cde487542e807bf64b2c84ab60d0b56b997b78fb69bfa53095e",
+        "openai_strong_baseline\\api.py": "4b7c1eee37b35a2481301dbbe49986957a467f495fd87b50bcfe5e32acea8feb",
+        "qwen_strong_baseline\\numeric_format.py": "2cf9778cf1326c5e76cd79b43be326c7e8134abc782988bbed4ed2065aaa1542"
+      }
+    }
+  },
+  "dev_scores": {
+    "pairwise": {
+      "examples": 1000,
+      "correct": 544,
+      "coverage": 1.0,
+      "accuracy": 0.544,
+      "macro_f1": 0.4216133942161339,
+      "per_class": {
+        "A": {
+          "precision": 0.9545454545454546,
+          "recall": 0.0846774193548387,
+          "f1": 0.15555555555555553,
+          "support": 496
+        },
+        "B": {
+          "precision": 0.5251046025104602,
+          "recall": 0.996031746031746,
+          "f1": 0.6876712328767123,
+          "support": 504
+        }
+      },
+      "confusion_matrix": {
+        "A": {
+          "A": 42,
+          "B": 454
+        },
+        "B": {
+          "A": 2,
+          "B": 502
+        }
+      }
+    },
+    "pointwise": {
+      "examples": 1000,
+      "correct": 671,
+      "coverage": 1.0,
+      "accuracy": 0.671,
+      "macro_f1": 0.6608495666812018,
+      "per_class": {
+        "A": {
+          "precision": 0.7522658610271903,
+          "recall": 0.5020161290322581,
+          "f1": 0.6021765417170496,
+          "support": 496
+        },
+        "B": {
+          "precision": 0.6307922272047832,
+          "recall": 0.8373015873015873,
+          "f1": 0.7195225916453539,
+          "support": 504
+        }
+      },
+      "confusion_matrix": {
+        "A": {
+          "A": 249,
+          "B": 247
+        },
+        "B": {
+          "A": 82,
+          "B": 422
+        }
+      }
+    }
+  },
+  "dev_runtime": {
+    "pairwise": {
+      "completed_inferences": 1000,
+      "inference_seconds": 112.73829169999999,
+      "tie_pairs": null,
+      "invalid_outputs": 0
+    },
+    "pointwise": {
+      "completed_inferences": 869,
+      "inference_seconds": 145.03498799999716,
+      "tie_pairs": 296,
+      "invalid_outputs": 0
+    }
+  }
+}

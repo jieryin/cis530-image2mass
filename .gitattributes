@@ -1,0 +1,3 @@
+# Keep Qwen source bytes stable for recorded inference source checksums.
+qwen_strong_baseline/*.py text eol=lf
+qwen_strong_baseline/**/*.py text eol=lf
