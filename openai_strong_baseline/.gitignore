@@ -1,8 +1,2 @@
-# Local response caches and machine-specific run metadata.
-**/cache.json
-**/run.json
-*.cache.json
-*.run.json
-
 # Temporary subset; the full pair files are already tracked in pairs/.
 smoke_pairs.jsonl

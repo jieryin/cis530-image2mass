@@ -1,0 +1,44 @@
+{
+  "mode": "pointwise",
+  "split": "test",
+  "concurrency": 16,
+  "job_order": "object first appearance in pair file",
+  "completion_order": "asynchronous; final files preserve input order",
+  "config": {
+    "mode": "pointwise",
+    "model": "gpt-6.1-sol",
+    "prompt": "Estimate the product's weight in pounds from its image and physical dimensions in inches. Consider its size, likely material, and construction, and give your best estimate. Return only one positive number, with no units or explanation.",
+    "response_format": "text",
+    "image_format": "PNG",
+    "detail": "high",
+    "dimension_unit": "inches",
+    "reasoning_effort": "high",
+    "max_output_tokens": 4096,
+    "service_tier": "default",
+    "weight_unit": "pounds",
+    "tie_label": "B"
+  },
+  "pair_file": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/pairs/test_pairs.jsonl",
+  "pair_file_sha256": "f8403f04e520e2b9d6ba47f9bbff93c5ab735382c6227f096f132f9d689d945c",
+  "pairs": 1000,
+  "objects": 882,
+  "total_requests": 882,
+  "cached_before_run": 0,
+  "files": {
+    "predictions": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/test/preds.jsonl",
+    "cache": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/test/cache.json",
+    "scores_json": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/test/scores.json",
+    "scores_text": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/test/scores.txt",
+    "run": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/test/run.json",
+    "weights": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/test/weight_preds.jsonl"
+  },
+  "status": "complete",
+  "completed_requests": 882,
+  "remaining_requests": 0,
+  "new_predictions_this_run": 882,
+  "usage": {
+    "requests_with_usage": 882,
+    "input_tokens": 336042,
+    "output_tokens": 242397
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "mode": "pairwise",
+  "split": "test",
+  "concurrency": 16,
+  "job_order": "existing pair file order",
+  "completion_order": "asynchronous; final files preserve input order",
+  "config": {
+    "mode": "pairwise",
+    "model": "gpt-6.1-sol",
+    "prompt": "Compare objects A and B using their images and physical dimensions in inches. Consider each object's size, likely material, and construction to decide which is heavier. Return A if object A is heavier, otherwise B. Return only A or B, with no explanation.",
+    "response_format": "text",
+    "image_format": "PNG",
+    "detail": "high",
+    "dimension_unit": "inches",
+    "reasoning_effort": "high",
+    "max_output_tokens": 4096,
+    "service_tier": "default"
+  },
+  "pair_file": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/pairs/test_pairs.jsonl",
+  "pair_file_sha256": "f8403f04e520e2b9d6ba47f9bbff93c5ab735382c6227f096f132f9d689d945c",
+  "pairs": 1000,
+  "objects": 882,
+  "total_requests": 1000,
+  "cached_before_run": 0,
+  "files": {
+    "predictions": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pairwise/output/test/preds.jsonl",
+    "cache": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pairwise/output/test/cache.json",
+    "scores_json": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pairwise/output/test/scores.json",
+    "scores_text": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pairwise/output/test/scores.txt",
+    "run": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pairwise/output/test/run.json"
+  },
+  "status": "complete",
+  "completed_requests": 1000,
+  "remaining_requests": 0,
+  "new_predictions_this_run": 1000,
+  "usage": {
+    "requests_with_usage": 1000,
+    "input_tokens": 722000,
+    "output_tokens": 79264
+  }
+}

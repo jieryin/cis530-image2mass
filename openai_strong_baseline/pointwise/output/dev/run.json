@@ -1,0 +1,44 @@
+{
+  "mode": "pointwise",
+  "split": "dev",
+  "concurrency": 16,
+  "job_order": "object first appearance in pair file",
+  "completion_order": "asynchronous; final files preserve input order",
+  "config": {
+    "mode": "pointwise",
+    "model": "gpt-6.1-sol",
+    "prompt": "Estimate the product's weight in pounds from its image and physical dimensions in inches. Consider its size, likely material, and construction, and give your best estimate. Return only one positive number, with no units or explanation.",
+    "response_format": "text",
+    "image_format": "PNG",
+    "detail": "high",
+    "dimension_unit": "inches",
+    "reasoning_effort": "high",
+    "max_output_tokens": 4096,
+    "service_tier": "default",
+    "weight_unit": "pounds",
+    "tie_label": "B"
+  },
+  "pair_file": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/pairs/dev_pairs.jsonl",
+  "pair_file_sha256": "ec36360f1916606ca1f130891fbb1beb47bc466ab7726a62792b3baf05a19a4d",
+  "pairs": 1000,
+  "objects": 869,
+  "total_requests": 869,
+  "cached_before_run": 40,
+  "files": {
+    "predictions": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/dev/preds.jsonl",
+    "cache": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/dev/cache.json",
+    "scores_json": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/dev/scores.json",
+    "scores_text": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/dev/scores.txt",
+    "run": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/dev/run.json",
+    "weights": "/Users/linfei/Documents/Courses/CIS 5300 NLP/project/cis530-image2mass/openai_strong_baseline/pointwise/output/dev/weight_preds.jsonl"
+  },
+  "status": "complete",
+  "completed_requests": 869,
+  "remaining_requests": 0,
+  "new_predictions_this_run": 829,
+  "usage": {
+    "requests_with_usage": 869,
+    "input_tokens": 331089,
+    "output_tokens": 234081
+  }
+}

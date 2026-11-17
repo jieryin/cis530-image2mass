@@ -40,15 +40,19 @@ openai_strong_baseline/
 ├── pairwise/output/{train,dev,test}/
 │   ├── preds.jsonl
 │   ├── scores.json
-│   └── scores.txt
+│   ├── scores.txt
+│   ├── cache.json
+│   └── run.json
 └── pointwise/output/{train,dev,test}/
     ├── weight_preds.jsonl
     ├── preds.jsonl
     ├── scores.json
-    └── scores.txt
+    ├── scores.txt
+    ├── cache.json
+    └── run.json
 ```
 
-Each run also creates local `cache.json` and `run.json` files for resuming and recording configuration, input checksums, raw output text, usage, and progress. These local files and `.env` are excluded from Git; the predictions and score reports are included.
+Each run also saves `cache.json` and `run.json` for resuming and recording configuration, input checksums, raw output text, usage, and progress. These files are included in Git alongside the predictions and score reports; `.env` remains excluded. The saved `run.json` paths describe the original machine and are updated when the runner is executed from another checkout.
 
 ## Usage
 
