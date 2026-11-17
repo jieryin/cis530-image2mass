@@ -9,6 +9,7 @@ python3.11 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
 ## Pairwise mass comparison task
 
 Project documentation, milestone materials, and code for a reproducible 10,000-record subset of the Amazon image2mass dataset.
@@ -43,6 +44,8 @@ The 10k archive is distributed as a Release asset rather than committed to Git. 
 - `amazon_data_10k/manifest.csv`: selected records and checksums.
 - `amazon_data_10k/sampling.json`: sampling parameters and statistics.
 - `amazon_data_10k/README.md`: extraction instructions.
+- [`simple_baseline/simple-baseline.md`](simple_baseline/simple-baseline.md): simple baseline methods, usage, and results.
+- [`openai_strong_baseline/strong-baseline.md`](openai_strong_baseline/strong-baseline.md): OpenAI pairwise and pointwise methods, usage, and results.
 - `SOURCE_DATA_TERMS.txt`: terms supplied with the original dataset.
 
 ## Reproduce the subset
@@ -82,6 +85,21 @@ python simple_baseline/simple-baseline.py \
   --output simple_baseline/volume_preds.jsonl
 ```
 
+## Run the strong baseline
+
+The OpenAI baseline uses `gpt-6.1-sol` with RGB images and dimensions. Pairwise mode directly predicts A or B; pointwise mode estimates each object's weight in pounds, then compares the estimates. Ground-truth weights and labels are used only for evaluation.
+
+Extract the dataset records under `amazon_data_10k/`. For new API predictions, create `openai_strong_baseline/.env` from [`.env.example`](openai_strong_baseline/.env.example) and fill in `OPENAI_API_KEY`. Then, from the repository root:
+
+```bash
+python -m pip install openai==3.51.0
+python openai_strong_baseline/runner.py --mode both --pairs pairs/dev_pairs.jsonl
+```
+
+Replace `dev_pairs.jsonl` with `train_pairs.jsonl` or `test_pairs.jsonl` to evaluate another split. Add `--dry-run` to check inputs without API calls. Compatible cached predictions are reused; completed runs automatically save predictions and JSON/text scores under `openai_strong_baseline/<mode>/output/<split>/`.
+
+See [strong-baseline.md](openai_strong_baseline/strong-baseline.md) for prompts, settings, output formats, and commands for all three splits.
+
 ## Run the evaluation script
 
 Score the majority-baseline predictions from the repository root:
@@ -96,6 +114,25 @@ The primary evaluation metric is accuracy. The scorer also reports macro-F1, per
 
 For the complete evaluation protocol and file-format requirements, see [`scoring.md`](scoring.md).
 
+The saved strong-baseline predictions can also be scored without an API key:
+
+```bash
+python score.py pairs/test_pairs.jsonl openai_strong_baseline/pairwise/output/test/preds.jsonl
+python score.py pairs/test_pairs.jsonl openai_strong_baseline/pointwise/output/test/preds.jsonl
+```
+
+## Baseline results
+
+Accuracy on the same 1,000 dev pairs and 1,000 test pairs:
+
+| Baseline | Dev accuracy | Test accuracy |
+|---|---:|---:|
+| Majority class | 50.4% | 49.3% |
+| Volume rule | 82.1% | 83.2% |
+| OpenAI pairwise | 91.8% | 91.1% |
+| OpenAI pointwise | 92.4% | 92.1% |
+
+Pointwise results measure A/B comparison accuracy after comparing predicted weights. Full strong-baseline score reports and predictions are stored under each mode's `output/<split>/` folder.
 
 ## Source
 
