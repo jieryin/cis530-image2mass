@@ -1,0 +1,566 @@
+{
+  "version": 1,
+  "generated_at": "2026-11-17T22:32:53.018003+00:00",
+  "scorer": "unchanged score.py; exact coverage required; saved score dictionaries revalidated",
+  "pair_files": {
+    "dev": {
+      "pairs": 1000,
+      "sha256": "dac3005873668f31e49e39d51328603588f7a67db2e9b098a749ae964318426f"
+    },
+    "test": {
+      "pairs": 1000,
+      "sha256": "cdafc73b3ea824e0dfe854e8be513a01cd98e86e76ce64adc7678b77430d7f6d"
+    }
+  },
+  "results": {
+    "majority": {
+      "dev": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 504,
+          "coverage": 1.0,
+          "accuracy": 0.504,
+          "macro_f1": 0.3351063829787234,
+          "per_class": {
+            "A": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 496
+            },
+            "B": {
+              "precision": 0.504,
+              "recall": 1.0,
+              "f1": 0.6702127659574468,
+              "support": 504
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 0,
+              "B": 496
+            },
+            "B": {
+              "A": 0,
+              "B": 504
+            }
+          }
+        },
+        "provenance": {
+          "implementation": "simple_baseline/simple-baseline.py",
+          "implementation_sha256": "91f594eb7a755003d500cac7e347c83922f1a0b49229d8d18d1dd10749f316a5",
+          "training_majority_label": "B",
+          "source": "recomputed existing deterministic rule in memory"
+        }
+      },
+      "test": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 493,
+          "coverage": 1.0,
+          "accuracy": 0.493,
+          "macro_f1": 0.3302076356329538,
+          "per_class": {
+            "A": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 507
+            },
+            "B": {
+              "precision": 0.493,
+              "recall": 1.0,
+              "f1": 0.6604152712659076,
+              "support": 493
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 0,
+              "B": 507
+            },
+            "B": {
+              "A": 0,
+              "B": 493
+            }
+          }
+        },
+        "provenance": {
+          "implementation": "simple_baseline/simple-baseline.py",
+          "implementation_sha256": "91f594eb7a755003d500cac7e347c83922f1a0b49229d8d18d1dd10749f316a5",
+          "training_majority_label": "B",
+          "source": "saved predictions, validated against the existing rule",
+          "predictions": "simple_baseline/simple_preds.jsonl",
+          "predictions_sha256": "092a425b360ab8a41a45ef374bbf4c44b766d20f8ed9473c57a8fa613de1147d"
+        }
+      }
+    },
+    "volume": {
+      "dev": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 821,
+          "coverage": 1.0,
+          "accuracy": 0.821,
+          "macro_f1": 0.8209912285701999,
+          "per_class": {
+            "A": {
+              "precision": 0.8189134808853119,
+              "recall": 0.8205645161290323,
+              "f1": 0.8197381671701913,
+              "support": 496
+            },
+            "B": {
+              "precision": 0.8230616302186878,
+              "recall": 0.8214285714285714,
+              "f1": 0.8222442899702085,
+              "support": 504
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 407,
+              "B": 89
+            },
+            "B": {
+              "A": 90,
+              "B": 414
+            }
+          }
+        },
+        "provenance": {
+          "implementation": "simple_baseline/simple-baseline.py",
+          "implementation_sha256": "91f594eb7a755003d500cac7e347c83922f1a0b49229d8d18d1dd10749f316a5",
+          "training_majority_label": "B",
+          "source": "recomputed existing deterministic rule in memory"
+        }
+      },
+      "test": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 832,
+          "coverage": 1.0,
+          "accuracy": 0.832,
+          "macro_f1": 0.832,
+          "per_class": {
+            "A": {
+              "precision": 0.8438133874239351,
+              "recall": 0.8205128205128205,
+              "f1": 0.832,
+              "support": 507
+            },
+            "B": {
+              "precision": 0.8205128205128205,
+              "recall": 0.8438133874239351,
+              "f1": 0.832,
+              "support": 493
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 416,
+              "B": 91
+            },
+            "B": {
+              "A": 77,
+              "B": 416
+            }
+          }
+        },
+        "provenance": {
+          "implementation": "simple_baseline/simple-baseline.py",
+          "implementation_sha256": "91f594eb7a755003d500cac7e347c83922f1a0b49229d8d18d1dd10749f316a5",
+          "training_majority_label": "B",
+          "source": "saved predictions, validated against the existing rule",
+          "predictions": "simple_baseline/volume_preds.jsonl",
+          "predictions_sha256": "6d53a9b60f798e222d2ed4d10a9f02a60e35c2d9d14dff716603b7f318f88cc7"
+        }
+      }
+    },
+    "openai_pairwise": {
+      "dev": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 918,
+          "coverage": 1.0,
+          "accuracy": 0.918,
+          "macro_f1": 0.9179602927817063,
+          "per_class": {
+            "A": {
+              "precision": 0.9294605809128631,
+              "recall": 0.9032258064516129,
+              "f1": 0.916155419222904,
+              "support": 496
+            },
+            "B": {
+              "precision": 0.9073359073359073,
+              "recall": 0.9325396825396826,
+              "f1": 0.9197651663405088,
+              "support": 504
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 448,
+              "B": 48
+            },
+            "B": {
+              "A": 34,
+              "B": 470
+            }
+          }
+        },
+        "provenance": {
+          "predictions": "openai_strong_baseline/pairwise/output/dev/preds.jsonl",
+          "predictions_sha256": "bb45e8473bc71d3061de76b1528d1a446beff3203bfa15189fe3a3fbecb8f014",
+          "scores": "openai_strong_baseline/pairwise/output/dev/scores.json"
+        }
+      },
+      "test": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 911,
+          "coverage": 1.0,
+          "accuracy": 0.911,
+          "macro_f1": 0.9109991989927908,
+          "per_class": {
+            "A": {
+              "precision": 0.926530612244898,
+              "recall": 0.8954635108481263,
+              "f1": 0.9107321965897692,
+              "support": 507
+            },
+            "B": {
+              "precision": 0.8960784313725491,
+              "recall": 0.9269776876267748,
+              "f1": 0.9112662013958125,
+              "support": 493
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 454,
+              "B": 53
+            },
+            "B": {
+              "A": 36,
+              "B": 457
+            }
+          }
+        },
+        "provenance": {
+          "predictions": "openai_strong_baseline/pairwise/output/test/preds.jsonl",
+          "predictions_sha256": "381af8e90c41fe44eb45875e0078e63d6147a89c3461168cefeab361bd4496a9",
+          "scores": "openai_strong_baseline/pairwise/output/test/scores.json"
+        }
+      }
+    },
+    "openai_pointwise": {
+      "dev": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 924,
+          "coverage": 1.0,
+          "accuracy": 0.924,
+          "macro_f1": 0.9239561987704918,
+          "per_class": {
+            "A": {
+              "precision": 0.9375,
+              "recall": 0.907258064516129,
+              "f1": 0.9221311475409837,
+              "support": 496
+            },
+            "B": {
+              "precision": 0.9115384615384615,
+              "recall": 0.9404761904761905,
+              "f1": 0.9257812499999999,
+              "support": 504
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 450,
+              "B": 46
+            },
+            "B": {
+              "A": 30,
+              "B": 474
+            }
+          }
+        },
+        "provenance": {
+          "predictions": "openai_strong_baseline/pointwise/output/dev/preds.jsonl",
+          "predictions_sha256": "8532dc836d56ec3c57d0fe010cd69e2448a5db42cd6c111cf9e18e9d62596cbd",
+          "scores": "openai_strong_baseline/pointwise/output/dev/scores.json"
+        }
+      },
+      "test": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 921,
+          "coverage": 1.0,
+          "accuracy": 0.921,
+          "macro_f1": 0.920999288993601,
+          "per_class": {
+            "A": {
+              "precision": 0.936734693877551,
+              "recall": 0.9053254437869822,
+              "f1": 0.9207622868605818,
+              "support": 507
+            },
+            "B": {
+              "precision": 0.9058823529411765,
+              "recall": 0.9371196754563894,
+              "f1": 0.9212362911266201,
+              "support": 493
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 459,
+              "B": 48
+            },
+            "B": {
+              "A": 31,
+              "B": 462
+            }
+          }
+        },
+        "provenance": {
+          "predictions": "openai_strong_baseline/pointwise/output/test/preds.jsonl",
+          "predictions_sha256": "a536cfd6019bdad0aecbc5ad2a735133e0b65d0a66c3f2d295e5578a965e1f9e",
+          "scores": "openai_strong_baseline/pointwise/output/test/scores.json"
+        }
+      }
+    },
+    "qwen_pairwise": {
+      "dev": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 544,
+          "coverage": 1.0,
+          "accuracy": 0.544,
+          "macro_f1": 0.4216133942161339,
+          "per_class": {
+            "A": {
+              "precision": 0.9545454545454546,
+              "recall": 0.0846774193548387,
+              "f1": 0.15555555555555553,
+              "support": 496
+            },
+            "B": {
+              "precision": 0.5251046025104602,
+              "recall": 0.996031746031746,
+              "f1": 0.6876712328767123,
+              "support": 504
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 42,
+              "B": 454
+            },
+            "B": {
+              "A": 2,
+              "B": 502
+            }
+          }
+        },
+        "runtime": {
+          "required_inferences": 1000,
+          "completed_inferences": 1000,
+          "remaining_inferences": 0,
+          "invalid_outputs": 0,
+          "inference_seconds": 112.73829169999999,
+          "mean_inference_seconds": 0.11273829169999999,
+          "peak_memory_allocated_bytes": 4459322368,
+          "timing_policy": "CUDA synchronized; excludes model download/load, input validation, cache writes and scoring; includes processing and generation"
+        },
+        "provenance": {
+          "predictions": "qwen_strong_baseline/pairwise/output/dev/preds.jsonl",
+          "predictions_sha256": "c8c4f0944c3a645d62798e1d9bd804970c034b0e253ef6d8bf60c8e0a6d32ef4",
+          "scores": "qwen_strong_baseline/pairwise/output/dev/scores.json",
+          "run": "qwen_strong_baseline/pairwise/output/dev/run.json"
+        },
+        "model": "Qwen/Qwen3-VL-2B-Instruct",
+        "revision": "89644892e4d85e24eaac8bacfd4f463576704203"
+      },
+      "test": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 539,
+          "coverage": 1.0,
+          "accuracy": 0.539,
+          "macro_f1": 0.4350206321641161,
+          "per_class": {
+            "A": {
+              "precision": 0.859375,
+              "recall": 0.10848126232741617,
+              "f1": 0.1926444833625219,
+              "support": 507
+            },
+            "B": {
+              "precision": 0.5170940170940171,
+              "recall": 0.9817444219066938,
+              "f1": 0.6773967809657102,
+              "support": 493
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 55,
+              "B": 452
+            },
+            "B": {
+              "A": 9,
+              "B": 484
+            }
+          }
+        },
+        "runtime": {
+          "required_inferences": 1000,
+          "completed_inferences": 1000,
+          "remaining_inferences": 0,
+          "invalid_outputs": 0,
+          "inference_seconds": 115.22348159999683,
+          "mean_inference_seconds": 0.11522348159999683,
+          "peak_memory_allocated_bytes": 4459089920,
+          "timing_policy": "CUDA synchronized; excludes model download/load, input validation, cache writes and scoring; includes processing and generation"
+        },
+        "provenance": {
+          "predictions": "qwen_strong_baseline/pairwise/output/test/preds.jsonl",
+          "predictions_sha256": "d1f589c6eade94e27009a651b73e564fa0d9358b72d46177e216c40616472cd4",
+          "scores": "qwen_strong_baseline/pairwise/output/test/scores.json",
+          "run": "qwen_strong_baseline/pairwise/output/test/run.json"
+        },
+        "model": "Qwen/Qwen3-VL-2B-Instruct",
+        "revision": "89644892e4d85e24eaac8bacfd4f463576704203"
+      }
+    },
+    "qwen_pointwise": {
+      "dev": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 671,
+          "coverage": 1.0,
+          "accuracy": 0.671,
+          "macro_f1": 0.6608495666812018,
+          "per_class": {
+            "A": {
+              "precision": 0.7522658610271903,
+              "recall": 0.5020161290322581,
+              "f1": 0.6021765417170496,
+              "support": 496
+            },
+            "B": {
+              "precision": 0.6307922272047832,
+              "recall": 0.8373015873015873,
+              "f1": 0.7195225916453539,
+              "support": 504
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 249,
+              "B": 247
+            },
+            "B": {
+              "A": 82,
+              "B": 422
+            }
+          }
+        },
+        "runtime": {
+          "required_inferences": 869,
+          "completed_inferences": 869,
+          "remaining_inferences": 0,
+          "invalid_outputs": 0,
+          "inference_seconds": 145.03498799999716,
+          "mean_inference_seconds": 0.16689872036823608,
+          "peak_memory_allocated_bytes": 4353428992,
+          "tie_pairs": 296,
+          "timing_policy": "CUDA synchronized; excludes model download/load, input validation, cache writes and scoring; includes processing and generation"
+        },
+        "provenance": {
+          "predictions": "qwen_strong_baseline/pointwise/output/dev/preds.jsonl",
+          "predictions_sha256": "400bb095f5f8022b668fa3ac60d274b069afc7a6a124156bbc2c1a638335f19d",
+          "scores": "qwen_strong_baseline/pointwise/output/dev/scores.json",
+          "run": "qwen_strong_baseline/pointwise/output/dev/run.json"
+        },
+        "model": "Qwen/Qwen3-VL-2B-Instruct",
+        "revision": "89644892e4d85e24eaac8bacfd4f463576704203"
+      },
+      "test": {
+        "status": "complete",
+        "scores": {
+          "examples": 1000,
+          "correct": 650,
+          "coverage": 1.0,
+          "accuracy": 0.65,
+          "macro_f1": 0.6388118354137773,
+          "per_class": {
+            "A": {
+              "precision": 0.7476340694006309,
+              "recall": 0.46745562130177515,
+              "f1": 0.575242718446602,
+              "support": 507
+            },
+            "B": {
+              "precision": 0.6046852122986823,
+              "recall": 0.8377281947261663,
+              "f1": 0.7023809523809524,
+              "support": 493
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 237,
+              "B": 270
+            },
+            "B": {
+              "A": 80,
+              "B": 413
+            }
+          }
+        },
+        "runtime": {
+          "required_inferences": 882,
+          "completed_inferences": 882,
+          "remaining_inferences": 0,
+          "invalid_outputs": 0,
+          "inference_seconds": 156.31788270000698,
+          "mean_inference_seconds": 0.17723115952381743,
+          "peak_memory_allocated_bytes": 4353428992,
+          "tie_pairs": 344,
+          "timing_policy": "CUDA synchronized; excludes model download/load, input validation, cache writes and scoring; includes processing and generation"
+        },
+        "provenance": {
+          "predictions": "qwen_strong_baseline/pointwise/output/test/preds.jsonl",
+          "predictions_sha256": "3869ef1b3880633d70e9e7c011bcc86ee1cf76d72b2ac005972d077b0c752877",
+          "scores": "qwen_strong_baseline/pointwise/output/test/scores.json",
+          "run": "qwen_strong_baseline/pointwise/output/test/run.json"
+        },
+        "model": "Qwen/Qwen3-VL-2B-Instruct",
+        "revision": "89644892e4d85e24eaac8bacfd4f463576704203"
+      }
+    }
+  },
+  "qwen_complete": true,
+  "notes": [
+    "Pointwise metrics measure A/B accuracy after comparing weights, with B on ties.",
+    "Simple dev predictions are recomputed in memory using the existing baseline functions; no baseline outputs are overwritten.",
+    "OpenAI high-reasoning API runs and local Qwen Instruct use different compute budgets.",
+    "Qwen timing is copied from run.json and excludes model downloads/loading."
+  ]
+}

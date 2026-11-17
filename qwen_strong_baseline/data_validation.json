@@ -1,0 +1,67 @@
+{
+  "validated_at_utc": "2026-11-17T21:51:28.871172+00:00",
+  "data_root": "D:\\angie\\cis530\\amazon_data_10k",
+  "pairs_dir": "D:\\angie\\cis530\\cis530-image2mass\\pairs",
+  "model_loaded": false,
+  "splits": {
+    "train": {
+      "record_files": 8000,
+      "expected_records": 8000,
+      "unique_record_ids": 8000,
+      "decoded_rgb_images": 8000,
+      "record_bytes": 164123301,
+      "pairs_sha256": "03e1b1751a2965e7bde48d8bb3f368c7f5a91016be24468ae1d542c4c19fa357",
+      "pairs": 8000,
+      "unique_pair_ids": 8000,
+      "unique_referenced_objects": 6945,
+      "labels": {
+        "A": 3990,
+        "B": 4010
+      }
+    },
+    "dev": {
+      "record_files": 1000,
+      "expected_records": 1000,
+      "unique_record_ids": 1000,
+      "decoded_rgb_images": 1000,
+      "record_bytes": 20504085,
+      "pairs_sha256": "dac3005873668f31e49e39d51328603588f7a67db2e9b098a749ae964318426f",
+      "pairs": 1000,
+      "unique_pair_ids": 1000,
+      "unique_referenced_objects": 869,
+      "labels": {
+        "A": 496,
+        "B": 504
+      }
+    },
+    "test": {
+      "record_files": 1000,
+      "expected_records": 1000,
+      "unique_record_ids": 1000,
+      "decoded_rgb_images": 1000,
+      "record_bytes": 20266819,
+      "pairs_sha256": "cdafc73b3ea824e0dfe854e8be513a01cd98e86e76ce64adc7678b77430d7f6d",
+      "pairs": 1000,
+      "unique_pair_ids": 1000,
+      "unique_referenced_objects": 882,
+      "labels": {
+        "A": 507,
+        "B": 493
+      }
+    }
+  },
+  "errors": [],
+  "manifest_sha256": "cd406ee4778a678b0c4f3de8183d6a728d3ed3ca2175a2f9e6a8bed659d13418",
+  "manifest_records": 10000,
+  "cross_split_record_id_overlap": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  },
+  "cross_split_referenced_id_overlap": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  },
+  "passed": true
+}

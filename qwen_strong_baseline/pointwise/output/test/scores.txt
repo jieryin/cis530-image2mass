@@ -1,0 +1,14 @@
+Examples:  1000
+Correct:   650
+Coverage:  1.0000
+Accuracy:  0.6500
+Macro-F1:  0.6388
+
+Confusion matrix (rows=gold, columns=prediction)
+             Pred A   Pred B
+Gold A          237      270
+Gold B           80      413
+
+Class  Precision  Recall      F1  Support
+    A     0.7476  0.4675  0.5752      507
+    B     0.6047  0.8377  0.7024      493

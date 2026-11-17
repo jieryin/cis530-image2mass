@@ -46,6 +46,7 @@ The 10k archive is distributed as a Release asset rather than committed to Git. 
 - `amazon_data_10k/README.md`: extraction instructions.
 - [`simple_baseline/simple-baseline.md`](simple_baseline/simple-baseline.md): simple baseline methods, usage, and results.
 - [`openai_strong_baseline/strong-baseline.md`](openai_strong_baseline/strong-baseline.md): OpenAI pairwise and pointwise methods, usage, and results.
+- [`qwen_strong_baseline/strong-baseline.md`](qwen_strong_baseline/strong-baseline.md): local Qwen3-VL pairwise and pointwise methods, installation, resumable inference, and results.
 - `SOURCE_DATA_TERMS.txt`: terms supplied with the original dataset.
 
 ## Reproduce the subset
@@ -100,6 +101,25 @@ Replace `dev_pairs.jsonl` with `train_pairs.jsonl` or `test_pairs.jsonl` to eval
 
 See [strong-baseline.md](openai_strong_baseline/strong-baseline.md) for prompts, settings, output formats, and commands for all three splits.
 
+## Run the local Qwen strong baseline
+
+The Qwen baseline uses `Qwen/Qwen3-VL-2B-Instruct` with the same zero-shot prompts, RGB images, and physical dimensions as the OpenAI baseline. Pairwise mode directly predicts A/B; pointwise mode estimates each unique object's weight once and compares the estimates, selecting B for ties. Model inputs exclude gold weights, labels, filenames, IDs, and thickness masks. No API key is required.
+
+Use an isolated Python 3.11 environment with a CUDA GPU supporting BF16. Install the pinned CUDA PyTorch wheels first, followed by the Qwen dependencies:
+
+```bash
+python -m pip install torch==2.10.0+cu128 torchvision==0.25.0+cu128 --index-url https://download.pytorch.org/whl/cu128
+python -m pip install -r qwen_strong_baseline/requirements.txt
+python qwen_strong_baseline/runner.py --mode both --pairs pairs/dev_pairs.jsonl --dry-run
+python qwen_strong_baseline/runner.py --mode both --pairs pairs/dev_pairs.jsonl --max-new-pairs 20 --max-new-objects 20
+```
+
+These commands expect dataset record files under `amazon_data_10k/`. If the dataset is elsewhere, pass `--root PATH` to every command. For the local D: checkout, use `--root ../amazon_data_10k`; the [Qwen method documentation](qwen_strong_baseline/strong-baseline.md#usage) gives complete Windows commands and cache paths.
+
+The model revision and configuration are pinned: BF16, batch size 1, greedy decoding with at most 32 new tokens, and the standard model processor. Pointwise numeric output is constrained during token generation; the exact prompts are preserved. A dry-run validates inputs without loading a model or writing outputs. Pilot limits count only new inferences; remove the limits after checking the pilot to complete dev, then run `pairs/test_pairs.jsonl` with the frozen configuration. Compatible caches resume automatically. Complete predictions and strict scorer reports are saved under `qwen_strong_baseline/<mode>/output/<split>/`; incomplete pilot outputs do not receive full evaluation scores.
+
+See [Qwen strong-baseline.md](qwen_strong_baseline/strong-baseline.md) for exact prompts, installation, input validation, generation and failure policies, development diagnostics, and verified dev/test measurements.
+
 ## Run the evaluation script
 
 Score the majority-baseline predictions from the repository root:
@@ -131,8 +151,18 @@ Accuracy on the same 1,000 dev pairs and 1,000 test pairs:
 | Volume rule | 82.1% | 83.2% |
 | OpenAI pairwise | 91.8% | 91.1% |
 | OpenAI pointwise | 92.4% | 92.1% |
+| Qwen3-VL pairwise | 54.4% | 53.9% |
+| Qwen3-VL pointwise* | 67.1% | 65.0% |
 
 Pointwise results measure A/B comparison accuracy after comparing predicted weights. Full strong-baseline score reports and predictions are stored under each mode's `output/<split>/` folder.
+
+*Qwen pointwise uses the `positive_json_number_v1` numeric generation constraint with the unchanged user prompt. Its configuration was frozen after dev validation and before test. All four Qwen outputs cover exactly 1,000 pairs with zero invalid outputs; both methods score below the volume rule on dev and test. See the [complete comparison](qwen_strong_baseline/results.md) for macro-F1, timing, memory, and tie counts.
+
+Revalidate the saved outputs and regenerate the comparison without model inference:
+
+```bash
+python qwen_strong_baseline/summarize_results.py --require-complete
+```
 
 ## Source
 

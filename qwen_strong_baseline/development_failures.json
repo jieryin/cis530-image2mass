@@ -1,0 +1,46 @@
+[
+  {
+    "stage": "PyTorch2.9.1slowvisionpilot",
+    "completed_pairwise": 6,
+    "status": "stopped for documented performance regression",
+    "final_scores_published": false
+  },
+  {
+    "stage": "Windowsatomiccachewritefailure",
+    "completed_pairwise": 510,
+    "errors": {
+      "dev-00509": {
+        "error": "[WinError 5] \u62d2\u7edd\u8bbf\u95ee\u3002: 'D:\\\\angie\\\\cis530\\\\cis530-image2mass\\\\qwen_strong_baseline\\\\pairwise\\\\output\\\\dev\\\\.cache.json.gd_t006f' -> 'D:\\\\angie\\\\cis530\\\\cis530-image2mass\\\\qwen_strong_baseline\\\\pairwise\\\\output\\\\dev\\\\cache.json'",
+        "response": {
+          "raw_output": "B",
+          "elapsed_seconds": 0.1209142999996402,
+          "peak_memory_allocated_bytes": 4456999424,
+          "generated_tokens": 2,
+          "truncated": false,
+          "parameter_versions_unchanged": true
+        },
+        "failed_at": "2026-11-17T22:03:28.973697+00:00"
+      }
+    },
+    "policy": "Storagewrites now use bounded retry; no modelretry. This run excluded from final results."
+  },
+  {
+    "stage": "unconstrainedpointwisedevformatfailure",
+    "completed_objects": 54,
+    "errors": {
+      "5754": {
+        "error": "Qwen pointwise response must contain only a positive number",
+        "response": {
+          "raw_output": "1.24, 3.09, 7.52",
+          "elapsed_seconds": 0.6344363000002886,
+          "peak_memory_allocated_bytes": 4353001984,
+          "generated_tokens": 17,
+          "truncated": false,
+          "parameter_versions_unchanged": true
+        },
+        "failed_at": "2026-11-17T22:09:41.127835+00:00"
+      }
+    },
+    "policy": "No score or posthoc repair. Pointwise numeric token grammar fixed on dev before test; final runs use fresh caches."
+  }
+]

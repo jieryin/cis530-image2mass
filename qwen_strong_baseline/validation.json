@@ -1,0 +1,177 @@
+{
+  "verified_at_utc": "2026-11-17T22:35:49.700640+00:00",
+  "repository_baseline_commit": "7455cbcbbff047d544b9020ca953c62c9b2ce0e5",
+  "branch": "feat/qwen-zero-shot",
+  "offline_tests": {
+    "command": "python -m unittest discover -s tests -q",
+    "passed": 82,
+    "failed": 0,
+    "execution_note": "Outside sandbox because Windows asyncio requires local socketpair"
+  },
+  "data_validation_passed": true,
+  "strict_scorer_cli_rechecked": true,
+  "both_split_dry_runs_complete": true,
+  "same_mode_configs_match_pretest_freeze": true,
+  "recorded_source_hashes_match_current_files": true,
+  "total_final_inferences": 3751,
+  "total_final_inference_seconds": 529.314644000001,
+  "train_status": "not run; zero-shot evaluation only, no training",
+  "runs": [
+    {
+      "mode": "pairwise",
+      "split": "dev",
+      "scores": {
+        "examples": 1000,
+        "correct": 544,
+        "coverage": 1.0,
+        "accuracy": 0.544,
+        "macro_f1": 0.4216133942161339,
+        "per_class": {
+          "A": {
+            "precision": 0.9545454545454546,
+            "recall": 0.0846774193548387,
+            "f1": 0.15555555555555553,
+            "support": 496
+          },
+          "B": {
+            "precision": 0.5251046025104602,
+            "recall": 0.996031746031746,
+            "f1": 0.6876712328767123,
+            "support": 504
+          }
+        },
+        "confusion_matrix": {
+          "A": {
+            "A": 42,
+            "B": 454
+          },
+          "B": {
+            "A": 2,
+            "B": 502
+          }
+        }
+      },
+      "inferences": 1000,
+      "invalid_outputs": 0,
+      "inference_seconds": 112.73829169999999,
+      "tie_pairs": null
+    },
+    {
+      "mode": "pairwise",
+      "split": "test",
+      "scores": {
+        "examples": 1000,
+        "correct": 539,
+        "coverage": 1.0,
+        "accuracy": 0.539,
+        "macro_f1": 0.4350206321641161,
+        "per_class": {
+          "A": {
+            "precision": 0.859375,
+            "recall": 0.10848126232741617,
+            "f1": 0.1926444833625219,
+            "support": 507
+          },
+          "B": {
+            "precision": 0.5170940170940171,
+            "recall": 0.9817444219066938,
+            "f1": 0.6773967809657102,
+            "support": 493
+          }
+        },
+        "confusion_matrix": {
+          "A": {
+            "A": 55,
+            "B": 452
+          },
+          "B": {
+            "A": 9,
+            "B": 484
+          }
+        }
+      },
+      "inferences": 1000,
+      "invalid_outputs": 0,
+      "inference_seconds": 115.22348159999683,
+      "tie_pairs": null
+    },
+    {
+      "mode": "pointwise",
+      "split": "dev",
+      "scores": {
+        "examples": 1000,
+        "correct": 671,
+        "coverage": 1.0,
+        "accuracy": 0.671,
+        "macro_f1": 0.6608495666812018,
+        "per_class": {
+          "A": {
+            "precision": 0.7522658610271903,
+            "recall": 0.5020161290322581,
+            "f1": 0.6021765417170496,
+            "support": 496
+          },
+          "B": {
+            "precision": 0.6307922272047832,
+            "recall": 0.8373015873015873,
+            "f1": 0.7195225916453539,
+            "support": 504
+          }
+        },
+        "confusion_matrix": {
+          "A": {
+            "A": 249,
+            "B": 247
+          },
+          "B": {
+            "A": 82,
+            "B": 422
+          }
+        }
+      },
+      "inferences": 869,
+      "invalid_outputs": 0,
+      "inference_seconds": 145.03498799999716,
+      "tie_pairs": 296
+    },
+    {
+      "mode": "pointwise",
+      "split": "test",
+      "scores": {
+        "examples": 1000,
+        "correct": 650,
+        "coverage": 1.0,
+        "accuracy": 0.65,
+        "macro_f1": 0.6388118354137773,
+        "per_class": {
+          "A": {
+            "precision": 0.7476340694006309,
+            "recall": 0.46745562130177515,
+            "f1": 0.575242718446602,
+            "support": 507
+          },
+          "B": {
+            "precision": 0.6046852122986823,
+            "recall": 0.8377281947261663,
+            "f1": 0.7023809523809524,
+            "support": 493
+          }
+        },
+        "confusion_matrix": {
+          "A": {
+            "A": 237,
+            "B": 270
+          },
+          "B": {
+            "A": 80,
+            "B": 413
+          }
+        }
+      },
+      "inferences": 882,
+      "invalid_outputs": 0,
+      "inference_seconds": 156.31788270000698,
+      "tie_pairs": 344
+    }
+  ]
+}
