@@ -17,7 +17,7 @@ Equal predicted weights therefore select B. The prompt is in [`pointwise/predict
 
 ## Input and output
 
-The runner reuses the existing pair files produced by [`make_pairs.py`](../make_pairs.py), loads the corresponding `.pklz` records with [`load_record.py`](../load_record.py), and evaluates predictions with [`score.py`](../score.py). It does not regenerate or reorder the saved pairs.
+The runner reuses the existing pair files produced by [`pairs/make_pairs.py`](../pairs/make_pairs.py), loads the corresponding `.pklz` records with [`load_record.py`](../load_record.py), and evaluates predictions with [`score.py`](../score.py). It does not regenerate or reorder the saved pairs.
 
 The model receives **RGB images and three physical dimensions in inches**. The images are sent as PNG image inputs, not file paths. IDs are used locally to match records and predictions. Ground-truth weights, gold A/B labels, filenames, and thickness masks are excluded from the requests. [`api.py`](api.py) handles image encoding and asynchronous Responses API calls.
 

@@ -18,7 +18,7 @@ where $d_{x,1}, d_{x,2}, d_{x,3}$ are the three listed dimensions of object $x$ 
 
 ## Input and output
 
-The inputs are the pair files in `pairs/`, produced by `make_pairs.py`, one JSON object per line:
+The inputs are the pair files in `pairs/`, produced by `pairs/make_pairs.py`, one JSON object per line:
 
 ```json
 {"pair_id": "test-00000", "id_a": 6852, "id_b": 7125, "path_a": "...", "path_b": "...", "dims_a": [4.13, 2.76, 1.57], "dims_b": [6.69, 2.76, 1.65], "weight_a": 0.04, "weight_b": 0.15, "label": "B"}

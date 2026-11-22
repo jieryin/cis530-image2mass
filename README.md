@@ -36,18 +36,18 @@ The generated pair files are stored in the `pairs/` directory:
 
 The 10k archive is distributed as a Release asset rather than committed to Git. The full original data stays on Google Drive.
 
-## Files
+## Repository layout
 
-- `data.md`: dataset description and input fields.
-- `CIS530_Milestone1.pdf`: milestone submission.
-- `amazon_data_10k/prepare_10k.py`: extraction code.
-- `amazon_data_10k/manifest.csv`: selected records and checksums.
-- `amazon_data_10k/sampling.json`: sampling parameters and statistics.
-- `amazon_data_10k/README.md`: extraction instructions.
-- [`simple_baseline/simple-baseline.md`](simple_baseline/simple-baseline.md): simple baseline methods, usage, and results.
-- [`openai_strong_baseline/strong-baseline.md`](openai_strong_baseline/strong-baseline.md): OpenAI pairwise and pointwise methods, usage, and results.
-- [`qwen_strong_baseline/strong-baseline.md`](qwen_strong_baseline/strong-baseline.md): local Qwen3-VL pairwise and pointwise methods, installation, resumable inference, and results.
-- `SOURCE_DATA_TERMS.txt`: terms supplied with the original dataset.
+| Path | Contents |
+|---|---|
+| `amazon_data_10k/` | Subset extraction code (`prepare_10k.py`), `manifest.csv` with checksums, `sampling.json`, extraction instructions, and [`data.md`](amazon_data_10k/data.md) (dataset description and input fields). Record files are extracted here and are not committed. |
+| `pairs/` | Train/dev/test pair files, the dev/test pairs the volume rule gets wrong, and the scripts that build them (`make_pairs.py`, `make_volume_wrong_pairs.py`). |
+| `load_record.py`, `score.py`, [`scoring.md`](scoring.md) | Shared record loader and evaluation script. |
+| [`simple_baseline/`](simple_baseline/simple-baseline.md), [`openai_strong_baseline/`](openai_strong_baseline/strong-baseline.md), [`qwen_strong_baseline/`](qwen_strong_baseline/strong-baseline.md) | Milestone 2 baselines: code, a `.md` with usage and results, and saved predictions. |
+| [`pairwise_finetune/`](pairwise_finetune/README.md) | Milestone 3 pairwise LoRA fine-tuning, with its own tests. |
+| `reports/` | Milestone reports. |
+| `tests/` | Tests for the scorer and the strong baselines. |
+| `SOURCE_DATA_TERMS.txt` | Terms supplied with the original dataset. |
 
 ## Reproduce the subset
 

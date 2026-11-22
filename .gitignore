@@ -16,3 +16,4 @@ __pycache__/
 
 # Local API credentials.
 .env
+.DS_Store
