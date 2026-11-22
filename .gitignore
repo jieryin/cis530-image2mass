@@ -9,6 +9,8 @@ amazon_data_10k/test/
 
 # Local Python caches.
 .venv/
+.venv-pairwise/
+.hf-cache/
 __pycache__/
 *.py[cod]
 .github_publish/
