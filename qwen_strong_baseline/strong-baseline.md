@@ -4,7 +4,7 @@
 
 The repository baseline is commit `7455cbcbbff047d544b9020ca953c62c9b2ce0e5`, matching the execution guide. No baseline interface differences were found at implementation time; the existing loader, saved pairs, prompts, and scorer are reused.
 
-**Pairwise** (`--mode pairwise`) sends objects A and B with each object's dimensions followed by its image. The model returns `A` or `B`. [`pairwise/predict.py`](pairwise/predict.py) builds the message and accepts only one of those labels after trimming surrounding whitespace.
+**Pairwise** (`--mode pairwise`) sends objects A and B with each object's dimensions followed by its image. The model returns `A` or `B`. [`prompts/pairwise.py`](../prompts/pairwise.py) builds the message; [`pairwise/predict.py`](pairwise/predict.py) accepts only one of those labels after trimming surrounding whitespace.
 
 **Pointwise** (`--mode pointwise`) estimates a positive weight in pounds for each unique object ID. An object's estimate is reused in every pair containing that object. [`pointwise/predict.py`](pointwise/predict.py) converts these estimates to A/B predictions locally:
 
@@ -18,7 +18,7 @@ Equal estimates select B. `--mode both` runs the two methods sequentially while 
 
 Records are decoded with the existing [`load_record.py`](../load_record.py). The model receives only **RGB image content and three physical dimensions in inches**, in a single user message. Ground-truth weights, gold labels, thickness masks, object IDs, pair IDs, filenames, and paths are excluded from model messages. IDs and paths are used locally for validation and result association.
 
-The prompt constants are imported directly from the existing OpenAI pairwise and pointwise implementations. Importing them does not construct an API client or issue a request. No OpenAI API calls or API keys are needed for this baseline.
+The unchanged prompt constants and message builders are imported directly from the shared [`prompts/`](../prompts/README.md) package, also used by the OpenAI baseline and pairwise fine-tuning. Importing them does not construct an API client or issue a request. No OpenAI API calls or API keys are needed for this baseline.
 
 The exact pairwise prompt is:
 
@@ -73,20 +73,14 @@ Both `preds.jsonl` files contain exactly one `{"pair_id": "...", "pred": "A"}` o
 
 Use Python 3.11 and an isolated environment. The local execution machine has an NVIDIA GeForce RTX 4090 with BF16 support. CUDA must be available in PyTorch; the runner refuses CPU fallback and requires all model parameters on CUDA.
 
-The pinned direct dependencies are in [`requirements.txt`](requirements.txt). From the repository root, these PowerShell commands create an environment on D: alongside this checkout:
+The shared pinned dependencies are in the repository-root [`requirements.txt`](../requirements.txt). From the repository root, these PowerShell commands create an environment on D: alongside this checkout:
 
 ```powershell
 python -m venv ..\.venv
 ..\.venv\Scripts\python.exe -m pip install torch==2.10.0+cu128 torchvision==0.25.0+cu128 --index-url https://download.pytorch.org/whl/cu128
-..\.venv\Scripts\python.exe -m pip install -r qwen_strong_baseline/requirements.txt
+..\.venv\Scripts\python.exe -m pip install -r requirements.txt
 $env:HF_HOME = 'D:\angie\cis530\.huggingface'
 ..\.venv\Scripts\python.exe -c "import torch, transformers; print(torch.__version__, transformers.__version__, torch.version.cuda); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0))"
-```
-
-[`requirements-lock.txt`](requirements-lock.txt) records the complete installed environment used for these runs, including transitive dependencies. After installing the CUDA wheels above, use the lock file instead of the direct-dependency file to reproduce that environment:
-
-```powershell
-..\.venv\Scripts\python.exe -m pip install -r qwen_strong_baseline/requirements-lock.txt
 ```
 
 This checkout is `D:\angie\cis530\cis530-image2mass`; its existing complete dataset is `D:\angie\cis530\amazon_data_10k`. Therefore the commands below use **`--root ../amazon_data_10k`**. The runner's default is the `amazon_data_10k` directory inside the repository; use that default only when the actual record files are there. Do not resample the dataset or regenerate the saved pairs.

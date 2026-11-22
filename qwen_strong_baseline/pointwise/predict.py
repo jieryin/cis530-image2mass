@@ -1,23 +1,11 @@
-"""Build the original pointwise prompt and parse strictly positive weights."""
+"""Parse Qwen weight estimates; re-export the shared prompt for compatibility."""
 
 from __future__ import annotations
 
 import json
 
-from openai_strong_baseline.api import BaselineError, dimensions, positive_number
-from openai_strong_baseline.pointwise.predict import PROMPT
-
-
-def build_messages(image, dims):
-    """Return one user message containing dimensions adjacent to its image."""
-    dims = dimensions(dims, "Object input dimensions")
-    if image.mode != "RGB":
-        image = image.convert("RGB")
-    return [{"role": "user", "content": [
-        {"type": "text", "text": PROMPT},
-        {"type": "text", "text": f"Physical dimensions in inches = {json.dumps(dims)}. Image follows."},
-        {"type": "image", "image": image},
-    ]}]
+from prompts._shared import BaselineError, positive_number
+from prompts.pointwise import PROMPT, build_messages
 
 
 def parse_output(raw):

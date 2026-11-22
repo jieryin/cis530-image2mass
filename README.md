@@ -2,12 +2,23 @@
 
 ## Environment setup
 
-Python 3.11 is the supported project version. Create and activate a virtual environment, then install the required dependencies:
+Python 3.11 is the supported project version. All dependencies are listed in the repository-root `requirements.txt`. Create and activate a virtual environment:
 
 ```bash
 python3.11 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+```
+
+For CUDA, install the pinned PyTorch wheels first:
+
+```bash
+python -m pip install torch==2.10.0+cu128 torchvision==0.25.0+cu128 --index-url https://download.pytorch.org/whl/cu128
+```
+
+Then install the shared requirements (on macOS or CPU, skip the CUDA command):
+
+```bash
+python -m pip install -r requirements.txt
 ```
 
 ## Pairwise mass comparison task
@@ -44,7 +55,8 @@ The 10k archive is distributed as a Release asset rather than committed to Git. 
 | `pairs/` | Train/dev/test pair files, the dev/test pairs the volume rule gets wrong, and the scripts that build them (`make_pairs.py`, `make_volume_wrong_pairs.py`). |
 | `load_record.py`, `score.py`, [`scoring.md`](scoring.md) | Shared record loader and evaluation script. |
 | [`simple_baseline/`](simple_baseline/simple-baseline.md), [`openai_strong_baseline/`](openai_strong_baseline/strong-baseline.md), [`qwen_strong_baseline/`](qwen_strong_baseline/strong-baseline.md) | Milestone 2 baselines: code, a `.md` with usage and results, and saved predictions. |
-| [`pairwise_finetune/`](pairwise_finetune/README.md) | Milestone 3 pairwise LoRA fine-tuning, with its own tests. |
+| [`prompts/`](prompts/README.md) | Shared prompt text and message builders for both strong baselines and fine-tuning. |
+| [`finetune/`](finetune/README.md) | Shared Qwen LoRA training, evaluation, and resumable checkpoints, with pairwise and pointwise task modules and tests. |
 | `reports/` | Milestone reports. |
 | `tests/` | Tests for the scorer and the strong baselines. |
 | `SOURCE_DATA_TERMS.txt` | Terms supplied with the original dataset. |
@@ -93,7 +105,6 @@ The OpenAI baseline uses `gpt-6.1-sol` with RGB images and dimensions. Pairwise 
 Extract the dataset records under `amazon_data_10k/`. For new API predictions, create `openai_strong_baseline/.env` from [`.env.example`](openai_strong_baseline/.env.example) and fill in `OPENAI_API_KEY`. Then, from the repository root:
 
 ```bash
-python -m pip install openai==3.51.0
 python openai_strong_baseline/runner.py --mode both --pairs pairs/dev_pairs.jsonl
 ```
 
@@ -105,11 +116,9 @@ See [strong-baseline.md](openai_strong_baseline/strong-baseline.md) for prompts,
 
 The Qwen baseline uses `Qwen/Qwen3-VL-2B-Instruct` with the same zero-shot prompts, RGB images, and physical dimensions as the OpenAI baseline. Pairwise mode directly predicts A/B; pointwise mode estimates each unique object's weight once and compares the estimates, selecting B for ties. Model inputs exclude gold weights, labels, filenames, IDs, and thickness masks. No API key is required.
 
-Use an isolated Python 3.11 environment with a CUDA GPU supporting BF16. Install the pinned CUDA PyTorch wheels first, followed by the Qwen dependencies:
+Use a CUDA GPU supporting BF16 and complete the shared [environment setup](#environment-setup), including the CUDA wheel command. Then run:
 
 ```bash
-python -m pip install torch==2.10.0+cu128 torchvision==0.25.0+cu128 --index-url https://download.pytorch.org/whl/cu128
-python -m pip install -r qwen_strong_baseline/requirements.txt
 python qwen_strong_baseline/runner.py --mode both --pairs pairs/dev_pairs.jsonl --dry-run
 python qwen_strong_baseline/runner.py --mode both --pairs pairs/dev_pairs.jsonl --max-new-pairs 20 --max-new-objects 20
 ```
@@ -119,6 +128,22 @@ These commands expect dataset record files under `amazon_data_10k/`. If the data
 The model revision and configuration are pinned: BF16, batch size 1, greedy decoding with at most 32 new tokens, and the standard model processor. Pointwise numeric output is constrained during token generation; the exact prompts are preserved. A dry-run validates inputs without loading a model or writing outputs. Pilot limits count only new inferences; remove the limits after checking the pilot to complete dev, then run `pairs/test_pairs.jsonl` with the frozen configuration. Compatible caches resume automatically. Complete predictions and strict scorer reports are saved under `qwen_strong_baseline/<mode>/output/<split>/`; incomplete pilot outputs do not receive full evaluation scores.
 
 See [Qwen strong-baseline.md](qwen_strong_baseline/strong-baseline.md) for exact prompts, installation, input validation, generation and failure policies, development diagnostics, and verified dev/test measurements.
+
+## Shared fine-tuning
+
+The `finetune/` package shares model loading, LoRA configuration, data validation,
+the training loop, and resumable checkpoints across tasks. Pairwise training
+retains its A/B probability MSE. Pointwise uses one unique object and numeric
+text output; its training loss and checkpoint-selection rule remain placeholders.
+
+```bash
+python -m finetune.train --task pairwise --dry-run
+python -m finetune.train --task pointwise --dry-run
+```
+
+See the [fine-tuning guide](finetune/README.md) for environment setup, pilot/full
+pairwise runs, evaluation, and resume commands. All fine-tuning code and tests
+live under `finetune/`; use its entry points for both tasks.
 
 ## Run the evaluation script
 

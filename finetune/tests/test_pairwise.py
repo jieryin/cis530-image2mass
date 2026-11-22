@@ -10,9 +10,9 @@ import os
 import tempfile
 import unittest
 
-from pairwise_finetune.core import (
-    answer_mse, answer_probability, answer_token_ids, attach_lora,
-    configure_image_pixels, predict_probability,
+from finetune.model import attach_lora, configure_image_pixels
+from finetune.pairwise_finetune.task import (
+    answer_mse, answer_probability, answer_token_ids, predict_probability,
 )
 
 
@@ -59,7 +59,7 @@ class ChoiceTokenTests(unittest.TestCase):
             answer_token_ids(FakeProcessor(b=(1, 2, 3)))
 
 
-@unittest.skipUnless(HAS_TORCH, "Install pairwise_finetune/requirements.txt for tensor tests")
+@unittest.skipUnless(HAS_TORCH, "Install requirements.txt for tensor tests")
 class AnswerObjectiveTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -145,7 +145,7 @@ class AnswerObjectiveTests(unittest.TestCase):
         self.assertTrue(torch.isfinite(logits.grad).all().item())
 
 
-@unittest.skipUnless(HAS_MODEL_STACK, "Install pairwise_finetune/requirements.txt for Qwen/LoRA integration")
+@unittest.skipUnless(HAS_MODEL_STACK, "Install requirements.txt for Qwen/LoRA integration")
 class TinyQwenLoraTests(unittest.TestCase):
     def test_pixel_limit_is_applied_and_survives_processor_reload(self):
         from types import SimpleNamespace

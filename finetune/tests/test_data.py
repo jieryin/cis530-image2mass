@@ -9,9 +9,8 @@ import types
 import unittest
 from unittest.mock import Mock, patch
 
-from pairwise_finetune.data import (
-    build_messages_for_pair, normalize_answer, read_pairs, validate_disjoint,
-)
+from finetune.data import normalize_answer, read_pairs, validate_disjoint
+from finetune.pairwise_finetune.task import build_messages_for_pair
 
 
 def example(split="train", first=10001, second=10002, number=0):
@@ -30,11 +29,7 @@ class FakeImage:
     size = (8, 8)
 
     def __init__(self):
-        self.loaded = False
         self.closed = False
-
-    def load(self):
-        self.loaded = True
 
     def close(self):
         self.closed = True
@@ -183,7 +178,7 @@ class PairDataTests(unittest.TestCase):
             rows = self.read([first, second], root=self.root, check_images=True)
         self.assertEqual(len(rows), 2)
         self.assertEqual(loader.call_count, 3)
-        self.assertTrue(all(record["image"].loaded and record["image"].closed for record in records.values()))
+        self.assertTrue(all(record["image"].closed for record in records.values()))
 
     def test_prompt_contains_only_images_and_dimensions(self):
         pair = example()
@@ -200,7 +195,7 @@ class PairDataTests(unittest.TestCase):
         for forbidden in ("SECRET_RATIONALE", "9876", "5432", "secret_name", "10001", "10002", "train-"):
             self.assertNotIn(forbidden, text)
         self.assertIn("[1.0, 2.0, 3.0]", text)
-        self.assertTrue(all(record["image"].loaded and not record["image"].closed for record in records.values()))
+        self.assertTrue(all(not record["image"].closed for record in records.values()))
 
     def test_record_mismatch_closes_images_before_raising(self):
         for field, wrong in (("id", 123), ("dims", (9, 9, 9)), ("weight", 1)):

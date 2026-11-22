@@ -11,8 +11,8 @@ from unittest.mock import patch
 from PIL import Image
 
 from openai_strong_baseline.api import BaselineError
-from openai_strong_baseline.pairwise.predict import PROMPT as OPENAI_PAIR_PROMPT
-from openai_strong_baseline.pointwise.predict import PROMPT as OPENAI_WEIGHT_PROMPT
+from prompts.pairwise import PROMPT as PAIRWISE_PROMPT
+from prompts.pointwise import PROMPT as POINTWISE_PROMPT
 from qwen_strong_baseline import runner
 from qwen_strong_baseline.numeric_format import PositiveNumberConstraint
 from qwen_strong_baseline.pairwise import predict as pairwise
@@ -204,8 +204,8 @@ class FakePredictor:
 
 class QwenPromptTests(unittest.TestCase):
     def test_prompts_match_existing_baseline_exactly(self):
-        self.assertEqual(pairwise.PROMPT, OPENAI_PAIR_PROMPT)
-        self.assertEqual(pointwise.PROMPT, OPENAI_WEIGHT_PROMPT)
+        self.assertEqual(pairwise.PROMPT, PAIRWISE_PROMPT)
+        self.assertEqual(pointwise.PROMPT, POINTWISE_PROMPT)
 
     def test_pairwise_dimensions_stay_adjacent_to_correct_rgb_image(self):
         image_a = Image.new("RGB", (3, 2), (10, 1, 2))
@@ -218,7 +218,7 @@ class QwenPromptTests(unittest.TestCase):
         content = messages[0]["content"]
         self.assertEqual([part["type"] for part in content],
                          ["text", "text", "image", "text", "image"])
-        self.assertEqual(content[0]["text"], OPENAI_PAIR_PROMPT)
+        self.assertEqual(content[0]["text"], PAIRWISE_PROMPT)
         self.assertEqual(content[1]["text"],
                          'Object A: dimensions in inches = [1.0, 2.0, 3.0]. Image follows.')
         self.assertEqual(content[3]["text"],
@@ -234,7 +234,7 @@ class QwenPromptTests(unittest.TestCase):
         self.assertEqual(messages[0]["role"], "user")
         content = messages[0]["content"]
         self.assertEqual([part["type"] for part in content], ["text", "text", "image"])
-        self.assertEqual(content[0]["text"], OPENAI_WEIGHT_PROMPT)
+        self.assertEqual(content[0]["text"], POINTWISE_PROMPT)
         self.assertEqual(content[1]["text"],
                          'Physical dimensions in inches = [1.0, 2.0, 3.0]. Image follows.')
         self.assertEqual(content[2]["image"].mode, "RGB")

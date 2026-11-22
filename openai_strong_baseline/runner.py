@@ -1,7 +1,7 @@
 r"""Run and score OpenAI pairwise and pointwise mass-comparison baselines.
 
 From the repository root (Python 3.11):
-    python -m pip install -r requirements.txt openai
+    python -m pip install -r requirements.txt
     # Put the API key in openai_strong_baseline/.env.
     python openai_strong_baseline/runner.py \
         --mode both --pairs pairs/dev_pairs.jsonl --dry-run
@@ -67,8 +67,10 @@ if str(REPO_ROOT) not in sys.path:
 from openai_strong_baseline.api import (
     BaselineError, DEFAULT_REASONING_EFFORT, DEFAULT_MAX_OUTPUT_TOKENS, dimensions, positive_number,
 )
-from openai_strong_baseline.pairwise.predict import PROMPT as PAIRWISE_PROMPT, predict as predict_pair
-from openai_strong_baseline.pointwise.predict import PROMPT as POINTWISE_PROMPT, predict as predict_weight
+from openai_strong_baseline.pairwise.predict import predict as predict_pair
+from openai_strong_baseline.pointwise.predict import predict as predict_weight
+from prompts.pairwise import PROMPT as PAIRWISE_PROMPT
+from prompts.pointwise import PROMPT as POINTWISE_PROMPT
 from score import ScoringError, load_labels, print_report, score
 
 DEFAULT_MODEL = "gpt-6.1-sol"
@@ -520,7 +522,7 @@ async def async_run(args, *, client=None, record_loader=None):
             try:
                 from openai import AsyncOpenAI
             except ImportError as exc:
-                raise BaselineError("Install the OpenAI SDK: python -m pip install openai") from exc
+                raise BaselineError("Install dependencies: python -m pip install -r requirements.txt") from exc
             api_key = os.environ.get("OPENAI_API_KEY") or env.get("OPENAI_API_KEY")
             if not api_key:
                 raise BaselineError(f"Add OPENAI_API_KEY to {args.env_file} before running predictions")

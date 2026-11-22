@@ -1,4 +1,4 @@
-"""Validated pairwise supervision and target-free Qwen input messages.
+"""Shared pair-file validation, record loading, and unique-object extraction.
 
 Validation uses only the standard library until records are actually opened.
 An optional ``answer`` may start with A/B followed by an explanation. Only that
@@ -9,9 +9,10 @@ from the prompt, so trailing explanation tokens never participate in the loss.
 from __future__ import annotations
 
 import json
-import math
 import re
 from pathlib import Path, PurePosixPath, PureWindowsPath
+
+from prompts._shared import dimensions, positive_number
 
 
 SPLITS = {"train", "dev", "test"}
@@ -20,8 +21,6 @@ _LEADING_CHOICE = re.compile(r"\A([AB])(?=$|\s|[.,:;!?])")
 
 def normalize_answer(answer, label):
     """Return a leading standalone A/B choice, rejecting rationale-first text."""
-    if label not in ("A", "B"):
-        raise ValueError("label must be A or B")
     if not isinstance(answer, str):
         raise ValueError("answer must be a string starting with A or B")
     match = _LEADING_CHOICE.match(answer.strip())
@@ -31,18 +30,6 @@ def normalize_answer(answer, label):
     if choice != label:
         raise ValueError("answer choice disagrees with the gold label")
     return choice
-
-
-def _positive(value, context):
-    if isinstance(value, bool) or not isinstance(value, (int, float)):
-        raise ValueError(f"{context} must be a positive finite number")
-    try:
-        result = float(value)
-    except (OverflowError, ValueError) as exc:
-        raise ValueError(f"{context} must be a positive finite number") from exc
-    if not math.isfinite(result) or result <= 0:
-        raise ValueError(f"{context} must be a positive finite number")
-    return result
 
 
 def _relative_path(value, context):
@@ -69,8 +56,10 @@ def _resolved_path(root, relative):
     return path
 
 
-def pair_split(pair):
-    """Infer one split and require pair IDs and both object paths to agree."""
+def _validate_pair(pair):
+    """Validate and normalize one JSON row at the dataset boundary."""
+    if not isinstance(pair, dict):
+        raise ValueError("expected a JSON object")
     pair_id = pair.get("pair_id")
     if not isinstance(pair_id, str) or not pair_id:
         raise ValueError("pair_id must be a nonempty string")
@@ -81,57 +70,43 @@ def pair_split(pair):
         relative = _relative_path(pair.get(f"path_{side}"), f"{pair_id}: path_{side}")
         if PurePosixPath(relative).parts[0] != split:
             raise ValueError(f"{pair_id}: record path and pair_id split mismatch")
-    return split
-
-
-def _validate_pair(row):
-    if not isinstance(row, dict):
-        raise ValueError("expected a JSON object")
-    pair = dict(row)
-    pair_split(pair)
-    context = pair["pair_id"]
-    for side in ("a", "b"):
         object_id = pair.get(f"id_{side}")
         if type(object_id) is not int or object_id < 0:
-            raise ValueError(f"{context}: id_{side} must be a nonnegative integer")
-        dims = pair.get(f"dims_{side}")
-        if not isinstance(dims, (list, tuple)) or len(dims) != 3:
-            raise ValueError(f"{context}: dims_{side} must contain exactly three dimensions")
-        pair[f"dims_{side}"] = [_positive(d, f"{context}: dims_{side}") for d in dims]
-        pair[f"weight_{side}"] = _positive(pair.get(f"weight_{side}"), f"{context}: weight_{side}")
+            raise ValueError(f"{pair_id}: id_{side} must be a nonnegative integer")
+        pair[f"dims_{side}"] = dimensions(pair.get(f"dims_{side}"), f"{pair_id}: dims_{side}")
+        pair[f"weight_{side}"] = positive_number(pair.get(f"weight_{side}"), f"{pair_id}: weight_{side}")
     if pair["id_a"] == pair["id_b"] or pair["path_a"] == pair["path_b"]:
-        raise ValueError(f"{context}: cannot compare an object with itself")
+        raise ValueError(f"{pair_id}: cannot compare an object with itself")
     label = pair.get("label")
-    if label not in ("A", "B"):
-        raise ValueError(f"{context}: label must be A or B")
     expected = "A" if pair["weight_a"] > pair["weight_b"] else "B"
     if label != expected:
-        raise ValueError(f"{context}: gold label disagrees with object weights")
+        raise ValueError(f"{pair_id}: gold label disagrees with object weights")
     pair["answer"] = normalize_answer(pair.get("answer", label), label)
     return pair
 
 
-def _load_validated_record(pair, side, root):
+def load_object_record(obj, root):
+    """Load one checked RGB record for either task; caller owns its image."""
     # The existing restricted unpickler blocks arbitrary imported globals.
     from load_record import load_record
 
-    path = _resolved_path(root, pair[f"path_{side}"])
-    record = load_record(path)
+    record = load_record(Path(root) / obj["path"])
     try:
-        if (record["id"] != pair[f"id_{side}"]
-                or tuple(record["dims"]) != tuple(pair[f"dims_{side}"])
-                or record["weight"] != pair[f"weight_{side}"]):
-            raise ValueError(f"{pair['pair_id']}: record id/dimensions/weight mismatch for side {side}")
-        image = record["image"]
-        image.load()
-        if image.mode != "RGB" or min(image.size) <= 0:
-            raise ValueError(f"{pair['pair_id']}: record image must be nonempty RGB")
+        if (record["id"] != obj["id"]
+                or tuple(record["dims"]) != tuple(obj["dims"])
+                or record["weight"] != obj["weight"]):
+            raise ValueError(f"Object {obj['id']}: record id/dimensions/weight mismatch")
         return record
     except Exception:
-        image = record.get("image")
-        if image is not None:
-            image.close()
+        record["image"].close()
         raise
+
+
+def pair_object(pair, side):
+    """Extract one object's metadata from a validated pair."""
+    obj = {field: pair[f"{field}_{side}"] for field in ("id", "path", "dims", "weight")}
+    obj["split"] = pair["pair_id"].partition("-")[0]
+    return obj
 
 
 def read_pairs(path, root=None, check_images=False):
@@ -158,7 +133,7 @@ def read_pairs(path, root=None, check_images=False):
                 if key in unordered_pairs:
                     raise ValueError("duplicate unordered object pair")
                 unordered_pairs.add(key)
-                splits.add(pair_split(pair))
+                splits.add(pair_id.partition("-")[0])
                 if len(splits) != 1:
                     raise ValueError("pair file mixes train/dev/test splits")
                 for side in ("a", "b"):
@@ -168,11 +143,12 @@ def read_pairs(path, root=None, check_images=False):
                         raise ValueError(f"Object {object_id} has conflicting paths, dimensions, or weights")
                     if relative in path_ids and path_ids[relative] != object_id:
                         raise ValueError(f"Record path {relative!r} has conflicting IDs")
-                    if root is not None:
-                        _resolved_path(root, relative)
-                    if check_images and object_id not in objects:
-                        record = _load_validated_record(pair, side, root)
-                        record["image"].close()
+                    if object_id not in objects:
+                        if root is not None:
+                            _resolved_path(root, relative)
+                        if check_images:
+                            record = load_object_record(pair_object(pair, side), root)
+                            record["image"].close()
                     objects[object_id] = signature
                     path_ids[relative] = object_id
                 pairs.append(pair)
@@ -184,42 +160,36 @@ def read_pairs(path, root=None, check_images=False):
 
 
 def validate_disjoint(train, dev):
-    """Require the intended train/dev roles and reject shared objects or paths."""
-    ids_by_split, paths_by_split = {}, {}
+    """Check train/dev roles and overlap for rows validated by ``read_pairs``."""
+    ids_by_split = {}
     for expected, pairs in (("train", train), ("dev", dev)):
-        if not pairs:
-            raise ValueError(f"{expected}: no pairs found")
-        ids, paths = set(), set()
-        for pair in pairs:
-            pair = _validate_pair(pair)
-            if pair_split(pair) != expected:
-                raise ValueError(f"Expected {expected} data; found a different split")
-            for side in ("a", "b"):
-                ids.add(pair[f"id_{side}"])
-                paths.add(pair[f"path_{side}"])
-        ids_by_split[expected], paths_by_split[expected] = ids, paths
+        if pairs[0]["pair_id"].partition("-")[0] != expected:
+            raise ValueError(f"Expected {expected} data; found a different split")
+        ids_by_split[expected] = {pair[f"id_{side}"] for pair in pairs for side in ("a", "b")}
     if ids_by_split["train"] & ids_by_split["dev"]:
         raise ValueError("Object ID leakage between train and dev")
-    if paths_by_split["train"] & paths_by_split["dev"]:
-        raise ValueError("Record path leakage between train and dev")
 
 
-def build_messages_for_pair(pair, root):
-    """Load checked images, returning prompt-only messages without supervision.
+def unique_objects(pairs):
+    """Extract objects from validated pairs in stable first-appearance order.
 
-    The caller owns the returned image objects. Neither answer text nor gold
-    weights, IDs, paths, or thickness masks enter the existing Qwen prompt.
+    Shared objects are trained/evaluated once in pointwise mode even when they
+    occur in multiple pairs. ``read_pairs`` owns metadata and split validation.
     """
-    from qwen_strong_baseline.pairwise.predict import build_messages
-
-    pair = _validate_pair(pair)
-    records = []
-    try:
+    objects = {}
+    for pair in pairs:
         for side in ("a", "b"):
-            records.append(_load_validated_record(pair, side, root))
-        return build_messages(records[0]["image"], pair["dims_a"],
-                              records[1]["image"], pair["dims_b"])
-    except Exception:
-        for record in records:
-            record["image"].close()
-        raise
+            object_id = pair[f"id_{side}"]
+            if object_id not in objects:
+                objects[object_id] = pair_object(pair, side)
+    return list(objects.values())
+
+
+def validate_subset(rows, subset):
+    """Require an evaluation slice to preserve every input and target field."""
+    full = {row["pair_id"]: row for row in rows}
+    fields = ("id_a", "id_b", "path_a", "path_b", "weight_a", "weight_b", "dims_a", "dims_b", "label")
+    for row in subset:
+        parent = full.get(row["pair_id"])
+        if parent is None or any(parent[field] != row[field] for field in fields):
+            raise ValueError(f"Subset is not an exact slice of full pairs: {row['pair_id']}")

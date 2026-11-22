@@ -1,50 +1,12 @@
-"""Shared image encoding and plain-text OpenAI response handling."""
+"""OpenAI response handling and compatibility exports for shared input helpers."""
 
 from __future__ import annotations
 
-import base64
-import io
-import math
+from prompts._shared import BaselineError, dimensions, image_content, positive_number
 
 
 DEFAULT_REASONING_EFFORT = "high"
 DEFAULT_MAX_OUTPUT_TOKENS = 4096
-
-
-class BaselineError(ValueError):
-    """Invalid inputs, incompatible cache, or unusable model prediction."""
-
-
-def positive_number(value, description):
-    """Return a finite positive float, rejecting booleans and numeric strings."""
-    if isinstance(value, bool) or not isinstance(value, (int, float)):
-        raise BaselineError(f"{description} must be numeric")
-    try:
-        number = float(value)
-    except OverflowError as exc:
-        raise BaselineError(f"{description} must be finite and positive") from exc
-    if not math.isfinite(number) or number <= 0:
-        raise BaselineError(f"{description} must be finite and positive")
-    return number
-
-
-def dimensions(values, description):
-    """Validate the three physical dimensions supplied to the model."""
-    if not isinstance(values, (list, tuple)) or len(values) != 3:
-        raise BaselineError(f"{description} must contain three dimensions")
-    return [positive_number(value, description) for value in values]
-
-
-def image_content(image, detail="high"):
-    """Encode a decoded image as an in-memory PNG input-image content block."""
-    buffer = io.BytesIO()
-    image.save(buffer, format="PNG")
-    encoded = base64.b64encode(buffer.getvalue()).decode("ascii")
-    return {
-        "type": "input_image",
-        "image_url": f"data:image/png;base64,{encoded}",
-        "detail": detail,
-    }
 
 
 async def request_text(client, model, content, *,

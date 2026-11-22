@@ -34,12 +34,12 @@ from openai_strong_baseline.runner import (
 from qwen_strong_baseline.pairwise import predict as pairwise
 from qwen_strong_baseline.pointwise import predict as pointwise
 from qwen_strong_baseline.numeric_format import NUMERIC_FORMAT_POLICY
+from prompts.pairwise import PROMPT as PAIRWISE_PROMPT, build_messages as build_pairwise_messages
+from prompts.pointwise import PROMPT as POINTWISE_PROMPT, build_messages as build_pointwise_messages
 from score import ScoringError, load_labels, print_report, score
 
 DEFAULT_MODEL = "Qwen/Qwen3-VL-2B-Instruct"
 DEFAULT_REVISION = "89644892e4d85e24eaac8bacfd4f463576704203"
-PAIRWISE_PROMPT = pairwise.PROMPT
-POINTWISE_PROMPT = pointwise.PROMPT
 SCHEMA_VERSION = 1
 
 
@@ -85,6 +85,7 @@ def configuration(args, mode):
                Path(__file__), REPO_ROOT / "load_record.py",
                REPO_ROOT / "openai_strong_baseline" / "runner.py",
                REPO_ROOT / "openai_strong_baseline" / "api.py"]
+    sources.extend(sorted((REPO_ROOT / "prompts").glob("*.py")))
     if mode == "pointwise":
         sources.append(BASELINE_DIR / "numeric_format.py")
     return {
@@ -290,11 +291,11 @@ def run(args, *, predictor=None, record_loader=None):
                         image, dims = load_input(record_loader, paths[object_key], objects[object_key])
                         images.append(image)
                         values.extend((image, dims))
-                    messages = pairwise.build_messages(*values)
+                    messages = build_pairwise_messages(*values)
                 else:
                     image, dims = load_input(record_loader, paths[key], objects[key])
                     images.append(image)
-                    messages = pointwise.build_messages(image, dims)
+                    messages = build_pointwise_messages(image, dims)
                 response = predictor(messages)
                 value = parse_result(state["mode"], response)
                 elapsed = response.get("elapsed_seconds", 0.0)

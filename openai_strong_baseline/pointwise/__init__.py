@@ -1,5 +1,6 @@
 """Individual-object weight estimation baseline."""
 
-from .predict import PROMPT, predict
+from prompts.pointwise import PROMPT
+from .predict import predict
 
 __all__ = ["PROMPT", "predict"]

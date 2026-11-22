@@ -2,7 +2,7 @@
 
 [`runner.py`](runner.py) evaluates OpenAI's `gpt-6.1-sol` model as a pretrained vision-language baseline for object mass comparison. We use zero-shot prompts, with no fine-tuning or labeled examples in the requests. Unlike the simple volume rule, the model can use the image to infer material and construction as well as the dimensions to judge scale.
 
-**Pairwise** (`--mode pairwise`) sends two objects, labeled A and B, with each object's dimensions followed by its image. The model returns only `A` or `B` to identify the heavier object. The exact prompt and response parsing are in [`pairwise/predict.py`](pairwise/predict.py).
+**Pairwise** (`--mode pairwise`) sends two objects, labeled A and B, with each object's dimensions followed by its image. The model returns only `A` or `B` to identify the heavier object. The exact prompt and message construction are shared in [`prompts/pairwise.py`](../prompts/pairwise.py); response parsing remains in [`pairwise/predict.py`](pairwise/predict.py).
 
 **Pointwise** (`--mode pointwise`) asks for one positive numeric weight estimate in pounds for each unique object. The runner reuses that estimate wherever the object appears, then compares the two predicted weights locally:
 
@@ -13,7 +13,7 @@ else:
     prediction = "B"
 ```
 
-Equal predicted weights therefore select B. The prompt is in [`pointwise/predict.py`](pointwise/predict.py), and the comparisons are made by `save_results()` in `runner.py`. `--mode both` runs both approaches with separate outputs and a shared concurrency limit.
+Equal predicted weights therefore select B. The prompt and message construction are shared in [`prompts/pointwise.py`](../prompts/pointwise.py), and the comparisons are made by `save_results()` in `runner.py`. `--mode both` runs both approaches with separate outputs and a shared concurrency limit.
 
 ## Input and output
 
@@ -61,7 +61,7 @@ Run the commands from the repository root with Python 3.11. Download and extract
 ```sh
 python3.11 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt openai==3.51.0
+python -m pip install -r requirements.txt
 ```
 
 Create `openai_strong_baseline/.env` from [`.env.example`](.env.example) if it does not already exist, then fill in your own `OPENAI_API_KEY`. Keep the key local. An exported `OPENAI_API_KEY` takes precedence over the file. Model selection follows `--model`, then an exported `OPENAI_MODEL`, then `.env`, then the default model.

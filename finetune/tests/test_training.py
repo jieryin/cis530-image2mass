@@ -10,7 +10,8 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from pairwise_finetune.evaluate import subset_metrics
+from finetune.pairwise_finetune.task import subset_metrics
+from finetune.data import validate_subset
 
 
 def pair(split, index):
@@ -32,13 +33,12 @@ class SubsetMetricsTests(unittest.TestCase):
         rows[1]["weight_a"], rows[1]["weight_b"] = 1.0, 2.0
         predictions = {rows[0]["pair_id"]: "A", rows[1]["pair_id"]: "A", rows[2]["pair_id"]: "B"}
         probabilities = {rows[0]["pair_id"]: 0.8, rows[1]["pair_id"]: 0.6, rows[2]["pair_id"]: 0.4}
-        metrics = subset_metrics(rows, copy.deepcopy(rows[:2]), predictions, probabilities)
+        metrics = subset_metrics(copy.deepcopy(rows[:2]), predictions, probabilities)
         self.assertAlmostEqual(metrics["accuracy"], 0.5)
         self.assertAlmostEqual(metrics["mse"], (0.2 ** 2 + 0.6 ** 2) / 2)
 
     def test_unknown_pair_and_any_changed_input_or_target_are_rejected(self):
         original = pair("test", 0)
-        predictions, probabilities = {original["pair_id"]: "A"}, {original["pair_id"]: 0.8}
         mutations = {
             "pair_id": "test-99999", "id_a": 999, "id_b": 998,
             "path_a": "test/other_a.pklz", "path_b": "test/other_b.pklz",
@@ -49,14 +49,15 @@ class SubsetMetricsTests(unittest.TestCase):
             modified = copy.deepcopy(original)
             modified[field] = value
             with self.subTest(field=field), self.assertRaisesRegex(ValueError, "not an exact slice"):
-                subset_metrics([original], [modified], predictions, probabilities)
+                validate_subset([original], [modified])
 
 
 @unittest.skipUnless(importlib.util.find_spec("torch") is not None, "Install PyTorch for training-loop checks")
 class TrainingWorkflowTests(unittest.TestCase):
     def run_toy_training(self, max_steps):
         import torch
-        from pairwise_finetune import train
+        from finetune import train
+        from finetune.pairwise_finetune import task as pairwise
 
         class TinyModel(torch.nn.Module):
             def __init__(self):
@@ -117,10 +118,9 @@ class TrainingWorkflowTests(unittest.TestCase):
             dev_path.write_text("\n".join(json.dumps(row) for row in development), encoding="utf-8")
             model = TinyModel()
             with (
-                patch.object(train, "load_model", return_value=(model, TinyProcessor(), (0, 1))),
-                patch.object(train, "prepare_inputs", side_effect=prepare_inputs),
-                patch("pairwise_finetune.core.prepare_inputs", side_effect=prepare_inputs),
-                patch.object(train, "environment_metadata", return_value={"torch": torch.__version__}),
+                patch.object(train, "load_model", return_value=(model, TinyProcessor())),
+                patch.object(pairwise, "setup", return_value=(0, 1)),
+                patch.object(pairwise, "prepare_inputs", side_effect=prepare_inputs),
                 patch.object(torch.optim, "AdamW", side_effect=optimizer_factory),
                 contextlib.redirect_stdout(io.StringIO()),
             ):
@@ -147,22 +147,22 @@ class TrainingWorkflowTests(unittest.TestCase):
         run, history, snapshots, gradients = self.run_toy_training(max_steps=3)
         self.assertEqual(run["status"], "pilot_complete")
         self.assertEqual(run["optimizer_steps"], 3)
-        self.assertEqual(run["pairs_seen"], 5)
-        self.assertEqual([event["pairs"] for event in history], [2, 2, 1])
+        self.assertEqual(run["examples_seen"], 5)
+        self.assertEqual([event["examples"] for event in history], [2, 2, 1])
         self.assertEqual(len(gradients), 3)
         for group in gradients:
             self.assertAlmostEqual(group[0].item(), -0.25)
         for snapshot in snapshots.values():
             self.assertTrue(snapshot["epoch_complete"])
             self.assertFalse(snapshot["optimizer_state_saved"])
-            self.assertAlmostEqual(snapshot["train_mse"], 0.25)
+            self.assertAlmostEqual(snapshot["train_loss"], 0.25)
             self.assertEqual(snapshot["config"]["probability_space"], "binary")
 
     def test_pilot_stops_after_optimizer_step_and_marks_partial_epoch(self):
         run, history, snapshots, gradients = self.run_toy_training(max_steps=1)
         self.assertEqual(run["status"], "pilot_complete")
         self.assertEqual(run["optimizer_steps"], 1)
-        self.assertEqual(run["pairs_seen"], 2)
+        self.assertEqual(run["examples_seen"], 2)
         self.assertEqual(len(history), 1)
         self.assertEqual(len(gradients), 1)
         self.assertFalse(snapshots["last"]["epoch_complete"])

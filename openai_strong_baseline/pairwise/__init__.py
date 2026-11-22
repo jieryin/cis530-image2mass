@@ -1,5 +1,6 @@
 """Direct A/B mass-comparison baseline."""
 
-from .predict import PROMPT, predict
+from prompts.pairwise import PROMPT
+from .predict import predict
 
 __all__ = ["PROMPT", "predict"]
