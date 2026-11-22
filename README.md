@@ -126,8 +126,7 @@ The new [`pairwise_finetune/`](pairwise_finetune/README.md) workflow fine-tunes
 `Qwen/Qwen3-VL-2B-Instruct` with language-attention LoRA. It uses answer-only
 MSE between the A/B-normalized probability of A and the binary gold label.
 Only the first answer decision is supervised; prompts and trailing explanations
-do not contribute token losses. Mac MPS and NVIDIA CUDA have separate setup
-instructions, and the existing zero-shot baselines remain available.
+do not contribute token losses. The existing zero-shot baselines remain available.
 
 Validate the saved train/dev pair metadata without downloading model weights:
 
