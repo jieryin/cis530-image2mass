@@ -127,6 +127,7 @@ Run the existing tests and the new data, objective, and workflow checks with:
 
 ```bash
 python -m unittest discover -s tests
+python -m unittest discover -s pairwise_finetune/tests
 ```
 
 With the training dependencies installed, the suite includes a tiny randomly

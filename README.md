@@ -120,25 +120,6 @@ The model revision and configuration are pinned: BF16, batch size 1, greedy deco
 
 See [Qwen strong-baseline.md](qwen_strong_baseline/strong-baseline.md) for exact prompts, installation, input validation, generation and failure policies, development diagnostics, and verified dev/test measurements.
 
-## Pairwise LoRA fine-tuning (Extension 1)
-
-The new [`pairwise_finetune/`](pairwise_finetune/README.md) workflow fine-tunes
-`Qwen/Qwen3-VL-2B-Instruct` with language-attention LoRA. It uses answer-only
-MSE between the A/B-normalized probability of A and the binary gold label.
-Only the first answer decision is supervised; prompts and trailing explanations
-do not contribute token losses. The existing zero-shot baselines remain available.
-
-Validate the saved train/dev pair metadata without downloading model weights:
-
-```bash
-python -m pairwise_finetune.train --dry-run
-```
-
-See the [fine-tuning guide](pairwise_finetune/README.md) for installation,
-pilot/full runs, and evaluation on both all test pairs and
-`pairs/test_volume_wrong_pairs.jsonl`. No fine-tuned accuracy results are claimed
-until a full training and evaluation run has been completed.
-
 ## Run the evaluation script
 
 Score the majority-baseline predictions from the repository root:
