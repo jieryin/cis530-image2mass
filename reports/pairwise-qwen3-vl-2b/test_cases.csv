@@ -1,0 +1,1001 @@
+﻿pair,change,hard,gold,baseline,tuned,p_a,a,b,lb_a,lb_b
+test-00000,保持正确,False,B,B,B,0.02595735713839531,Electronics Camera & Photo Film Cameras hand made,ladle violet,0.04,0.15
+test-00001,保持正确,False,B,B,B,0.24508501589298248,oil lamp blue,musical box fancy,0.45,1.98
+test-00002,保持正确,False,B,B,B,0.11920291930437088,Technical Pens full,water gate straight,0.09,0.32
+test-00003,纠正,False,A,B,A,0.9992903470993042,Dead-Blow Hammers heavy,pillbox popular,3.75,0.08
+test-00004,纠正,False,A,B,A,0.999373733997345,waste-paper basket better,Health & Personal Care Personal Care Oral Hygiene Power Toothbrushes Battery Powered red,8.7,1.2
+test-00005,保持正确,False,B,B,B,0.006692850962281227,pocket comb best,Bottle Accessories generic,0.13,8.5
+test-00006,纠正,False,A,B,A,0.7057850360870361,Drive Sockets translucent,pier mirror round,0.25,0.18
+test-00007,纠正,False,A,B,A,0.9990890026092529,Sauté Pans shallow,junction barrier womens,2.25,0.1
+test-00008,纠正,False,A,B,A,0.9968273043632507,Margarita Glasses boys,Toys & Games Hobbies Radio Control Cars discount,11.0,0.24
+test-00009,保持正确,False,B,B,B,0.4073334336280823,File Folders wooden,rain gauge sturdy,6.0,12.0
+test-00010,保持正确,False,B,B,B,0.03308597952127457,real storage translucent,savings bank well made,0.35,2.0
+test-00011,纠正,True,A,B,A,0.5926666259765625,flag glass,pliers smart,0.2,0.15
+test-00012,纠正,False,A,B,A,0.562176525592804,tape drive medium,breathalyzer ,0.55,0.19
+test-00013,保持正确,False,B,B,B,0.006692850962281227,emitter generic,backlighting authentic,0.22,3.1
+test-00014,仍错,True,A,B,B,0.2018132209777832,stapler metal,savings bank yellow,0.9,0.2
+test-00015,纠正,False,A,B,A,0.9924227595329285,Electronics Accessories & Supplies Audio & Video Accessories Antennas TV Antennas hand held,tank destroyer steel,0.85,0.22
+test-00016,纠正,False,A,B,A,0.9740425944328308,grab bar stone,rain stick plastic,1.8,0.35
+test-00017,保持正确,False,B,B,B,0.014063626527786255,cat box popular,Dead-Blow Hammers heavy,0.15,3.75
+test-00018,保持正确,False,A,A,A,0.9859364032745361,zoom lens standard,Office Tape Dispensers wood,2.09,0.72
+test-00019,保持正确,False,B,B,B,0.020332353189587593,coffee mug best,garbage can charming,0.56,2.4
+test-00020,保持正确,False,B,B,B,0.16451644897460938,"Home, Garden & Pets Kitchen & Dining Kitchen Knives & Cutlery Accessories Specialty Knives Cheese Knives genious",firing mechanism portable,1.34,2.29
+test-00021,纠正,False,A,B,A,0.9914224743843079,soap dispenser powerful,chemical balance slender,1.1,0.19
+test-00022,纠正,False,A,B,A,0.9859364032745361,electric clock easy,bridle standard,0.48,0.02
+test-00023,保持正确,False,B,B,B,0.02595735713839531,scimitar realistic,clock pendulum tall,0.13,2.87
+test-00024,仍错,True,A,B,B,0.43782350420951843,Electronics Televisions & Video Satellite Television Antennas big,knuckles ,0.35,0.11
+test-00025,纠正,False,A,B,A,0.8354835510253906,caravan small,saucepot unique,6.0,4.62
+test-00026,保持正确,False,B,B,B,0.020332353189587593,hand axe special,Tools & Home Improvement Storage & Home Organization portable,1.95,9.8
+test-00027,保持正确,False,B,B,B,0.0534033328294754,p-n junction wide,"Cake, Pie & Pastry Servers light",0.15,2.5
+test-00028,纠正,False,A,B,A,0.622459352016449,"Toys & Games Action Figures Statues, Maquettes & Busts mens",Candles & Home Scents baby,2.3,1.75
+test-00029,保持正确,False,A,A,A,0.957912266254425,Bird Feeders discount,soap dispenser kids,0.57,0.35
+test-00030,保持正确,False,B,B,B,0.022977370768785477,fishgig brown,ultraviolet lamp ceramic,0.04,0.19
+test-00031,保持正确,False,A,A,A,0.970687747001648,D Batteries old,gateleg table powerful,0.58,0.41
+test-00032,保持正确,False,B,B,B,0.02931223064661026,tuner common,Cheese Knives white,0.36,0.5
+test-00033,保持正确,False,B,B,B,0.43782350420951843,vacuum flask wooden,Education & Crafts authentic,1.22,2.75
+test-00034,保持正确,False,B,B,B,0.014063626527786255,electric razor short,trash barrel slick,0.5,7.55
+test-00035,纠正,True,A,B,A,0.9149009585380554,buckle fat,"Home, Garden & Pets Pet Supplies Houses & Habitats Accessories Kennel Food & Water Cups common",0.95,0.41
+test-00036,纠正,False,A,B,A,0.9971990585327148,toilet seat dark,panoramic sight high quality,6.5,0.33
+test-00037,纠正,False,A,B,A,0.8354835510253906,tote silly,bird big,2.9,0.35
+test-00038,保持正确,False,B,B,B,0.09534946084022522,moneybag girls,round file black,0.13,0.9
+test-00039,纠正,False,A,B,A,0.9820137619972229,brasier real,bird big,6.83,0.35
+test-00040,保持正确,False,B,B,B,0.02931223064661026,trumpet delux,Office Products Office Furniture & Lighting Office Lighting Desk Lamps simple,8.0,10.0
+test-00041,保持正确,True,B,B,B,0.022977370768785477,reading lamp newest,"Home, Garden & Pets Kitchen & Dining Bakeware Baking Tools & Accessories Cooking Torches realistic",0.35,0.75
+test-00042,保持正确,False,B,B,B,0.01243165135383606,Electronics Camera & Photo Film Cameras hand made,crosse blue,0.04,0.75
+test-00043,保持正确,False,B,B,B,0.009708477184176445,Drive Sockets translucent,time capsule glass,0.25,5.3
+test-00044,纠正,False,A,B,A,0.9924227595329285,caravan small,induction coil classic,6.0,2.3
+test-00045,保持正确,False,B,B,B,0.0031726830638945103,tank destroyer steel,minute gun delicate,0.22,13.01
+test-00046,纠正,False,A,B,A,0.9940890073776245,rain gauge sturdy,calliper yellow,12.0,0.93
+test-00047,保持正确,False,B,B,B,0.02595735713839531,spool translucent,watering pot imported,0.5,11.5
+test-00048,纠正,False,A,B,A,0.9971990585327148,reconnaissance vehicle girls,window lock single,0.29,0.15
+test-00049,退步,False,B,B,A,0.531209409236908,bird shot wood,Travel Mugs green,0.4,0.81
+test-00050,保持正确,False,B,B,B,0.01243165135383606,matchstick thick,valve-in-head engine square,1.5,9.0
+test-00051,保持正确,False,B,B,B,0.0534033328294754,menorah premium,garden spade large,0.4,2.0
+test-00052,保持正确,False,B,B,B,0.01243165135383606,Health & Personal Care Personal Care Eye Care Contact Lens Care Cases unique,Countersink Bits beautiful,0.33,1.32
+test-00053,纠正,False,A,B,A,0.9980732202529907,carburetor red,Shovels charming,3.15,0.2
+test-00054,纠正,True,A,B,A,0.8670357465744019,router hand made,"Home, Garden & Pets Pet Supplies Apparel & Accessories Accessories Hats kitchen",1.2,0.48
+test-00055,保持正确,False,B,B,B,0.24508501589298248,Time Cards colorful,rangefinder wonderful,0.77,1.98
+test-00056,保持正确,False,B,B,B,0.037326883524656296,glasses case nice,socket wrench iron,0.18,1.7
+test-00057,纠正,False,A,B,A,0.9988304972648621,stealth fighter shallow,sailboat tiny,4.7,0.26
+test-00058,保持正确,False,A,A,A,0.9875683188438416,public address system little,attache case slick,3.31,0.26
+test-00059,保持正确,False,B,B,B,0.020332353189587593,stuffed giraffe bright,omelet pan light,0.55,5.4
+test-00060,保持正确,False,B,B,B,0.2018132209777832,"Home, Garden & Pets Kitchen & Dining Kitchen Knives & Cutlery Accessories Specialty Knives Cheese Knives genious",water tank molded,1.34,2.45
+test-00061,纠正,False,A,B,A,0.9959298968315125,nosewheel red,Keepsake Boxes & Tins colorful,5.0,0.35
+test-00062,保持正确,False,B,B,B,0.08509904146194458,Tools & Home Improvement Lamps & Light Fixtures Light Fixtures Track Lighting plain,rack and pinion cheap,0.1,1.1
+test-00063,纠正,False,A,B,A,0.6513549089431763,fighter aircraft wooden,Baby Products Nursery Nursery Décor Lamps & Shades quality,3.96,3.0
+test-00064,纠正,False,A,B,A,0.9924227595329285,Office Products Office Furniture & Lighting Office Lighting Desk Lamps simple,mustard agent solid,10.0,1.76
+test-00065,保持正确,False,B,B,B,0.01243165135383606,bath oil clever,drone discount,0.5,4.85
+test-00066,保持正确,False,A,A,A,0.9959298968315125,automatic choke square,shoehorn generic,10.0,0.44
+test-00067,纠正,False,A,B,A,0.9982993006706238,HEPA Air Purifiers fancy,jet heavy,5.5,1.15
+test-00068,保持正确,False,B,B,B,0.02931223064661026,Business Cards beautiful,converter simple,0.26,2.0
+test-00069,纠正,False,A,B,A,0.977022647857666,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,Tools & Home Improvement Electrical Terminals & Kits Flag Terminals solid,0.65,0.1
+test-00070,保持正确,False,B,B,B,0.005911068990826607,coolant system sturdy,mariner's compass better,0.88,12.0
+test-00071,保持正确,False,B,B,B,0.06754669547080994,Hammer nice,Jewelry Children's Jewelry Boys' Jewelry beautiful,0.42,1.54
+test-00072,纠正,False,A,B,A,0.9968273043632507,Graters realistic,bird unique,3.45,0.5
+test-00073,保持正确,False,B,B,B,0.020332353189587593,baton inexpensive,automatic firearm discount,0.05,1.81
+test-00074,保持正确,False,B,B,B,0.022977370768785477,Drive Sockets translucent,roller bearing simple,0.25,1.1
+test-00075,纠正,True,A,B,A,0.7310585379600525,hand axe special,penny bank well made,1.95,1.15
+test-00076,纠正,False,A,B,A,0.9975274205207825,Office Products Office Electronics Fax Machines discount,Yarn small,12.0,0.33
+test-00077,保持正确,False,B,B,B,0.020332353189587593,face cream quick,pressure cooker quality,0.38,3.0
+test-00078,保持正确,False,B,B,B,0.3486451506614685,firing mechanism portable,body lotion full,2.29,8.2
+test-00079,纠正,False,A,B,A,0.7772998809814453,lap joint best,radio large,2.0,1.06
+test-00080,纠正,False,A,B,A,0.977022647857666,Cups classic,Tools & Home Improvement Building Supplies Building Materials Windows Casement Windows black,0.29,0.16
+test-00081,保持正确,False,B,B,B,0.02931223064661026,tripper steel,Tools & Home Improvement Lamps & Light Fixtures Lamps scale,0.8,1.83
+test-00082,保持正确,False,B,B,B,0.0534033328294754,Can Openers powerful,Big Blue inexpensive,0.63,7.5
+test-00083,保持正确,False,B,B,B,0.16451644897460938,Clipboards blue,Cups black,0.49,1.1
+test-00084,保持正确,False,A,A,A,0.9953904151916504,Roasting Pans steel,reactor sturdy,3.25,0.9
+test-00085,保持正确,False,B,B,B,0.005911068990826607,Shovels charming,power takeoff orange,0.2,1.1
+test-00086,保持正确,False,B,B,B,0.14804719388484955,Travel Mugs green,Countersink Bits beautiful,0.81,1.32
+test-00087,纠正,False,A,B,A,0.9933071732521057,Cookie Jars white,scauper single,3.7,0.45
+test-00088,纠正,False,A,B,A,0.9940890073776245,lawn cart brand name,remote terminal old,4.12,3.13
+test-00089,仍错,True,A,B,B,0.09534946084022522,Tools & Home Improvement Power & Hand Tools Hand Tools Axes heavy,soup bowl ornate,4.0,2.0
+test-00090,保持正确,False,B,B,B,0.0031726830638945103,candy thermometer slender,Tools & Home Improvement Hardware Furniture Hardware blue,0.08,2.5
+test-00091,纠正,True,A,B,A,0.851952850818634,streetlight generic,water gate straight,0.5,0.32
+test-00092,保持正确,False,B,B,B,0.005220125894993544,sleigh old,share steel,0.13,7.5
+test-00093,保持正确,False,B,B,B,0.042087726294994354,Coin Purses white,action iron,0.08,0.65
+test-00094,保持正确,False,B,B,B,0.020332353189587593,moneybag girls,Luncheon Plates boys,0.13,1.5
+test-00095,保持正确,False,A,A,A,0.9982993006706238,small computer system interface iron,Office Products Office & School Supplies Staplers & Punches Electric & Battery Operated Staplers full,9.5,0.35
+test-00096,保持正确,False,B,B,B,0.03308597952127457,bicycle purple,Jewelry Towers popular,0.1,0.91
+test-00097,保持正确,False,B,B,B,0.09534946084022522,wrist pin slender,Sports & Outdoors Accessories Sports Water Bottles common,0.25,0.44
+test-00098,保持正确,False,B,B,B,0.24508501589298248,spool translucent,induction coil classic,0.5,2.3
+test-00099,保持正确,False,B,B,B,0.2689414322376251,camera lens slick,table lamp girls,1.75,3.4
+test-00100,保持正确,False,B,B,B,0.009708477184176445,"Home, Garden & Pets Vacuums, Cleaning & Storage Storage & Organization Garage Storage & Organization Ski Storage Racks brand name",Switches slick,0.45,3.22
+test-00101,纠正,False,B,A,B,0.11920291930437088,cookie sheet marble,Bread Boxes purple,1.21,4.41
+test-00102,纠正,False,A,B,A,0.9982993006706238,Spice Racks quality,Gaming Mice kids,5.87,0.29
+test-00103,保持正确,False,B,B,B,0.02931223064661026,mosaic glass,"Home, Garden & Pets Home Appliances Small Appliances Deep Fryers skinny",0.75,11.0
+test-00104,纠正,False,A,B,A,0.9953904151916504,electric organ kitchen,coffee mug common,5.1,0.75
+test-00105,保持正确,False,B,B,B,0.01590639166533947,bucket metal,scoop curved,0.45,3.0
+test-00106,纠正,True,A,B,A,0.531209409236908,Casserole Spoons glass,clapperboard brand name,1.95,0.6
+test-00107,保持正确,False,B,B,B,0.008577484637498856,tuner common,rubber mallet large,0.36,1.8
+test-00108,退步,True,B,B,A,0.7772998809814453,sleigh old,Drive Sockets translucent,0.13,0.25
+test-00109,纠正,False,A,B,A,0.9669140577316284,shopping bag skinny,sidesaddle simple,2.2,0.5
+test-00110,保持正确,False,A,A,A,0.7310585379600525,squeezer ,pocketknife big,0.68,0.21
+test-00111,纠正,False,A,B,A,0.9988304972648621,field-effect transistor silver,Beard Trimmers clever,10.0,0.67
+test-00112,纠正,False,A,B,A,0.9399133324623108,pew thick,local oscillator square,1.73,1.36
+test-00113,保持正确,False,B,B,B,0.009708477184176445,soap dispenser kids,Bedding wooden,0.35,7.4
+test-00114,保持正确,False,A,A,A,0.8670357465744019,ladle violet,sugar spoon molded,0.15,0.04
+test-00115,退步,True,B,B,A,0.8933094143867493,meter kitchen,cantle powerful,1.25,2.0
+test-00116,退步,True,B,B,A,0.9046505093574524,Salt & Pepper Shaker Sets petite,Electronics Computers & Accessories Networking Products Switches best,0.5,0.64
+test-00117,仍错,False,A,B,B,0.02931223064661026,Toys & Games Sports & Outdoor Play Pools & Water Fun Lawn Water Slides well made,Sports & Outdoors Hunting & Fishing Hunting Air Guns discount,1.1,0.63
+test-00118,保持正确,False,B,B,B,0.008577484637498856,Credit Card Holders steel,solar thermal system big,0.2,11.65
+test-00119,保持正确,False,B,B,B,0.24508501589298248,scimitar realistic,Office Tape Dispensers wood,0.13,0.72
+test-00120,退步,True,B,B,A,0.8175744414329529,melting pot metal,solar thermal system big,3.45,11.65
+test-00121,仍错,True,A,B,B,0.3208213150501251,corbel standard,Electronics Accessories & Supplies Mounts Computer & Monitor Mounts modest,7.0,4.75
+test-00122,仍错,True,A,B,B,0.3208213150501251,Electronics Accessories & Supplies Office Electronics Accessories Printer Supplies Printer Roll Holders red,savings bank yellow,3.2,1.1
+test-00123,保持正确,False,B,B,B,0.007577240467071533,crackle tall,Serveware blue,0.35,4.41
+test-00124,纠正,False,A,B,A,0.9980732202529907,Bottle Accessories generic,Shampoo clever,8.5,1.2
+test-00125,保持正确,False,B,B,B,0.0534033328294754,coolant system sturdy,pallet powerful,0.88,2.35
+test-00126,保持正确,False,B,B,B,0.06008664518594742,flambeau small,"Home, Garden & Pets Patio, Lawn & Garden Picnic Baskets & Accessories Picnic Backpacks plastic",0.45,0.57
+test-00127,保持正确,True,B,B,B,0.09534946084022522,D Batteries old,lead-acid battery popular,0.58,3.2
+test-00128,纠正,False,A,B,A,0.9964063763618469,electric organ kitchen,Grill Scrapers ingenious,5.1,0.59
+test-00129,纠正,False,A,B,A,0.9324532747268677,till wide,dustmop discount,3.04,2.39
+test-00130,保持正确,False,B,B,B,0.022977370768785477,Hot Pots & Electric Kettles orange,analog computer broad,2.8,4.7
+test-00131,退步,True,B,B,A,0.851952850818634,Footballs blue,Tool Belts generic,0.49,1.1
+test-00132,保持正确,False,B,B,B,0.10669060051441193,Technical Pens full,"Office Products Office & School Supplies Tape, Adhesives & Fasteners Clips, Clamps & Rings Clips hand made",0.09,0.5
+test-00133,纠正,False,A,B,A,0.562176525592804,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,Small Parts Envelopes ornate,0.65,0.3
+test-00134,保持正确,False,B,B,B,0.014063626527786255,solar panel short,Meat kettle,0.3,9.5
+test-00135,退步,True,B,B,A,0.9669140577316284,pew thick,black kettle,1.73,2.5
+test-00136,纠正,False,A,B,A,0.9959298968315125,toilet seat dark,foghorn standard,6.5,0.75
+test-00137,纠正,False,A,B,A,0.9933071732521057,add-in green,Office Products Office & School Supplies Staplers & Punches Electric & Battery Operated Staplers full,4.0,0.35
+test-00138,退步,True,B,B,A,0.6791787147521973,soap dispenser kids,secateurs small,0.35,0.55
+test-00139,纠正,True,A,B,A,0.531209409236908,zoom lens standard,face cream quick,1.31,0.38
+test-00140,保持正确,False,A,A,A,0.9953904151916504,cooling system round,Mortar & Pestles plastic,1.16,0.03
+test-00141,保持正确,False,B,B,B,0.0028009270317852497,scriber big,snare orange,0.27,12.0
+test-00142,纠正,False,A,B,A,0.9924227595329285,Furniture green,cookie jar cheap,4.0,2.0
+test-00143,纠正,False,A,B,A,0.9991958737373352,Furniture green,penknife old,4.0,0.55
+test-00144,保持正确,True,B,B,B,0.3775406777858734,chute-the-chute best,rack and pinion cheap,0.28,1.24
+test-00145,纠正,True,A,B,A,0.7549149990081787,Cheese Knives white,Bendable Figures premium,0.5,0.29
+test-00146,纠正,False,A,B,A,0.9982993006706238,coax real,idler pulley classic,5.09,0.35
+test-00147,纠正,True,A,B,A,0.957912266254425,mother board beautiful,pencil case long,0.77,0.04
+test-00148,保持正确,False,B,B,B,0.09534946084022522,penknife old,Index & Business Card Files curved,0.55,1.09
+test-00149,保持正确,False,B,B,B,0.007577240467071533,pier mirror round,metal drum shallow,0.18,4.95
+test-00150,保持正确,False,B,B,B,0.06008664518594742,pottery square,mailbox fine,0.98,7.0
+test-00151,保持正确,False,B,B,B,0.13296423852443695,bull's-eye clever,mailsorter silver,0.4,2.0
+test-00152,保持正确,False,B,B,B,0.14804719388484955,Yarn small,riding light huge,0.33,2.04
+test-00153,保持正确,False,A,A,A,0.9978172779083252,lead-acid battery wooden,wiper motor miniature,3.15,0.11
+test-00154,保持正确,False,B,B,B,0.01098694372922182,idiot box standard,Venturi tube inexpensive,0.35,0.75
+test-00155,纠正,False,A,B,A,0.9980732202529907,"Home, Garden & Pets Patio, Lawn & Garden Gardening Garden Structures Garden Bridges yellow",jet heavy,5.5,1.15
+test-00156,保持正确,False,B,B,B,0.0035936026833951473,return key hollow,ash-pan wide,0.02,0.19
+test-00157,保持正确,False,B,B,B,0.009708477184176445,ballpoint simple,strainer black,0.04,2.15
+test-00158,保持正确,False,B,B,B,0.01243165135383606,readout fine,Health & Personal Care Personal Care Oral Hygiene Mouthwash delicate,0.11,1.2
+test-00159,纠正,False,A,B,A,0.8354835510253906,Hammer nice,Beauty Bath & Body Bath Bubble Bath discount,0.42,0.25
+test-00160,退步,False,B,B,A,0.7549149990081787,electronic organ huge,toilet seat dark,4.41,6.5
+test-00161,保持正确,False,B,B,B,0.3208213150501251,drawer premium,thermos bottle silver,1.4,3.1
+test-00162,保持正确,False,B,B,B,0.06008664518594742,Electronics Camera & Photo Film Cameras APS Cameras slick,Filing Crates & Posting Tubs violet,1.5,4.0
+test-00163,纠正,False,A,B,A,0.9399133324623108,Clothing Women's hand held,Tools & Home Improvement Power & Hand Tools Hand Tools Punches girls,1.14,0.6
+test-00164,保持正确,False,B,B,B,0.008577484637498856,electroscope metal,small computer system interface iron,1.59,9.5
+test-00165,保持正确,False,A,A,A,0.9986749291419983,Drip Coffee Machines solid,streetlight generic,7.0,0.5
+test-00166,退步,False,B,B,A,0.531209409236908,depth charge fat,tower discount,0.29,0.49
+test-00167,保持正确,True,B,B,B,0.22270014882087708,riding light violet,Vacuum Coffee Machines light,0.26,0.5
+test-00168,保持正确,False,B,B,B,0.004070138093084097,clamshell womens,radius new,0.33,6.17
+test-00169,纠正,False,A,B,A,0.7549149990081787,Food Savers full,roost steel,0.3,0.23
+test-00170,纠正,False,A,B,A,0.9914224743843079,back saw better,pilot single,1.15,0.23
+test-00171,保持正确,False,B,B,B,0.01243165135383606,destroyer escort make,omelette pan blue,1.21,10.4
+test-00172,退步,False,B,B,A,0.851952850818634,display panel broad,cantle powerful,0.63,2.0
+test-00173,仍错,True,A,B,B,0.042087726294994354,All-Purpose Labels broad,pepper spray well made,0.5,0.33
+test-00174,保持正确,False,B,B,B,0.04742587357759476,scimitar realistic,timepiece brand name,0.13,0.65
+test-00175,保持正确,False,B,B,B,0.014063626527786255,evening bag hollow,gyro huge,0.44,1.76
+test-00176,保持正确,False,B,B,B,0.02595735713839531,gyrostabilizer expensive,alarm orange,0.13,0.31
+test-00177,纠正,False,A,B,A,0.8933094143867493,Electronics Televisions & Video Satellite Television Antennas big,hardtop premium,0.35,0.25
+test-00178,保持正确,False,B,B,B,0.01798621006309986,rain stick plastic,energizer clever,0.35,5.38
+test-00179,保持正确,False,B,B,B,0.022977370768785477,scaler fine,stake slick,2.2,9.0
+test-00180,纠正,False,A,B,A,0.9626730680465698,roll top,fuel-air bomb short,3.5,0.4
+test-00181,保持正确,True,B,B,B,0.02595735713839531,voltmeter toy,pickle barrel mens,0.3,2.6
+test-00182,纠正,False,A,B,A,0.998498797416687,Furniture green,secateurs small,4.0,0.55
+test-00183,仍错,True,A,B,B,0.5,lead-acid battery handsome,Napkin Holders blue,3.15,2.0
+test-00184,保持正确,False,B,B,B,0.037326883524656296,Expanding Wallets big,candelabra square,0.49,2.5
+test-00185,纠正,False,A,B,A,0.9989677667617798,Spice Racks quality,first gear huge,5.87,0.33
+test-00186,退步,True,B,B,A,0.9149009585380554,Health & Personal Care Diet & Nutrition Vitamins & Supplements Minerals Boron easy,Shovels charming,0.1,0.2
+test-00187,保持正确,False,B,B,B,0.04742587357759476,"Home, Garden & Pets Pet Supplies Apparel & Accessories Accessories Hats kitchen",scoop curved,0.48,3.0
+test-00188,保持正确,False,B,B,B,0.007577240467071533,Keepsakes little,secateurs small,0.03,0.55
+test-00189,纠正,False,A,B,A,0.9890130758285522,Fungicide ,sonar smart,1.27,0.06
+test-00190,保持正确,False,B,B,B,0.022977370768785477,Beer Glasses best,coffee grinder silver,1.25,4.5
+test-00191,纠正,True,A,B,A,0.9324532747268677,Fungicide ,tripper steel,1.27,0.8
+test-00192,纠正,False,A,B,A,0.851952850818634,Highchairs & Booster Seats round,Mint Julep Cups authentic,1.1,0.33
+test-00193,纠正,False,A,B,A,0.9982993006706238,Fungicide ,fishgig brown,1.27,0.04
+test-00194,保持正确,False,B,B,B,0.01798621006309986,bearing wall commodity,Potpourris round,0.9,5.1
+test-00195,保持正确,False,B,B,B,0.02931223064661026,"Home, Garden & Pets Vacuums, Cleaning & Storage Cleaning Supplies Sweeping Brooms Hand Brooms popular",narrow-body generic,0.18,1.61
+test-00196,保持正确,False,B,B,B,0.02931223064661026,"Home, Garden & Pets Patio, Lawn & Garden Picnic Baskets & Accessories Picnic Backpacks plastic",filling premium,0.57,1.2
+test-00197,保持正确,False,B,B,B,0.01590639166533947,Tools & Home Improvement Electrical Light Bulbs Specialty Light Bulbs discount,narrow-body generic,0.1,1.61
+test-00198,纠正,False,A,B,A,0.970687747001648,pig metal,Small Parts Envelopes ornate,1.36,0.3
+test-00199,纠正,False,A,B,A,0.9740425944328308,air gun realistic,whip stone,3.4,0.44
+test-00200,仍错,True,A,B,B,0.29421496391296387,bass full,chemical balance slender,0.25,0.19
+test-00201,退步,True,B,B,A,0.6791787147521973,Highchairs & Booster Seats round,Electronics Accessories & Supplies Office Electronics Accessories Printer Supplies Printer Roll Holders red,1.1,3.2
+test-00202,保持正确,False,A,A,A,0.9933071732521057,Office Products Office Furniture & Lighting Office Lighting Desk Lamps medium,add-in green,10.0,4.0
+test-00203,保持正确,False,A,A,A,0.8175744414329529,convertible scale,black box ingenious,1.1,0.88
+test-00204,保持正确,False,B,B,B,0.022977370768785477,vacuum bag narrow,soup bowl ornate,1.13,2.0
+test-00205,纠正,False,A,B,A,0.6791787147521973,central processing unit blue,Electronics Camera & Photo Flashes slender,0.75,0.45
+test-00206,纠正,False,A,B,A,0.9990890026092529,stockpot popular,pilot single,8.0,0.23
+test-00207,保持正确,False,B,B,B,0.24508501589298248,reconnaissance vehicle girls,vacuum flask wooden,0.29,1.22
+test-00208,保持正确,False,B,B,B,0.3486451506614685,soap dispenser powerful,B-flat clarinet nice,1.1,1.76
+test-00209,保持正确,False,B,B,B,0.18242551386356354,wiper motor miniature,cargo container powerful,0.11,0.35
+test-00210,仍错,False,A,B,B,0.2018132209777832,developer purple,Mint Julep Cups authentic,0.33,0.2
+test-00211,保持正确,False,B,B,B,0.4073334336280823,"Home, Garden & Pets Kitchen & Dining Bakeware Baking Tools & Accessories Cooking Torches realistic",single-rotor helicopter high quality,0.75,1.57
+test-00212,纠正,True,A,B,A,0.7057850360870361,black box ingenious,chute-the-chute make,0.88,0.48
+test-00213,保持正确,False,B,B,B,0.022977370768785477,Fountain Pens bright,buckle fat,0.11,0.95
+test-00214,纠正,True,A,B,A,0.7772998809814453,bass full,stuffed turtle popular,0.25,0.2
+test-00215,退步,False,B,B,A,0.8354835510253906,billy powerful,Thermometers & Timers cheap,0.22,0.49
+test-00216,纠正,True,A,B,A,0.7549149990081787,Shoes Handbags cute,knapsack genious,1.6,0.5
+test-00217,保持正确,False,B,B,B,0.06008664518594742,coffee mug common,hurricane lamp long,0.75,0.94
+test-00218,保持正确,False,B,B,B,0.06754669547080994,crane yellow,Office Products Office & School Supplies Education & Crafts Filing Products File & Folder Accessories Expanding Files smart,0.66,1.92
+test-00219,纠正,False,A,B,A,0.9875683188438416,drone discount,master key smart,4.85,1.75
+test-00220,保持正确,False,B,B,B,0.09534946084022522,LGB sturdy,water tank new,0.9,2.45
+test-00221,纠正,False,A,B,A,0.9975274205207825,earthenware wide,Coin Purses white,1.46,0.08
+test-00222,纠正,False,A,B,A,0.9796676635742188,Tools & Home Improvement Power & Hand Tools Hand Tools Axes heavy,cologne water well made,4.0,0.28
+test-00223,退步,False,B,B,A,0.7981867790222168,recording system huge,clutch bag quality,0.62,1.1
+test-00224,仍错,True,A,B,B,0.43782350420951843,fire tongs quality,destroyer escort make,1.75,1.21
+test-00225,退步,True,B,B,A,0.622459352016449,Accent Plates shallow,"Home, Garden & Pets Home Appliances Small Appliances Deep Fryers skinny",5.8,11.0
+test-00226,保持正确,False,B,B,B,0.06008664518594742,teacup old,Drip Coffee Machines solid,0.9,7.0
+test-00227,保持正确,False,B,B,B,0.08509904146194458,tappet medium,time clock yellow,0.18,0.85
+test-00228,仍错,True,A,B,B,0.22270014882087708,dogcart thick,gun case brand name,0.25,0.11
+test-00229,保持正确,False,A,A,A,0.9465966820716858,flat tip screwdriver square,Electronics Computers & Accessories Printers All-In-Ones tiny,0.5,0.15
+test-00230,纠正,False,A,B,A,0.9964063763618469,candlestick generic,rotor coil quality,5.1,3.7
+test-00231,纠正,False,A,B,A,0.9940890073776245,data system brown,light arm cute,7.15,0.39
+test-00232,仍错,False,A,B,B,0.5,Hammer nice,cache solid,0.42,0.25
+test-00233,保持正确,False,B,B,B,0.08509904146194458,throwing stick smart,waste-paper basket heavy,0.5,0.92
+test-00234,纠正,False,A,B,A,0.9995694756507874,flatbed powerful,in-tray dark,9.5,0.5
+test-00235,保持正确,False,B,B,B,0.01590639166533947,sidesaddle simple,stockpot popular,0.5,8.0
+test-00236,纠正,False,A,B,A,0.9968273043632507,Meat kettle,cat box popular,9.5,0.15
+test-00237,纠正,False,A,B,A,0.9980732202529907,Wine Decanters boys,"Office Products Office & School Supplies Tape, Adhesives & Fasteners Clips, Clamps & Rings Clips hand made",3.0,0.5
+test-00238,保持正确,False,B,B,B,0.08509904146194458,Jewelry Towers popular,pedestal ,0.91,3.0
+test-00239,纠正,False,A,B,A,0.9241418242454529,water tank molded,tumbler slick,2.45,0.88
+test-00240,保持正确,False,B,B,B,0.10669060051441193,sharpener light,minicar premium,0.02,0.08
+test-00241,保持正确,True,B,B,B,0.0534033328294754,Timers fat,lead-acid battery handsome,0.46,3.15
+test-00242,纠正,False,A,B,A,0.9820137619972229,omnidirectional antenna toy,Tools & Home Improvement Painting Tools & Supplies short,2.7,1.1
+test-00243,纠正,False,A,B,A,0.9968273043632507,tankard easy,life support new,0.81,0.35
+test-00244,纠正,False,A,B,A,0.9953904151916504,crossbow orange,Tools & Home Improvement Lamps & Light Fixtures Light Fixtures Track Lighting plain,0.85,0.1
+test-00245,保持正确,False,B,B,B,0.3486451506614685,EDS silver,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,0.15,0.65
+test-00246,保持正确,False,B,B,B,0.005911068990826607,Soufflé Dishes generic,furnishing green,0.06,4.0
+test-00247,纠正,False,A,B,A,0.9978172779083252,decoy sturdy,horsewhip expensive,1.6,0.19
+test-00248,保持正确,False,B,B,B,0.005220125894993544,soap dispenser kids,Sports & Outdoors Other Sports Rodeo imported,0.35,7.3
+test-00249,纠正,False,A,B,A,0.851952850818634,thermos bottle silver,center punch strong,3.1,0.7
+test-00250,退步,True,B,B,A,0.531209409236908,quern model,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,0.26,0.65
+test-00251,纠正,False,A,B,A,0.9669140577316284,small ship womens,Beauty Hair Care Conditioners green,1.54,0.63
+test-00252,保持正确,True,B,B,B,0.06754669547080994,harp purple,tool case dark,0.4,2.4
+test-00253,纠正,False,A,B,A,0.9978172779083252,radius new,Can Openers powerful,6.17,0.63
+test-00254,保持正确,False,B,B,B,0.01590639166533947,switch engine well made,Serveware blue,0.63,4.41
+test-00255,仍错,True,A,B,B,0.43782350420951843,lead-acid battery handsome,stator old,3.15,2.35
+test-00256,纠正,False,A,B,A,0.9991958737373352,"Home, Garden & Pets Home Appliances Small Appliances Coffee, Tea & Espresso Appliances Beverage Warmers sturdy",PC board powerful,2.6,0.07
+test-00257,保持正确,False,B,B,B,0.3486451506614685,dice box well made,penlight discount,0.33,1.2
+test-00258,纠正,False,A,B,A,0.9796676635742188,Toilet Parts shallow,eyeglass long,0.66,0.2
+test-00259,仍错,False,A,B,B,0.3775406777858734,Tools & Home Improvement Safety & Security Work Safety Equipment & Gear Hardhats quality,soup ladle single,0.6,0.3
+test-00260,保持正确,False,B,B,B,0.06008664518594742,gyro horizon powerful,automatic firearm orange,2.4,7.1
+test-00261,仍错,False,A,B,B,0.18242551386356354,knuckles kitchen,bath oil clever,0.88,0.5
+test-00262,纠正,True,A,B,A,0.6791787147521973,lug wrench wood,Tools & Home Improvement Building Supplies Building Materials Tiles Glass Tiles steel,4.63,2.33
+test-00263,退步,True,B,B,A,0.9399133324623108,single-reed instrument hollow,rack and pinion cheap,0.81,1.1
+test-00264,保持正确,False,B,B,B,0.09534946084022522,horsewhip expensive,cocktail shaker purple,0.19,1.1
+test-00265,纠正,False,A,B,A,0.9924227595329285,stockpot popular,conditioner plastic,8.0,1.2
+test-00266,纠正,False,A,B,A,0.9875683188438416,oil lamp green,internal drive kids,2.0,0.27
+test-00267,纠正,False,A,B,A,0.9465966820716858,fuel filter large,Shovels charming,0.39,0.2
+test-00268,保持正确,False,B,B,B,0.10669060051441193,baton inexpensive,parallel port ingenious,0.05,0.25
+test-00269,保持正确,False,A,A,A,0.9978172779083252,holdall plastic,Soufflé Dishes generic,1.08,0.06
+test-00270,保持正确,False,B,B,B,0.24508501589298248,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,worm light,0.65,1.25
+test-00271,退步,False,B,B,A,0.531209409236908,Cups black,thermos bottle silver,1.1,3.1
+test-00272,纠正,False,A,B,A,0.9940890073776245,brake system new,Microscope Accessories realistic,1.4,0.41
+test-00273,保持正确,False,B,B,B,0.01243165135383606,mould girls,Electronics Camera & Photo Surveillance Cameras Dome Cameras modest,0.3,1.98
+test-00274,纠正,True,A,B,A,0.5926666259765625,groover narrow,soap dispenser powerful,2.0,1.1
+test-00275,纠正,False,A,B,A,0.6513549089431763,"Home, Garden & Pets Home Appliances Small Appliances Deep Fryers skinny",P.A. smart,11.0,4.06
+test-00276,纠正,False,A,B,A,0.9924227595329285,roll top,color television system hand held,3.5,0.23
+test-00277,纠正,False,A,B,A,0.9875683188438416,dinghy baby,fishgig brown,0.31,0.04
+test-00278,仍错,True,A,B,B,0.29421496391296387,evening bag hollow,luggage beautiful,0.44,0.2
+test-00279,保持正确,False,A,A,A,0.9994471669197083,Tools & Home Improvement Storage & Home Organization portable,streetlight generic,9.8,0.5
+test-00280,纠正,False,A,B,A,0.8807970285415649,Tools & Home Improvement Hardware powerful,color television system hand held,0.8,0.23
+test-00281,保持正确,False,B,B,B,0.10669060051441193,woofer large,induction coil portable,3.5,5.8
+test-00282,保持正确,False,B,B,B,0.002182716503739357,telfer toy,Sports & Outdoors Team Sports Baseball Gloves & Mitts Outfielder's Gloves ,0.1,1.48
+test-00283,保持正确,False,B,B,B,0.004070138093084097,measuring cup simple,matrix black,0.35,2.0
+test-00284,仍错,True,A,B,B,0.0534033328294754,Napkin Holders blue,aircraft engine easy,2.0,1.6
+test-00285,保持正确,False,B,B,B,0.06008664518594742,pump action handsome,butt shaft old,2.0,3.0
+test-00286,保持正确,False,B,B,B,0.005220125894993544,Tools & Home Improvement Electrical Light Bulbs High Intensity Discharge Bulbs standard,saucepan brown,0.03,1.3
+test-00287,保持正确,False,B,B,B,0.042087726294994354,caravan small,small computer system interface iron,6.0,9.5
+test-00288,保持正确,False,B,B,B,0.02931223064661026,center punch strong,Rice Cookers orange,0.7,3.09
+test-00289,纠正,False,A,B,A,0.9859364032745361,staplegun plastic,dog high quality,0.57,0.15
+test-00290,纠正,False,A,B,A,0.9947799444198608,stake slick,welt toy,9.0,0.34
+test-00291,退步,True,B,B,A,0.5926666259765625,FAE steel,dimmer red,0.47,0.66
+test-00292,纠正,False,A,B,A,0.9859364032745361,mustard agent solid,Health & Personal Care Household Supplies Light Bulbs High Intensity Discharge Bulbs blue,1.76,0.2
+test-00293,保持正确,False,B,B,B,0.3486451506614685,recording system huge,stator old,0.62,2.35
+test-00294,纠正,False,A,B,A,0.9933071732521057,mute purple,wiper motor miniature,0.31,0.11
+test-00295,保持正确,False,B,B,B,0.3486451506614685,Diffusers black,roll top,0.66,3.5
+test-00296,纠正,False,A,B,A,0.9149009585380554,supplejack lovely,compound pendulum easy,1.19,0.2
+test-00297,纠正,False,A,B,A,0.9953904151916504,P.A. smart,LGB sturdy,4.06,0.9
+test-00298,纠正,False,A,B,A,0.8670357465744019,tin white,stringer strong,0.81,0.28
+test-00299,保持正确,False,B,B,B,0.008577484637498856,taping large,radius new,0.45,6.17
+test-00300,保持正确,False,B,B,B,0.006692850962281227,billy powerful,Skillets new,0.22,3.6
+test-00301,纠正,False,A,B,A,0.9840936064720154,ambulance hand made,scourge round,0.5,0.07
+test-00302,保持正确,False,B,B,B,0.037326883524656296,Toys & Games Hobbies Radio Control Cars discount,stuffed giraffe bright,0.24,0.55
+test-00303,保持正确,False,B,B,B,0.02595735713839531,mould girls,hookup green,0.3,0.4
+test-00304,保持正确,False,B,B,B,0.042087726294994354,zoom lens standard,Soufflé Dishes square,1.31,3.7
+test-00305,纠正,False,A,B,A,0.9149009585380554,pantograph wood,cookie jar cheap,3.09,2.0
+test-00306,纠正,False,A,B,A,0.9933071732521057,Electronics Accessories & Supplies Mounts Computer & Monitor Mounts modest,Tools & Home Improvement Hardware powerful,4.75,0.8
+test-00307,保持正确,False,B,B,B,0.007577240467071533,window lock single,Money Handling Products sturdy,0.15,5.3
+test-00308,保持正确,False,B,B,B,0.11920291930437088,hockey puck ceramic,Beauty Bath & Body Bath Bubble Bath make,0.76,1.27
+test-00309,纠正,False,A,B,A,0.7549149990081787,ballot box well made,floppy realistic,1.5,0.88
+test-00310,纠正,False,A,B,A,0.9796676635742188,Dish Racks unique,vacuum bottle square,4.2,1.4
+test-00311,纠正,False,A,B,A,0.851952850818634,cuckoo clock curved,metronome dark,1.6,1.08
+test-00312,纠正,False,A,B,A,0.9933071732521057,Tools & Home Improvement Hardware Bathroom Hardware Bathroom Shelves iron,bidet violet,0.65,0.51
+test-00313,保持正确,False,B,B,B,0.005220125894993544,sleigh old,Saucepans curved,0.13,6.0
+test-00314,纠正,False,A,B,A,0.9875683188438416,cookie jar cheap,gas fixture straight,2.0,0.8
+test-00315,保持正确,False,B,B,B,0.002182716503739357,iris smart,snare yellow,0.06,9.0
+test-00316,纠正,True,A,B,A,0.8670357465744019,Tools & Home Improvement Building Supplies Building Materials Tiles Glass Tiles steel,automatic firearm discount,2.33,1.81
+test-00317,纠正,True,B,A,B,0.5,Countersink Bits beautiful,Tools & Home Improvement Power & Hand Tools Hand Tools Axes heavy,1.32,4.0
+test-00318,保持正确,False,B,B,B,0.03308597952127457,sorter simple,Toys & Games Puzzles Jigsaw Puzzles Panoramic Puzzles scale,0.15,0.33
+test-00319,保持正确,False,B,B,B,0.06754669547080994,bridle standard,mountain bike orange,0.02,0.55
+test-00320,退步,True,B,B,A,0.7549149990081787,metronome dark,ground control iron,1.08,1.41
+test-00321,纠正,False,A,B,A,0.9959298968315125,toll line easy,Kitchen Accessories ceramic,4.5,0.59
+test-00322,保持正确,True,B,B,B,0.11920291930437088,petrol tank single,Sports & Outdoors Other Sports Rodeo imported,4.28,7.3
+test-00323,保持正确,False,B,B,B,0.07585817575454712,sump pump brass,Electronics Camera & Photo Surveillance Cameras Dome Cameras modest,0.9,1.98
+test-00324,保持正确,False,B,B,B,0.10669060051441193,dish antenna classic,Furniture green,0.8,4.0
+test-00325,纠正,True,A,B,A,0.6791787147521973,lug wrench wood,omnidirectional antenna toy,4.63,2.7
+test-00326,保持正确,False,B,B,B,0.01243165135383606,Hammer nice,Soufflé Dishes square,0.42,3.7
+test-00327,保持正确,False,B,B,B,0.006692850962281227,action iron,Tools & Home Improvement Hardware Window Hardware full,0.65,7.2
+test-00328,纠正,False,A,B,A,0.9982993006706238,electrical distributor vintage,wreck expensive,3.0,0.46
+test-00329,纠正,False,A,B,A,0.9959298968315125,riding light huge,secateurs small,2.04,0.55
+test-00330,纠正,False,A,B,A,0.9046505093574524,pilot single,bogie brand name,0.23,0.1
+test-00331,纠正,False,A,B,A,0.9241418242454529,pilot single,cutting tool fancy,0.23,0.04
+test-00332,纠正,False,A,B,A,0.9990890026092529,Jig Saw Blades solid,stuffed tiger authentic,4.19,0.35
+test-00333,纠正,False,A,B,A,0.9890130758285522,corbel standard,roadster wooden,7.0,0.66
+test-00334,保持正确,True,B,B,B,0.009708477184176445,stuffed kitten tall,firing mechanism portable,0.3,2.29
+test-00335,纠正,False,A,B,A,0.9964063763618469,Serveware blue,"Home, Garden & Pets Pet Supplies Houses & Habitats Accessories Kennel Food & Water Cups common",4.41,0.41
+test-00336,纠正,False,A,B,A,0.998498797416687,flatbed powerful,worm light,9.5,1.25
+test-00337,保持正确,False,B,B,B,0.13296423852443695,knuckles ,overdrive better,0.11,1.38
+test-00338,纠正,False,A,B,A,0.9149009585380554,wok yellow,spool translucent,1.6,0.5
+test-00339,保持正确,False,B,B,B,0.2018132209777832,dining compartment realistic,mailsorter silver,0.44,2.0
+test-00340,保持正确,False,A,A,A,0.9980732202529907,high-hat cymbal metal,cardcase top,2.87,0.05
+test-00341,保持正确,False,B,B,B,0.03308597952127457,kick starter solid,jaw hand made,0.16,0.45
+test-00342,保持正确,False,B,B,B,0.005911068990826607,penny bank well made,Paella Pans huge,1.15,6.0
+test-00343,保持正确,False,B,B,B,0.01590639166533947,master key smart,tank circuit newest,1.75,5.51
+test-00344,保持正确,False,B,B,B,0.02931223064661026,Cups classic,camera lens slick,0.29,1.75
+test-00345,纠正,False,A,B,A,0.9964063763618469,electric scale,crane yellow,8.95,0.66
+test-00346,纠正,False,A,B,A,0.9982993006706238,water tank molded,dog sleigh black,2.45,0.31
+test-00347,纠正,False,A,B,A,0.7981867790222168,round steel,Footballs blue,0.8,0.49
+test-00348,保持正确,False,B,B,B,0.004609572701156139,Beauty Bath & Body Bath Bubble Bath make,toll line easy,1.27,4.5
+test-00349,保持正确,True,B,B,B,0.014063626527786255,Skillets little,field-effect transistor silver,3.0,10.0
+test-00350,保持正确,False,B,B,B,0.01098694372922182,decoy sturdy,minute gun delicate,1.6,13.01
+test-00351,保持正确,False,B,B,B,0.004609572701156139,butter knife skiny,electric scale,0.15,8.95
+test-00352,纠正,False,A,B,A,0.9324532747268677,penny bank small,billy powerful,0.56,0.22
+test-00353,仍错,False,A,B,B,0.3208213150501251,console small,gas engine round,1.75,0.89
+test-00354,保持正确,False,B,B,B,0.2018132209777832,wok yellow,water tank new,1.6,2.45
+test-00355,保持正确,False,B,B,B,0.3208213150501251,limousine quaint,coffee mug best,0.35,0.56
+test-00356,仍错,True,A,B,B,0.2018132209777832,gas fixture straight,Taping Supplies narrow,0.8,0.35
+test-00357,保持正确,False,A,A,A,0.977022647857666,mail red,"Toys & Games Games Checkers, Chess & Backgammon Chess purple",1.35,0.31
+test-00358,保持正确,False,B,B,B,0.01098694372922182,Health & Personal Care Personal Care Eye Care Contact Lens Care Cases unique,laundry basket popular,0.33,0.6
+test-00359,纠正,False,A,B,A,0.9820137619972229,crank best,passive matrix display single,0.49,0.3
+test-00360,保持正确,False,B,B,B,0.04742587357759476,Candles & Home Scents baby,bicycle seat wide,1.75,2.35
+test-00361,保持正确,False,B,B,B,0.0534033328294754,Technical Pens full,dog hook solid,0.09,0.35
+test-00362,纠正,False,A,B,A,0.9982993006706238,HEPA Air Purifiers powerful,mould girls,9.0,0.3
+test-00363,保持正确,False,B,B,B,0.22270014882087708,Toys & Games Puzzles Jigsaw Puzzles Panoramic Puzzles scale,metronome dark,0.33,1.08
+test-00364,保持正确,False,A,A,A,0.957912266254425,Davy lamp brass,dining compartment realistic,3.2,0.44
+test-00365,仍错,False,A,B,B,0.5,clock pendulum tall,Yarn red,2.87,0.22
+test-00366,纠正,False,A,B,A,0.9902915358543396,scoop curved,earthenware wide,3.0,1.46
+test-00367,保持正确,False,B,B,B,0.06008664518594742,limousine quaint,electric clock easy,0.35,0.48
+test-00368,纠正,False,A,B,A,0.9914224743843079,All Pans top,Education & Crafts authentic,7.0,2.75
+test-00369,纠正,False,A,B,A,0.9149009585380554,bucket metal,reading lamp newest,0.45,0.35
+test-00370,保持正确,False,B,B,B,0.005911068990826607,bidet violet,conditioner plastic,0.51,1.2
+test-00371,纠正,False,A,B,A,0.622459352016449,"Home, Garden & Pets Kitchen & Dining Kitchen Utensils & Gadgets Oil Sprayers & Dispensers skiny",dice box well made,0.5,0.33
+test-00372,保持正确,False,B,B,B,0.007577240467071533,dog high quality,n-type semiconductor large,0.15,2.19
+test-00373,保持正确,True,B,B,B,0.042087726294994354,Vacuum Coffee Machines light,Health & Personal Care Health Care Alternative Medicine Sound Therapy better,0.5,0.63
+test-00374,保持正确,True,B,B,B,0.01798621006309986,CD burner little,lead authentic,0.75,5.29
+test-00375,纠正,False,A,B,A,0.9953904151916504,automobile unique,butter knife skiny,0.98,0.15
+test-00376,保持正确,False,B,B,B,0.005911068990826607,window lock single,butt shaft old,0.15,3.0
+test-00377,纠正,False,A,B,A,0.9859364032745361,convertible scale,hair spray medium,1.1,0.2
+test-00378,纠正,False,A,B,A,0.9982993006706238,sprayer metal,Personal Groomers better,8.1,0.5
+test-00379,退步,True,B,B,A,0.531209409236908,Woodcase Colored Pencils high quality,biteplate plain,0.5,0.65
+test-00380,纠正,False,A,B,A,0.9046505093574524,Baby Products Nursery Nursery Décor Lamps & Shades quality,patrol wagon toy,3.0,2.1
+test-00381,保持正确,False,B,B,B,0.07585817575454712,bridle standard,tower discount,0.02,0.49
+test-00382,纠正,True,A,B,A,0.5926666259765625,pulse counter wonderful,crossbow orange,1.46,0.85
+test-00383,保持正确,False,B,B,B,0.020332353189587593,Toys & Games Puzzles Jigsaw Puzzles Panoramic Puzzles scale,vase top,0.33,2.2
+test-00384,纠正,False,A,B,A,0.9947799444198608,Time Cards colorful,Welding Hammers small,0.77,0.2
+test-00385,仍错,False,A,B,B,0.16451644897460938,Dish Racks unique,solar panel new,4.2,2.87
+test-00386,纠正,True,A,B,A,0.9626730680465698,matrix black,foil kitchen,2.0,1.43
+test-00387,仍错,False,A,B,B,0.18242551386356354,rain gauge sturdy,electronic organ huge,12.0,4.41
+test-00388,纠正,False,A,B,A,0.9940890073776245,Bottle Accessories generic,mosaic glass,8.5,0.75
+test-00389,纠正,False,A,B,A,0.9796676635742188,Clothing Women's hand held,Office Tape Dispensers toy,1.14,0.25
+test-00390,纠正,False,A,B,A,0.9902915358543396,searing iron medium,coffee mug common,5.3,0.75
+test-00391,纠正,False,A,B,A,0.9875683188438416,Clothing Women's hand held,thermos bottle model,1.14,0.45
+test-00392,仍错,True,A,B,B,0.4687906503677368,rack and pinion cheap,ledger board cheap,1.1,0.59
+test-00393,纠正,False,A,B,A,0.9859364032745361,stake slick,filament beautiful,9.0,2.2
+test-00394,保持正确,False,B,B,B,0.3775406777858734,wet cell old,roller bearing simple,0.7,1.1
+test-00395,退步,True,B,B,A,0.9875683188438416,pepper spray well made,opener wonderful,0.33,0.44
+test-00396,纠正,False,A,B,A,0.7549149990081787,action iron,fuel-air bomb short,0.65,0.4
+test-00397,保持正确,False,B,B,B,0.04742587357759476,corrective purple,strainer black,0.31,2.15
+test-00398,纠正,False,A,B,A,0.9971990585327148,operating table kitchen,spade medium,6.61,1.04
+test-00399,仍错,True,A,B,B,0.13296423852443695,Graph & Data Pads narrow,tower discount,1.59,0.49
+test-00400,保持正确,False,B,B,B,0.014063626527786255,coffee mug common,teakettle hand made,0.75,3.5
+test-00401,保持正确,False,B,B,B,0.01798621006309986,switch engine well made,melting pot metal,0.63,3.45
+test-00402,退步,True,B,B,A,0.622459352016449,rattan short,cuckoo clock curved,0.33,1.6
+test-00403,退步,False,B,B,A,0.8175744414329529,booster amplifier delicate,cocktail shaker purple,0.66,1.1
+test-00404,保持正确,False,A,A,A,0.9940890073776245,bypass full,real storage translucent,0.8,0.35
+test-00405,保持正确,True,B,B,B,0.07585817575454712,mobile home modern,parallel port ingenious,0.15,0.25
+test-00406,保持正确,False,B,B,B,0.014063626527786255,Tools & Home Improvement Electrical Dimmer Switches slender,ground brand name,0.44,0.68
+test-00407,保持正确,False,B,B,B,0.07585817575454712,mosaic glass,cereal bowl stone,0.75,4.14
+test-00408,保持正确,False,B,B,B,0.11920291930437088,Tools & Home Improvement Electrical Dimmer Switches slender,Office Tape Dispensers wood,0.44,0.72
+test-00409,保持正确,False,B,B,B,0.01798621006309986,"Home, Garden & Pets Patio, Lawn & Garden Gardening Garden Sculptures & Statues Gazing Balls toy",stockpot popular,1.4,8.0
+test-00410,纠正,False,A,B,A,0.6791787147521973,penny bank well made,idler pulley classic,1.15,0.35
+test-00411,保持正确,False,B,B,B,0.01243165135383606,Mortar & Pestles plastic,tin white,0.03,0.81
+test-00412,纠正,True,A,B,A,0.531209409236908,gasoline tank bright,wok yellow,2.25,1.6
+test-00413,纠正,False,A,B,A,0.8175744414329529,fire truck big,steel baby,0.88,0.5
+test-00414,保持正确,False,B,B,B,0.0035936026833951473,candy thermometer slender,Health & Personal Care Household Supplies Laundry Liquid Detergent portable,0.08,4.95
+test-00415,保持正确,False,B,B,B,0.02931223064661026,Tools & Home Improvement Power & Hand Tools Hand Tools Punches girls,Filing Crates & Posting Tubs violet,0.6,4.0
+test-00416,退步,True,B,B,A,0.8354835510253906,Toys & Games Sports & Outdoor Play Pools & Water Fun Lawn Water Slides well made,entanglement tall,1.1,1.95
+test-00417,保持正确,False,B,B,B,0.02595735713839531,bagpipe kitchen,Shampoo clever,0.88,1.2
+test-00418,纠正,False,A,B,A,0.9924227595329285,Beard Trimmers clever,Coin Purses white,0.67,0.08
+test-00419,保持正确,False,A,A,A,0.6791787147521973,stockpot popular,Food Savers full,8.0,3.69
+test-00420,退步,False,B,B,A,0.5926666259765625,scriber big,Microscope Accessories realistic,0.27,0.41
+test-00421,保持正确,False,B,B,B,0.009708477184176445,"Home, Garden & Pets Vacuums, Cleaning & Storage Cleaning Supplies Sweeping Brooms Hand Brooms popular",Tools & Home Improvement Power & Hand Tools Hand Tools Hammers Claw Hammers hollow,0.18,1.67
+test-00422,保持正确,False,B,B,B,0.020332353189587593,fire truck big,waste-paper basket better,0.88,8.7
+test-00423,保持正确,False,B,B,B,0.04742587357759476,dimmer red,water tank new,0.66,2.45
+test-00424,保持正确,True,B,B,B,0.020332353189587593,supplejack lovely,"Home, Garden & Pets Kitchen & Dining Small Appliances Deep Fryers ceramic",1.19,4.98
+test-00425,纠正,False,A,B,A,0.9914224743843079,data system brown,pump action handsome,7.15,2.0
+test-00426,纠正,False,A,B,A,0.9890130758285522,lug wrench wood,sparking plug glass,4.63,0.4
+test-00427,仍错,True,A,B,B,0.2689414322376251,IEEE 1394 Firewire heavy,mower oak,0.66,0.5
+test-00428,退步,False,B,B,A,0.8354835510253906,wall clock plain,black kettle,1.7,2.5
+test-00429,保持正确,False,B,B,B,0.10669060051441193,mosaic glass,grinder premium,0.75,2.1
+test-00430,退步,True,B,B,A,0.7549149990081787,power strip cute,dice box well made,0.22,0.33
+test-00431,保持正确,False,B,B,B,0.06754669547080994,Office Tape Dispensers toy,tin white,0.25,0.81
+test-00432,保持正确,True,A,A,A,0.531209409236908,firing mechanism portable,trash bin orange,2.29,0.97
+test-00433,纠正,True,A,B,A,0.9859364032745361,Travel Mugs green,telfer toy,0.81,0.1
+test-00434,纠正,False,A,B,A,0.9975274205207825,Office Products Office & School Supplies Education & Crafts Filing Products File & Folder Accessories Expanding Files smart,"Home, Garden & Pets Vacuums, Cleaning & Storage Cleaning Supplies Sweeping Brooms Hand Brooms popular",1.92,0.18
+test-00435,纠正,False,A,B,A,0.8670357465744019,Filing Crates & Posting Tubs violet,Maps brown,4.0,2.8
+test-00436,纠正,True,A,B,A,0.9875683188438416,cache solid,butter knife skiny,0.25,0.15
+test-00437,保持正确,False,B,B,B,0.014063626527786255,Body Sprays clever,Electronics Marine Electronics Subwoofers special,0.28,11.2
+test-00438,保持正确,False,A,A,A,0.9840936064720154,radio large,glasses case long,1.06,0.3
+test-00439,退步,False,B,B,A,0.562176525592804,wok yellow,cue stick heavy,1.6,2.0
+test-00440,保持正确,False,B,B,B,0.01590639166533947,Office Tape Dispensers toy,lead authentic,0.25,5.29
+test-00441,纠正,False,A,B,A,0.970687747001648,radio receiver boys,"Home, Garden & Pets Kitchen & Dining Kitchen Utensils & Gadgets Oil Sprayers & Dispensers skiny",1.06,0.5
+test-00442,纠正,False,A,B,A,0.998498797416687,operating table kitchen,Timers fat,6.61,0.46
+test-00443,纠正,False,A,B,A,0.9947799444198608,"Home, Garden & Pets Patio, Lawn & Garden Gardening Garden Structures Garden Bridges yellow",musical box expensive,5.5,1.5
+test-00444,纠正,False,A,B,A,0.9992903470993042,pinger inexpensive,Toys & Games Hobbies Radio Control Cars discount,10.0,0.24
+test-00445,纠正,False,A,B,A,0.9399133324623108,Electronics Accessories & Supplies Office Electronics Accessories Printer Supplies Printer Roll Holders red,streetlight generic,3.2,0.5
+test-00446,保持正确,False,B,B,B,0.01098694372922182,free weight plastic,Personal Groomers better,0.22,0.5
+test-00447,退步,True,B,B,A,0.8670357465744019,Personal Groomers better,hair tonic quaint,0.5,0.79
+test-00448,仍错,True,A,B,B,0.14804719388484955,pottery square,menorah premium,0.98,0.4
+test-00449,纠正,True,A,B,A,0.9399133324623108,mixing faucet ceramic,Sports & Outdoors Outdoor Recreation Camping & Hiking Backpack Accessories Pack Covers powerful,4.0,2.65
+test-00450,纠正,False,A,B,A,0.9465966820716858,Pullman toy,junction barrier womens,0.63,0.1
+test-00451,保持正确,False,B,B,B,0.042087726294994354,IEEE 1394 Firewire heavy,Speaker Cables white,0.66,10.0
+test-00452,保持正确,False,B,B,B,0.009708477184176445,return key hollow,cabin car toy,0.02,0.49
+test-00453,退步,True,B,B,A,0.5926666259765625,laundry basket popular,fire tongs quality,0.6,1.75
+test-00454,仍错,True,A,B,B,0.4073334336280823,jet heavy,welt toy,1.15,0.34
+test-00455,退步,True,B,B,A,0.562176525592804,harp purple,All-Purpose Labels broad,0.4,0.5
+test-00456,退步,True,B,B,A,0.8670357465744019,EDS silver,cassette tape green,0.15,0.88
+test-00457,保持正确,False,A,A,A,0.9953904151916504,air cleaner light,pulse counter wonderful,11.0,1.46
+test-00458,纠正,False,A,B,A,0.9626730680465698,simple pendulum yellow,Sports & Outdoors Boating & Water Sports Surfing Surfboard Racks sturdy,1.1,0.45
+test-00459,纠正,False,A,B,A,0.9959298968315125,wine bottle real,pilot single,2.88,0.23
+test-00460,纠正,False,A,B,A,0.9975274205207825,savings bank yellow,Keepsakes little,1.1,0.03
+test-00461,纠正,False,A,B,A,0.9947799444198608,trash barrel oak,stuffed giraffe bright,3.31,0.55
+test-00462,保持正确,False,B,B,B,0.14804719388484955,oil lamp wood,Dish Racks unique,2.0,4.2
+test-00463,保持正确,False,B,B,B,0.02931223064661026,Travel Mugs green,Filing Crates & Posting Tubs violet,0.81,4.0
+test-00464,保持正确,False,B,B,B,0.07585817575454712,Filing Crates & Posting Tubs violet,air cleaner light,4.0,11.0
+test-00465,纠正,False,A,B,A,0.9986749291419983,mailbox fine,chute-the-chute best,7.0,0.28
+test-00466,纠正,False,A,B,A,0.7310585379600525,Scissors blue,Credit Card Holders steel,0.29,0.2
+test-00467,纠正,False,A,B,A,0.8175744414329529,Hurricane Glasses brown,File Folders hollow,7.18,1.21
+test-00468,纠正,False,A,B,A,0.9940890073776245,ladder truck ,hygrometer small,1.56,0.1
+test-00469,纠正,False,A,B,A,0.9796676635742188,"Home, Garden & Pets Kitchen & Dining Bakeware Baking Tools & Accessories Cooking Torches realistic",in-tray dark,0.75,0.5
+test-00470,保持正确,True,B,B,B,0.008577484637498856,gyro horizon brand name,Sports & Outdoors Other Sports Rodeo imported,2.05,7.3
+test-00471,保持正确,False,B,B,B,0.2689414322376251,tripper steel,earthenware wide,0.8,1.46
+test-00472,纠正,False,A,B,A,0.9940890073776245,"Home, Garden & Pets Kitchen & Dining Kitchen Utensils & Gadgets Oil Sprayers & Dispensers skiny",Brushes & Applicators strong,0.5,0.05
+test-00473,保持正确,False,B,B,B,0.4687906503677368,charger smart,penny bank well made,0.41,1.15
+test-00474,纠正,False,A,B,A,0.9978172779083252,savings bank yellow,sharpener light,1.1,0.02
+test-00475,保持正确,False,B,B,B,0.005220125894993544,Tools & Home Improvement Lamps & Light Fixtures Light Fixtures Track Lighting plain,high-hat cymbal metal,0.1,2.87
+test-00476,保持正确,False,B,B,B,0.4687906503677368,stringer strong,Tool Belts generic,0.28,1.1
+test-00477,纠正,False,A,B,A,0.9875683188438416,Bird Feeders discount,afterburner kids,0.57,0.33
+test-00478,保持正确,False,B,B,B,0.01798621006309986,master key smart,omelette pan blue,1.75,10.4
+test-00479,保持正确,False,B,B,B,0.004070138093084097,Electronics Computers & Accessories Computer Accessories Printer Ink & Toner Inkjet Printer Ink & Toner wonderful,Hot Pots & Electric Kettles orange,0.04,2.8
+test-00480,纠正,False,A,B,A,0.999373733997345,diesel-electric glass,Fountain Pens bright,3.31,0.11
+test-00481,保持正确,False,B,B,B,0.006692850962281227,cargo container powerful,Wine Decanters boys,0.35,3.0
+test-00482,纠正,True,A,B,A,0.6791787147521973,push button classic,Sports & Outdoors Team Sports Baseball Gloves & Mitts Outfielder's Gloves ,6.0,1.48
+test-00483,保持正确,False,B,B,B,0.02595735713839531,WiFi wooden,All Pans top,1.25,7.0
+test-00484,保持正确,False,B,B,B,0.02931223064661026,Beauty Skin Care Face Face Treatments brand name,water tank molded,0.29,2.45
+test-00485,纠正,False,A,B,A,0.9971990585327148,electron multiplier iron,alarm clock carved,5.2,0.33
+test-00486,纠正,False,A,B,A,0.9990890026092529,stealth fighter shallow,Electronics Computers & Accessories Printers All-In-Ones tiny,4.7,0.15
+test-00487,纠正,False,A,B,A,0.998498797416687,Sports & Outdoors Team Sports Baseball Gloves & Mitts Outfielder's Gloves ,aerofoil wonderful,1.48,0.88
+test-00488,纠正,True,A,B,A,0.9875683188438416,lawn cart brand name,rucksack best,4.12,1.96
+test-00489,保持正确,False,A,A,A,0.9975274205207825,Tools & Home Improvement Power & Hand Tools Hand Tools Axes heavy,Coin Purses white,4.0,0.08
+test-00490,纠正,False,A,B,A,0.9992903470993042,Bottle Accessories generic,poor box steel,8.5,0.08
+test-00491,保持正确,True,B,B,B,0.11920291930437088,ship's boat glass,Cheese Knives white,0.35,0.5
+test-00492,纠正,False,A,B,A,0.9968273043632507,strainer black,Binder Pouches simple,2.15,0.31
+test-00493,仍错,True,A,B,B,0.09534946084022522,dining compartment realistic,box wrench black,0.44,0.09
+test-00494,保持正确,False,B,B,B,0.10669060051441193,bypass full,hand luggage plastic,0.8,3.53
+test-00495,保持正确,False,B,B,B,0.09534946084022522,Compact Refrigerators fake,Woodcase Colored Pencils high quality,0.14,0.5
+test-00496,保持正确,False,A,A,A,0.9525741338729858,round steel,dog hook solid,0.8,0.35
+test-00497,纠正,False,A,B,A,0.9971990585327148,Office Products Office Furniture & Lighting Office Lighting Desk Lamps medium,thermos bottle silver,10.0,3.1
+test-00498,纠正,False,A,B,A,0.9669140577316284,guillotine discount,lead-acid battery handsome,8.0,3.15
+test-00499,仍错,True,A,B,B,0.18242551386356354,engine fancy,Drawing Media brown,0.14,0.05
+test-00500,纠正,False,A,B,A,0.9859364032745361,tin can girls,coffee mug best,0.91,0.56
+test-00501,保持正确,False,A,A,A,0.9989677667617798,toilet seat dark,Soufflé Dishes generic,6.5,0.06
+test-00502,保持正确,False,B,B,B,0.042087726294994354,tea maker square,pew thick,1.3,1.73
+test-00503,保持正确,False,B,B,B,0.037326883524656296,roadster wooden,coffer red,0.66,2.7
+test-00504,纠正,True,A,B,A,0.9241418242454529,Margarita Glasses boys,ATM ceramic,11.0,0.55
+test-00505,退步,True,B,B,A,0.7549149990081787,bypass full,ballot box well made,0.8,1.5
+test-00506,保持正确,False,B,B,B,0.0534033328294754,Health & Personal Care Household Supplies Light Bulbs High Intensity Discharge Bulbs blue,pulse counter wonderful,0.2,1.46
+test-00507,保持正确,False,B,B,B,0.014063626527786255,power strip cute,fighter aircraft wooden,0.22,3.96
+test-00508,退步,True,B,B,A,0.531209409236908,alpenstock well made,Hot Pots & Electric Kettles orange,1.6,2.8
+test-00509,保持正确,False,A,A,A,0.977022647857666,Skillets new,Napkin Holders blue,3.6,2.0
+test-00510,保持正确,False,B,B,B,0.005220125894993544,stuffed monkey popular,soup bowl ornate,0.48,2.0
+test-00511,保持正确,True,B,B,B,0.43782350420951843,wok yellow,remote terminal old,1.6,3.13
+test-00512,纠正,False,A,B,A,0.9902915358543396,Modular Storage Systems glass,rucksack best,5.6,1.96
+test-00513,仍错,True,A,B,B,0.03308597952127457,tin white,electric razor short,0.81,0.5
+test-00514,纠正,False,A,B,A,0.998498797416687,automatic firearm orange,Jewelry Accessories scale,7.1,0.25
+test-00515,仍错,False,A,B,B,0.22270014882087708,streetlight generic,tab quality,0.5,0.4
+test-00516,仍错,True,A,B,B,0.4687906503677368,scraper wood,streetlight generic,0.85,0.5
+test-00517,保持正确,False,B,B,B,0.01098694372922182,junction barrier womens,cashbox delux,0.1,1.4
+test-00518,仍错,True,A,B,B,0.02595735713839531,Soufflé Dishes square,matrix black,2.5,2.0
+test-00519,纠正,False,A,B,A,0.9875683188438416,electron multiplier iron,Countersink Bits beautiful,5.2,1.32
+test-00520,保持正确,False,B,B,B,0.3486451506614685,soup ladle glass,Verey pistol wide,0.35,1.1
+test-00521,纠正,False,A,B,A,0.957912266254425,Speaker Cables white,sparking plug glass,10.0,0.4
+test-00522,纠正,False,A,B,A,0.9975274205207825,mustard agent solid,IOL blue,1.76,0.1
+test-00523,保持正确,False,B,B,B,0.0031726830638945103,Index & Business Card Files curved,Tools & Home Improvement Storage & Home Organization portable,1.09,9.8
+test-00524,保持正确,False,B,B,B,0.01798621006309986,entanglement tall,Serveware blue,1.95,4.41
+test-00525,纠正,False,A,B,A,0.9988304972648621,clock pendulum tall,return key hollow,2.87,0.02
+test-00526,纠正,False,A,B,A,0.9525741338729858,"Home, Garden & Pets Kitchen & Dining Small Appliances Deep Fryers ceramic",Taping Supplies narrow,4.98,0.41
+test-00527,纠正,False,A,B,A,0.999373733997345,waste-paper basket better,Fountain Pens bright,8.7,0.11
+test-00528,保持正确,False,B,B,B,0.11920291930437088,Electronics Camera & Photo Digital Cameras Micro Four Thirds Digital Cameras long,Beauty Bath & Body Bath Minerals & Salts toy,0.43,1.13
+test-00529,保持正确,False,A,A,A,0.9964063763618469,zoom lens standard,Cups classic,2.09,0.29
+test-00530,纠正,False,A,B,A,0.9940890073776245,cereal bowl stone,miter joint hollow,4.14,0.38
+test-00531,保持正确,False,A,A,A,0.622459352016449,All-Purpose Labels broad,Duct Tape unique,0.5,0.1
+test-00532,保持正确,False,B,B,B,0.14804719388484955,Woodcase Colored Pencils high quality,clock pendulum tall,0.5,2.87
+test-00533,保持正确,False,B,B,B,0.10669060051441193,drinking glass fancy,foil kitchen,0.7,1.43
+test-00534,保持正确,False,B,B,B,0.02931223064661026,ash-pan wide,Hurricane Glasses brown,0.19,7.18
+test-00535,保持正确,False,B,B,B,0.03308597952127457,scimitar realistic,tote silly,0.13,2.9
+test-00536,纠正,False,A,B,A,0.9626730680465698,conditioner plastic,Activators violet,1.2,0.25
+test-00537,纠正,False,A,B,A,0.9046505093574524,developer purple,p-n junction wide,0.33,0.15
+test-00538,保持正确,False,A,A,A,0.9978172779083252,zoom lens standard,bass full,2.09,0.25
+test-00539,仍错,True,A,B,B,0.4687906503677368,sulfur mustard authentic,automatic firearm discount,2.5,1.81
+test-00540,纠正,False,A,B,A,0.9324532747268677,tumbler slick,stuffed kitten tall,0.88,0.3
+test-00541,保持正确,False,B,B,B,0.16451644897460938,Bread Boxes purple,lobster pot large,4.41,9.0
+test-00542,保持正确,False,B,B,B,0.02931223064661026,sleigh old,bypass full,0.13,0.8
+test-00543,保持正确,False,A,A,A,0.9975274205207825,merchant vessels wonderful,squeezer ,4.0,0.68
+test-00544,纠正,False,A,B,A,0.9978172779083252,Switches slick,gun case brand name,3.22,0.11
+test-00545,保持正确,False,A,A,A,0.9982993006706238,saucepot unique,thermos bottle green,4.62,0.2
+test-00546,仍错,False,B,A,A,0.8933094143867493,induction coil portable,Ice-Cream Machines steel,5.8,12.0
+test-00547,保持正确,False,B,B,B,0.0534033328294754,clamshell womens,clapperboard brand name,0.3,0.6
+test-00548,纠正,False,A,B,A,0.6791787147521973,Electronics Camera & Photo Film Cameras APS Cameras slick,display panel broad,1.5,0.63
+test-00549,保持正确,False,B,B,B,0.3208213150501251,internal drive kids,horse-drawn vehicle green,0.27,0.72
+test-00550,退步,True,B,B,A,0.7310585379600525,reed instrument easy,electric clock plastic,0.26,0.7
+test-00551,纠正,False,A,B,A,0.9980732202529907,carburetor red,Steak Sets yellow,3.15,0.06
+test-00552,保持正确,False,A,A,A,0.9875683188438416,"Home, Garden & Pets Patio, Lawn & Garden Picnic Baskets & Accessories Picnic Backpacks plastic",eyeglass long,0.57,0.2
+test-00553,保持正确,True,B,B,B,0.014063626527786255,stuffed monkey popular,solar telescope modern,0.5,0.84
+test-00554,保持正确,False,B,B,B,0.01098694372922182,breathalyzer ,Maps brown,0.19,2.8
+test-00555,纠正,False,A,B,A,0.9990890026092529,small computer system interface iron,Cups classic,9.5,0.29
+test-00556,保持正确,False,B,B,B,0.01243165135383606,carousel make,Steamers & Rice Cookers girls,2.0,6.22
+test-00557,保持正确,False,B,B,B,0.06008664518594742,hockey puck ceramic,Sports & Outdoors Outdoor Recreation Camping & Hiking Backpacks & Bags External Frame Backpacks short,0.76,1.54
+test-00558,保持正确,False,B,B,B,0.007577240467071533,Sports & Outdoors Accessories Sports Water Bottles common,stockpot popular,0.44,8.0
+test-00559,纠正,False,A,B,A,0.9902915358543396,wet cell light,alarm clock carved,2.3,0.33
+test-00560,退步,False,B,B,A,0.562176525592804,solar panel short,Sports & Outdoors Accessories Sports Water Bottles common,0.3,0.44
+test-00561,纠正,True,A,B,A,0.9940890073776245,mixing faucet ceramic,Chucks newest,4.0,3.1
+test-00562,纠正,False,A,B,A,0.9820137619972229,piano model,ash-pan wide,0.89,0.19
+test-00563,纠正,False,A,B,A,0.977022647857666,frying pan medium,Health & Personal Care Personal Care Oral Hygiene Mouthwash delicate,3.5,1.2
+test-00564,纠正,False,A,B,A,0.9149009585380554,bass full,Beauty Makeup Nails Nail Polish translucent,0.25,0.12
+test-00565,纠正,True,A,B,A,0.9740425944328308,foot lever mens,telfer toy,0.44,0.1
+test-00566,保持正确,False,B,B,B,0.03308597952127457,Tools & Home Improvement Hardware Bathroom Hardware Bathroom Shelves iron,electric scale,0.65,8.95
+test-00567,纠正,False,A,B,A,0.9980732202529907,Rediffusion ceramic,zoom lens standard,2.54,0.21
+test-00568,纠正,False,A,B,A,0.9241418242454529,diffusing screen long,display panel broad,1.54,0.63
+test-00569,纠正,True,A,B,A,0.7057850360870361,jaw hand made,tappet medium,0.45,0.18
+test-00570,保持正确,False,B,B,B,0.0031726830638945103,thermometer brown,minute gun delicate,0.5,13.01
+test-00571,纠正,False,A,B,A,0.9933071732521057,throwing stick smart,Pad Holders beautiful,0.5,0.06
+test-00572,保持正确,False,B,B,B,0.01798621006309986,ground control iron,energizer clever,1.41,5.38
+test-00573,保持正确,False,B,B,B,0.042087726294994354,scaler fine,File Folders wooden,2.2,6.0
+test-00574,纠正,False,A,B,A,0.9669140577316284,cement mixer classic,scriber big,0.75,0.27
+test-00575,纠正,False,A,B,A,0.9669140577316284,grandfather clock make,trash bin orange,8.0,0.97
+test-00576,纠正,False,A,B,A,0.9982993006706238,flatbed powerful,IEEE 1394 Firewire heavy,9.5,0.66
+test-00577,仍错,False,B,A,A,0.9241418242454529,Cheese Knives white,penlight discount,0.5,1.2
+test-00578,保持正确,False,B,B,B,0.02595735713839531,gateleg table powerful,treenail colorful,0.41,1.1
+test-00579,保持正确,False,B,B,B,0.3208213150501251,Binder Index Dividers hand made,tea maker square,0.77,1.3
+test-00580,保持正确,False,B,B,B,0.02595735713839531,ketchup bottle blue,oil lamp green,0.66,2.0
+test-00581,纠正,False,A,B,A,0.9399133324623108,gyro huge,Bar Code Scanners popular,1.76,1.1
+test-00582,保持正确,False,B,B,B,0.08509904146194458,mosaic glass,corbel standard,0.75,7.0
+test-00583,保持正确,False,B,B,B,0.042087726294994354,Steak Sets yellow,Cookie Jars white,0.06,3.7
+test-00584,纠正,False,A,B,A,0.9740425944328308,solar telescope modern,gear lever ugly,0.84,0.1
+test-00585,保持正确,False,B,B,B,0.020332353189587593,scraper wood,diffusing screen long,0.85,1.54
+test-00586,保持正确,False,B,B,B,0.042087726294994354,Beauty Skin Care Body Moisturizers Lotions long,Health & Personal Care Health Care Alternative Medicine Sound Therapy better,0.5,0.63
+test-00587,纠正,True,A,B,A,0.5926666259765625,thermos bottle model,wrist pin slender,0.45,0.25
+test-00588,保持正确,False,B,B,B,0.03308597952127457,megaphone toy,high-hat cymbal metal,0.14,2.87
+test-00589,保持正确,False,B,B,B,0.16451644897460938,hard disc slick,coffee mug best,0.3,0.56
+test-00590,纠正,False,A,B,A,0.9626730680465698,pig metal,coin box easy,1.36,0.9
+test-00591,纠正,False,A,B,A,0.957912266254425,musical box fancy,shooter black,1.98,0.6
+test-00592,保持正确,False,B,B,B,0.09534946084022522,gas engine round,Closet Storage Boxes popular,0.89,11.95
+test-00593,保持正确,False,B,B,B,0.004070138093084097,ballpoint simple,manufactured home plastic,0.04,2.75
+test-00594,保持正确,False,B,B,B,0.01590639166533947,dog hook solid,remote terminal old,0.35,3.13
+test-00595,纠正,False,A,B,A,0.9947799444198608,Toilet Paper Storage white,bicycle purple,0.88,0.1
+test-00596,保持正确,True,B,B,B,0.3208213150501251,rubber mallet large,lead authentic,1.8,5.29
+test-00597,保持正确,False,B,B,B,0.3486451506614685,Mixers steel,Filing Crates & Posting Tubs violet,2.2,4.0
+test-00598,保持正确,False,B,B,B,0.005220125894993544,Business Cards beautiful,B battery wide,0.26,10.5
+test-00599,纠正,False,A,B,A,0.998498797416687,Food Savers full,Tools & Home Improvement Electrical Light Bulbs Specialty Light Bulbs discount,3.69,0.1
+test-00600,保持正确,True,B,B,B,0.24508501589298248,Hammer nice,meter kitchen,0.42,1.25
+test-00601,纠正,True,A,B,A,0.7310585379600525,corbel standard,wine bottle real,7.0,2.88
+test-00602,保持正确,False,A,A,A,0.9968273043632507,"Home, Garden & Pets Kitchen & Dining Small Appliances Thermocoolers & Compact Refrigerators white","Cake, Pie & Pastry Servers light",6.2,2.5
+test-00603,退步,True,B,B,A,0.562176525592804,scimitar realistic,eyeglass long,0.13,0.2
+test-00604,纠正,False,A,B,A,0.9669140577316284,radio receiver boys,charger smart,1.06,0.41
+test-00605,纠正,False,A,B,A,0.9324532747268677,Diffusers black,Tulip Champagne Glasses classic,0.66,0.4
+test-00606,纠正,False,A,B,A,0.8933094143867493,merchant vessels wonderful,grab bar stone,4.0,1.8
+test-00607,纠正,False,A,B,A,0.9820137619972229,Tools & Home Improvement Lamps & Light Fixtures Ceiling Fans & Accessories Ceiling Fan Lights ornate,Health & Personal Care Health Care Alternative Medicine Sound Therapy model,4.64,2.05
+test-00608,保持正确,False,B,B,B,0.014063626527786255,bagpipe kitchen,diffusing screen long,0.88,1.54
+test-00609,保持正确,True,B,B,B,0.01590639166533947,stuffed hippopotamus tall,distributor cam unique,0.3,0.64
+test-00610,纠正,False,A,B,A,0.957912266254425,racing shell easy,scraper wood,2.43,0.85
+test-00611,纠正,False,A,B,A,0.9991958737373352,stealth fighter shallow,Weather Monitors orange,4.7,0.18
+test-00612,纠正,True,A,B,A,0.851952850818634,booster amplifier delicate,alarm clock carved,0.66,0.33
+test-00613,纠正,False,A,B,A,0.9859364032745361,tote bag standard,chemical balance slender,1.2,0.19
+test-00614,纠正,False,A,B,A,0.9149009585380554,Dessert Bowls light,Clipboards blue,5.0,0.49
+test-00615,保持正确,False,B,B,B,0.042087726294994354,ballpoint simple,soap dispenser kids,0.04,0.35
+test-00616,纠正,True,A,B,A,0.8354835510253906,Potpourris powerful,tip-top table silly,0.48,0.04
+test-00617,纠正,False,A,B,A,0.9971990585327148,alarm clock round,Tools & Home Improvement Electrical Light Bulbs Specialty Light Bulbs discount,0.5,0.1
+test-00618,保持正确,False,B,B,B,0.0534033328294754,scythe marble,Meat kettle,2.0,9.5
+test-00619,纠正,False,A,B,A,0.9971990585327148,sweep-second curved,Toys & Games Hobbies Radio Control Cars discount,2.0,0.24
+test-00620,保持正确,True,B,B,B,0.3775406777858734,sport car plastic,pendulum clock curved,0.59,2.41
+test-00621,纠正,False,A,B,A,0.8807970285415649,Travel Mugs green,Small Parts Envelopes ornate,0.81,0.3
+test-00622,保持正确,False,B,B,B,0.022977370768785477,penny bank well made,shopping bag skinny,1.15,2.2
+test-00623,纠正,False,A,B,A,0.9982993006706238,matrix black,microphone translucent,2.0,0.2
+test-00624,仍错,False,A,B,B,0.2689414322376251,gyro horizon powerful,wok yellow,2.4,1.6
+test-00625,纠正,False,A,B,A,0.998498797416687,Closet Storage Boxes popular,wet cell green,11.95,0.5
+test-00626,保持正确,False,B,B,B,0.08509904146194458,alarm orange,drinking glass shallow,0.31,0.75
+test-00627,保持正确,False,A,A,A,0.9840936064720154,Roasting Pans steel,steel baby,9.1,0.5
+test-00628,纠正,False,A,B,A,0.8354835510253906,table lamp girls,soap dispenser powerful,3.4,1.1
+test-00629,保持正确,False,B,B,B,0.2018132209777832,flick knife high quality,horse-drawn vehicle green,0.24,0.72
+test-00630,保持正确,False,A,A,A,0.9933071732521057,air cleaner light,double bass big,11.0,0.54
+test-00631,退步,False,B,B,A,0.562176525592804,vacuum bottle square,thermos bottle silver,1.4,3.1
+test-00632,纠正,False,A,B,A,0.9902915358543396,filament beautiful,flag glass,2.2,0.2
+test-00633,纠正,False,A,B,A,0.7310585379600525,gondola ceramic,Rice Cookers orange,6.2,3.09
+test-00634,保持正确,True,B,B,B,0.02931223064661026,small ship womens,Tools & Home Improvement Building Supplies Building Materials Tiles Glass Tiles steel,1.54,2.33
+test-00635,退步,True,B,B,A,0.9046505093574524,solar panel short,Camping Plates wooden,0.3,0.5
+test-00636,纠正,False,A,B,A,0.9982993006706238,stewing pan authentic,LGB sturdy,7.9,0.9
+test-00637,保持正确,False,B,B,B,0.01098694372922182,weather ship marble,Sports & Outdoors Outdoor Recreation Camping & Hiking Backpack Accessories Pack Covers powerful,0.61,2.65
+test-00638,保持正确,False,B,B,B,0.3486451506614685,flick knife high quality,"Home, Garden & Pets Vacuums, Cleaning & Storage Storage & Organization Garage Storage & Organization Ski Storage Racks brand name",0.24,0.45
+test-00639,保持正确,False,B,B,B,0.008577484637498856,Business Cards beautiful,alpenstock well made,0.26,1.6
+test-00640,纠正,False,A,B,A,0.9980732202529907,cookware thick,Tools & Home Improvement Electrical Light Bulbs High Intensity Discharge Bulbs standard,1.8,0.03
+test-00641,保持正确,False,B,B,B,0.01798621006309986,bass full,Paper Roll Cutters quality,0.25,1.23
+test-00642,保持正确,False,B,B,B,0.04742587357759476,FAE steel,camera lens slick,0.47,1.75
+test-00643,保持正确,False,B,B,B,0.01798621006309986,Coin Purses charming,water tank molded,0.2,2.45
+test-00644,纠正,False,A,B,A,0.9978172779083252,merchant vessels wonderful,afterburner kids,4.0,0.33
+test-00645,纠正,False,A,B,A,0.957912266254425,music stand generic,energizer brown,0.7,0.45
+test-00646,保持正确,False,B,B,B,0.02931223064661026,baton inexpensive,land line kitchen,0.05,3.75
+test-00647,纠正,False,A,B,A,0.9968273043632507,analog-digital converter medium,p-n junction wide,1.83,0.15
+test-00648,保持正确,False,B,B,B,0.008577484637498856,Drawing Media brown,mustard agent solid,0.05,1.76
+test-00649,保持正确,False,B,B,B,0.06754669547080994,whiskey bottle toy,gyro horizon powerful,0.8,2.4
+test-00650,保持正确,False,B,B,B,0.022977370768785477,cargo container powerful,single-reed instrument hollow,0.35,0.81
+test-00651,保持正确,False,B,B,B,0.02595735713839531,oil lamp blue,dry mop scale,0.45,9.0
+test-00652,保持正确,False,B,B,B,0.004070138093084097,disk blue,HEPA Air Purifiers fancy,0.26,5.5
+test-00653,保持正确,False,B,B,B,0.01590639166533947,billy powerful,pendulum clock curved,0.22,2.41
+test-00654,退步,True,B,B,A,0.8933094143867493,fanjet engine brass,Rice Cookers orange,2.2,3.09
+test-00655,保持正确,False,A,A,A,0.9980732202529907,Tools & Home Improvement Power & Hand Tools Hand Tools Hammers Claw Hammers hollow,pocket comb best,1.67,0.13
+test-00656,保持正确,False,B,B,B,0.01098694372922182,Sports & Outdoors Other Sports Martial Arts Weapons Batons solid,Dessert Bowls light,0.11,5.0
+test-00657,仍错,True,A,B,B,0.11920291930437088,cargo container powerful,tappet medium,0.35,0.18
+test-00658,纠正,False,A,B,A,0.9046505093574524,Kitchen Accessories ceramic,jaw hand made,0.59,0.45
+test-00659,保持正确,False,A,A,A,0.9933071732521057,Health & Personal Care Health Care Alternative Medicine Sound Therapy model,soap dispenser kids,2.05,0.35
+test-00660,保持正确,False,B,B,B,0.020332353189587593,schoolbag premium,energizer clever,1.54,5.38
+test-00661,退步,True,B,B,A,0.562176525592804,target acquisition system medium,tea maker square,0.99,1.3
+test-00662,纠正,False,A,B,A,0.977022647857666,Verey pistol wide,gas fixture straight,1.1,0.8
+test-00663,保持正确,True,B,B,B,0.11920291930437088,thermos bottle green,streetlight generic,0.2,0.5
+test-00664,纠正,False,A,B,A,0.9924227595329285,Diffusers black,p-n junction wide,0.66,0.15
+test-00665,纠正,True,A,B,A,0.9796676635742188,knuckles kitchen,stuffed tiger authentic,0.88,0.35
+test-00666,保持正确,False,B,B,B,0.03308597952127457,Travel Mugs green,electrical distributor vintage,0.65,3.0
+test-00667,保持正确,False,B,B,B,0.0534033328294754,Welding Hammers small,passenger train ,0.2,0.85
+test-00668,纠正,False,A,B,A,0.9046505093574524,Bleachers dark,Pad Holders beautiful,0.2,0.06
+test-00669,保持正确,True,B,B,B,0.01798621006309986,wrist pin slender,hair tonic quaint,0.25,0.79
+test-00670,纠正,False,A,B,A,0.9740425944328308,Candles & Home Scents baby,jet heavy,1.75,1.15
+test-00671,纠正,False,A,B,A,0.9399133324623108,tractor large,zoom lens standard,2.05,1.31
+test-00672,纠正,False,A,B,A,0.9924227595329285,bypass full,first gear huge,0.8,0.33
+test-00673,保持正确,False,B,B,B,0.005220125894993544,stuffed giraffe bright,radiator slick,0.55,4.0
+test-00674,纠正,False,A,B,A,0.9324532747268677,billy powerful,Technical Pens full,0.22,0.09
+test-00675,纠正,False,A,B,A,0.9902915358543396,wheelbarrow kids,Sports & Outdoors Hunting & Fishing Hunting Air Guns discount,7.5,0.63
+test-00676,保持正确,False,B,B,B,0.01243165135383606,binoculars high quality,cistern tall,1.97,6.06
+test-00677,纠正,False,A,B,A,0.9902915358543396,snare yellow,destroyer escort make,9.0,1.21
+test-00678,保持正确,False,B,B,B,0.43782350420951843,Grill Pans fine,steering wheel classic,2.45,3.66
+test-00679,仍错,True,A,B,B,0.06754669547080994,floppy realistic,menorah premium,0.88,0.4
+test-00680,纠正,False,A,B,A,0.5926666259765625,Storage Crates red,Yarn red,0.39,0.22
+test-00681,保持正确,False,B,B,B,0.022977370768785477,Weather Monitors orange,Health & Personal Care Health Care Alternative Medicine Sound Therapy model,0.18,2.05
+test-00682,保持正确,False,B,B,B,0.02931223064661026,Index & Business Card Files common,automobile unique,0.01,0.98
+test-00683,保持正确,False,B,B,B,0.02931223064661026,push-bike light,remote terminal old,0.25,3.13
+test-00684,纠正,False,A,B,A,0.977022647857666,roller bearing simple,coalhole generic,1.1,0.3
+test-00685,纠正,True,A,B,A,0.8670357465744019,shades glass,master key smart,8.0,1.75
+test-00686,仍错,True,A,B,B,0.22270014882087708,Small Parts Envelopes ornate,Mint Julep Cups authentic,0.3,0.2
+test-00687,保持正确,False,B,B,B,0.006692850962281227,stuffed hippopotamus tall,omelette pan blue,0.3,10.4
+test-00688,保持正确,False,B,B,B,0.007577240467071533,PC board powerful,File Folders wooden,0.07,6.0
+test-00689,纠正,False,A,B,A,0.9840936064720154,chute-the-chute best,file server plastic,0.28,0.13
+test-00690,保持正确,False,A,A,A,0.9968273043632507,induction coil portable,radio large,5.8,1.06
+test-00691,仍错,False,A,B,B,0.07585817575454712,Graph & Data Pads narrow,gas fixture straight,1.59,0.8
+test-00692,纠正,False,A,B,A,0.9933071732521057,Ribbon Microphones common,Ice Tongs commodity,2.0,0.25
+test-00693,纠正,False,A,B,A,0.9046505093574524,rotor coil quality,"Home, Garden & Pets Home Appliances Humidifier Parts & Accessories Replacement Belts wooden",2.5,0.44
+test-00694,保持正确,False,B,B,B,0.020332353189587593,sorter simple,solar telescope modern,0.15,0.84
+test-00695,纠正,False,A,B,A,0.9924227595329285,trash bin orange,Sashimi Knives standard,0.97,0.28
+test-00696,纠正,True,A,B,A,0.9796676635742188,tin white,stuffed monkey popular,0.81,0.48
+test-00697,纠正,False,A,B,A,0.9933071732521057,wall clock plain,cat box metal,1.7,0.55
+test-00698,保持正确,False,B,B,B,0.09534946084022522,billy powerful,parer strong,0.22,2.73
+test-00699,保持正确,False,B,B,B,0.022977370768785477,streetlight generic,local oscillator square,0.5,1.36
+test-00700,纠正,False,A,B,A,0.8175744414329529,land line kitchen,Sports & Outdoors Other Sports Equestrian Sports Horse Care Equipment Hoof Care ,3.75,2.2
+test-00701,纠正,False,A,B,A,0.7772998809814453,door stop green,readout fine,0.5,0.11
+test-00702,退步,False,B,B,A,0.8807970285415649,Mint Julep Cups authentic,wide-body dark,0.33,0.56
+test-00703,仍错,True,B,A,A,0.9149009585380554,"Home, Garden & Pets Furniture & Décor Furniture Kids' Furniture Step Stools fat",toilet table violet,0.6,2.57
+test-00704,纠正,False,A,B,A,0.6791787147521973,schoolbag boys,tower discount,0.7,0.49
+test-00705,纠正,False,A,B,A,0.9890130758285522,vase top,coolant system sturdy,2.2,0.88
+test-00706,纠正,False,A,B,A,0.9964063763618469,roadster wooden,filament beautiful,10.0,2.2
+test-00707,纠正,False,A,B,A,0.9989677667617798,high-hat cymbal metal,idiot box standard,2.87,0.35
+test-00708,保持正确,False,B,B,B,0.014063626527786255,ewer fat,Electronics Accessories & Supplies Office Electronics Accessories Ink & Toner Laser Printer Ink & Toner kitchen,0.02,1.6
+test-00709,保持正确,False,B,B,B,0.06754669547080994,pocketknife big,vacuum bag narrow,0.21,1.13
+test-00710,保持正确,False,B,B,B,0.042087726294994354,Travel Mugs green,LCD brown,0.81,2.0
+test-00711,纠正,False,A,B,A,0.9241418242454529,ignition coil top,Microscope Accessories realistic,1.2,0.41
+test-00712,纠正,False,A,B,A,0.977022647857666,mailsorter strange,Surge Protectors quality,1.83,1.4
+test-00713,仍错,True,A,B,B,0.0534033328294754,passive matrix display single,maze miniature,0.3,0.12
+test-00714,纠正,False,A,B,A,0.9796676635742188,pottery square,security system wide,0.98,0.22
+test-00715,保持正确,False,B,B,B,0.01243165135383606,pillbox handsome,round steel,0.08,0.8
+test-00716,纠正,False,A,B,A,0.9947799444198608,groover narrow,Steak Sets yellow,2.0,0.06
+test-00717,保持正确,False,B,B,B,0.07585817575454712,Baby Products Baby Toys Electronic Toys powerful,convertible scale,0.3,1.1
+test-00718,保持正确,False,B,B,B,0.0024726232513785362,moneybag girls,stealth fighter shallow,0.13,4.7
+test-00719,纠正,False,A,B,A,0.8670357465744019,nosewheel red,Tools & Home Improvement Building Supplies Building Materials Roofing Vents Roof Vents tall,5.0,4.0
+test-00720,保持正确,False,B,B,B,0.005911068990826607,Pad Holders beautiful,Bells delicate,0.06,0.75
+test-00721,纠正,False,A,B,A,0.9859364032745361,earthenware wide,Food Savers full,1.46,0.3
+test-00722,纠正,False,A,B,A,0.977022647857666,Jig Saw Blades solid,Sports & Outdoors Boating & Water Sports Wakeboarding Lines steel,4.19,1.19
+test-00723,纠正,False,A,B,A,0.9914224743843079,cistern tall,savings bank yellow,6.06,0.2
+test-00724,保持正确,False,B,B,B,0.43782350420951843,sonar smart,bidet violet,0.06,0.51
+test-00725,保持正确,False,B,B,B,0.2018132209777832,bird big,butt shaft old,0.35,3.0
+test-00726,纠正,True,A,B,A,0.8670357465744019,dressing table charming,stuffed kitten tall,0.77,0.3
+test-00727,纠正,False,A,B,A,0.9525741338729858,bidet violet,dog high quality,0.51,0.15
+test-00728,纠正,False,A,B,A,0.9991958737373352,Roasting Pans steel,pillbox popular,3.25,0.08
+test-00729,保持正确,False,B,B,B,0.014063626527786255,recording system huge,slice modern,0.62,6.2
+test-00730,保持正确,False,B,B,B,0.005220125894993544,Sports & Outdoors Paintball & Airsoft Airsoft Protective Gear iron,field-effect transistor silver,0.22,10.0
+test-00731,保持正确,False,A,A,A,0.9953904151916504,Venturi tube inexpensive,security system wide,0.75,0.22
+test-00732,纠正,False,A,B,A,0.970687747001648,Closet Storage Boxes popular,brake system new,11.95,1.4
+test-00733,仍错,False,A,B,B,0.43782350420951843,spade medium,cologne water well made,1.04,0.28
+test-00734,纠正,False,A,B,A,0.9626730680465698,Furniture green,scythe marble,4.0,2.0
+test-00735,保持正确,False,B,B,B,0.014063626527786255,idiot box standard,dustmop discount,0.35,2.39
+test-00736,保持正确,False,B,B,B,0.3775406777858734,mail red,Cookie Jars white,1.35,3.7
+test-00737,仍错,True,A,B,B,0.06008664518594742,wreck expensive,Health & Personal Care Household Supplies Light Bulbs High Intensity Discharge Bulbs blue,0.46,0.2
+test-00738,保持正确,False,B,B,B,0.014063626527786255,fuel-air bomb short,mailbox fine,0.4,7.0
+test-00739,保持正确,False,B,B,B,0.08509904146194458,Cash Bags mens,Cookie Jars white,0.88,3.7
+test-00740,退步,True,B,B,A,0.7057850360870361,Toys & Games Sports & Outdoor Play Pools & Water Fun Lawn Water Slides well made,"Cake, Pie & Pastry Servers light",1.1,2.5
+test-00741,保持正确,False,B,B,B,0.0534033328294754,Grill Scrapers ingenious,soap dispenser powerful,0.59,1.1
+test-00742,保持正确,False,B,B,B,0.06008664518594742,hookup green,schoolbag premium,0.4,1.54
+test-00743,保持正确,False,A,A,A,0.9971990585327148,"Home, Garden & Pets Furniture & Décor Lighting Specialty Lighting Novelty Lamps yellow",security system wide,2.0,0.22
+test-00744,纠正,True,A,B,A,0.851952850818634,bass full,Soufflé Dishes generic,0.25,0.06
+test-00745,纠正,False,A,B,A,0.9978172779083252,mailbox fine,sump pump brass,7.0,0.9
+test-00746,纠正,False,A,B,A,0.9988304972648621,in-basket orange,monocle solid,0.92,0.08
+test-00747,保持正确,False,A,A,A,0.977022647857666,Skillets little,metronome dark,3.0,1.08
+test-00748,仍错,True,A,B,B,0.18242551386356354,lead authentic,Switches slick,5.29,3.22
+test-00749,纠正,False,A,B,A,0.9995121955871582,gasoline engine unique,return key hollow,1.6,0.02
+test-00750,纠正,True,A,B,A,0.6791787147521973,Tools & Home Improvement Building Supplies Building Materials Roofing Vents Roof Vents tall,garbage can charming,4.0,2.4
+test-00751,保持正确,False,B,B,B,0.005220125894993544,timer kitchen,gasoline tank bright,0.2,2.25
+test-00752,仍错,False,A,B,B,0.4073334336280823,Education & Crafts authentic,oil lamp green,2.75,2.0
+test-00753,保持正确,False,B,B,B,0.006692850962281227,ballpoint simple,Electronics Marine Electronics Subwoofers special,0.04,11.2
+test-00754,保持正确,False,B,B,B,0.01098694372922182,Kurdistan glass,Toys & Games Puzzles Jigsaw Puzzles Panoramic Puzzles scale,0.18,0.33
+test-00755,退步,False,B,B,A,0.8670357465744019,stove easy,Toys & Games Learning & Education Electronic Learning real,0.63,3.0
+test-00756,纠正,False,A,B,A,0.9914224743843079,electric fan black,oil lamp wood,5.67,2.0
+test-00757,纠正,False,A,B,A,0.998498797416687,small computer system interface iron,Yarn dark,9.5,0.31
+test-00758,保持正确,False,B,B,B,0.02595735713839531,first gear huge,foil kitchen,0.33,1.43
+test-00759,保持正确,True,B,B,B,0.09534946084022522,mailsorter silver,Tools & Home Improvement Power & Hand Tools Hand Tools Tool Sets Spark-free Tool Sets portable,2.0,4.4
+test-00760,保持正确,False,B,B,B,0.002182716503739357,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,Tools & Home Improvement Storage & Home Organization portable,0.65,9.8
+test-00761,保持正确,False,B,B,B,0.24508501589298248,ship's boat glass,wide-body dark,0.35,0.56
+test-00762,纠正,True,A,B,A,0.851952850818634,meter kitchen,developer purple,1.25,0.33
+test-00763,保持正确,False,B,B,B,0.10669060051441193,push-down store discount,laundry basket popular,0.34,0.6
+test-00764,纠正,True,A,B,A,0.9046505093574524,winch standard,bird shot wood,2.0,0.4
+test-00765,纠正,False,A,B,A,0.9324532747268677,fuel-air bomb short,Electronics Camera & Photo Film Cameras hand made,0.4,0.04
+test-00766,仍错,True,B,A,A,0.7981867790222168,wastebin purple,Bread Boxes purple,3.3,4.41
+test-00767,纠正,True,A,B,A,0.9046505093574524,Baby Products Bathing & Skin Care Soaps & Cleansers Hypoallergenic Cleansers oak,"Home, Garden & Pets Pet Supplies Houses & Habitats Accessories Kennel Food & Water Cups common",2.1,0.41
+test-00768,纠正,False,A,B,A,0.9149009585380554,Sports & Outdoors Boating & Water Sports Surfing Surfboard Racks sturdy,mobile home modern,0.45,0.15
+test-00769,保持正确,False,B,B,B,0.24508501589298248,pew thick,grinder dark,1.73,10.0
+test-00770,保持正确,False,B,B,B,0.005911068990826607,EDS silver,Potpourris round,0.15,5.1
+test-00771,保持正确,False,B,B,B,0.007577240467071533,emitter generic,cooking pan common,0.22,1.2
+test-00772,退步,True,B,B,A,0.7549149990081787,holdall plastic,"Toys & Games Action Figures Statues, Maquettes & Busts mens",1.08,2.3
+test-00773,保持正确,False,B,B,B,0.13296423852443695,stapler metal,till wide,0.9,3.04
+test-00774,纠正,False,A,B,A,0.9399133324623108,parer strong,ship's boat glass,2.73,0.35
+test-00775,纠正,True,A,B,A,0.7310585379600525,Electronics Computers & Accessories Networking Products Switches best,megaphone toy,0.64,0.14
+test-00776,保持正确,False,B,B,B,0.18242551386356354,brooder generic,automobile unique,0.43,0.98
+test-00777,保持正确,False,B,B,B,0.01243165135383606,Credit Card Holders steel,cereal bowl stone,0.2,4.14
+test-00778,保持正确,False,B,B,B,0.06754669547080994,push button big,dry mop scale,2.1,9.0
+test-00779,仍错,True,A,B,B,0.042087726294994354,mould girls,knuckles ,0.3,0.11
+test-00780,保持正确,False,A,A,A,0.9465966820716858,hookup green,file server plastic,0.4,0.13
+test-00781,保持正确,False,B,B,B,0.0031726830638945103,cardcase top,desktop slick,0.05,4.1
+test-00782,保持正确,False,B,B,B,0.01098694372922182,luggage beautiful,Bottle Accessories generic,0.2,8.5
+test-00783,纠正,False,A,B,A,0.9840936064720154,soup bowl ornate,taping large,2.0,0.45
+test-00784,仍错,True,A,B,B,0.13296423852443695,drawer premium,solar telescope modern,1.4,0.84
+test-00785,保持正确,False,B,B,B,0.0534033328294754,antiperspirant translucent,horse-drawn vehicle green,0.2,0.72
+test-00786,保持正确,False,B,B,B,0.037326883524656296,Bendable Figures premium,vase top,0.29,2.2
+test-00787,纠正,False,A,B,A,0.9959298968315125,Storage Crates red,mould girls,0.39,0.3
+test-00788,纠正,False,A,B,A,0.9953904151916504,wastepaper basket make,steamer baby,3.65,0.32
+test-00789,纠正,False,A,B,A,0.9982993006706238,minute gun delicate,Sports & Outdoors Paintball & Airsoft Airsoft Protective Gear iron,13.01,0.22
+test-00790,纠正,False,A,B,A,0.9964063763618469,destroyer escort make,gun case brand name,1.21,0.11
+test-00791,纠正,True,A,B,A,0.8933094143867493,point-and-shoot camera glass,Food Savers full,0.47,0.3
+test-00792,纠正,False,A,B,A,0.9669140577316284,grandfather clock cheap,hurricane lamp long,3.09,0.94
+test-00793,保持正确,False,B,B,B,0.005220125894993544,Mint Julep Cups authentic,electric organ kitchen,0.2,5.1
+test-00794,保持正确,False,B,B,B,0.006692850962281227,ram orange,automatic firearm orange,0.04,7.1
+test-00795,纠正,False,A,B,A,0.7057850360870361,waste-paper basket better,electric organ kitchen,9.0,5.1
+test-00796,纠正,False,A,B,A,0.9933071732521057,Toys & Games Games Educational Games Geography & History Games Geography Games high quality,Casserole Spoons glass,4.54,1.95
+test-00797,保持正确,False,B,B,B,0.037326883524656296,distributor point mens,Beauty Skin Care Face Face Treatments brand name,0.05,0.29
+test-00798,纠正,False,A,B,A,0.977022647857666,filament beautiful,Beauty Bath & Body Bath Minerals & Salts toy,2.2,1.13
+test-00799,纠正,False,A,B,A,0.8933094143867493,Margarita Glasses boys,knuckles ,11.0,0.11
+test-00800,纠正,False,A,B,A,0.8175744414329529,trumpet delux,"Home, Garden & Pets Patio, Lawn & Garden Gardening Sprayers fake",8.0,2.0
+test-00801,保持正确,False,B,B,B,0.020332353189587593,Baby Products Baby Toys Electronic Toys powerful,Filing Crates & Posting Tubs violet,0.3,4.0
+test-00802,退步,True,B,B,A,0.562176525592804,tin can girls,musical box fancy,0.91,1.98
+test-00803,保持正确,False,B,B,B,0.0028009270317852497,Duct Tape unique,Office Products Office Furniture & Lighting Office Lighting Desk Lamps simple,0.1,10.0
+test-00804,保持正确,False,A,A,A,0.9626730680465698,thermos flask unique,Ice Tongs commodity,0.74,0.25
+test-00805,保持正确,False,A,A,A,0.9971990585327148,buckle fat,pocket comb best,0.95,0.13
+test-00806,保持正确,False,B,B,B,0.01798621006309986,Salt Shakers nice,rotor coil quality,0.3,3.7
+test-00807,保持正确,False,B,B,B,0.0534033328294754,microphone translucent,B-flat clarinet nice,0.2,1.76
+test-00808,退步,False,B,B,A,0.622459352016449,Time Cards colorful,ballot box well made,0.77,1.5
+test-00809,纠正,False,A,B,A,0.9959298968315125,Toys & Games Games Educational Games Geography & History Games Geography Games high quality,electric clock easy,4.54,0.48
+test-00810,保持正确,False,B,B,B,0.01590639166533947,dog sleigh black,Margarita Glasses boys,0.31,11.0
+test-00811,保持正确,False,B,B,B,0.10669060051441193,clutch bag quality,Davy lamp brass,1.1,3.2
+test-00812,纠正,False,A,B,A,0.957912266254425,tote silly,hair spray medium,2.9,0.2
+test-00813,纠正,False,A,B,A,0.957912266254425,Bells delicate,ship's boat glass,0.75,0.35
+test-00814,保持正确,False,B,B,B,0.01098694372922182,ram orange,patrol wagon toy,0.04,2.1
+test-00815,仍错,True,A,B,B,0.07585817575454712,schoolbag premium,Toilet Paper Storage white,1.54,0.88
+test-00816,保持正确,False,B,B,B,0.06754669547080994,panoramic sight high quality,"Home, Garden & Pets Furniture & Décor Furniture Kids' Furniture Step Stools fat",0.33,0.6
+test-00817,退步,True,B,B,A,0.5926666259765625,"Home, Garden & Pets Pet Supplies Houses & Habitats Accessories Kennel Food & Water Cups common",drinking glass fancy,0.41,0.7
+test-00818,纠正,False,A,B,A,0.9046505093574524,baton inexpensive,lead pencil strong,0.05,0.01
+test-00819,纠正,False,A,B,A,0.6791787147521973,vase top,router hand made,2.2,1.2
+test-00820,保持正确,False,B,B,B,0.006692850962281227,alarm clock blue,furnishing green,0.5,4.0
+test-00821,保持正确,False,A,A,A,0.9924227595329285,scoop curved,round steel,3.0,0.8
+test-00822,保持正确,False,B,B,B,0.08509904146194458,Thermometers & Timers cheap,ignition coil top,0.49,1.2
+test-00823,退步,False,B,B,A,0.8670357465744019,zoom lens standard,in-tray dark,0.21,0.5
+test-00824,保持正确,False,B,B,B,0.14804719388484955,bird shot wood,"Home, Garden & Pets Kitchen & Dining Kitchen Knives & Cutlery Accessories Specialty Knives Cheese Knives genious",0.4,1.34
+test-00825,纠正,False,A,B,A,0.999373733997345,"Home, Garden & Pets Home Appliances Small Appliances Deep Fryers skinny",Steak Sets yellow,11.0,0.06
+test-00826,仍错,True,A,B,B,0.13296423852443695,flat file nice,throwing stick smart,0.7,0.5
+test-00827,保持正确,True,B,B,B,0.01798621006309986,schoolbag boys,Tools & Home Improvement Lamps & Light Fixtures Lamps scale,0.7,1.83
+test-00828,保持正确,False,B,B,B,0.01243165135383606,overdrive better,snare orange,1.38,12.0
+test-00829,保持正确,False,B,B,B,0.02931223064661026,videocassette violet,Mini Processors standard,1.13,2.8
+test-00830,纠正,False,A,B,A,0.9986749291419983,Spice Racks quality,eggwhisk red,5.87,0.3
+test-00831,纠正,False,A,B,A,0.9986749291419983,time capsule glass,parallel port ingenious,5.3,0.25
+test-00832,纠正,False,A,B,A,0.9740425944328308,Accent Plates shallow,gasoline tank bright,5.8,2.25
+test-00833,保持正确,False,B,B,B,0.02595735713839531,binoculars high quality,Sports & Outdoors Boating & Water Sports Boating Boat Plumbing Water Pressure Pumps ,1.97,6.9
+test-00834,保持正确,False,B,B,B,0.01243165135383606,Binder Index Dividers hand made,Potpourris round,0.77,5.1
+test-00835,保持正确,False,B,B,B,0.01098694372922182,emitter generic,Cheese Servers classic,0.22,4.0
+test-00836,保持正确,False,B,B,B,0.009708477184176445,gear lever ugly,diesel-electric glass,0.1,3.31
+test-00837,保持正确,False,B,B,B,0.09534946084022522,bass full,ignition coil top,0.25,1.2
+test-00838,纠正,False,A,B,A,0.9990890026092529,Office Products Office Electronics Fax Machines discount,oil lamp blue,12.0,0.45
+test-00839,纠正,False,A,B,A,0.9953904151916504,searing iron medium,cashbox skinny,5.3,0.44
+test-00840,纠正,True,A,B,A,0.9669140577316284,cookware thick,black box ingenious,1.8,0.88
+test-00841,纠正,False,A,B,A,0.9982993006706238,Money Handling Products sturdy,Beauty Makeup Nails Nail Polish translucent,5.3,0.12
+test-00842,保持正确,False,A,A,A,0.7981867790222168,Dead-Blow Hammers heavy,taping large,3.75,0.45
+test-00843,纠正,False,A,B,A,0.9971990585327148,radiator slick,stuffed penguin hand made,4.0,2.0
+test-00844,保持正确,False,B,B,B,0.0035936026833951473,Sports & Outdoors Other Sports Martial Arts Weapons Batons solid,overnighter orange,0.11,8.0
+test-00845,纠正,False,A,B,A,0.9986749291419983,ceramic ware ceramic,roost steel,2.9,0.23
+test-00846,仍错,True,B,A,A,0.9669140577316284,tankard easy,fuel cell small,0.81,1.8
+test-00847,纠正,False,A,B,A,0.7310585379600525,double boiler top,rubber mallet large,3.0,1.8
+test-00848,纠正,False,A,B,A,0.9968273043632507,Wine Decanters boys,hurricane lamp long,3.0,0.94
+test-00849,保持正确,False,B,B,B,0.004609572701156139,radio receiver boys,garden spade large,1.06,2.0
+test-00850,保持正确,False,B,B,B,0.07585817575454712,Taping Supplies narrow,bypass full,0.35,0.8
+test-00851,纠正,False,A,B,A,0.970687747001648,pickle barrel mens,Potpourris powerful,2.6,0.48
+test-00852,仍错,True,A,B,B,0.01798621006309986,clutch bag quality,Sports & Outdoors Hunting & Fishing Hunting Air Guns discount,1.1,0.63
+test-00853,纠正,False,A,B,A,0.9964063763618469,"Home, Garden & Pets Kitchen & Dining Small Appliances Deep Fryers ceramic",alarm clock carved,4.98,0.33
+test-00854,保持正确,True,B,B,B,0.03308597952127457,patrol wagon toy,body lotion full,2.1,8.2
+test-00855,保持正确,False,B,B,B,0.007577240467071533,gun case brand name,solar thermal system big,0.11,11.65
+test-00856,仍错,False,B,A,A,0.6513549089431763,Taping Supplies narrow,cat box metal,0.41,0.55
+test-00857,保持正确,False,B,B,B,0.022977370768785477,Coin Purses white,double bass big,0.08,0.54
+test-00858,保持正确,False,B,B,B,0.022977370768785477,CD burner little,solar thermal system big,0.75,11.65
+test-00859,仍错,True,A,B,B,0.0534033328294754,Graph & Data Pads narrow,throwing stick smart,1.59,0.5
+test-00860,保持正确,False,B,B,B,0.04742587357759476,pendulum clock curved,sterilizer broad,2.41,10.0
+test-00861,保持正确,False,A,A,A,0.8354835510253906,electric clock ceramic,File Folders hollow,1.85,1.21
+test-00862,退步,False,B,B,A,0.562176525592804,grinder premium,Mini Processors standard,2.1,2.8
+test-00863,纠正,False,A,B,A,0.970687747001648,share steel,"Home, Garden & Pets Patio, Lawn & Garden Outdoor Décor Decorative Fences strong",7.5,2.4
+test-00864,纠正,False,A,B,A,0.970687747001648,tin can girls,shoehorn generic,0.91,0.44
+test-00865,保持正确,False,B,B,B,0.04742587357759476,tugboat high quality,pedestal ,0.6,4.8
+test-00866,纠正,False,A,B,A,0.9959298968315125,Mint Julep Cups authentic,sharpener light,0.33,0.02
+test-00867,保持正确,False,B,B,B,0.005911068990826607,poppet brown,"Home, Garden & Pets Home Appliances Small Appliances Coffee, Tea & Espresso Appliances Beverage Warmers sturdy",0.45,2.6
+test-00868,退步,True,B,B,A,0.9324532747268677,tin white,binoculars high quality,0.81,1.97
+test-00869,纠正,False,A,B,A,0.9875683188438416,Cheese Knives white,color television system hand held,0.5,0.23
+test-00870,纠正,False,A,B,A,0.9465966820716858,rush candle quality,pliers smart,1.4,0.15
+test-00871,纠正,False,A,B,A,0.9982993006706238,garden spade large,aerofoil wonderful,2.0,0.88
+test-00872,纠正,False,A,B,A,0.851952850818634,omelet pan light,Grill Pans fine,5.4,2.45
+test-00873,保持正确,False,B,B,B,0.014063626527786255,Personal Groomers better,electric clock ceramic,0.5,1.85
+test-00874,保持正确,False,B,B,B,0.4073334336280823,spool translucent,timepiece brand name,0.5,0.65
+test-00875,保持正确,False,B,B,B,0.16451644897460938,earthenware wide,Rice Cookers orange,1.46,3.09
+test-00876,保持正确,False,B,B,B,0.02931223064661026,baton inexpensive,corbel standard,0.05,7.0
+test-00877,纠正,False,A,B,A,0.7057850360870361,scaler fine,speaker unit hand made,2.2,0.42
+test-00878,保持正确,False,B,B,B,0.007577240467071533,Kurdistan glass,cereal bowl stone,0.18,4.14
+test-00879,保持正确,False,B,B,B,0.43782350420951843,afterburner kids,sidesaddle simple,0.33,0.5
+test-00880,纠正,False,A,B,A,0.9149009585380554,gondola ceramic,lead-acid battery handsome,6.2,3.15
+test-00881,纠正,False,A,B,A,0.9046505093574524,linac glass,Self-Tanners & Bronzers newest,3.0,0.99
+test-00882,纠正,False,A,B,A,0.998498797416687,gyro huge,butter knife skiny,1.76,0.15
+test-00883,保持正确,False,B,B,B,0.29421496391296387,satellite TV simple,Health & Personal Care Personal Care Oral Hygiene Mouthwash delicate,0.51,1.2
+test-00884,纠正,False,A,B,A,0.9940890073776245,electronic organ huge,ladder truck ,4.41,1.56
+test-00885,保持正确,False,A,A,A,0.8175744414329529,Cash Bags mens,glasses case long,0.88,0.3
+test-00886,纠正,True,A,B,A,0.9465966820716858,English horn powerful,Grill Scrapers ingenious,0.77,0.59
+test-00887,纠正,False,A,B,A,0.9980732202529907,electric scale,biteplate plain,8.95,0.65
+test-00888,纠正,False,A,B,A,0.9988304972648621,Maps brown,Mechanical Pencils smart,2.8,0.02
+test-00889,退步,True,B,B,A,0.5926666259765625,push-down store discount,"Home, Garden & Pets Home Appliances Air Conditioners & Fans Household Fans Window Fans high quality",0.34,0.5
+test-00890,保持正确,False,B,B,B,0.01590639166533947,Tools & Home Improvement Electrical Terminals & Kits Flag Terminals solid,Margarita Glasses boys,0.1,11.0
+test-00891,纠正,False,A,B,A,0.9971990585327148,Filing Crates & Posting Tubs violet,gear lever ugly,4.0,0.1
+test-00892,纠正,False,A,B,A,0.9890130758285522,Taping Supplies narrow,Tools & Home Improvement Electrical Light Bulbs High Intensity Discharge Bulbs standard,0.35,0.03
+test-00893,保持正确,False,B,B,B,0.01798621006309986,charger smart,airplane propeller imported,0.41,2.5
+test-00894,保持正确,False,B,B,B,0.04742587357759476,tape drive medium,bearing wall commodity,0.55,0.9
+test-00895,纠正,False,A,B,A,0.8354835510253906,developer purple,tank destroyer steel,0.33,0.22
+test-00896,纠正,False,A,B,A,0.9940890073776245,push-down store discount,poor box steel,0.34,0.08
+test-00897,纠正,False,A,B,A,0.9241418242454529,Electronics Accessories & Supplies Office Electronics Accessories Printer Supplies Printer Roll Holders red,passenger train ,3.2,0.85
+test-00898,纠正,False,A,B,A,0.5926666259765625,Clothing Women's hand held,steel baby,1.14,0.5
+test-00899,保持正确,False,B,B,B,0.24508501589298248,"Home, Garden & Pets Patio, Lawn & Garden Picnic Baskets & Accessories Picnic Backpacks plastic",sweep-second curved,0.57,2.0
+test-00900,保持正确,False,B,B,B,0.14804719388484955,Gaming Mice kids,thermos flask unique,0.29,0.74
+test-00901,保持正确,True,A,A,A,0.9820137619972229,torque wrench beautiful,eggwhisk red,1.43,0.3
+test-00902,纠正,True,B,A,B,0.5,synthesizer small,metronome dark,0.82,1.08
+test-00903,纠正,False,A,B,A,0.9740425944328308,soup bowl ornate,Shoes Handbags cute,2.0,1.6
+test-00904,保持正确,False,B,B,B,0.07585817575454712,bogie brand name,hockey puck ceramic,0.1,0.76
+test-00905,仍错,True,A,B,B,0.01798621006309986,Dessert Bowls light,matrix black,5.0,2.0
+test-00906,保持正确,False,B,B,B,0.014063626527786255,disk blue,wet cell light,0.26,2.3
+test-00907,保持正确,False,B,B,B,0.03308597952127457,Shovels charming,tripper steel,0.2,0.8
+test-00908,纠正,False,A,B,A,0.5926666259765625,Binder Index Dividers hand made,Salt Shakers nice,0.77,0.3
+test-00909,保持正确,False,B,B,B,0.08509904146194458,Office Products Office & School Supplies Education & Crafts Filing Products File & Folder Accessories Expanding Files smart,caravan small,1.92,6.0
+test-00910,保持正确,False,B,B,B,0.037326883524656296,soap dispenser kids,Jewelry Towers popular,0.35,0.91
+test-00911,纠正,False,A,B,A,0.970687747001648,alpenstock well made,Beauty Hair Care Hair & Scalp Treatments brand name,1.6,0.64
+test-00912,纠正,False,A,B,A,0.970687747001648,Tools & Home Improvement Appliances Clothes Dryers cheap,Health & Personal Care Diet & Nutrition Vitamins & Supplements Minerals Boron easy,0.25,0.1
+test-00913,保持正确,True,B,B,B,0.037326883524656296,stuffed hippopotamus tall,lightship square,0.3,0.9
+test-00914,保持正确,False,B,B,B,0.0534033328294754,bass full,bird big,0.25,0.35
+test-00915,保持正确,False,B,B,B,0.06754669547080994,lead pencil strong,Coin Purses charming,0.01,0.2
+test-00916,保持正确,False,B,B,B,0.01798621006309986,eggwhisk red,Filing Crates & Posting Tubs violet,0.3,4.0
+test-00917,纠正,False,A,B,A,0.9971990585327148,Bar Code Scanners popular,junction barrier womens,1.1,0.1
+test-00918,保持正确,False,B,B,B,0.01243165135383606,Cutting & Measuring Devices charming,chute-the-chute make,0.15,0.48
+test-00919,纠正,False,A,B,A,0.9968273043632507,searing iron medium,jaw hand made,5.3,0.45
+test-00920,纠正,False,A,B,A,0.9914224743843079,black kettle,vacuum bag narrow,2.5,1.13
+test-00921,纠正,False,A,B,A,0.9988304972648621,groover narrow,Keepsakes little,2.0,0.03
+test-00922,仍错,True,A,B,B,0.09534946084022522,Baby Products Bathing & Skin Care Soaps & Cleansers Hypoallergenic Cleansers oak,cooking pan common,2.1,1.2
+test-00923,纠正,False,A,B,A,0.9046505093574524,Circular Saw Accessories orange,open-end wrench classic,2.43,0.45
+test-00924,纠正,False,A,B,A,0.9940890073776245,metal drum shallow,speaker unit hand made,4.95,0.42
+test-00925,保持正确,False,B,B,B,0.01798621006309986,wine bottle real,lobster pot large,2.88,9.0
+test-00926,纠正,False,A,B,A,0.9890130758285522,Money Handling Products sturdy,Yarn dark,5.3,0.31
+test-00927,保持正确,True,B,B,B,0.09534946084022522,teacup old,Switches slick,0.9,3.22
+test-00928,保持正确,False,A,A,A,0.9796676635742188,air gun realistic,flambeau small,3.4,0.45
+test-00929,退步,True,B,B,A,0.8933094143867493,laundry basket popular,passenger train ,0.6,0.85
+test-00930,保持正确,False,B,B,B,0.009708477184176445,iris smart,toilet table violet,0.06,2.57
+test-00931,纠正,False,A,B,A,0.9992903470993042,Office Products Office Electronics Fax Machines discount,Sports & Outdoors Paintball & Airsoft Airsoft Protective Gear iron,12.0,0.22
+test-00932,纠正,False,A,B,A,0.9980732202529907,power takeoff orange,Health & Personal Care Personal Care Eye Care Contact Lens Care Cases little,1.1,0.33
+test-00933,保持正确,False,B,B,B,0.13296423852443695,telephone dial tall,grinder premium,1.3,2.1
+test-00934,纠正,False,A,B,A,0.9980732202529907,Construction Staplers wide,tripper steel,5.1,0.8
+test-00935,保持正确,False,B,B,B,0.01243165135383606,Scissors blue,push-button radio discount,0.29,6.0
+test-00936,保持正确,False,B,B,B,0.02595735713839531,bass full,Tools & Home Improvement Safety & Security Work Safety Equipment & Gear Hardhats quality,0.25,0.6
+test-00937,纠正,False,A,B,A,0.9986749291419983,waste-paper basket better,Scissors blue,8.7,0.29
+test-00938,纠正,True,A,B,A,0.7310585379600525,switch engine well made,stuffed kitten tall,0.63,0.3
+test-00939,纠正,False,A,B,A,0.977022647857666,Candles & Home Scents baby,sailboat tiny,1.75,0.26
+test-00940,保持正确,False,B,B,B,0.02595735713839531,Taping Supplies narrow,Closet Storage Boxes popular,0.35,11.95
+test-00941,保持正确,False,B,B,B,0.01098694372922182,cocktail shaker purple,mattock short,1.1,5.0
+test-00942,保持正确,False,B,B,B,0.0031726830638945103,lightship square,Tools & Home Improvement Power & Hand Tools Hand Tools Hammers special,0.9,5.5
+test-00943,保持正确,False,B,B,B,0.09534946084022522,Money Handling Products sturdy,Roasting Pans steel,5.3,9.1
+test-00944,纠正,False,A,B,A,0.9149009585380554,thong old,weather ship marble,1.4,0.61
+test-00945,纠正,False,A,B,A,0.9241418242454529,drawer premium,switch engine well made,1.4,0.63
+test-00946,保持正确,False,B,B,B,0.042087726294994354,thermos bottle green,add-in green,0.2,4.0
+test-00947,保持正确,False,B,B,B,0.3775406777858734,oil lamp blue,Baby Products Diapering Changing Tables special,0.45,1.55
+test-00948,纠正,False,A,B,A,0.9968273043632507,sugar shell green,disk blue,4.0,0.26
+test-00949,保持正确,False,B,B,B,0.020332353189587593,disk blue,destroyer escort make,0.26,1.21
+test-00950,保持正确,False,A,A,A,0.9241418242454529,target acquisition system medium,puncher hand held,0.99,0.14
+test-00951,保持正确,False,B,B,B,0.01098694372922182,EDS silver,scratcher wonderful,0.15,9.7
+test-00952,保持正确,False,B,B,B,0.10669060051441193,Coin Purses white,crackle tall,0.08,0.35
+test-00953,纠正,False,A,B,A,0.9986749291419983,HEPA Air Purifiers fancy,Binder Pouches simple,5.5,0.31
+test-00954,退步,True,B,B,A,0.8175744414329529,Shovels charming,handsaw simple,0.2,0.35
+test-00955,保持正确,False,B,B,B,0.04742587357759476,Yarn red,metal drum shallow,0.22,4.95
+test-00956,保持正确,False,B,B,B,0.037326883524656296,CD burner little,wet cell light,0.75,2.3
+test-00957,保持正确,False,B,B,B,0.0015011822106316686,file server plastic,Office Products Office Furniture & Lighting Office Lighting Desk Lamps medium,0.13,10.0
+test-00958,纠正,False,A,B,A,0.9978172779083252,point-and-shoot camera glass,junction barrier womens,0.47,0.1
+test-00959,保持正确,False,B,B,B,0.01590639166533947,minicar premium,tote bag standard,0.08,1.2
+test-00960,纠正,False,A,B,A,0.9978172779083252,coolant system sturdy,Tools & Home Improvement Building Supplies Building Materials Windows Casement Windows black,0.88,0.16
+test-00961,纠正,False,A,B,A,0.9914224743843079,Baby Products Feeding Pacifiers & Accessories green,scriber big,0.93,0.27
+test-00962,保持正确,False,B,B,B,0.037326883524656296,spot-weld solid,Electronics Televisions & Video Satellite Television Antennas big,0.1,0.35
+test-00963,保持正确,False,B,B,B,0.10669060051441193,Serveware blue,automatic choke square,4.41,10.0
+test-00964,纠正,True,A,B,A,0.7057850360870361,stealth fighter shallow,fanjet engine brass,4.7,2.2
+test-00965,保持正确,False,B,B,B,0.2018132209777832,ignition coil large,Speaker Cables white,2.0,10.0
+test-00966,退步,True,B,B,A,0.531209409236908,tin can girls,display panel oak,0.91,1.35
+test-00967,保持正确,False,B,B,B,0.3486451506614685,zoom lens standard,pickle barrel mens,1.31,2.6
+test-00968,保持正确,False,B,B,B,0.005911068990826607,exercise device marble,valve-in-head engine square,0.75,9.0
+test-00969,纠正,False,A,B,A,0.9959298968315125,Accent Plates shallow,radio receiver boys,5.8,1.06
+test-00970,保持正确,True,B,B,B,0.0534033328294754,Sports & Outdoors Paintball & Airsoft Airsoft Protective Gear iron,Venturi tube inexpensive,0.22,0.75
+test-00971,纠正,False,A,B,A,0.9975274205207825,stator old,Coin Purses white,2.35,0.08
+test-00972,纠正,False,A,B,A,0.9959298968315125,Clipboards blue,closeup lens fine,0.49,0.1
+test-00973,纠正,False,A,B,A,0.9989677667617798,Toys & Games Games Educational Games Geography & History Games Geography Games high quality,gun case brand name,4.54,0.11
+test-00974,纠正,False,A,B,A,0.8933094143867493,Health & Personal Care Personal Care Oral Hygiene Power Toothbrushes Battery Powered red,readout fine,1.2,0.11
+test-00975,保持正确,True,B,B,B,0.4687906503677368,Sports & Outdoors Outdoor Recreation Camping & Hiking Backpacks & Bags External Frame Backpacks short,Dessert Bowls light,1.54,5.0
+test-00976,纠正,False,A,B,A,0.9820137619972229,Yarn red,tip-top table silly,0.22,0.04
+test-00977,保持正确,False,B,B,B,0.008577484637498856,free weight plastic,Rice Cookers orange,0.22,3.09
+test-00978,保持正确,False,B,B,B,0.06008664518594742,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,rotor coil quality,0.65,2.5
+test-00979,保持正确,False,B,B,B,0.007577240467071533,distributor point mens,riding light huge,0.05,2.04
+test-00980,保持正确,False,A,A,A,0.9980732202529907,bicycle seat wide,free weight plastic,2.35,0.22
+test-00981,仍错,False,A,B,B,0.08509904146194458,thong old,Bells delicate,1.4,0.75
+test-00982,保持正确,False,B,B,B,0.01098694372922182,lead pencil strong,foot lever mens,0.01,0.44
+test-00983,保持正确,True,B,B,B,0.5,charger iron,scientific instrument square,0.72,1.51
+test-00984,纠正,False,A,B,A,0.9991958737373352,diesel-electric glass,Tools & Home Improvement Electrical Light Bulbs High Intensity Discharge Bulbs standard,3.31,0.03
+test-00985,纠正,False,A,B,A,0.9980732202529907,mariner's compass better,lead-acid battery square,12.0,1.5
+test-00986,保持正确,False,B,B,B,0.01590639166533947,bath oil clever,Ice-Cream Machines steel,0.5,12.0
+test-00987,纠正,True,A,B,A,0.9840936064720154,wall clock plain,reactor sturdy,1.7,0.9
+test-00988,仍错,True,A,B,B,0.3775406777858734,shades glass,backlighting authentic,8.0,3.1
+test-00989,保持正确,False,B,B,B,0.16451644897460938,EDS silver,deflector wood,0.15,0.6
+test-00990,保持正确,False,B,B,B,0.01098694372922182,Sports & Outdoors Other Sports Martial Arts Weapons Batons solid,gyro horizon brand name,0.11,2.05
+test-00991,纠正,False,A,B,A,0.9982993006706238,public address system little,spot-weld solid,3.31,0.1
+test-00992,纠正,False,A,B,A,0.9953904151916504,brasier real,ash-pan wide,6.83,0.19
+test-00993,保持正确,False,B,B,B,0.18242551386356354,hygrometer small,teapot hand held,0.1,0.36
+test-00994,退步,False,B,B,A,0.7310585379600525,matrix black,HEPA Air Purifiers fancy,2.0,5.5
+test-00995,保持正确,False,B,B,B,0.008577484637498856,lead-acid battery wooden,medicine cabinet wood,3.15,11.0
+test-00996,纠正,False,A,B,A,0.9324532747268677,disk blue,ultraviolet lamp ceramic,0.26,0.19
+test-00997,纠正,False,A,B,A,0.9740425944328308,electric fan black,land line kitchen,5.67,3.75
+test-00998,保持正确,False,B,B,B,0.009708477184176445,Tools & Home Improvement Lamps & Light Fixtures Light Fixtures Track Lighting plain,Fungicide ,0.1,1.27
+test-00999,保持正确,False,B,B,B,0.01798621006309986,mould girls,Jewelry Children's Jewelry Boys' Jewelry beautiful,0.3,1.54
