@@ -4,6 +4,7 @@ import contextlib
 import importlib.util
 import io
 import json
+import math
 from pathlib import Path
 import tempfile
 from types import SimpleNamespace
@@ -85,13 +86,14 @@ class TaskDataTests(_TaskFixture, unittest.TestCase):
         loader.assert_not_called()
         self.assertFalse(self.output.exists())
 
-    def test_pointwise_training_loss_is_an_explicit_placeholder(self):
-        with self.assertRaisesRegex(NotImplementedError, "training_loss"):
-            pointwise.training_loss(None, None, None, {"weight": 3}, None, None)
-        with self.assertRaises(NotImplementedError):
-            pointwise.selection_key({"accuracy": 1.0})
-        self.assertEqual(pointwise.metadata()["loss"], "not_implemented")
-        self.assertEqual(pointwise.metadata()["selection"], "not_implemented")
+    def test_pointwise_metadata_and_selection_use_mse(self):
+        self.assertEqual(pointwise.metadata()["loss"], "mse_on_log1p_weight_lb")
+        self.assertEqual(pointwise.metadata()["target_transform"], "log1p_pounds")
+        first = {"accuracy": 0.8, "object_log_mse": 0.2}
+        better_accuracy = {"accuracy": 0.9, "object_log_mse": 9.0}
+        same_accuracy_lower_mse = {"accuracy": 0.8, "object_log_mse": 0.1}
+        self.assertGreater(pointwise.selection_key(better_accuracy), pointwise.selection_key(first))
+        self.assertGreater(pointwise.selection_key(same_accuracy_lower_mse), pointwise.selection_key(first))
 
     def test_resume_rejects_changing_task_before_model_or_checkpoint_use(self):
         args = train.parse_args(self.arguments("pointwise"))
@@ -184,6 +186,8 @@ class TaskTensorTests(_TaskFixture, unittest.TestCase):
         self.assertEqual(predictions, {"dev-0": "A", "dev-1": "B"})
         self.assertEqual(metrics["accuracy"], 1)
         self.assertEqual(metrics["objects"], 3)
+        self.assertIn("object_log_mse", metrics)
+        self.assertIn("object_mae_lb", metrics)
         subset_metrics = pointwise.subset_metrics(self.dev[:1], predictions, weights)
         self.assertEqual(subset_metrics["objects"], 2)
         self.assertEqual(subset_metrics["accuracy"], 1)
@@ -192,30 +196,34 @@ class TaskTensorTests(_TaskFixture, unittest.TestCase):
         self.assertEqual(saved, [{"id": 200, "weight_lb": 2.5}, {"id": 201, "weight_lb": 1.2},
                                  {"id": 202, "weight_lb": 4.2}])
 
-    def test_pointwise_generation_keeps_numeric_grammar_and_rejects_truncation(self):
+    def test_pointwise_mse_uses_scalar_head_and_log1p_target(self):
         import torch
 
-        callback = lambda batch, tokens: [3, 9]
-        constraint = SimpleNamespace(eos_token_ids=(9,), for_prompt=lambda length: callback)
-        processor = SimpleNamespace(batch_decode=lambda *args, **kwargs: ["2.5"])
-        calls = []
+        class TinyModel(torch.nn.Module):
+            def __init__(self):
+                super().__init__()
+                self.hidden = torch.nn.Parameter(torch.tensor([[[0.0], [1.0]]]))
 
-        def generate(**kwargs):
-            calls.append(kwargs)
-            return torch.tensor([[1, 2, 3, 9]])
+            def forward(self, **kwargs):
+                self.request = kwargs
+                return SimpleNamespace(hidden_states=(self.hidden,))
 
-        model = SimpleNamespace(generate=generate)
+        model = TinyModel()
+        head = torch.nn.Linear(1, 1)
+        with torch.no_grad():
+            head.weight.zero_()
+            # inverse_softplus(1), so the predicted log1p weight is exactly 1.
+            head.bias.fill_(math.log(math.expm1(1.0)))
+        with patch.object(pointwise, "prepare_inputs", return_value={"input_ids": torch.tensor([[1, 2]])}):
+            loss = pointwise.training_loss(
+                model, None, head, {"weight": math.e - 1}, None, torch.device("cpu"))
+        self.assertAlmostEqual(loss.item(), 0.0, places=6)
+        loss.backward()
+        self.assertTrue(model.request["output_hidden_states"])
+        self.assertFalse(model.request["use_cache"])
+
         inputs = {"input_ids": torch.tensor([[1, 2]])}
-        self.assertEqual(pointwise.predict_weight(model, processor, inputs, constraint), 2.5)
-        self.assertIs(calls[0]["prefix_allowed_tokens_fn"], callback)
-        self.assertFalse(calls[0]["do_sample"])
-        self.assertEqual(calls[0]["max_new_tokens"], 32)
-        processor.batch_decode = lambda *args, **kwargs: ["The weight is 2.5"]
-        with self.assertRaises(ValueError):
-            pointwise.predict_weight(model, processor, inputs, constraint)
-        model.generate = lambda **kwargs: torch.tensor([[1, 2] + [3] * 32])
-        with self.assertRaisesRegex(ValueError, "token limit"):
-            pointwise.predict_weight(model, processor, inputs, constraint)
+        self.assertAlmostEqual(pointwise.predict_weight(model, None, inputs, head), math.e - 1)
 
     def test_common_loop_uses_pointwise_example_and_loss_hooks(self):
         import torch

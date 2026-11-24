@@ -40,7 +40,10 @@ def main(argv=None):
     if subset:
         validate_subset(rows, subset)
     device, dtype = select_device(args.device, config["dtype"] if args.dtype == "auto" else args.dtype)
-    model, processor = load_model(device, dtype, adapter=args.checkpoint, max_pixels=config["max_pixels"])
+    model, processor = load_model(
+        device, dtype, adapter=args.checkpoint, max_pixels=config["max_pixels"],
+        pointwise_regression=task_name == "pointwise",
+    )
     context = task.setup(model, processor)
     inference_settings = task.metadata(context)
     for key in ("answer_policy", "answer_token_ids", "max_new_tokens"):
