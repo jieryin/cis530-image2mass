@@ -17,3 +17,6 @@ __pycache__/
 # Local API credentials.
 .env
 .DS_Store
+
+# Local fine-tuning runs and checkpoints
+finetune/output/

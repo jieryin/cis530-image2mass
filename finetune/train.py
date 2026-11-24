@@ -159,6 +159,7 @@ def main(argv=None):
     model, processor = load_model(
         device, dtype, max_pixels=args.max_pixels, rank=args.rank, alpha=args.alpha,
         dropout=args.dropout, checkpointing=not args.no_checkpointing,
+        pointwise_regression=args.task == "pointwise",
         **({"adapter": resume_path, "trainable_adapter": True} if metadata else {}),
     )
     context = task.setup(model, processor)

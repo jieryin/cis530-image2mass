@@ -4,11 +4,19 @@ Pairwise and pointwise share one trainer, model loader, data pipeline, and
 checkpoint implementation. Both import their unchanged prompts from
 [`prompts/`](../prompts/README.md).
 
-**Pairwise training is implemented. Pointwise training is a scaffold:** its
-numeric-text output is agreed, but its loss and checkpoint-selection rule are
-undecided. Both functions raise `NotImplementedError` in
-[`pointwise_finetune/task.py`](pointwise_finetune/task.py). No MSE, cross-entropy,
-regression head, or weight-error metric has been chosen for pointwise.
+Both pairwise and pointwise training are implemented. Pointwise adds a scalar
+mass-regression head to the final assistant-prefix hidden state. The head and
+language-attention LoRA parameters are trained with MSE in log-weight space:
+
+```text
+target = log1p(gold_weight_lb)
+predicted_log_weight = softplus(linear(final_hidden_state))
+loss = mean((predicted_log_weight - target) ** 2)
+predicted_weight_lb = expm1(predicted_log_weight)
+```
+
+PEFT saves the regression head through `modules_to_save`, so best/last adapters
+and resumable checkpoints contain both the LoRA weights and mass head.
 
 ## Setup and defaults
 
@@ -30,7 +38,7 @@ python -m finetune.train
 
 | Setting | Default | Optional override |
 |---|---|---|
-| Task | Pairwise | `--task pointwise` (loss/selection pending) |
+| Task | Pairwise | `--task pointwise` |
 | Train / dev pairs | `pairs/train_pairs.jsonl`, `pairs/dev_pairs.jsonl` | `--train`, `--dev` |
 | Records | `amazon_data_10k/` | `--root` |
 | Output | `finetune/output/<task>/run1` | `--output` |
@@ -53,9 +61,8 @@ python -m finetune.train --dry-run
 python -m finetune.train --task pointwise --dry-run
 ```
 
-Add `--check-images` to also open the records. Pointwise dry-run works before
-its loss is implemented; actual pointwise training reaches the placeholder
-after model and run setup.
+Add `--check-images` to also open the records. Pointwise dry-run validates
+unique-object counts without loading model weights.
 
 For a small pilot:
 
@@ -80,7 +87,7 @@ finetune/
   train.py                    shared training loop
   evaluate.py                 shared evaluation entry point
   pairwise_finetune/task.py    pairwise prompts, loss, predictions, metrics
-  pointwise_finetune/task.py   numeric prediction; loss/selection placeholders
+  pointwise_finetune/task.py   scalar mass regression, MSE, predictions, metrics
   tests/
 ```
 
@@ -109,9 +116,19 @@ explanations are ignored. Predict A when `p_A > 0.5`, otherwise B. Dev accuracy,
 then lower dev MSE, selects the best pairwise adapter.
 
 LoRA updates language-attention q/k/v/o projections while the base model and
-vision encoder stay frozen. Pointwise inference generates a numeric weight for
-each unique object using the existing baseline grammar, then compares weights
-to produce pair predictions. Its training objective remains undecided.
+vision encoder stay frozen. Pointwise additionally trains one linear regression
+head. It predicts each unique object's log weight, converts it back to pounds,
+and compares the two weights to produce pair predictions. Dev pairwise accuracy,
+then lower object log-MSE, selects the best pointwise adapter. Reports also
+include object MAE and RMSE in pounds.
+
+Start a pointwise pilot with:
+
+```bash
+python -m finetune.train --task pointwise \
+  --output finetune/output/pointwise/pilot \
+  --limit-train 128 --limit-dev 32 --max-steps 20
+```
 
 ## Resume and evaluate
 

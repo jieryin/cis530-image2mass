@@ -1,22 +1,23 @@
-"""One-image numeric-text task; its training loss is intentionally a placeholder."""
+"""One-image pointwise mass regression with answer-only MSE supervision."""
 
 from __future__ import annotations
 
+import math
 import time
 from pathlib import Path
 
 from openai_strong_baseline.runner import write_json, write_jsonl
 from prompts.pointwise import PROMPT, build_messages
-from qwen_strong_baseline.numeric_format import NUMERIC_FORMAT_POLICY, PositiveNumberConstraint
-from qwen_strong_baseline.pointwise.predict import compare, parse_output
+from qwen_strong_baseline.pointwise.predict import compare
 from score import score
 from ..data import load_object_record, unique_objects
-from ..model import prepare_messages, synchronize
+from ..model import get_mass_head, prepare_messages, synchronize
 
 
 NAME = "pointwise"
 COUNT_UNIT = "objects"
-MAX_NEW_TOKENS = 32
+TARGET_TRANSFORM = "log1p_pounds"
+MIN_WEIGHT_LB = 1e-8
 
 
 def training_rows(pairs):
@@ -37,44 +38,78 @@ def build_messages_for_object(obj, root):
 
 
 def setup(model, processor):
-    return PositiveNumberConstraint(processor.tokenizer, model.generation_config.eos_token_id)
+    # PEFT saves/restores this module through ``modules_to_save``.
+    return get_mass_head(model)
 
 
 def metadata(context=None):
-    return {"answer_policy": NUMERIC_FORMAT_POLICY, "loss": "not_implemented",
-            "tie_label": "B", "weight_unit": "pounds", "output_type": "numeric_text",
-            "max_new_tokens": MAX_NEW_TOKENS,
-            "selection": "not_implemented"}
+    return {"answer_policy": "scalar_regression_v1",
+            "loss": "mse_on_log1p_weight_lb",
+            "target_transform": TARGET_TRANSFORM,
+            "tie_label": "B", "weight_unit": "pounds",
+            "output_type": "scalar_regression",
+            "selection": "dev accuracy, then lower dev object log-MSE"}
 
 
 def prepare_inputs(processor, obj, root, device):
     return prepare_messages(processor, build_messages_for_object(obj, root), device)
 
 
+def predict_log_weight(model, inputs, mass_head):
+    """Predict a nonnegative, differentiable log1p weight."""
+    import torch.nn.functional as F
+
+    outputs = model(
+        **inputs, output_hidden_states=True, return_dict=True,
+        use_cache=False, logits_to_keep=1,
+    )
+    if not outputs.hidden_states:
+        raise ValueError("The model did not return language hidden states")
+    final_state = outputs.hidden_states[-1][:, -1, :]
+    # softplus is smooth during training and guarantees a physically valid
+    # nonnegative log1p mass without discarding gradients at zero.
+    prediction = F.softplus(mass_head(final_state).squeeze(-1).float())
+    if prediction.ndim != 1 or prediction.shape[0] != 1:
+        raise ValueError("Pointwise regression expects batch size one")
+    return prediction
+
+
 def training_loss(model, processor, context, row, root, device):
-    """TODO: define the pointwise objective; numeric-text output is agreed."""
-    raise NotImplementedError(
-        "Pointwise text training loss is not implemented yet. "
-        "Implement finetune/pointwise_finetune/task.py:training_loss before training; "
-        "--dry-run can validate the shared data pipeline now."
-    )
+    """MSE between predicted and gold log1p weight; prompt tokens have no loss."""
+    import torch
+    import torch.nn.functional as F
+
+    inputs = prepare_inputs(processor, row, root, device)
+    prediction = predict_log_weight(model, inputs, context)
+    target = torch.tensor([math.log1p(row["weight"])], device=device, dtype=torch.float32)
+    return F.mse_loss(prediction, target)
 
 
-def predict_weight(model, processor, inputs, constraint):
-    """Reuse the zero-shot baseline's numeric grammar and greedy text decoding."""
-    prompt_length = inputs["input_ids"].shape[-1]
-    outputs = model.generate(
-        **inputs, max_new_tokens=MAX_NEW_TOKENS, do_sample=False, num_beams=1,
-        temperature=None, top_p=None, top_k=None, use_cache=True,
-        prefix_allowed_tokens_fn=constraint.for_prompt(prompt_length),
-    )
-    generated = outputs[0, prompt_length:]
-    if len(generated) >= MAX_NEW_TOKENS and generated[-1].item() not in constraint.eos_token_ids:
-        raise ValueError("Pointwise weight generation reached the token limit without EOS")
-    text = processor.batch_decode(
-        [generated], skip_special_tokens=True, clean_up_tokenization_spaces=False,
-    )[0]
-    return parse_output(text)
+def predict_weight(model, processor, inputs, mass_head):
+    """Return a positive weight in pounds from the scalar regression output."""
+    predicted_log_weight = predict_log_weight(model, inputs, mass_head).item()
+    if not math.isfinite(predicted_log_weight):
+        raise ValueError("Pointwise model produced a non-finite log weight")
+    weight = max(MIN_WEIGHT_LB, math.expm1(predicted_log_weight))
+    if not math.isfinite(weight):
+        raise ValueError("Pointwise model produced a non-finite weight")
+    return weight
+
+
+def object_error_metrics(objects, weights):
+    """Diagnostic regression metrics over the unique objects in a pair slice."""
+    squared_log_errors, absolute_errors, squared_errors = [], [], []
+    for obj in objects:
+        predicted, gold = weights[obj["id"]], obj["weight"]
+        squared_log_errors.append((math.log1p(predicted) - math.log1p(gold)) ** 2)
+        absolute_errors.append(abs(predicted - gold))
+        squared_errors.append((predicted - gold) ** 2)
+    count = len(objects)
+    return {
+        "object_log_mse": sum(squared_log_errors) / count,
+        "object_mae_lb": sum(absolute_errors) / count,
+        "object_rmse_lb": math.sqrt(sum(squared_errors) / count),
+    }
 
 
 def evaluate_rows(model, processor, context, rows, root, device):
@@ -94,6 +129,7 @@ def evaluate_rows(model, processor, context, rows, root, device):
     synchronize(device)
     metrics = score(gold, predictions)
     metrics["objects"] = len(objects)
+    metrics.update(object_error_metrics(objects, weights))
     metrics["elapsed_seconds"] = time.perf_counter() - started
     return predictions, weights, metrics
 
@@ -113,10 +149,11 @@ def subset_metrics(subset, predictions, weights):
     selected = {row["pair_id"]: predictions[row["pair_id"]] for row in subset}
     gold = {row["pair_id"]: row["label"] for row in subset}
     metrics = score(gold, selected)
-    metrics["objects"] = len(unique_objects(subset))
+    objects = unique_objects(subset)
+    metrics["objects"] = len(objects)
+    metrics.update(object_error_metrics(objects, weights))
     return metrics
 
 
 def selection_key(metrics):
-    """TODO: choose how pointwise checkpoints should be ranked."""
-    raise NotImplementedError("Pointwise checkpoint selection_key is not implemented yet.")
+    return metrics["accuracy"], -metrics["object_log_mse"]
