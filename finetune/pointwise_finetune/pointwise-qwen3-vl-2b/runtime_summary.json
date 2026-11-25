@@ -1,0 +1,10 @@
+{
+  "active_full_seconds": 6908.9379999999655,
+  "full_wall_seconds": 9078.163325309753,
+  "pipeline_wall_seconds": 9278.223385095596,
+  "pilot_projected_full_seconds": 6800.779029225325,
+  "projection_error_percent": 1.5903908994814309,
+  "idle_repair_interval_seconds": 2169.225325309788,
+  "completed_at_utc": "2026-11-25T08:06:51+00:00",
+  "keep_awake_released": true
+}

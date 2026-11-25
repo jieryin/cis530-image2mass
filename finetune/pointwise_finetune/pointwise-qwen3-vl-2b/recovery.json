@@ -1,0 +1,9 @@
+{
+  "incident": "Windows console close event terminated the original console-attached process chain",
+  "last_history_step_before_exit": 128,
+  "durable_checkpoint_step": 125,
+  "replayed_optimizer_updates": 3,
+  "remedy": "Use pythonw.exe throughout the process chain, CREATE_NO_WINDOW for child processes, and break away from the launching job",
+  "recovery_observed_step": 149,
+  "optimizer_scheduler_rng_and_cursor_restored": true
+}

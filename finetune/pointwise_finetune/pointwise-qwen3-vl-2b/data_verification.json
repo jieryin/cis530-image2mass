@@ -1,0 +1,23 @@
+{
+  "verified_at_utc": "2026-11-25T05:29:51+00:00",
+  "source_commit": "d65197f1ca61232231573b78011799932bea3537",
+  "manifest_path": "D:\\angie\\cis530\\pointwise-source\\amazon_data_10k\\manifest.csv",
+  "manifest_sha256": "cd406ee4778a678b0c4f3de8183d6a728d3ed3ca2175a2f9e6a8bed659d13418",
+  "current_origin_main_manifest_sha256": "cd406ee4778a678b0c4f3de8183d6a728d3ed3ca2175a2f9e6a8bed659d13418",
+  "matches_current_origin_main_manifest": true,
+  "records": 10000,
+  "split_counts": {
+    "train": 8000,
+    "dev": 1000,
+    "test": 1000
+  },
+  "matched_records": 10000,
+  "missing_count": 0,
+  "mismatch_count": 0,
+  "missing": [],
+  "mismatches": [],
+  "archive_sha256": "aa17aeb12ed1b67f4492cba6820a90b4dd9d55632f2291ef4868c2c3f1e2634e",
+  "expected_release_archive_sha256": "aa17aeb12ed1b67f4492cba6820a90b4dd9d55632f2291ef4868c2c3f1e2634e",
+  "archive_matches_release": true,
+  "all_passed": true
+}

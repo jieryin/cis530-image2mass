@@ -1,0 +1,9 @@
+{
+  "selected": "full",
+  "names": [
+    "full"
+  ],
+  "decision": "Default best dev accuracy exceeded both baselines; retain one seed and stop tuning.",
+  "zero_shot_dev_accuracy": 0.671,
+  "volume_dev_accuracy": 0.821
+}

@@ -1,0 +1,129 @@
+{
+  "status": "complete",
+  "config": {
+    "task": "pointwise",
+    "train": "D:\\angie\\cis530\\pointwise-source\\pairs\\train_pairs.jsonl",
+    "dev": "D:\\angie\\cis530\\pointwise-source\\pairs\\dev_pairs.jsonl",
+    "root": "D:\\angie\\cis530\\amazon_data_10k",
+    "output": "D:\\angie\\cis530\\pointwise-results\\full",
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "epochs": 3,
+    "grad_accum": 8,
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "max_pixels": 262144,
+    "seed": 42,
+    "max_steps": null,
+    "limit_train": null,
+    "limit_dev": null,
+    "no_checkpointing": false,
+    "dry_run": false,
+    "check_images": false,
+    "save_every": 25,
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "batch_size": 1,
+    "count_unit": "objects",
+    "train_examples": 6945,
+    "dev_pairs": 1000,
+    "train_sha256": "03e1b1751a2965e7bde48d8bb3f368c7f5a91016be24468ae1d542c4c19fa357",
+    "dev_sha256": "dac3005873668f31e49e39d51328603588f7a67db2e9b098a749ae964318426f",
+    "trainable_parameters": 3213313,
+    "total_parameters": 2130747394,
+    "task_prompt": "Estimate the product's weight in pounds from its image and physical dimensions in inches. Consider its size, likely material, and construction, and give your best estimate. Return only one positive number, with no units or explanation.",
+    "answer_policy": "scalar_regression_v1",
+    "loss": "mse_on_log1p_weight_lb",
+    "target_transform": "log1p_pounds",
+    "tie_label": "B",
+    "weight_unit": "pounds",
+    "output_type": "scalar_regression",
+    "selection": "dev accuracy, then lower dev object log-MSE",
+    "image_processor": {
+      "_processor_class": "Qwen3VLProcessor",
+      "size": {
+        "longest_edge": 262144,
+        "shortest_edge": 65536
+      },
+      "min_pixels": 65536,
+      "max_pixels": 262144,
+      "crop_size": null,
+      "data_format": "channels_first",
+      "default_to_square": true,
+      "device": null,
+      "disable_grouping": null,
+      "do_center_crop": null,
+      "do_convert_rgb": true,
+      "do_normalize": true,
+      "do_pad": null,
+      "do_rescale": true,
+      "do_resize": true,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_processor_type": "Qwen2VLImageProcessorFast",
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "input_data_format": null,
+      "merge_size": 2,
+      "pad_size": null,
+      "patch_size": 16,
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "return_tensors": null,
+      "temporal_patch_size": 2
+    },
+    "chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n        {%- if messages[0].content is string %}\n            {{- messages[0].content }}\n        {%- else %}\n            {%- for content in messages[0].content %}\n                {%- if 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' }}\n        {%- if messages[0].content is string %}\n            {{- messages[0].content }}\n        {%- else %}\n            {%- for content in messages[0].content %}\n                {%- if 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- for message in messages %}\n    {%- if message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content in message.content %}\n                {%- if content.type == 'image' or 'image' in content or 'image_url' in content %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                    {%- if add_vision_id %}Picture {{ image_count.value }}: {% endif -%}\n                    <|vision_start|><|image_pad|><|vision_end|>\n                {%- elif content.type == 'video' or 'video' in content %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                    {%- if add_vision_id %}Video {{ video_count.value }}: {% endif -%}\n                    <|vision_start|><|video_pad|><|vision_end|>\n                {%- elif 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role + '\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content_item in message.content %}\n                {%- if 'text' in content_item %}\n                    {{- content_item.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {%- if message.tool_calls %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first and message.content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name }}\n                {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n                    {{- tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson }}\n                {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content in message.content %}\n                {%- if content.type == 'image' or 'image' in content or 'image_url' in content %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                    {%- if add_vision_id %}Picture {{ image_count.value }}: {% endif -%}\n                    <|vision_start|><|image_pad|><|vision_end|>\n                {%- elif content.type == 'video' or 'video' in content %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                    {%- if add_vision_id %}Video {{ video_count.value }}: {% endif -%}\n                    <|vision_start|><|video_pad|><|vision_end|>\n                {%- elif 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n"
+  },
+  "optimizer_steps": 2607,
+  "examples_seen": 20835,
+  "train_seconds": 6567.60189170111,
+  "train_examples_per_second": 3.172390827514579,
+  "best_dev": {
+    "examples": 1000,
+    "correct": 886,
+    "coverage": 1.0,
+    "accuracy": 0.886,
+    "macro_f1": 0.8859981759708154,
+    "per_class": {
+      "A": {
+        "precision": 0.882,
+        "recall": 0.8891129032258065,
+        "f1": 0.8855421686746987,
+        "support": 496
+      },
+      "B": {
+        "precision": 0.89,
+        "recall": 0.8829365079365079,
+        "f1": 0.8864541832669321,
+        "support": 504
+      }
+    },
+    "confusion_matrix": {
+      "A": {
+        "A": 441,
+        "B": 55
+      },
+      "B": {
+        "A": 59,
+        "B": 445
+      }
+    },
+    "objects": 869,
+    "object_log_mse": 0.08445612352532271,
+    "object_mae_lb": 0.736270298463353,
+    "object_rmse_lb": 1.2949324954735777,
+    "elapsed_seconds": 83.66543469997123
+  },
+  "memory": {
+    "peak_allocated_bytes": 4435300864
+  }
+}

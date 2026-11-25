@@ -1,0 +1,2 @@
+{"type": "train", "epoch": 1, "optimizer_step": 1, "examples": 8, "loss": 1.7100624696086015, "seconds": 3.6059366998961195, "lr": 0.0001, "peak_allocated_bytes": 4409601536}
+{"type": "train", "epoch": 1, "optimizer_step": 10, "examples": 8, "loss": 0.3549154931679368, "seconds": 2.3557220000075176, "lr": 5.789473684210527e-05, "peak_allocated_bytes": 4434025984}

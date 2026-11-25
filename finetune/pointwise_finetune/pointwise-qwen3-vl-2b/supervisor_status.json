@@ -1,0 +1,151 @@
+{
+  "supervisor_pid": 15828,
+  "started_at": "2026-11-25T06:15:36+00:00",
+  "python": "D:\\angie\\cis530\\.venv\\Scripts\\pythonw.exe",
+  "source": "D:\\angie\\cis530\\pointwise-source",
+  "workflow": "D:\\angie\\cis530\\pointwise-results\\workflow.py",
+  "max_retries": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-11-25T06:15:36+00:00",
+      "stdout": "D:\\angie\\cis530\\pointwise-results\\workflow.20261125T061536Z-15828.attempt-01.stdout.log",
+      "stderr": "D:\\angie\\cis530\\pointwise-results\\workflow.20261125T061536Z-15828.attempt-01.stderr.log",
+      "pid": 23444,
+      "exit_code": 0,
+      "finished_at": "2026-11-25T08:06:51+00:00"
+    }
+  ],
+  "status": "complete",
+  "heartbeat_at": "2026-11-25T08:06:51+00:00",
+  "keep_awake": false,
+  "stop_requested": false,
+  "progress": {
+    "pilot": {
+      "last_update": {
+        "type": "train",
+        "epoch": 1,
+        "optimizer_step": 20,
+        "examples": 8,
+        "loss": 0.5297718270512632,
+        "seconds": 2.3567856999579817,
+        "lr": 5.263157894736842e-06
+      },
+      "history_age_seconds": 9205.5,
+      "checkpoint": "D:\\angie\\cis530\\pointwise-results\\pilot\\checkpoints\\checkpoint-00000020-epoch_complete-eefd3d4ad5a442b5befe7b48aba1ebdc",
+      "training_state_exists": true,
+      "checkpoint_progress": {
+        "phase": "epoch_complete",
+        "epoch": 1,
+        "optimizer_steps": 20,
+        "epoch_seen": 160,
+        "epoch_loss": 102.06550232371592,
+        "examples_seen": 160,
+        "train_seconds": 50.22212280018721,
+        "best_metrics": {
+          "examples": 32,
+          "correct": 22,
+          "coverage": 1.0,
+          "accuracy": 0.6875,
+          "macro_f1": 0.6862745098039216,
+          "per_class": {
+            "A": {
+              "precision": 0.8,
+              "recall": 0.631578947368421,
+              "f1": 0.7058823529411765,
+              "support": 19
+            },
+            "B": {
+              "precision": 0.5882352941176471,
+              "recall": 0.7692307692307693,
+              "f1": 0.6666666666666667,
+              "support": 13
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 12,
+              "B": 7
+            },
+            "B": {
+              "A": 3,
+              "B": 10
+            }
+          },
+          "objects": 63,
+          "object_log_mse": 0.5367655984071986,
+          "object_mae_lb": 2.1430944413156947,
+          "object_rmse_lb": 2.861571672538036,
+          "elapsed_seconds": 5.852630799985491
+        }
+      },
+      "run_status": "pilot_complete"
+    },
+    "full": {
+      "last_update": {
+        "type": "train",
+        "epoch": 3,
+        "optimizer_step": 2607,
+        "examples": 1,
+        "loss": 0.0035655363462865353,
+        "seconds": 0.3065006999531761,
+        "lr": 3.954132068011072e-08
+      },
+      "history_age_seconds": 191.4,
+      "checkpoint": "D:\\angie\\cis530\\pointwise-results\\full\\checkpoints\\checkpoint-00002607-epoch_complete-7ed3b8bd25ae4707bf8886de5a15157a",
+      "training_state_exists": true,
+      "checkpoint_progress": {
+        "phase": "epoch_complete",
+        "epoch": 3,
+        "optimizer_steps": 2607,
+        "epoch_seen": 6945,
+        "epoch_loss": 582.855232369328,
+        "examples_seen": 20835,
+        "train_seconds": 6567.60189170111,
+        "best_metrics": {
+          "examples": 1000,
+          "correct": 886,
+          "coverage": 1.0,
+          "accuracy": 0.886,
+          "macro_f1": 0.8859981759708154,
+          "per_class": {
+            "A": {
+              "precision": 0.882,
+              "recall": 0.8891129032258065,
+              "f1": 0.8855421686746987,
+              "support": 496
+            },
+            "B": {
+              "precision": 0.89,
+              "recall": 0.8829365079365079,
+              "f1": 0.8864541832669321,
+              "support": 504
+            }
+          },
+          "confusion_matrix": {
+            "A": {
+              "A": 441,
+              "B": 55
+            },
+            "B": {
+              "A": 59,
+              "B": 445
+            }
+          },
+          "objects": 869,
+          "object_log_mse": 0.08445612352532271,
+          "object_mae_lb": 0.736270298463353,
+          "object_rmse_lb": 1.2949324954735777,
+          "elapsed_seconds": 83.66543469997123
+        }
+      },
+      "run_status": "complete"
+    }
+  },
+  "attempt": 1,
+  "child_pid": null,
+  "exit_code": 0,
+  "message": "Workflow exited successfully.",
+  "finished_at": "2026-11-25T08:06:51+00:00",
+  "keep_awake_released_at": "2026-11-25T08:06:51+00:00"
+}

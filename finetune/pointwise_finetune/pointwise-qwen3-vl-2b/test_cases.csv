@@ -1,0 +1,1001 @@
+﻿pair_id,change,hard_subset,gold,baseline,tuned,id_a,id_b,product_a,product_b,gold_weight_a_lb,gold_weight_b_lb,predicted_weight_a_lb,predicted_weight_b_lb
+test-00000,retained,False,B,B,B,6852,7125,Electronics Camera & Photo Film Cameras hand made,ladle violet,0.04,0.15,0.11575840825801498,0.3537862027149912
+test-00001,retained,False,B,B,B,6621,6675,oil lamp blue,musical box fancy,0.45,1.98,1.030484720831601,1.7966745703906035
+test-00002,retained,False,B,B,B,6912,7495,Technical Pens full,water gate straight,0.09,0.32,0.16581625690895407,0.3678794822621095
+test-00003,corrected,False,A,B,A,7153,6556,Dead-Blow Hammers heavy,pillbox popular,3.75,0.08,2.2099473027431755,0.0691225012899848
+test-00004,retained,False,A,A,A,7294,7201,waste-paper basket better,Health & Personal Care Personal Care Oral Hygiene Power Toothbrushes Battery Powered red,8.7,1.2,6.173788026531636,0.24506054621544074
+test-00005,retained,False,B,B,B,7039,7850,pocket comb best,Bottle Accessories generic,0.13,8.5,0.09596709400202674,9.05326131593696
+test-00006,corrected,False,A,B,A,7574,6862,Drive Sockets translucent,pier mirror round,0.25,0.18,0.21796137042631303,0.1418301555822262
+test-00007,corrected,False,A,B,A,7682,7032,Sauté Pans shallow,junction barrier womens,2.25,0.1,3.6865370780193,0.11943296889639958
+test-00008,retained,False,A,A,A,6953,6846,Margarita Glasses boys,Toys & Games Hobbies Radio Control Cars discount,11.0,0.24,0.620914173469141,0.14406366524238348
+test-00009,retained,False,B,B,B,7129,7511,File Folders wooden,rain gauge sturdy,6.0,12.0,3.9550765028722905,5.577551617209266
+test-00010,retained,False,B,B,B,7208,7086,real storage translucent,savings bank well made,0.35,2.0,0.21796137042631303,1.6487212763492138
+test-00011,still_wrong,True,A,B,B,7919,6645,flag glass,pliers smart,0.2,0.15,0.2887519106650235,0.47236660243706935
+test-00012,retained,False,A,A,A,7548,7506,tape drive medium,breathalyzer ,0.55,0.19,0.45073532839280867,0.2955994441305806
+test-00013,retained,False,B,B,B,6992,7107,emitter generic,backlighting authentic,0.22,3.1,0.19385883655441752,1.5518583997618172
+test-00014,still_wrong,True,A,B,B,7259,7814,stapler metal,savings bank yellow,0.9,0.2,0.6294614641426453,0.9257524415171081
+test-00015,corrected,False,A,B,A,6619,7386,Electronics Accessories & Supplies Audio & Video Accessories Antennas TV Antennas hand held,tank destroyer steel,0.85,0.22,1.2493910334389895,0.21125539049028952
+test-00016,corrected,False,A,B,A,7637,6926,grab bar stone,rain stick plastic,1.8,0.35,2.7610886939755868,0.5107500348368632
+test-00017,retained,False,B,B,B,7307,7153,cat box popular,Dead-Blow Hammers heavy,0.15,3.75,0.2733847795705032,2.2099473027431755
+test-00018,retained,False,A,A,A,7390,6651,zoom lens standard,Office Tape Dispensers wood,2.09,0.72,1.314475215121592,0.5187931807832993
+test-00019,retained,False,B,B,B,7272,7905,coffee mug best,garbage can charming,0.56,2.4,0.5587622264125949,3.3305086660640857
+test-00020,retained,False,B,B,B,6860,7487,"Home, Garden & Pets Kitchen & Dining Kitchen Knives & Cutlery Accessories Specialty Knives Cheese Knives genious",firing mechanism portable,1.34,2.29,1.1863703074283594,2.9162907478085818
+test-00021,retained,False,A,A,A,7472,7436,soap dispenser powerful,chemical balance slender,1.1,0.19,1.2074087891635923,0.23201866635205334
+test-00022,corrected,False,A,B,A,7805,7308,electric clock easy,bridle standard,0.48,0.02,0.9984295614745611,0.2508719802493304
+test-00023,retained,False,B,B,B,7815,6722,scimitar realistic,clock pendulum tall,0.13,2.87,0.2733847795705032,1.5041127428629242
+test-00024,still_wrong,True,A,B,B,6532,7607,Electronics Televisions & Video Satellite Television Antennas big,knuckles ,0.35,0.11,0.5609491756531326,0.5924804170357254
+test-00025,retained,False,A,A,A,7826,7706,caravan small,saucepot unique,6.0,4.62,6.125743015272698,4.999685426154717
+test-00026,retained,False,B,B,B,7888,6970,hand axe special,Tools & Home Improvement Storage & Home Organization portable,1.95,9.8,0.8074556487501026,13.590554742650841
+test-00027,retained,False,B,B,B,7010,7288,p-n junction wide,"Cake, Pie & Pastry Servers light",0.15,2.5,0.1429425498419782,0.5373563581828229
+test-00028,corrected,False,A,B,A,7368,7602,"Toys & Games Action Figures Statues, Maquettes & Busts mens",Candles & Home Scents baby,2.3,1.75,1.380251362611411,0.7872119334661354
+test-00029,retained,False,A,A,A,6795,6568,Bird Feeders discount,soap dispenser kids,0.57,0.35,1.311910426753439,0.44722766027480515
+test-00030,retained,False,B,B,B,6574,7268,fishgig brown,ultraviolet lamp ceramic,0.04,0.19,0.03421811901523373,0.18069631443179024
+test-00031,corrected,False,A,B,A,7701,7137,D Batteries old,gateleg table powerful,0.58,0.41,0.7301880665659792,0.2820629437832903
+test-00032,retained,False,B,B,B,7792,7221,tuner common,Cheese Knives white,0.36,0.5,0.25883551999043947,0.8193706697188303
+test-00033,retained,False,B,B,B,6579,7483,vacuum flask wooden,Education & Crafts authentic,1.22,2.75,0.9777894377356753,1.1199467990792922
+test-00034,retained,False,B,B,B,6774,7847,electric razor short,trash barrel slick,0.5,7.55,1.6042500295874866,10.751012749579445
+test-00035,corrected,True,A,B,A,7077,7045,buckle fat,"Home, Garden & Pets Pet Supplies Houses & Habitats Accessories Kennel Food & Water Cups common",0.95,0.41,1.1353638861937116,0.5067752986137797
+test-00036,corrected,False,A,B,A,7318,7821,toilet seat dark,panoramic sight high quality,6.5,0.33,5.6212974038301375,0.5087587723651925
+test-00037,corrected,False,A,B,A,7437,6551,tote silly,bird big,2.9,0.35,1.701057286207016,0.9609865109905826
+test-00038,retained,False,B,B,B,6881,7642,moneybag girls,round file black,0.13,0.9,0.1291378287541794,0.6041660657224992
+test-00039,corrected,False,A,B,A,6848,6551,brasier real,bird big,6.83,0.35,4.922172346138484,0.9609865109905826
+test-00040,retained,False,B,B,B,7718,7332,trumpet delux,Office Products Office Furniture & Lighting Office Lighting Desk Lamps simple,8.0,10.0,6.4700731303598396,11.266964636852629
+test-00041,retained,True,B,B,B,6548,7689,reading lamp newest,"Home, Garden & Pets Kitchen & Dining Bakeware Baking Tools & Accessories Cooking Torches realistic",0.35,0.75,0.4950358907100782,0.9185481167735374
+test-00042,retained,False,B,B,B,6852,7845,Electronics Camera & Photo Film Cameras hand made,crosse blue,0.04,0.75,0.11575840825801498,1.2567332263759714
+test-00043,retained,False,B,B,B,7574,7254,Drive Sockets translucent,time capsule glass,0.25,5.3,0.21796137042631303,3.436230294933144
+test-00044,retained,False,A,A,A,7826,6900,caravan small,induction coil classic,6.0,2.3,6.125743015272698,1.3748702135753343
+test-00045,retained,False,B,B,B,7386,7002,tank destroyer steel,minute gun delicate,0.22,13.01,0.21125539049028952,13.172416411671733
+test-00046,corrected,False,A,B,A,7511,7496,rain gauge sturdy,calliper yellow,12.0,0.93,5.577551617209266,0.9203439774457489
+test-00047,retained,False,B,B,B,7583,7204,spool translucent,watering pot imported,0.5,11.5,0.6356386871084834,6.887357219379342
+test-00048,retained,False,A,A,A,7305,6736,reconnaissance vehicle girls,window lock single,0.29,0.15,0.8306499377474519,0.10874495353537195
+test-00049,regressed,False,B,B,A,7249,7118,bird shot wood,Travel Mugs green,0.4,0.81,0.7063416733948575,0.5947993669627278
+test-00050,retained,False,B,B,B,6771,6966,matchstick thick,valve-in-head engine square,1.5,9.0,1.3992515146585291,8.24308772728254
+test-00051,retained,False,B,B,B,7405,7183,menorah premium,garden spade large,0.4,2.0,3.08021671168827,4.845861396500035
+test-00052,retained,False,B,B,B,6787,6608,Health & Personal Care Personal Care Eye Care Contact Lens Care Cases unique,Countersink Bits beautiful,0.33,1.32,0.08469065377669605,1.5337785826391634
+test-00053,retained,False,A,A,A,7645,7260,carburetor red,Shovels charming,3.15,0.2,3.08021671168827,0.19691167001720755
+test-00054,retained,True,A,A,A,7651,6680,router hand made,"Home, Garden & Pets Pet Supplies Apparel & Accessories Accessories Hats kitchen",1.2,0.48,2.782744106502737,1.1031222887173397
+test-00055,retained,False,B,B,B,7872,6700,Time Cards colorful,rangefinder wonderful,0.77,1.98,0.6282332667694694,1.2027015706788489
+test-00056,retained,False,B,B,B,7552,7377,glasses case nice,socket wrench iron,0.18,1.7,0.173773930835089,0.9401013821699935
+test-00057,retained,False,A,A,A,7151,6844,stealth fighter shallow,sailboat tiny,4.7,0.26,7.623610274378278,0.2691463453263826
+test-00058,retained,False,A,A,A,7544,7184,public address system little,attache case slick,3.31,0.26,2.8710780322525977,0.49891854792167145
+test-00059,retained,False,B,B,B,6858,7614,stuffed giraffe bright,omelet pan light,0.55,5.4,0.6558159667693613,3.8634572749307594
+test-00060,retained,False,B,B,B,6860,7849,"Home, Garden & Pets Kitchen & Dining Kitchen Knives & Cutlery Accessories Specialty Knives Cheese Knives genious",water tank molded,1.34,2.45,1.1863703074283594,3.128722982500859
+test-00061,retained,False,A,A,A,7336,6755,nosewheel red,Keepsake Boxes & Tins colorful,5.0,0.35,7.217889851305568,0.42674762076819134
+test-00062,retained,False,B,B,B,7669,6683,Tools & Home Improvement Lamps & Light Fixtures Light Fixtures Track Lighting plain,rack and pinion cheap,0.1,1.1,0.08081239444613314,0.524908526794988
+test-00063,regressed,False,A,A,B,7321,7422,fighter aircraft wooden,Baby Products Nursery Nursery Décor Lamps & Shades quality,3.96,3.0,4.446811822578948,5.158393202987484
+test-00064,corrected,False,A,B,A,7332,7666,Office Products Office Furniture & Lighting Office Lighting Desk Lamps simple,mustard agent solid,10.0,1.76,11.266964636852629,2.1252859129307433
+test-00065,retained,False,B,B,B,6591,7744,bath oil clever,drone discount,0.5,4.85,0.524908526794988,5.038898260670574
+test-00066,retained,False,A,A,A,7424,7939,automatic choke square,shoehorn generic,10.0,0.44,8.372897633066568,0.34290132091136305
+test-00067,corrected,False,A,B,A,7900,7104,HEPA Air Purifiers fancy,jet heavy,5.5,1.15,4.446811822578948,0.42674762076819134
+test-00068,retained,False,B,B,B,6531,7052,Business Cards beautiful,converter simple,0.26,2.0,0.1509774230219172,1.2815199302926565
+test-00069,corrected,False,A,B,A,7009,7103,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,Tools & Home Improvement Electrical Terminals & Kits Flag Terminals solid,0.65,0.1,0.5008712377852649,0.19235023000606633
+test-00070,retained,False,B,B,B,7261,7836,coolant system sturdy,mariner's compass better,0.88,12.0,0.9396424650511519,13.379850984935384
+test-00071,retained,False,B,B,B,6788,7415,Hammer nice,Jewelry Children's Jewelry Boys' Jewelry beautiful,0.42,1.54,0.4217758897612579,1.5548923675121262
+test-00072,corrected,False,A,B,A,7904,7154,Graters realistic,bird unique,3.45,0.5,3.5453076977175666,0.7049635052147099
+test-00073,retained,False,B,B,B,7147,7335,baton inexpensive,automatic firearm discount,0.05,1.81,0.1385446601250913,1.8464801955161225
+test-00074,retained,False,B,B,B,7574,6809,Drive Sockets translucent,roller bearing simple,0.25,1.1,0.21796137042631303,0.8915924585536652
+test-00075,corrected,True,A,B,A,7888,6647,hand axe special,penny bank well made,1.95,1.15,0.8074556487501026,0.6041660657224992
+test-00076,corrected,False,A,B,A,6938,7329,Office Products Office Electronics Fax Machines discount,Yarn small,12.0,0.33,10.584333506364336,0.8298390638127198
+test-00077,retained,False,B,B,B,7458,7627,face cream quick,pressure cooker quality,0.38,3.0,0.4779346748503138,3.0562466041079333
+test-00078,retained,False,B,B,B,7487,7593,firing mechanism portable,body lotion full,2.29,8.2,2.9162907478085818,3.4094889887700326
+test-00079,retained,False,A,A,A,7313,7489,lap joint best,radio large,2.0,1.06,1.5579322293905573,0.7697274944271382
+test-00080,retained,False,A,A,A,6826,7280,Cups classic,Tools & Home Improvement Building Supplies Building Materials Windows Casement Windows black,0.29,0.16,0.3221260502785499,0.1509774230219172
+test-00081,corrected,False,B,A,B,7578,6915,tripper steel,Tools & Home Improvement Lamps & Light Fixtures Lamps scale,0.8,1.83,0.8495182609752205,2.2800985992925566
+test-00082,retained,False,B,B,B,7504,7199,Can Openers powerful,Big Blue inexpensive,0.63,7.5,0.6583828223462889,3.436230294933144
+test-00083,retained,False,B,B,B,7537,7256,Clipboards blue,Cups black,0.49,1.1,1.424065312682699,1.9125503106591846
+test-00084,corrected,False,A,B,A,7818,6904,Roasting Pans steel,reactor sturdy,3.25,0.9,4.481689047471681,0.9330131991639286
+test-00085,corrected,False,B,A,B,7260,7397,Shovels charming,power takeoff orange,0.2,1.1,0.19691167001720755,2.2800985992925566
+test-00086,corrected,False,B,A,B,7118,6608,Travel Mugs green,Countersink Bits beautiful,0.81,1.32,0.5947993669627278,1.5337785826391634
+test-00087,retained,False,A,A,A,6959,6603,Cookie Jars white,scauper single,3.7,0.45,1.6199931951660358,0.29791784219740586
+test-00088,retained,False,A,A,A,7801,7709,lawn cart brand name,remote terminal old,4.12,3.13,4.696769601963679,2.158754224794926
+test-00089,still_wrong,True,A,B,B,7252,6863,Tools & Home Improvement Power & Hand Tools Hand Tools Axes heavy,soup bowl ornate,4.0,2.0,1.8537071764778554,3.2029187058657405
+test-00090,retained,False,B,B,B,7021,6934,candy thermometer slender,Tools & Home Improvement Hardware Furniture Hardware blue,0.08,2.5,0.07832605453935766,1.7966745703906035
+test-00091,corrected,True,A,B,A,6999,7495,streetlight generic,water gate straight,0.5,0.32,0.5127490197996951,0.3678794822621095
+test-00092,retained,False,B,B,B,7093,7361,sleigh old,share steel,0.13,7.5,0.6065306631389771,7.865609488647534
+test-00093,retained,False,B,B,B,7697,6956,Coin Purses white,action iron,0.08,0.65,0.12131377011564688,0.5878696639272509
+test-00094,retained,False,B,B,B,6881,7396,moneybag girls,Luncheon Plates boys,0.13,1.5,0.1291378287541794,1.3883624700625066
+test-00095,retained,False,A,A,A,6842,7960,small computer system interface iron,Office Products Office & School Supplies Staplers & Punches Electric & Battery Operated Staplers full,9.5,0.35,13.379850984935384,0.6832739686472373
+test-00096,retained,False,B,B,B,7085,7053,bicycle purple,Jewelry Towers popular,0.1,0.91,0.18211353124688745,2.1756855763347542
+test-00097,retained,False,B,B,B,7416,6547,wrist pin slender,Sports & Outdoors Accessories Sports Water Bottles common,0.25,0.44,0.18498141037984206,0.5394595491134899
+test-00098,retained,False,B,B,B,7583,6900,spool translucent,induction coil classic,0.5,2.3,0.6356386871084834,1.3748702135753343
+test-00099,retained,False,B,B,B,7300,7956,camera lens slick,table lamp girls,1.75,3.4,1.486589212541908,3.0088637338289486
+test-00100,retained,False,B,B,B,7881,7454,"Home, Garden & Pets Vacuums, Cleaning & Storage Storage & Organization Garage Storage & Organization Ski Storage Racks brand name",Switches slick,0.45,3.22,0.5331746303235263,2.7610886939755868
+test-00101,retained,False,B,B,B,6887,7202,cookie sheet marble,Bread Boxes purple,1.21,4.41,1.8755580435184807,3.601137929811734
+test-00102,retained,False,A,A,A,7322,7691,Spice Racks quality,Gaming Mice kids,5.87,0.29,3.6865370780193,0.46504323459728425
+test-00103,retained,False,B,B,B,6540,6642,mosaic glass,"Home, Garden & Pets Home Appliances Small Appliances Deep Fryers skinny",0.75,11.0,1.380251362611411,3.8937590011084904
+test-00104,corrected,False,A,B,A,6897,7890,electric organ kitchen,coffee mug common,5.1,0.75,3.3045903982324063,0.47607138805619703
+test-00105,retained,False,B,B,B,7169,7522,bucket metal,scoop curved,0.45,3.0,1.2827721902685543,4.309998464373749
+test-00106,still_wrong,True,A,B,B,6902,7247,Casserole Spoons glass,clapperboard brand name,1.95,0.6,1.021716831981275,1.6422935849881286
+test-00107,retained,False,B,B,B,7792,7465,tuner common,rubber mallet large,0.36,1.8,0.25883551999043947,1.882898716011792
+test-00108,regressed,True,B,B,A,7093,7574,sleigh old,Drive Sockets translucent,0.13,0.25,0.6065306631389771,0.21796137042631303
+test-00109,corrected,False,A,B,A,6968,6636,shopping bag skinny,sidesaddle simple,2.2,0.5,3.278873669435737,0.6245629895674574
+test-00110,corrected,False,A,B,A,7856,6983,squeezer ,pocketknife big,0.68,0.21,0.3122152554359038,0.16452586597629482
+test-00111,retained,False,A,A,A,7166,7306,field-effect transistor silver,Beard Trimmers clever,10.0,0.67,13.590554742650841,0.6700582566092752
+test-00112,corrected,False,A,B,A,7962,7545,pew thick,local oscillator square,1.73,1.36,7.389056770107361,2.4082644514100573
+test-00113,retained,False,B,B,B,6568,7749,soap dispenser kids,Bedding wooden,0.35,7.4,0.44722766027480515,4.733607558469452
+test-00114,corrected,False,A,B,A,7125,7558,ladle violet,sugar spoon molded,0.15,0.04,0.3537862027149912,0.1765104760401213
+test-00115,regressed,True,B,B,A,7024,6666,meter kitchen,cantle powerful,1.25,2.0,1.0103683118349323,0.3722158928197272
+test-00116,regressed,True,B,B,A,7310,7554,Salt & Pepper Shaker Sets petite,Electronics Computers & Accessories Networking Products Switches best,0.5,0.64,1.486589212541908,0.9087337970683871
+test-00117,still_wrong,False,A,B,B,7539,7909,Toys & Games Sports & Outdoor Play Pools & Water Fun Lawn Water Slides well made,Sports & Outdoors Hunting & Fishing Hunting Air Guns discount,1.1,0.63,0.9762390270523702,2.325069318072025
+test-00118,retained,False,B,B,B,6978,7543,Credit Card Holders steel,solar thermal system big,0.2,11.65,0.12131377011564688,5.078419554291424
+test-00119,retained,False,B,B,B,7815,6651,scimitar realistic,Office Tape Dispensers wood,0.13,0.72,0.2733847795705032,0.5187931807832993
+test-00120,still_wrong,True,B,A,A,7423,7543,melting pot metal,solar thermal system big,3.45,11.65,7.105985422111752,5.078419554291424
+test-00121,regressed,True,A,A,B,7668,6554,corbel standard,Electronics Accessories & Supplies Mounts Computer & Monitor Mounts modest,7.0,4.75,3.601137929811734,3.6293825295036504
+test-00122,regressed,True,A,A,B,7443,7808,Electronics Accessories & Supplies Office Electronics Accessories Printer Supplies Printer Roll Holders red,savings bank yellow,3.2,1.1,1.306795698182388,1.9050936178127968
+test-00123,corrected,False,B,A,B,6947,7621,crackle tall,Serveware blue,0.35,4.41,0.32976503524902057,3.436230294933144
+test-00124,retained,False,A,A,A,7850,7069,Bottle Accessories generic,Shampoo clever,8.5,1.2,9.05326131593696,0.7402396760661873
+test-00125,retained,False,B,B,B,7261,7488,coolant system sturdy,pallet powerful,0.88,2.35,0.9396424650511519,3.177993666405537
+test-00126,retained,False,B,B,B,7366,7589,flambeau small,"Home, Garden & Pets Patio, Lawn & Garden Picnic Baskets & Accessories Picnic Backpacks plastic",0.45,0.57,0.22664394599714188,0.771232335401155
+test-00127,retained,True,B,B,B,7701,6658,D Batteries old,lead-acid battery popular,0.58,3.2,0.7301880665659792,1.5458080969909096
+test-00128,corrected,False,A,B,A,6897,6723,electric organ kitchen,Grill Scrapers ingenious,5.1,0.59,3.3045903982324063,0.40089233640216304
+test-00129,corrected,False,A,B,A,7400,7559,till wide,dustmop discount,3.04,2.39,2.0760535221192717,1.5041127428629242
+test-00130,retained,False,B,B,B,6690,6878,Hot Pots & Electric Kettles orange,analog computer broad,2.8,4.7,2.3709274264110114,6.623508132218554
+test-00131,regressed,True,B,B,A,7236,7844,Footballs blue,Tool Belts generic,0.49,1.1,0.7941612190907046,0.6221280031293768
+test-00132,retained,False,B,B,B,6912,7618,Technical Pens full,"Office Products Office & School Supplies Tape, Adhesives & Fasteners Clips, Clamps & Rings Clips hand made",0.09,0.5,0.16581625690895407,0.4931059666017967
+test-00133,corrected,False,A,B,A,7009,7768,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,Small Parts Envelopes ornate,0.65,0.3,0.5008712377852649,0.319619204523867
+test-00134,retained,False,B,B,B,6773,6801,solar panel short,Meat kettle,0.3,9.5,0.4950358907100782,8.504750398950502
+test-00135,regressed,True,B,B,A,7962,7238,pew thick,black kettle,1.73,2.5,7.389056770107361,2.2359976334474885
+test-00136,corrected,False,A,B,A,7318,7611,toilet seat dark,foghorn standard,6.5,0.75,5.6212974038301375,0.6687507706600064
+test-00137,retained,False,A,A,A,7830,7960,add-in green,Office Products Office & School Supplies Staplers & Punches Electric & Battery Operated Staplers full,4.0,0.35,2.9162907478085818,0.6832739686472373
+test-00138,regressed,True,B,B,A,6568,6857,soap dispenser kids,secateurs small,0.35,0.55,0.44722766027480515,0.2302130728818505
+test-00139,corrected,True,A,B,A,7623,7458,zoom lens standard,face cream quick,1.31,0.38,0.7964913568461423,0.4779346748503138
+test-00140,corrected,False,A,B,A,7903,6711,cooling system round,Mortar & Pestles plastic,1.16,0.03,1.6616524790344869,0.11943296889639958
+test-00141,retained,False,B,B,B,7192,7467,scriber big,snare orange,0.27,12.0,0.14748001915342285,7.74366325770818
+test-00142,retained,False,A,A,A,7525,7743,Furniture green,cookie jar cheap,4.0,2.0,3.8937590011084904,1.542792040343596
+test-00143,retained,False,A,A,A,7525,6967,Furniture green,penknife old,4.0,0.55,3.8937590011084904,0.18069631443179024
+test-00144,corrected,True,B,A,B,7080,7033,chute-the-chute best,rack and pinion cheap,0.28,1.24,0.4368676493920408,0.9021022348911953
+test-00145,corrected,True,A,B,A,7221,6869,Cheese Knives white,Bendable Figures premium,0.5,0.29,0.8193706697188303,0.5310959962650226
+test-00146,corrected,False,A,B,A,7274,7136,coax real,idler pulley classic,5.09,0.35,6.9413761004949865,0.8612123916893075
+test-00147,corrected,True,A,B,A,7521,7082,mother board beautiful,pencil case long,0.77,0.04,0.5522524052503033,0.319619204523867
+test-00148,retained,False,B,B,B,6967,7434,penknife old,Index & Business Card Files curved,0.55,1.09,0.18069631443179024,0.26291158324245645
+test-00149,retained,False,B,B,B,6862,7180,pier mirror round,metal drum shallow,0.18,4.95,0.1418301555822262,2.7396013875865464
+test-00150,retained,False,B,B,B,6606,7063,pottery square,mailbox fine,0.98,7.0,0.9440112569757764,6.320194837551344
+test-00151,retained,False,B,B,B,6828,7178,bull's-eye clever,mailsorter silver,0.4,2.0,0.39777250963224525,1.701057286207016
+test-00152,retained,False,B,B,B,7329,6815,Yarn small,riding light huge,0.33,2.04,0.8298390638127198,2.3709274264110114
+test-00153,corrected,False,A,B,A,7857,7560,lead-acid battery wooden,wiper motor miniature,3.15,0.11,1.3992515146585291,0.06699582508074768
+test-00154,retained,False,B,B,B,7001,6719,idiot box standard,Venturi tube inexpensive,0.35,0.75,0.2431534582580844,1.2156908128353625
+test-00155,retained,False,A,A,A,7812,7104,"Home, Garden & Pets Patio, Lawn & Garden Gardening Garden Structures Garden Bridges yellow",jet heavy,5.5,1.15,7.623610274378278,0.42674762076819134
+test-00156,retained,False,B,B,B,6849,6948,return key hollow,ash-pan wide,0.02,0.19,0.04825527845501749,0.4402940190394018
+test-00157,retained,False,B,B,B,7626,7756,ballpoint simple,strainer black,0.04,2.15,0.12713572663715056,1.897666378388155
+test-00158,retained,False,B,B,B,6605,7901,readout fine,Health & Personal Care Personal Care Oral Hygiene Mouthwash delicate,0.11,1.2,0.1291378287541794,0.7035878717293782
+test-00159,corrected,False,A,B,A,6788,7257,Hammer nice,Beauty Bath & Body Bath Bubble Bath discount,0.42,0.25,0.4217758897612579,0.24126123994088003
+test-00160,retained,False,B,B,B,6856,7318,electronic organ huge,toilet seat dark,4.41,6.5,5.239625842347827,5.6212974038301375
+test-00161,retained,False,B,B,B,7453,7817,drawer premium,thermos bottle silver,1.4,3.1,0.8098247349663905,1.6681558892463575
+test-00162,retained,False,B,B,B,7692,7796,Electronics Camera & Photo Film Cameras APS Cameras slick,Filing Crates & Posting Tubs violet,1.5,4.0,1.3273746382809577,4.017360269137704
+test-00163,corrected,False,A,B,A,7596,6576,Clothing Women's hand held,Tools & Home Improvement Power & Hand Tools Hand Tools Punches girls,1.14,0.6,1.029730261923576,0.48736109393896276
+test-00164,retained,False,B,B,B,7316,6842,electroscope metal,small computer system interface iron,1.59,9.5,1.9125503106591846,13.379850984935384
+test-00165,retained,False,A,A,A,7430,6999,Drip Coffee Machines solid,streetlight generic,7.0,0.5,5.799737071407908,0.5127490197996951
+test-00166,retained,False,B,B,B,6976,7501,depth charge fat,tower discount,0.29,0.49,0.38855814828671326,0.5587622264125949
+test-00167,regressed,True,B,B,A,6750,6546,riding light violet,Vacuum Coffee Machines light,0.26,0.5,0.5500994451408616,0.3900789093936432
+test-00168,retained,False,B,B,B,6581,7915,clamshell womens,radius new,0.33,6.17,0.3722158928197272,6.6754564450043725
+test-00169,still_wrong,False,A,B,B,7686,7046,Food Savers full,roost steel,0.3,0.23,0.30498273866936093,0.3246524622840884
+test-00170,retained,False,A,A,A,7148,6986,back saw better,pilot single,1.15,0.23,1.3351751372596716,0.44548407278937063
+test-00171,retained,False,B,B,B,6894,6985,destroyer escort make,omelette pan blue,1.21,10.4,1.8392813323771011,7.865609488647534
+test-00172,regressed,False,B,B,A,6765,6666,display panel broad,cantle powerful,0.63,2.0,0.9901005306832469,0.3722158928197272
+test-00173,regressed,True,A,A,B,6696,7871,All-Purpose Labels broad,pepper spray well made,0.5,0.33,0.6558159667693613,0.9465498167719995
+test-00174,retained,False,B,B,B,7815,6616,scimitar realistic,timepiece brand name,0.13,0.65,0.2733847795705032,0.5653487510592692
+test-00175,corrected,False,B,A,B,7573,6705,evening bag hollow,gyro huge,0.44,1.76,0.2284215478208103,2.9854482065079413
+test-00176,retained,False,B,B,B,7097,7089,gyrostabilizer expensive,alarm orange,0.13,0.31,0.08875503861303496,0.3678794822621095
+test-00177,corrected,False,A,B,A,6532,7432,Electronics Televisions & Video Satellite Television Antennas big,hardtop premium,0.35,0.25,0.5609491756531326,0.22664394599714188
+test-00178,retained,False,B,B,B,6926,7771,rain stick plastic,energizer clever,0.35,5.38,0.5107500348368632,6.030772044401106
+test-00179,retained,False,B,B,B,7143,6614,scaler fine,stake slick,2.2,9.0,0.522862158096904,5.078419554291424
+test-00180,corrected,False,A,B,A,7776,6796,roll top,fuel-air bomb short,3.5,0.4,1.380251362611411,0.4950358907100782
+test-00181,retained,True,B,B,B,6778,7098,voltmeter toy,pickle barrel mens,0.3,2.6,0.6494427409207881,1.3748702135753343
+test-00182,retained,False,A,A,A,7525,6857,Furniture green,secateurs small,4.0,0.55,3.8937590011084904,0.2302130728818505
+test-00183,corrected,True,A,B,A,6594,7553,lead-acid battery handsome,Napkin Holders blue,3.15,2.0,1.7143989873148588,1.4953251840144732
+test-00184,retained,False,B,B,B,7629,7262,Expanding Wallets big,candelabra square,0.49,2.5,0.20798019458874412,2.2013315344506985
+test-00185,retained,False,A,A,A,7322,7860,Spice Racks quality,first gear huge,5.87,0.33,3.6865370780193,0.291016578447069
+test-00186,still_wrong,True,B,A,A,7172,7260,Health & Personal Care Diet & Nutrition Vitamins & Supplements Minerals Boron easy,Shovels charming,0.1,0.2,0.4950358907100782,0.19691167001720755
+test-00187,retained,False,B,B,B,6680,7522,"Home, Garden & Pets Pet Supplies Apparel & Accessories Accessories Hats kitchen",scoop curved,0.48,3.0,1.1031222887173397,4.309998464373749
+test-00188,retained,False,B,B,B,6770,6857,Keepsakes little,secateurs small,0.03,0.55,0.07473923932348137,0.2302130728818505
+test-00189,retained,False,A,A,A,6684,6741,Fungicide ,sonar smart,1.27,0.06,1.2865358214415763,0.16452586597629482
+test-00190,retained,False,B,B,B,6640,7320,Beer Glasses best,coffee grinder silver,1.25,4.5,1.1453865174422804,6.571961959318446
+test-00191,corrected,True,A,B,A,6684,7578,Fungicide ,tripper steel,1.27,0.8,1.2865358214415763,0.8495182609752205
+test-00192,retained,False,A,A,A,7565,7616,Highchairs & Booster Seats round,Mint Julep Cups authentic,1.1,0.33,2.2359976334474885,0.7402396760661873
+test-00193,retained,False,A,A,A,6684,6574,Fungicide ,fishgig brown,1.27,0.04,1.2865358214415763,0.03421811901523373
+test-00194,retained,False,B,B,B,7190,7353,bearing wall commodity,Potpourris round,0.9,5.1,1.3615092124007,4.845861396500035
+test-00195,retained,False,B,B,B,7349,7762,"Home, Garden & Pets Vacuums, Cleaning & Storage Cleaning Supplies Sweeping Brooms Hand Brooms popular",narrow-body generic,0.18,1.61,0.12713572663715056,1.701057286207016
+test-00196,retained,False,B,B,B,7589,6925,"Home, Garden & Pets Patio, Lawn & Garden Picnic Baskets & Accessories Picnic Backpacks plastic",filling premium,0.57,1.2,0.771232335401155,5.158393202987484
+test-00197,retained,False,B,B,B,7112,7762,Tools & Home Improvement Electrical Light Bulbs Specialty Light Bulbs discount,narrow-body generic,0.1,1.61,0.09157243755872142,1.701057286207016
+test-00198,retained,False,A,A,A,7373,7768,pig metal,Small Parts Envelopes ornate,1.36,0.3,2.0598973848365243,0.319619204523867
+test-00199,corrected,False,A,B,A,7043,7724,air gun realistic,whip stone,3.4,0.44,0.996511766830531,0.3766034657217415
+test-00200,retained,True,A,A,A,7708,7436,bass full,chemical balance slender,0.25,0.19,0.28650482642765057,0.23201866635205334
+test-00201,regressed,True,B,B,A,7565,7443,Highchairs & Booster Seats round,Electronics Accessories & Supplies Office Electronics Accessories Printer Supplies Printer Roll Holders red,1.1,3.2,2.2359976334474885,1.306795698182388
+test-00202,corrected,False,A,B,A,7446,7830,Office Products Office Furniture & Lighting Office Lighting Desk Lamps medium,add-in green,10.0,4.0,11.092286592459589,2.9162907478085818
+test-00203,corrected,False,A,B,A,7684,7513,convertible scale,black box ingenious,1.1,0.88,1.4982487545524776,0.7174649340345967
+test-00204,retained,False,B,B,B,7339,6863,vacuum bag narrow,soup bowl ornate,1.13,2.0,0.5587622264125949,3.2029187058657405
+test-00205,corrected,False,A,B,A,7825,6737,central processing unit blue,Electronics Camera & Photo Flashes slender,0.75,0.45,0.7188675507469842,0.4120054037223316
+test-00206,retained,False,A,A,A,7941,6986,stockpot popular,pilot single,8.0,0.23,5.799737071407908,0.44548407278937063
+test-00207,retained,False,B,B,B,7305,6579,reconnaissance vehicle girls,vacuum flask wooden,0.29,1.22,0.8306499377474519,0.9777894377356753
+test-00208,retained,False,B,B,B,7472,7121,soap dispenser powerful,B-flat clarinet nice,1.1,1.76,1.2074087891635923,3.032462500265929
+test-00209,retained,False,B,B,B,7560,7291,wiper motor miniature,cargo container powerful,0.11,0.35,0.06699582508074768,0.1175813344701115
+test-00210,still_wrong,False,A,B,B,7337,6560,developer purple,Mint Julep Cups authentic,0.33,0.2,0.3537862027149912,0.5832948623287524
+test-00211,retained,False,B,B,B,7689,7766,"Home, Garden & Pets Kitchen & Dining Bakeware Baking Tools & Accessories Cooking Torches realistic",single-rotor helicopter high quality,0.75,1.57,0.9185481167735374,1.9809839976863088
+test-00212,corrected,True,A,B,A,7513,6850,black box ingenious,chute-the-chute make,0.88,0.48,0.7174649340345967,0.6065306631389771
+test-00213,retained,False,B,B,B,6575,7077,Fountain Pens bright,buckle fat,0.11,0.95,0.10539921905615537,1.1353638861937116
+test-00214,corrected,True,A,B,A,7708,7831,bass full,stuffed turtle popular,0.25,0.2,0.28650482642765057,0.26086560100301986
+test-00215,regressed,False,B,B,A,6996,7493,billy powerful,Thermometers & Timers cheap,0.22,0.49,0.24126123994088003,0.19235023000606633
+test-00216,corrected,True,A,B,A,7925,7240,Shoes Handbags cute,knapsack genious,1.6,0.5,1.6681558892463575,0.8933355513409877
+test-00217,corrected,False,B,A,B,7890,7867,coffee mug common,hurricane lamp long,0.75,0.94,0.47607138805619703,0.9216930355441451
+test-00218,retained,False,B,B,B,7492,7214,crane yellow,Office Products Office & School Supplies Education & Crafts Filing Products File & Folder Accessories Expanding Files smart,0.66,1.92,0.6077164726167938,2.573617561873104
+test-00219,corrected,False,A,B,A,7744,7311,drone discount,master key smart,4.85,1.75,5.038898260670574,0.5147558863743535
+test-00220,corrected,False,B,A,B,6901,6782,LGB sturdy,water tank new,0.9,2.45,0.5810207700067891,2.9391633058114683
+test-00221,retained,False,A,A,A,6660,7697,earthenware wide,Coin Purses white,1.46,0.08,1.539781676221469,0.12131377011564688
+test-00222,retained,False,A,A,A,7252,6542,Tools & Home Improvement Power & Hand Tools Hand Tools Axes heavy,cologne water well made,4.0,0.28,1.8537071764778554,0.3510330532959801
+test-00223,regressed,False,B,B,A,6807,7271,recording system huge,clutch bag quality,0.62,1.1,0.7035878717293782,0.6481755614227849
+test-00224,still_wrong,True,A,B,B,6993,6894,fire tongs quality,destroyer escort make,1.75,1.21,1.4982487545524776,1.8392813323771011
+test-00225,regressed,True,B,B,A,7505,6642,Accent Plates shallow,"Home, Garden & Pets Home Appliances Small Appliances Deep Fryers skinny",5.8,11.0,4.243178109989657,3.8937590011084904
+test-00226,corrected,False,B,A,B,7127,7430,teacup old,Drip Coffee Machines solid,0.9,7.0,2.1087466746290424,5.799737071407908
+test-00227,retained,False,B,B,B,7374,7582,tappet medium,time clock yellow,0.18,0.85,0.5587622264125949,0.9185481167735374
+test-00228,still_wrong,True,A,B,B,6710,6662,dogcart thick,gun case brand name,0.25,0.11,0.13963128451321924,0.14748001915342285
+test-00229,corrected,False,A,B,A,7889,7040,flat tip screwdriver square,Electronics Computers & Accessories Printers All-In-Ones tiny,0.5,0.15,0.6100949406575449,0.1121968842945518
+test-00230,corrected,False,A,B,A,7327,6747,candlestick generic,rotor coil quality,5.1,3.7,8.24308772728254,2.3433054150756703
+test-00231,retained,False,A,A,A,7569,7477,data system brown,light arm cute,7.15,0.39,6.320194837551344,0.6270074013118914
+test-00232,corrected,False,A,B,A,6788,6923,Hammer nice,cache solid,0.42,0.25,0.4217758897612579,0.38104272692186425
+test-00233,retained,False,B,B,B,6563,7555,throwing stick smart,waste-paper basket heavy,0.5,0.92,0.771232335401155,1.803706581383472
+test-00234,retained,False,A,A,A,7832,6989,flatbed powerful,in-tray dark,9.5,0.5,7.389056770107361,0.29329906280777246
+test-00235,retained,False,B,B,B,6636,7941,sidesaddle simple,stockpot popular,0.5,8.0,0.6245629895674574,5.799737071407908
+test-00236,retained,False,A,A,A,6801,7307,Meat kettle,cat box popular,9.5,0.15,8.504750398950502,0.2733847795705032
+test-00237,retained,False,A,A,A,6557,7618,Wine Decanters boys,"Office Products Office & School Supplies Tape, Adhesives & Fasteners Clips, Clamps & Rings Clips hand made",3.0,0.5,3.65784770858091,0.4931059666017967
+test-00238,retained,False,B,B,B,7053,7887,Jewelry Towers popular,pedestal ,0.91,3.0,2.1756855763347542,9.637146121342822
+test-00239,corrected,False,A,B,A,7849,6806,water tank molded,tumbler slick,2.45,0.88,3.128722982500859,1.0423772082123008
+test-00240,retained,False,B,B,B,6692,7051,sharpener light,minicar premium,0.02,0.08,0.09596709400202674,0.291016578447069
+test-00241,retained,True,B,B,B,7523,6594,Timers fat,lead-acid battery handsome,0.46,3.15,0.38104272692186425,1.7143989873148588
+test-00242,corrected,False,A,B,A,7547,6924,omnidirectional antenna toy,Tools & Home Improvement Painting Tools & Supplies short,2.7,1.1,2.30697605422961,1.1106889343017259
+test-00243,retained,False,A,A,A,6876,6754,tankard easy,life support new,0.81,0.35,1.4635417809330882,0.26705182107958814
+test-00244,corrected,False,A,B,A,7150,7669,crossbow orange,Tools & Home Improvement Lamps & Light Fixtures Light Fixtures Track Lighting plain,0.85,0.1,0.9581752493298175,0.08081239444613314
+test-00245,retained,False,B,B,B,7130,7009,EDS silver,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,0.15,0.65,0.38403128943921006,0.5008712377852649
+test-00246,retained,False,B,B,B,6652,7510,Soufflé Dishes generic,furnishing green,0.06,4.0,0.1232241760324108,6.4700731303598396
+test-00247,retained,False,A,A,A,7457,7341,decoy sturdy,horsewhip expensive,1.6,0.19,1.5159094868581358,0.2284215478208103
+test-00248,retained,False,B,B,B,6568,6786,soap dispenser kids,Sports & Outdoors Other Sports Rodeo imported,0.35,7.3,0.44722766027480515,6.078072089539689
+test-00249,corrected,False,A,B,A,7817,7549,thermos bottle silver,center punch strong,3.1,0.7,1.6681558892463575,0.9230441875907298
+test-00250,still_wrong,True,B,A,A,7755,7009,quern model,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,0.26,0.65,0.524908526794988,0.5008712377852649
+test-00251,retained,False,A,A,A,7162,7717,small ship womens,Beauty Hair Care Conditioners green,1.54,0.63,1.4408517049217324,0.47236660243706935
+test-00252,corrected,True,B,A,B,7851,7932,harp purple,tool case dark,0.4,2.4,0.7548395931925886,3.1043754395350396
+test-00253,retained,False,A,A,A,7915,7504,radius new,Can Openers powerful,6.17,0.63,6.6754564450043725,0.6583828223462889
+test-00254,retained,False,B,B,B,7218,7621,switch engine well made,Serveware blue,0.63,4.41,0.3171319104486417,3.436230294933144
+test-00255,still_wrong,True,A,B,B,6594,7946,lead-acid battery handsome,stator old,3.15,2.35,1.7143989873148588,1.7688198240053343
+test-00256,corrected,False,A,B,A,7585,6797,"Home, Garden & Pets Home Appliances Small Appliances Coffee, Tea & Espresso Appliances Beverage Warmers sturdy",PC board powerful,2.6,0.07,2.5938028268555047,0.09596709400202674
+test-00257,retained,False,B,B,B,7914,7243,dice box well made,penlight discount,0.33,1.2,0.3621760147761968,0.44548407278937063
+test-00258,corrected,False,A,B,A,7179,7494,Toilet Parts shallow,eyeglass long,0.66,0.2,0.8872495621908805,0.23752082623335874
+test-00259,corrected,False,A,B,A,6847,7603,Tools & Home Improvement Safety & Security Work Safety Equipment & Gear Hardhats quality,soup ladle single,0.6,0.3,0.9366648613269699,0.8520105883272135
+test-00260,retained,False,B,B,B,7008,6792,gyro horizon powerful,automatic firearm orange,2.4,7.1,2.6039542855879683,7.74366325770818
+test-00261,corrected,False,A,B,A,7138,6591,knuckles kitchen,bath oil clever,0.88,0.5,0.8855183660343244,0.524908526794988
+test-00262,corrected,True,A,B,A,7746,6615,lug wrench wood,Tools & Home Improvement Building Supplies Building Materials Tiles Glass Tiles steel,4.63,2.33,3.08021671168827,2.893596020751634
+test-00263,still_wrong,True,B,A,A,6745,6683,single-reed instrument hollow,rack and pinion cheap,0.81,1.1,1.2604203784220744,0.524908526794988
+test-00264,retained,False,B,B,B,7341,7674,horsewhip expensive,cocktail shaker purple,0.19,1.1,0.2284215478208103,0.5500994451408616
+test-00265,retained,False,A,A,A,7941,7230,stockpot popular,conditioner plastic,8.0,1.2,5.799737071407908,1.3937963063198953
+test-00266,retained,False,A,A,A,7429,6814,oil lamp green,internal drive kids,2.0,0.27,1.0388205289034045,0.20475575455784914
+test-00267,corrected,False,A,B,A,6634,7260,fuel filter large,Shovels charming,0.39,0.2,0.6726807890760182,0.19691167001720755
+test-00268,corrected,False,B,A,B,7147,6699,baton inexpensive,parallel port ingenious,0.05,0.25,0.1385446601250913,0.3870433086245895
+test-00269,retained,False,A,A,A,7389,6652,holdall plastic,Soufflé Dishes generic,1.08,0.06,2.012180132344743,0.1232241760324108
+test-00270,retained,False,B,B,B,7009,7916,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,worm light,0.65,1.25,0.5008712377852649,0.7077225841960644
+test-00271,still_wrong,False,B,A,A,7256,7817,Cups black,thermos bottle silver,1.1,3.1,1.9125503106591846,1.6681558892463575
+test-00272,retained,False,A,A,A,7673,6873,brake system new,Microscope Accessories realistic,1.4,0.41,4.446811822578948,0.3171319104486417
+test-00273,corrected,False,B,A,B,7267,7167,mould girls,Electronics Camera & Photo Surveillance Cameras Dome Cameras modest,0.3,1.98,0.16974848016677435,1.0644945038251135
+test-00274,corrected,True,A,B,A,7528,7472,groover narrow,soap dispenser powerful,2.0,1.1,1.5518583997618172,1.2074087891635923
+test-00275,retained,False,A,A,A,6642,6759,"Home, Garden & Pets Home Appliances Small Appliances Deep Fryers skinny",P.A. smart,11.0,4.06,3.8937590011084904,3.2280393166621684
+test-00276,corrected,False,A,B,A,7776,6638,roll top,color television system hand held,3.5,0.23,1.380251362611411,0.16711677336663738
+test-00277,retained,False,A,A,A,7895,6574,dinghy baby,fishgig brown,0.31,0.04,0.22313017327230963,0.03421811901523373
+test-00278,regressed,True,A,A,B,7573,7884,evening bag hollow,luggage beautiful,0.44,0.2,0.2284215478208103,0.29329906280777246
+test-00279,retained,False,A,A,A,6970,6999,Tools & Home Improvement Storage & Home Organization portable,streetlight generic,9.8,0.5,13.590554742650841,0.5127490197996951
+test-00280,corrected,False,A,B,A,7330,6638,Tools & Home Improvement Hardware powerful,color television system hand held,0.8,0.23,0.48546104285586406,0.16711677336663738
+test-00281,retained,False,B,B,B,7773,7301,woofer large,induction coil portable,3.5,5.8,3.128722982500859,11.092286592459589
+test-00282,retained,False,B,B,B,7660,6974,telfer toy,Sports & Outdoors Team Sports Baseball Gloves & Mitts Outfielder's Gloves ,0.1,1.48,0.18789442761862998,4.243178109989657
+test-00283,retained,False,B,B,B,7793,7092,measuring cup simple,matrix black,0.35,2.0,0.21796137042631303,4.112628972666761
+test-00284,regressed,True,A,A,B,7553,7055,Napkin Holders blue,aircraft engine easy,2.0,1.6,1.4953251840144732,3.6293825295036504
+test-00285,retained,False,B,B,B,6689,7253,pump action handsome,butt shaft old,2.0,3.0,1.3430213322378632,2.1419547185322534
+test-00286,retained,False,B,B,B,6715,7319,Tools & Home Improvement Electrical Light Bulbs High Intensity Discharge Bulbs standard,saucepan brown,0.03,1.3,0.1407264251338984,1.5793782704177008
+test-00287,retained,False,B,B,B,7826,6842,caravan small,small computer system interface iron,6.0,9.5,6.125743015272698,13.379850984935384
+test-00288,corrected,False,B,A,B,7549,7117,center punch strong,Rice Cookers orange,0.7,3.09,0.9230441875907298,2.218597001928029
+test-00289,corrected,False,A,B,A,7870,7144,staplegun plastic,dog high quality,0.57,0.15,0.4351644727600135,0.08469065377669605
+test-00290,retained,False,A,A,A,6614,7283,stake slick,welt toy,9.0,0.34,5.078419554291424,0.7132733424022872
+test-00291,still_wrong,True,B,A,A,7026,7101,FAE steel,dimmer red,0.47,0.66,0.4402940190394018,0.38855814828671326
+test-00292,retained,False,A,A,A,7666,7131,mustard agent solid,Health & Personal Care Household Supplies Light Bulbs High Intensity Discharge Bulbs blue,1.76,0.2,2.1252859129307433,0.585577801586628
+test-00293,retained,False,B,B,B,6807,7946,recording system huge,stator old,0.62,2.35,0.7035878717293782,1.7688198240053343
+test-00294,corrected,False,A,B,A,7605,7560,mute purple,wiper motor miniature,0.31,0.11,0.1765104760401213,0.06699582508074768
+test-00295,retained,False,B,B,B,7287,7776,Diffusers black,roll top,0.66,3.5,0.8645831519053777,1.380251362611411
+test-00296,retained,False,A,A,A,7095,7711,supplejack lovely,compound pendulum easy,1.19,0.2,1.5337785826391634,0.4668633539886035
+test-00297,corrected,False,A,B,A,6759,6901,P.A. smart,LGB sturdy,4.06,0.9,3.2280393166621684,0.5810207700067891
+test-00298,regressed,False,A,A,B,7712,7917,tin white,stringer strong,0.81,0.28,0.8082445323350098,0.9371223811792109
+test-00299,retained,False,B,B,B,6822,7915,taping large,radius new,0.45,6.17,1.191013633477561,6.6754564450043725
+test-00300,retained,False,B,B,B,6996,7037,billy powerful,Skillets new,0.22,3.6,0.24126123994088003,3.8634572749307594
+test-00301,corrected,False,A,B,A,6533,7213,ambulance hand made,scourge round,0.5,0.07,0.3402328954453201,0.08081239444613314
+test-00302,retained,False,B,B,B,6846,6858,Toys & Games Hobbies Radio Control Cars discount,stuffed giraffe bright,0.24,0.55,0.14406366524238348,0.6558159667693613
+test-00303,corrected,False,B,A,B,7267,6805,mould girls,hookup green,0.3,0.4,0.16974848016677435,0.5587622264125949
+test-00304,retained,False,B,B,B,7623,7083,zoom lens standard,Soufflé Dishes square,1.31,3.7,0.7964913568461423,4.412206828113552
+test-00305,corrected,False,A,B,A,7546,7743,pantograph wood,cookie jar cheap,3.09,2.0,3.8937590011084904,1.542792040343596
+test-00306,retained,False,A,A,A,6554,7330,Electronics Accessories & Supplies Mounts Computer & Monitor Mounts modest,Tools & Home Improvement Hardware powerful,4.75,0.8,3.6293825295036504,0.48546104285586406
+test-00307,retained,False,B,B,B,6736,6707,window lock single,Money Handling Products sturdy,0.15,5.3,0.10874495353537195,3.0088637338289486
+test-00308,retained,False,B,B,B,7568,6682,hockey puck ceramic,Beauty Bath & Body Bath Bubble Bath make,0.76,1.27,0.3722158928197272,0.8035226252141359
+test-00309,regressed,False,A,A,B,7035,7370,ballot box well made,floppy realistic,1.5,0.88,0.8747745673363378,0.8773410999888707
+test-00310,corrected,False,A,B,A,6758,7177,Dish Racks unique,vacuum bottle square,4.2,1.4,2.2623550443798663,0.9189967814556623
+test-00311,retained,False,A,A,A,7653,6632,cuckoo clock curved,metronome dark,1.6,1.08,1.5548923675121262,1.184055264907082
+test-00312,corrected,False,A,B,A,7363,6602,Tools & Home Improvement Hardware Bathroom Hardware Bathroom Shelves iron,bidet violet,0.65,0.51,1.5277990195575546,0.17789488335145315
+test-00313,retained,False,B,B,B,7093,6910,sleigh old,Saucepans curved,0.13,6.0,0.6065306631389771,4.960777666272578
+test-00314,retained,False,A,A,A,7743,7715,cookie jar cheap,gas fixture straight,2.0,0.8,1.542792040343596,0.5067752986137797
+test-00315,retained,False,B,B,B,6823,7879,iris smart,snare yellow,0.06,9.0,0.07358051647071133,9.788908130126833
+test-00316,retained,True,A,A,A,6615,7335,Tools & Home Improvement Building Supplies Building Materials Tiles Glass Tiles steel,automatic firearm discount,2.33,1.81,2.893596020751634,1.8464801955161225
+test-00317,retained,True,B,B,B,6608,7252,Countersink Bits beautiful,Tools & Home Improvement Power & Hand Tools Hand Tools Axes heavy,1.32,4.0,1.5337785826391634,1.8537071764778554
+test-00318,retained,False,B,B,B,7699,7000,sorter simple,Toys & Games Puzzles Jigsaw Puzzles Panoramic Puzzles scale,0.15,0.33,0.15455775942366992,0.7387953674463308
+test-00319,retained,False,B,B,B,7308,7760,bridle standard,mountain bike orange,0.02,0.55,0.2508719802493304,0.9828153747681896
+test-00320,retained,True,B,B,B,6632,7794,metronome dark,ground control iron,1.08,1.41,1.184055264907082,1.1991831525117846
+test-00321,corrected,False,A,B,A,7328,7376,toll line easy,Kitchen Accessories ceramic,4.5,0.59,3.3045903982324063,0.9060752665737315
+test-00322,corrected,True,B,A,B,7738,6786,petrol tank single,Sports & Outdoors Other Sports Rodeo imported,4.28,7.3,5.239625842347827,6.078072089539689
+test-00323,retained,False,B,B,B,7447,7167,sump pump brass,Electronics Camera & Photo Surveillance Cameras Dome Cameras modest,0.9,1.98,0.45073532839280867,1.0644945038251135
+test-00324,retained,False,B,B,B,6940,7525,dish antenna classic,Furniture green,0.8,4.0,0.8963941531926027,3.8937590011084904
+test-00325,corrected,True,A,B,A,7746,7547,lug wrench wood,omnidirectional antenna toy,4.63,2.7,3.08021671168827,2.30697605422961
+test-00326,retained,False,B,B,B,6788,7083,Hammer nice,Soufflé Dishes square,0.42,3.7,0.4217758897612579,4.412206828113552
+test-00327,corrected,False,B,A,B,6956,6879,action iron,Tools & Home Improvement Hardware Window Hardware full,0.65,7.2,0.5878696639272509,6.6754564450043725
+test-00328,corrected,False,A,B,A,7690,7575,electrical distributor vintage,wreck expensive,3.0,0.46,2.1672033007287577,0.20798019458874412
+test-00329,retained,False,A,A,A,6815,6857,riding light huge,secateurs small,2.04,0.55,2.3709274264110114,0.2302130728818505
+test-00330,retained,False,A,A,A,6986,7152,pilot single,bogie brand name,0.23,0.1,0.44548407278937063,0.10705901909885046
+test-00331,corrected,False,A,B,A,6986,6799,pilot single,cutting tool fancy,0.23,0.04,0.44548407278937063,0.17929012781082598
+test-00332,corrected,False,A,B,A,6903,7241,Jig Saw Blades solid,stuffed tiger authentic,4.19,0.35,2.3433054150756703,0.2887519106650235
+test-00333,retained,False,A,A,A,7668,7441,corbel standard,roadster wooden,7.0,0.66,3.601137929811734,0.6456485361669868
+test-00334,retained,True,B,B,B,7357,7487,stuffed kitten tall,firing mechanism portable,0.3,2.29,0.45604844661058874,2.9162907478085818
+test-00335,corrected,False,A,B,A,7621,7045,Serveware blue,"Home, Garden & Pets Pet Supplies Houses & Habitats Accessories Kennel Food & Water Cups common",4.41,0.41,3.436230294933144,0.5067752986137797
+test-00336,corrected,False,A,B,A,7832,7916,flatbed powerful,worm light,9.5,1.25,7.389056770107361,0.7077225841960644
+test-00337,retained,False,B,B,B,7607,6627,knuckles ,overdrive better,0.11,1.38,0.5924804170357254,1.588659477140653
+test-00338,retained,False,A,A,A,7922,7583,wok yellow,spool translucent,1.6,0.5,2.398875294057996,0.6356386871084834
+test-00339,retained,False,B,B,B,7299,7178,dining compartment realistic,mailsorter silver,0.44,2.0,0.4742153710929788,1.701057286207016
+test-00340,corrected,False,A,B,A,7181,7375,high-hat cymbal metal,cardcase top,2.87,0.05,2.4944354340522166,0.1175813344701115
+test-00341,retained,False,B,B,B,6908,7854,kick starter solid,jaw hand made,0.16,0.45,0.198456085302785,0.4668633539886035
+test-00342,retained,False,B,B,B,6647,7383,penny bank well made,Paella Pans huge,1.15,6.0,0.6041660657224992,6.271010674933232
+test-00343,retained,False,B,B,B,7311,7407,master key smart,tank circuit newest,1.75,5.51,0.5147558863743535,3.6865370780193
+test-00344,corrected,False,B,A,B,6826,7300,Cups classic,camera lens slick,0.29,1.75,0.3221260502785499,1.486589212541908
+test-00345,retained,False,A,A,A,7643,7492,electric scale,crane yellow,8.95,0.66,6.887357219379342,0.6077164726167938
+test-00346,retained,False,A,A,A,7849,6987,water tank molded,dog sleigh black,2.45,0.31,3.128722982500859,0.2798679153516722
+test-00347,retained,False,A,A,A,6840,7236,round steel,Footballs blue,0.8,0.49,1.681239345505345,0.7941612190907046
+test-00348,corrected,False,B,A,B,6682,7328,Beauty Bath & Body Bath Bubble Bath make,toll line easy,1.27,4.5,0.8035226252141359,3.3045903982324063
+test-00349,retained,True,B,B,B,6550,7166,Skillets little,field-effect transistor silver,3.0,10.0,8.504750398950502,13.590554742650841
+test-00350,corrected,False,B,A,B,7457,7002,decoy sturdy,minute gun delicate,1.6,13.01,1.5159094868581358,13.172416411671733
+test-00351,retained,False,B,B,B,7964,7643,butter knife skiny,electric scale,0.15,8.95,0.08602433488017848,6.887357219379342
+test-00352,retained,False,A,A,A,7170,6996,penny bank small,billy powerful,0.56,0.22,0.8595320128686137,0.24126123994088003
+test-00353,regressed,False,A,A,B,7741,7577,console small,gas engine round,1.75,0.89,1.9887373791567398,2.244749247068837
+test-00354,corrected,False,B,A,B,7922,6782,wok yellow,water tank new,1.6,2.45,2.398875294057996,2.9391633058114683
+test-00355,retained,False,B,B,B,7598,7272,limousine quaint,coffee mug best,0.35,0.56,0.38104272692186425,0.5587622264125949
+test-00356,still_wrong,True,A,B,B,7715,6933,gas fixture straight,Taping Supplies narrow,0.8,0.35,0.5067752986137797,0.791837948501674
+test-00357,retained,False,A,A,A,7124,6665,mail red,"Toys & Games Games Checkers, Chess & Backgammon Chess purple",1.35,0.31,1.1265284039347478,0.28427520929536093
+test-00358,retained,False,B,B,B,6787,7779,Health & Personal Care Personal Care Eye Care Contact Lens Care Cases unique,laundry basket popular,0.33,0.6,0.08469065377669605,0.8837905544461184
+test-00359,corrected,False,A,B,A,7302,7115,crank best,passive matrix display single,0.49,0.3,0.6368813489432965,0.2096113847889987
+test-00360,corrected,False,B,A,B,7602,7824,Candles & Home Scents baby,bicycle seat wide,1.75,2.35,0.7872119334661354,2.244749247068837
+test-00361,retained,False,B,B,B,6912,7087,Technical Pens full,dog hook solid,0.09,0.35,0.16581625690895407,0.4334679287965916
+test-00362,retained,False,A,A,A,7536,7267,HEPA Air Purifiers powerful,mould girls,9.0,0.3,5.198850227681073,0.16974848016677435
+test-00363,corrected,False,B,A,B,7000,6632,Toys & Games Puzzles Jigsaw Puzzles Panoramic Puzzles scale,metronome dark,0.33,1.08,0.7387953674463308,1.184055264907082
+test-00364,corrected,False,A,B,A,6982,7299,Davy lamp brass,dining compartment realistic,3.2,0.44,1.9579049758657807,0.4742153710929788
+test-00365,corrected,False,A,B,A,6722,7163,clock pendulum tall,Yarn red,2.87,0.22,1.5041127428629242,0.9234950501996677
+test-00366,corrected,False,A,B,A,7522,6660,scoop curved,earthenware wide,3.0,1.46,4.309998464373749,1.539781676221469
+test-00367,corrected,False,B,A,B,7598,7805,limousine quaint,electric clock easy,0.35,0.48,0.38104272692186425,0.9984295614745611
+test-00368,corrected,False,A,B,A,6834,7483,All Pans top,Education & Crafts authentic,7.0,2.75,5.754603006015069,1.1199467990792922
+test-00369,retained,False,A,A,A,7169,6548,bucket metal,reading lamp newest,0.45,0.35,1.2827721902685543,0.4950358907100782
+test-00370,retained,False,B,B,B,6602,7230,bidet violet,conditioner plastic,0.51,1.2,0.17789488335145315,1.3937963063198953
+test-00371,still_wrong,False,A,B,B,7042,7914,"Home, Garden & Pets Kitchen & Dining Kitchen Utensils & Gadgets Oil Sprayers & Dispensers skiny",dice box well made,0.5,0.33,0.2712572890560032,0.3621760147761968
+test-00372,retained,False,B,B,B,7144,7613,dog high quality,n-type semiconductor large,0.15,2.19,0.08469065377669605,1.7619237117976971
+test-00373,retained,True,B,B,B,6546,6951,Vacuum Coffee Machines light,Health & Personal Care Health Care Alternative Medicine Sound Therapy better,0.5,0.63,0.3900789093936432,1.1215885809686363
+test-00374,retained,True,B,B,B,7105,6783,CD burner little,lead authentic,0.75,5.29,0.7803233087798311,3.0562466041079333
+test-00375,corrected,False,A,B,A,6749,7964,automobile unique,butter knife skiny,0.98,0.15,1.5855596737844695,0.08602433488017848
+test-00376,retained,False,B,B,B,6736,7253,window lock single,butt shaft old,0.15,3.0,0.10874495353537195,2.1419547185322534
+test-00377,corrected,False,A,B,A,7684,6998,convertible scale,hair spray medium,1.1,0.2,1.4982487545524776,0.2548226479767089
+test-00378,retained,False,A,A,A,6613,7231,sprayer metal,Personal Groomers better,8.1,0.5,7.865609488647534,0.3510330532959801
+test-00379,retained,True,B,B,B,7442,7438,Woodcase Colored Pencils high quality,biteplate plain,0.5,0.65,0.4168620197164004,0.42674762076819134
+test-00380,corrected,False,A,B,A,7422,7198,Baby Products Nursery Nursery Décor Lamps & Shades quality,patrol wagon toy,3.0,2.1,5.158393202987484,2.4176897311522842
+test-00381,corrected,False,B,A,B,7308,7501,bridle standard,tower discount,0.02,0.49,0.2508719802493304,0.5587622264125949
+test-00382,corrected,True,A,B,A,7076,7150,pulse counter wonderful,crossbow orange,1.46,0.85,1.5041127428629242,0.9581752493298175
+test-00383,retained,False,B,B,B,7000,7868,Toys & Games Puzzles Jigsaw Puzzles Panoramic Puzzles scale,vase top,0.33,2.2,0.7387953674463308,2.893596020751634
+test-00384,corrected,False,A,B,A,7872,7542,Time Cards colorful,Welding Hammers small,0.77,0.2,0.6282332667694694,0.15822299520068045
+test-00385,regressed,False,A,A,B,6758,7719,Dish Racks unique,solar panel new,4.2,2.87,2.2623550443798663,3.2533572263789523
+test-00386,retained,True,A,A,A,7092,7635,matrix black,foil kitchen,2.0,1.43,4.112628972666761,1.521842736989809
+test-00387,retained,False,A,A,A,7511,6856,rain gauge sturdy,electronic organ huge,12.0,4.41,5.577551617209266,5.239625842347827
+test-00388,retained,False,A,A,A,7850,6540,Bottle Accessories generic,mosaic glass,8.5,0.75,9.05326131593696,1.380251362611411
+test-00389,corrected,False,A,B,A,7596,6990,Clothing Women's hand held,Office Tape Dispensers toy,1.14,0.25,1.029730261923576,0.39777250963224525
+test-00390,corrected,False,A,B,A,7624,7890,searing iron medium,coffee mug common,5.3,0.75,4.481689047471681,0.47607138805619703
+test-00391,corrected,False,A,B,A,7596,7735,Clothing Women's hand held,thermos bottle model,1.14,0.45,1.029730261923576,0.3073747730789382
+test-00392,still_wrong,True,A,B,B,6683,7081,rack and pinion cheap,ledger board cheap,1.1,0.59,0.524908526794988,0.7359150013959819
+test-00393,corrected,False,A,B,A,6614,7657,stake slick,filament beautiful,9.0,2.2,5.078419554291424,1.9579049758657807
+test-00394,corrected,False,B,A,B,7120,6809,wet cell old,roller bearing simple,0.7,1.1,0.6519845528595318,0.8915924585536652
+test-00395,regressed,True,B,B,A,7871,6780,pepper spray well made,opener wonderful,0.33,0.44,0.9465498167719995,0.13963128451321924
+test-00396,corrected,False,A,B,A,6956,6796,action iron,fuel-air bomb short,0.65,0.4,0.5878696639272509,0.4950358907100782
+test-00397,corrected,False,B,A,B,7819,7756,corrective purple,strainer black,0.31,2.15,0.7607598923872492,1.897666378388155
+test-00398,corrected,False,A,B,A,7615,6943,operating table kitchen,spade medium,6.61,1.04,4.446811822578948,0.5167705232919886
+test-00399,still_wrong,True,A,B,B,6790,7501,Graph & Data Pads narrow,tower discount,1.59,0.49,0.34559077904227037,0.5587622264125949
+test-00400,retained,False,B,B,B,7890,7703,coffee mug common,teakettle hand made,0.75,3.5,0.47607138805619703,3.986096468111186
+test-00401,retained,False,B,B,B,7218,7423,switch engine well made,melting pot metal,0.63,3.45,0.3171319104486417,7.105985422111752
+test-00402,corrected,True,B,A,B,6681,7653,rattan short,cuckoo clock curved,0.33,1.6,1.4212865710822569,1.5548923675121262
+test-00403,retained,False,B,B,B,7455,7674,booster amplifier delicate,cocktail shaker purple,0.66,1.1,0.5107500348368632,0.5500994451408616
+test-00404,retained,False,A,A,A,7634,7208,bypass full,real storage translucent,0.8,0.35,1.5458080969909096,0.21796137042631303
+test-00405,corrected,True,B,A,B,7364,6699,mobile home modern,parallel port ingenious,0.15,0.25,0.33495805078657204,0.3870433086245895
+test-00406,retained,False,B,B,B,7475,7777,Tools & Home Improvement Electrical Dimmer Switches slender,ground brand name,0.44,0.68,0.3171319104486417,1.2727894447611918
+test-00407,retained,False,B,B,B,6540,6730,mosaic glass,cereal bowl stone,0.75,4.14,1.380251362611411,1.8537071764778554
+test-00408,retained,False,B,B,B,7475,6651,Tools & Home Improvement Electrical Dimmer Switches slender,Office Tape Dispensers wood,0.44,0.72,0.3171319104486417,0.5187931807832993
+test-00409,retained,False,B,B,B,6725,7941,"Home, Garden & Pets Patio, Lawn & Garden Gardening Garden Sculptures & Statues Gazing Balls toy",stockpot popular,1.4,8.0,1.8178532523906585,5.799737071407908
+test-00410,still_wrong,False,A,B,B,6647,7136,penny bank well made,idler pulley classic,1.15,0.35,0.6041660657224992,0.8612123916893075
+test-00411,retained,False,B,B,B,6711,7712,Mortar & Pestles plastic,tin white,0.03,0.81,0.11943296889639958,0.8082445323350098
+test-00412,still_wrong,True,A,B,B,6762,7922,gasoline tank bright,wok yellow,2.25,1.6,2.1087466746290424,2.398875294057996
+test-00413,corrected,False,A,B,A,7452,6942,fire truck big,steel baby,0.88,0.5,2.2623550443798663,0.9362076803481258
+test-00414,retained,False,B,B,B,7021,7675,candy thermometer slender,Health & Personal Care Household Supplies Laundry Liquid Detergent portable,0.08,4.95,0.07832605453935766,3.436230294933144
+test-00415,retained,False,B,B,B,6576,7796,Tools & Home Improvement Power & Hand Tools Hand Tools Punches girls,Filing Crates & Posting Tubs violet,0.6,4.0,0.48736109393896276,4.017360269137704
+test-00416,retained,True,B,B,B,7539,7210,Toys & Games Sports & Outdoor Play Pools & Water Fun Lawn Water Slides well made,entanglement tall,1.1,1.95,0.9762390270523702,1.0230895941192806
+test-00417,corrected,False,B,A,B,7945,7069,bagpipe kitchen,Shampoo clever,0.88,1.2,0.4351644727600135,0.7402396760661873
+test-00418,corrected,False,A,B,A,7306,7697,Beard Trimmers clever,Coin Purses white,0.67,0.08,0.6700582566092752,0.12131377011564688
+test-00419,regressed,False,A,A,B,7941,7023,stockpot popular,Food Savers full,8.0,3.69,5.799737071407908,5.937273577990162
+test-00420,retained,False,B,B,B,7192,6873,scriber big,Microscope Accessories realistic,0.27,0.41,0.14748001915342285,0.3171319104486417
+test-00421,retained,False,B,B,B,7349,7155,"Home, Garden & Pets Vacuums, Cleaning & Storage Cleaning Supplies Sweeping Brooms Hand Brooms popular",Tools & Home Improvement Power & Hand Tools Hand Tools Hammers Claw Hammers hollow,0.18,1.67,0.12713572663715056,1.486589212541908
+test-00422,retained,False,B,B,B,7452,7294,fire truck big,waste-paper basket better,0.88,8.7,2.2623550443798663,6.173788026531636
+test-00423,retained,False,B,B,B,7101,6782,dimmer red,water tank new,0.66,2.45,0.38855814828671326,2.9391633058114683
+test-00424,corrected,True,B,A,B,7095,7197,supplejack lovely,"Home, Garden & Pets Kitchen & Dining Small Appliances Deep Fryers ceramic",1.19,4.98,1.5337785826391634,3.8634572749307594
+test-00425,retained,False,A,A,A,7569,6689,data system brown,pump action handsome,7.15,2.0,6.320194837551344,1.3430213322378632
+test-00426,retained,False,A,A,A,7746,7571,lug wrench wood,sparking plug glass,4.63,0.4,3.08021671168827,0.32719873222104445
+test-00427,corrected,True,A,B,A,6585,7246,IEEE 1394 Firewire heavy,mower oak,0.66,0.5,0.694033892125379,0.6041660657224992
+test-00428,regressed,False,B,B,A,7394,7238,wall clock plain,black kettle,1.7,2.5,2.9854482065079413,2.2359976334474885
+test-00429,retained,False,B,B,B,6540,7882,mosaic glass,grinder premium,0.75,2.1,1.380251362611411,2.676138773824772
+test-00430,regressed,True,B,B,A,7876,7914,power strip cute,dice box well made,0.22,0.33,0.5187931807832993,0.3621760147761968
+test-00431,retained,False,B,B,B,6990,7712,Office Tape Dispensers toy,tin white,0.25,0.81,0.39777250963224525,0.8082445323350098
+test-00432,corrected,True,A,B,A,7487,6625,firing mechanism portable,trash bin orange,2.29,0.97,2.9162907478085818,2.465374611364857
+test-00433,retained,True,A,A,A,7118,7660,Travel Mugs green,telfer toy,0.81,0.1,0.5947993669627278,0.18789442761862998
+test-00434,retained,False,A,A,A,7214,7349,Office Products Office & School Supplies Education & Crafts Filing Products File & Folder Accessories Expanding Files smart,"Home, Garden & Pets Vacuums, Cleaning & Storage Cleaning Supplies Sweeping Brooms Hand Brooms popular",1.92,0.18,2.573617561873104,0.12713572663715056
+test-00435,retained,False,A,A,A,7796,7270,Filing Crates & Posting Tubs violet,Maps brown,4.0,2.8,4.017360269137704,2.4944354340522166
+test-00436,corrected,True,A,B,A,6923,7964,cache solid,butter knife skiny,0.25,0.15,0.38104272692186425,0.08602433488017848
+test-00437,retained,False,B,B,B,7795,6841,Body Sprays clever,Electronics Marine Electronics Subwoofers special,0.28,11.2,0.2302130728818505,3.278873669435737
+test-00438,corrected,False,A,B,A,7489,7913,radio large,glasses case long,1.06,0.3,0.7697274944271382,0.33495805078657204
+test-00439,regressed,False,B,B,A,7922,7961,wok yellow,cue stick heavy,1.6,2.0,2.398875294057996,2.012180132344743
+test-00440,retained,False,B,B,B,6990,6783,Office Tape Dispensers toy,lead authentic,0.25,5.29,0.39777250963224525,3.0562466041079333
+test-00441,corrected,False,A,B,A,6673,7042,radio receiver boys,"Home, Garden & Pets Kitchen & Dining Kitchen Utensils & Gadgets Oil Sprayers & Dispensers skiny",1.06,0.5,1.2228348970961802,0.2712572890560032
+test-00442,corrected,False,A,B,A,7615,7523,operating table kitchen,Timers fat,6.61,0.46,4.446811822578948,0.38104272692186425
+test-00443,retained,False,A,A,A,7812,6785,"Home, Garden & Pets Patio, Lawn & Garden Gardening Garden Structures Garden Bridges yellow",musical box expensive,5.5,1.5,7.623610274378278,0.8209725345318488
+test-00444,retained,False,A,A,A,7421,6846,pinger inexpensive,Toys & Games Hobbies Radio Control Cars discount,10.0,0.24,7.217889851305568,0.14406366524238348
+test-00445,retained,False,A,A,A,7443,6999,Electronics Accessories & Supplies Office Electronics Accessories Printer Supplies Printer Roll Holders red,streetlight generic,3.2,0.5,1.306795698182388,0.5127490197996951
+test-00446,retained,False,B,B,B,7114,7231,free weight plastic,Personal Groomers better,0.22,0.5,0.09747834474684133,0.3510330532959801
+test-00447,retained,True,B,B,B,7231,7464,Personal Groomers better,hair tonic quaint,0.5,0.79,0.3510330532959801,0.6994773516518564
+test-00448,still_wrong,True,A,B,B,6606,7405,pottery square,menorah premium,0.98,0.4,0.9440112569757764,3.08021671168827
+test-00449,corrected,True,A,B,A,7770,7371,mixing faucet ceramic,Sports & Outdoors Outdoor Recreation Camping & Hiking Backpack Accessories Pack Covers powerful,4.0,2.65,6.833759949370973,1.7966745703906035
+test-00450,corrected,False,A,B,A,7920,7032,Pullman toy,junction barrier womens,0.63,0.1,0.3122152554359038,0.11943296889639958
+test-00451,retained,False,B,B,B,6585,7141,IEEE 1394 Firewire heavy,Speaker Cables white,0.66,10.0,0.694033892125379,4.446811822578948
+test-00452,retained,False,B,B,B,6849,7628,return key hollow,cabin car toy,0.02,0.49,0.04825527845501749,0.42674762076819134
+test-00453,retained,True,B,B,B,7779,6993,laundry basket popular,fire tongs quality,0.6,1.75,0.8837905544461184,1.4982487545524776
+test-00454,still_wrong,True,A,B,B,7104,7283,jet heavy,welt toy,1.15,0.34,0.42674762076819134,0.7132733424022872
+test-00455,still_wrong,True,B,A,A,7851,6696,harp purple,All-Purpose Labels broad,0.4,0.5,0.7548395931925886,0.6558159667693613
+test-00456,regressed,True,B,B,A,7130,6916,EDS silver,cassette tape green,0.15,0.88,0.38403128943921006,0.23567240488914243
+test-00457,retained,False,A,A,A,7866,7076,air cleaner light,pulse counter wonderful,11.0,1.46,6.887357219379342,1.5041127428629242
+test-00458,retained,False,A,A,A,7678,7142,simple pendulum yellow,Sports & Outdoors Boating & Water Sports Surfing Surfboard Racks sturdy,1.1,0.45,1.092935426189638,0.4816831886835015
+test-00459,corrected,False,A,B,A,7875,6986,wine bottle real,pilot single,2.88,0.23,1.897666378388155,0.44548407278937063
+test-00460,retained,False,A,A,A,7808,6770,savings bank yellow,Keepsakes little,1.1,0.03,1.9050936178127968,0.07473923932348137
+test-00461,retained,False,A,A,A,7655,6858,trash barrel oak,stuffed giraffe bright,3.31,0.55,4.481689047471681,0.6558159667693613
+test-00462,retained,False,B,B,B,7944,6758,oil lamp wood,Dish Racks unique,2.0,4.2,1.184055264907082,2.2623550443798663
+test-00463,retained,False,B,B,B,7118,7796,Travel Mugs green,Filing Crates & Posting Tubs violet,0.81,4.0,0.5947993669627278,4.017360269137704
+test-00464,corrected,False,B,A,B,7796,7866,Filing Crates & Posting Tubs violet,air cleaner light,4.0,11.0,4.017360269137704,6.887357219379342
+test-00465,corrected,False,A,B,A,7063,7080,mailbox fine,chute-the-chute best,7.0,0.28,6.320194837551344,0.4368676493920408
+test-00466,corrected,False,A,B,A,7763,6978,Scissors blue,Credit Card Holders steel,0.29,0.2,0.4217758897612579,0.12131377011564688
+test-00467,corrected,False,A,B,A,7398,6648,Hurricane Glasses brown,File Folders hollow,7.18,1.21,2.655312828645812,1.329969775623605
+test-00468,corrected,False,A,B,A,7902,7951,ladder truck ,hygrometer small,1.56,0.1,1.1364730166436399,0.1121968842945518
+test-00469,corrected,False,A,B,A,7689,6989,"Home, Garden & Pets Kitchen & Dining Bakeware Baking Tools & Accessories Cooking Torches realistic",in-tray dark,0.75,0.5,0.9185481167735374,0.29329906280777246
+test-00470,corrected,True,B,A,B,6538,6786,gyro horizon brand name,Sports & Outdoors Other Sports Rodeo imported,2.05,7.3,2.1756855763347542,6.078072089539689
+test-00471,retained,False,B,B,B,7578,6660,tripper steel,earthenware wide,0.8,1.46,0.8495182609752205,1.539781676221469
+test-00472,retained,False,A,A,A,7042,6714,"Home, Garden & Pets Kitchen & Dining Kitchen Utensils & Gadgets Oil Sprayers & Dispensers skiny",Brushes & Applicators strong,0.5,0.05,0.2712572890560032,0.07131667919014512
+test-00473,regressed,False,B,B,A,6931,6647,charger smart,penny bank well made,0.41,1.15,0.7373538108423319,0.6041660657224992
+test-00474,retained,False,A,A,A,7808,6692,savings bank yellow,sharpener light,1.1,0.02,1.9050936178127968,0.09596709400202674
+test-00475,retained,False,B,B,B,7669,7181,Tools & Home Improvement Lamps & Light Fixtures Light Fixtures Track Lighting plain,high-hat cymbal metal,0.1,2.87,0.08081239444613314,2.4944354340522166
+test-00476,still_wrong,False,B,A,A,7917,7844,stringer strong,Tool Belts generic,0.28,1.1,0.9371223811792109,0.6221280031293768
+test-00477,retained,False,A,A,A,6795,7326,Bird Feeders discount,afterburner kids,0.57,0.33,1.311910426753439,0.30498273866936093
+test-00478,retained,False,B,B,B,7311,6985,master key smart,omelette pan blue,1.75,10.4,0.5147558863743535,7.865609488647534
+test-00479,retained,False,B,B,B,7877,6690,Electronics Computers & Accessories Computer Accessories Printer Ink & Toner Inkjet Printer Ink & Toner wonderful,Hot Pots & Electric Kettles orange,0.04,2.8,0.15946395078271533,2.3709274264110114
+test-00480,retained,False,A,A,A,7654,6575,diesel-electric glass,Fountain Pens bright,3.31,0.11,4.660219607120837,0.10539921905615537
+test-00481,retained,False,B,B,B,7291,6557,cargo container powerful,Wine Decanters boys,0.35,3.0,0.1175813344701115,3.65784770858091
+test-00482,corrected,True,A,B,A,7479,6974,push button classic,Sports & Outdoors Team Sports Baseball Gloves & Mitts Outfielder's Gloves ,6.0,1.48,6.173788026531636,4.243178109989657
+test-00483,retained,False,B,B,B,7859,6834,WiFi wooden,All Pans top,1.25,7.0,1.7619237117976971,5.754603006015069
+test-00484,retained,False,B,B,B,6960,7849,Beauty Skin Care Face Face Treatments brand name,water tank molded,0.29,2.45,0.30260936680878947,3.128722982500859
+test-00485,retained,False,A,A,A,6655,6617,electron multiplier iron,alarm clock carved,5.2,0.33,4.808150583922088,0.46323017048839543
+test-00486,retained,False,A,A,A,7151,7040,stealth fighter shallow,Electronics Computers & Accessories Printers All-In-Ones tiny,4.7,0.15,7.623610274378278,0.1121968842945518
+test-00487,retained,False,A,A,A,6974,6895,Sports & Outdoors Team Sports Baseball Gloves & Mitts Outfielder's Gloves ,aerofoil wonderful,1.48,0.88,4.243178109989657,0.29791784219740586
+test-00488,corrected,True,A,B,A,7801,6753,lawn cart brand name,rucksack best,4.12,1.96,4.696769601963679,2.0438674687339904
+test-00489,retained,False,A,A,A,7252,7697,Tools & Home Improvement Power & Hand Tools Hand Tools Axes heavy,Coin Purses white,4.0,0.08,1.8537071764778554,0.12131377011564688
+test-00490,retained,False,A,A,A,7850,6596,Bottle Accessories generic,poor box steel,8.5,0.08,9.05326131593696,0.07832605453935766
+test-00491,corrected,True,B,A,B,6761,7221,ship's boat glass,Cheese Knives white,0.35,0.5,0.32719873222104445,0.8193706697188303
+test-00492,corrected,False,A,B,A,7756,7490,strainer black,Binder Pouches simple,2.15,0.31,1.897666378388155,0.2145821966721603
+test-00493,still_wrong,True,A,B,B,7299,7094,dining compartment realistic,box wrench black,0.44,0.09,0.4742153710929788,1.1123171253760664
+test-00494,retained,False,B,B,B,7634,7677,bypass full,hand luggage plastic,0.8,3.53,1.5458080969909096,4.34380215774675
+test-00495,retained,False,B,B,B,6612,7442,Compact Refrigerators fake,Woodcase Colored Pencils high quality,0.14,0.5,0.1429425498419782,0.4168620197164004
+test-00496,retained,False,A,A,A,6840,7087,round steel,dog hook solid,0.8,0.35,1.681239345505345,0.4334679287965916
+test-00497,corrected,False,A,B,A,7446,7817,Office Products Office Furniture & Lighting Office Lighting Desk Lamps medium,thermos bottle silver,10.0,3.1,11.092286592459589,1.6681558892463575
+test-00498,retained,False,A,A,A,7647,6594,guillotine discount,lead-acid battery handsome,8.0,3.15,4.112628972666761,1.7143989873148588
+test-00499,still_wrong,True,A,B,B,6921,6886,engine fancy,Drawing Media brown,0.14,0.05,0.13323710398012764,0.13963128451321924
+test-00500,corrected,False,A,B,A,7296,7272,tin can girls,coffee mug best,0.91,0.56,1.9809839976863088,0.5587622264125949
+test-00501,corrected,False,A,B,A,7318,6652,toilet seat dark,Soufflé Dishes generic,6.5,0.06,5.6212974038301375,0.1232241760324108
+test-00502,corrected,False,B,A,B,6738,7962,tea maker square,pew thick,1.3,1.73,0.5352614396106092,7.389056770107361
+test-00503,retained,False,B,B,B,7441,6756,roadster wooden,coffer red,0.66,2.7,0.6456485361669868,2.9162907478085818
+test-00504,corrected,True,A,B,A,6953,7625,Margarita Glasses boys,ATM ceramic,11.0,0.55,0.620914173469141,0.5167705232919886
+test-00505,regressed,True,B,B,A,7634,7035,bypass full,ballot box well made,0.8,1.5,1.5458080969909096,0.8747745673363378
+test-00506,corrected,False,B,A,B,7131,7076,Health & Personal Care Household Supplies Light Bulbs High Intensity Discharge Bulbs blue,pulse counter wonderful,0.2,1.46,0.585577801586628,1.5041127428629242
+test-00507,retained,False,B,B,B,7876,7321,power strip cute,fighter aircraft wooden,0.22,3.96,0.5187931807832993,4.446811822578948
+test-00508,corrected,True,B,A,B,6693,6690,alpenstock well made,Hot Pots & Electric Kettles orange,1.6,2.8,1.935094904100025,2.3709274264110114
+test-00509,corrected,False,A,B,A,7037,7553,Skillets new,Napkin Holders blue,3.6,2.0,3.8634572749307594,1.4953251840144732
+test-00510,retained,False,B,B,B,7774,6863,stuffed monkey popular,soup bowl ornate,0.48,2.0,0.3402328954453201,3.2029187058657405
+test-00511,still_wrong,True,B,A,A,7922,7709,wok yellow,remote terminal old,1.6,3.13,2.398875294057996,2.158754224794926
+test-00512,corrected,False,A,B,A,7255,6753,Modular Storage Systems glass,rucksack best,5.6,1.96,5.6212974038301375,2.0438674687339904
+test-00513,regressed,True,A,A,B,7712,6774,tin white,electric razor short,0.81,0.5,0.8082445323350098,1.6042500295874866
+test-00514,retained,False,A,A,A,6792,6558,automatic firearm orange,Jewelry Accessories scale,7.1,0.25,7.74366325770818,0.26086560100301986
+test-00515,corrected,False,A,B,A,6999,7474,streetlight generic,tab quality,0.5,0.4,0.5127490197996951,0.42674762076819134
+test-00516,corrected,True,A,B,A,6899,6999,scraper wood,streetlight generic,0.85,0.5,0.8282199188823873,0.5127490197996951
+test-00517,retained,False,B,B,B,7032,6984,junction barrier womens,cashbox delux,0.1,1.4,0.11943296889639958,2.2800985992925566
+test-00518,still_wrong,True,A,B,B,7839,7092,Soufflé Dishes square,matrix black,2.5,2.0,2.7396013875865464,4.112628972666761
+test-00519,retained,False,A,A,A,6655,6608,electron multiplier iron,Countersink Bits beautiful,5.2,1.32,4.808150583922088,1.5337785826391634
+test-00520,corrected,False,B,A,B,6955,7276,soup ladle glass,Verey pistol wide,0.35,1.1,1.1325953580934165,1.3965212155264548
+test-00521,retained,False,A,A,A,7141,7571,Speaker Cables white,sparking plug glass,10.0,0.4,4.446811822578948,0.32719873222104445
+test-00522,retained,False,A,A,A,7666,7187,mustard agent solid,IOL blue,1.76,0.1,2.1252859129307433,0.09596709400202674
+test-00523,retained,False,B,B,B,7434,6970,Index & Business Card Files curved,Tools & Home Improvement Storage & Home Organization portable,1.09,9.8,0.26291158324245645,13.590554742650841
+test-00524,corrected,False,B,A,B,7210,7621,entanglement tall,Serveware blue,1.95,4.41,1.0230895941192806,3.436230294933144
+test-00525,corrected,False,A,B,A,6722,6849,clock pendulum tall,return key hollow,2.87,0.02,1.5041127428629242,0.04825527845501749
+test-00526,corrected,False,A,B,A,7197,6963,"Home, Garden & Pets Kitchen & Dining Small Appliances Deep Fryers ceramic",Taping Supplies narrow,4.98,0.41,3.8634572749307594,1.1817450144303563
+test-00527,retained,False,A,A,A,7294,6575,waste-paper basket better,Fountain Pens bright,8.7,0.11,6.173788026531636,0.10539921905615537
+test-00528,corrected,False,B,A,B,6864,7189,Electronics Camera & Photo Digital Cameras Micro Four Thirds Digital Cameras long,Beauty Bath & Body Bath Minerals & Salts toy,0.43,1.13,0.2129122760130818,0.3722158928197272
+test-00529,retained,False,A,A,A,7390,6826,zoom lens standard,Cups classic,2.09,0.29,1.314475215121592,0.3221260502785499
+test-00530,retained,False,A,A,A,6730,6643,cereal bowl stone,miter joint hollow,4.14,0.38,1.8537071764778554,0.30260936680878947
+test-00531,retained,False,A,A,A,6696,7710,All-Purpose Labels broad,Duct Tape unique,0.5,0.1,0.6558159667693613,0.4168620197164004
+test-00532,retained,False,B,B,B,7442,6722,Woodcase Colored Pencils high quality,clock pendulum tall,0.5,2.87,0.4168620197164004,1.5041127428629242
+test-00533,retained,False,B,B,B,7380,7635,drinking glass fancy,foil kitchen,0.7,1.43,0.6065306631389771,1.521842736989809
+test-00534,retained,False,B,B,B,6948,7398,ash-pan wide,Hurricane Glasses brown,0.19,7.18,0.4402940190394018,2.655312828645812
+test-00535,retained,False,B,B,B,7815,7437,scimitar realistic,tote silly,0.13,2.9,0.2733847795705032,1.701057286207016
+test-00536,retained,False,A,A,A,7230,7649,conditioner plastic,Activators violet,1.2,0.25,1.3937963063198953,0.319619204523867
+test-00537,corrected,False,A,B,A,7337,7010,developer purple,p-n junction wide,0.33,0.15,0.3537862027149912,0.1429425498419782
+test-00538,retained,False,A,A,A,7390,7708,zoom lens standard,bass full,2.09,0.25,1.314475215121592,0.28650482642765057
+test-00539,regressed,True,A,A,B,6708,7335,sulfur mustard authentic,automatic firearm discount,2.5,1.81,1.460686106317104,1.8464801955161225
+test-00540,retained,False,A,A,A,6806,7357,tumbler slick,stuffed kitten tall,0.88,0.3,1.0423772082123008,0.45604844661058874
+test-00541,retained,False,B,B,B,7202,7898,Bread Boxes purple,lobster pot large,4.41,9.0,3.601137929811734,10.751012749579445
+test-00542,retained,False,B,B,B,7093,7634,sleigh old,bypass full,0.13,0.8,0.6065306631389771,1.5458080969909096
+test-00543,retained,False,A,A,A,7478,7856,merchant vessels wonderful,squeezer ,4.0,0.68,3.6865370780193,0.3122152554359038
+test-00544,corrected,False,A,B,A,7454,6662,Switches slick,gun case brand name,3.22,0.11,2.7610886939755868,0.14748001915342285
+test-00545,corrected,False,A,B,A,7706,7025,saucepot unique,thermos bottle green,4.62,0.2,4.999685426154717,0.3171319104486417
+test-00546,regressed,False,B,B,A,7301,7067,induction coil portable,Ice-Cream Machines steel,5.8,12.0,11.092286592459589,5.665386575450163
+test-00547,retained,False,B,B,B,7462,7247,clamshell womens,clapperboard brand name,0.3,0.6,0.30978555676246444,1.6422935849881286
+test-00548,retained,False,A,A,A,7692,6765,Electronics Camera & Photo Film Cameras APS Cameras slick,display panel broad,1.5,0.63,1.3273746382809577,0.9901005306832469
+test-00549,retained,False,B,B,B,6814,7947,internal drive kids,horse-drawn vehicle green,0.27,0.72,0.20475575455784914,0.5971272626835835
+test-00550,regressed,True,B,B,A,7509,6583,reed instrument easy,electric clock plastic,0.26,0.7,0.6519845528595318,0.5947993669627278
+test-00551,retained,False,A,A,A,7645,6672,carburetor red,Steak Sets yellow,3.15,0.06,3.08021671168827,0.09015273190195616
+test-00552,corrected,False,A,B,A,7589,7494,"Home, Garden & Pets Patio, Lawn & Garden Picnic Baskets & Accessories Picnic Backpacks plastic",eyeglass long,0.57,0.2,0.771232335401155,0.23752082623335874
+test-00553,corrected,True,B,A,B,7852,7431,stuffed monkey popular,solar telescope modern,0.5,0.84,0.41039915892850853,1.6878196109669958
+test-00554,retained,False,B,B,B,7506,7270,breathalyzer ,Maps brown,0.19,2.8,0.2955994441305806,2.4944354340522166
+test-00555,retained,False,A,A,A,6842,6826,small computer system interface iron,Cups classic,9.5,0.29,13.379850984935384,0.3221260502785499
+test-00556,retained,False,B,B,B,7659,7075,carousel make,Steamers & Rice Cookers girls,2.0,6.22,1.206230220425311,7.865609488647534
+test-00557,retained,False,B,B,B,7568,6843,hockey puck ceramic,Sports & Outdoors Outdoor Recreation Camping & Hiking Backpacks & Bags External Frame Backpacks short,0.76,1.54,0.3722158928197272,1.935094904100025
+test-00558,retained,False,B,B,B,6547,7941,Sports & Outdoors Accessories Sports Water Bottles common,stockpot popular,0.44,8.0,0.5394595491134899,5.799737071407908
+test-00559,corrected,False,A,B,A,7646,6617,wet cell light,alarm clock carved,2.3,0.33,2.1672033007287577,0.46323017048839543
+test-00560,retained,False,B,B,B,6773,6547,solar panel short,Sports & Outdoors Accessories Sports Water Bottles common,0.3,0.44,0.4950358907100782,0.5394595491134899
+test-00561,corrected,True,A,B,A,7770,7106,mixing faucet ceramic,Chucks newest,4.0,3.1,6.833759949370973,1.4436686306421471
+test-00562,corrected,False,A,B,A,6833,6948,piano model,ash-pan wide,0.89,0.19,0.8169736007632775,0.4402940190394018
+test-00563,corrected,False,A,B,A,7557,7901,frying pan medium,Health & Personal Care Personal Care Oral Hygiene Mouthwash delicate,3.5,1.2,3.278873669435737,0.7035878717293782
+test-00564,corrected,False,A,B,A,7708,7599,bass full,Beauty Makeup Nails Nail Polish translucent,0.25,0.12,0.28650482642765057,0.1407264251338984
+test-00565,corrected,True,A,B,A,7838,7660,foot lever mens,telfer toy,0.44,0.1,0.6431314575727751,0.18789442761862998
+test-00566,retained,False,B,B,B,7363,7643,Tools & Home Improvement Hardware Bathroom Hardware Bathroom Shelves iron,electric scale,0.65,8.95,1.5277990195575546,6.887357219379342
+test-00567,retained,False,A,A,A,7323,7644,Rediffusion ceramic,zoom lens standard,2.54,0.21,2.893596020751634,0.2302130728818505
+test-00568,retained,False,A,A,A,7248,6765,diffusing screen long,display panel broad,1.54,0.63,2.7182816077147627,0.9901005306832469
+test-00569,regressed,True,A,A,B,7854,7374,jaw hand made,tappet medium,0.45,0.18,0.4668633539886035,0.5587622264125949
+test-00570,retained,False,B,B,B,6698,7002,thermometer brown,minute gun delicate,0.5,13.01,0.39777250963224525,13.172416411671733
+test-00571,corrected,False,A,B,A,6563,6914,throwing stick smart,Pad Holders beautiful,0.5,0.06,0.771232335401155,0.10539921905615537
+test-00572,retained,False,B,B,B,7794,7771,ground control iron,energizer clever,1.41,5.38,1.1991831525117846,6.030772044401106
+test-00573,retained,False,B,B,B,7143,7129,scaler fine,File Folders wooden,2.2,6.0,0.522862158096904,3.9550765028722905
+test-00574,corrected,False,A,B,A,7885,7192,cement mixer classic,scriber big,0.75,0.27,0.5587622264125949,0.14748001915342285
+test-00575,corrected,False,A,B,A,7466,6625,grandfather clock make,trash bin orange,8.0,0.97,7.505416546369441,2.465374611364857
+test-00576,retained,False,A,A,A,7832,6585,flatbed powerful,IEEE 1394 Firewire heavy,9.5,0.66,7.389056770107361,0.694033892125379
+test-00577,regressed,False,B,B,A,7221,7243,Cheese Knives white,penlight discount,0.5,1.2,0.8193706697188303,0.44548407278937063
+test-00578,retained,False,B,B,B,7137,7751,gateleg table powerful,treenail colorful,0.41,1.1,0.2820629437832903,0.8209725345318488
+test-00579,retained,False,B,B,B,6964,6738,Binder Index Dividers hand made,tea maker square,0.77,1.3,0.29329906280777246,0.5352614396106092
+test-00580,corrected,False,B,A,B,6577,7429,ketchup bottle blue,oil lamp green,0.66,2.0,0.41849354902612124,1.0388205289034045
+test-00581,corrected,False,A,B,A,6705,7874,gyro huge,Bar Code Scanners popular,1.76,1.1,2.9854482065079413,1.161153617647928
+test-00582,retained,False,B,B,B,6540,7668,mosaic glass,corbel standard,0.75,7.0,1.380251362611411,3.601137929811734
+test-00583,retained,False,B,B,B,6672,6959,Steak Sets yellow,Cookie Jars white,0.06,3.7,0.09015273190195616,1.6199931951660358
+test-00584,corrected,False,A,B,A,7431,7038,solar telescope modern,gear lever ugly,0.84,0.1,1.6878196109669958,0.32976503524902057
+test-00585,retained,False,B,B,B,6899,7248,scraper wood,diffusing screen long,0.85,1.54,0.8282199188823873,2.7182816077147627
+test-00586,retained,False,B,B,B,7022,6951,Beauty Skin Care Body Moisturizers Lotions long,Health & Personal Care Health Care Alternative Medicine Sound Therapy better,0.5,0.63,0.5269630151532336,1.1215885809686363
+test-00587,retained,True,A,A,A,7735,7416,thermos bottle model,wrist pin slender,0.45,0.25,0.3073747730789382,0.18498141037984206
+test-00588,corrected,False,B,A,B,7781,7181,megaphone toy,high-hat cymbal metal,0.14,2.87,0.5310959962650226,2.4944354340522166
+test-00589,retained,False,B,B,B,7157,7272,hard disc slick,coffee mug best,0.3,0.56,0.4056179379004734,0.5587622264125949
+test-00590,corrected,False,A,B,A,7373,7694,pig metal,coin box easy,1.36,0.9,2.0598973848365243,0.5742517106744371
+test-00591,corrected,False,A,B,A,6675,7073,musical box fancy,shooter black,1.98,0.6,1.7966745703906035,0.7879811110874531
+test-00592,retained,False,B,B,B,7577,6831,gas engine round,Closet Storage Boxes popular,0.89,11.95,2.244749247068837,8.115290772908487
+test-00593,retained,False,B,B,B,7626,7873,ballpoint simple,manufactured home plastic,0.04,2.75,0.12713572663715056,4.080624363468065
+test-00594,retained,False,B,B,B,7087,7709,dog hook solid,remote terminal old,0.35,3.13,0.4334679287965916,2.158754224794926
+test-00595,retained,False,A,A,A,7362,7085,Toilet Paper Storage white,bicycle purple,0.88,0.1,3.1043754395350396,0.18211353124688745
+test-00596,retained,True,B,B,B,7465,6783,rubber mallet large,lead authentic,1.8,5.29,1.882898716011792,3.0562466041079333
+test-00597,retained,False,B,B,B,6816,7796,Mixers steel,Filing Crates & Posting Tubs violet,2.2,4.0,3.278873669435737,4.017360269137704
+test-00598,retained,False,B,B,B,6531,6958,Business Cards beautiful,B battery wide,0.26,10.5,0.1509774230219172,4.62395305496294
+test-00599,corrected,False,A,B,A,7023,7112,Food Savers full,Tools & Home Improvement Electrical Light Bulbs Specialty Light Bulbs discount,3.69,0.1,5.937273577990162,0.09157243755872142
+test-00600,retained,True,B,B,B,6788,7024,Hammer nice,meter kitchen,0.42,1.25,0.4217758897612579,1.0103683118349323
+test-00601,retained,True,A,A,A,7668,7875,corbel standard,wine bottle real,7.0,2.88,3.601137929811734,1.897666378388155
+test-00602,retained,False,A,A,A,6622,7288,"Home, Garden & Pets Kitchen & Dining Small Appliances Thermocoolers & Compact Refrigerators white","Cake, Pie & Pastry Servers light",6.2,2.5,6.419723612944014,0.5373563581828229
+test-00603,regressed,True,B,B,A,7815,7494,scimitar realistic,eyeglass long,0.13,0.2,0.2733847795705032,0.23752082623335874
+test-00604,corrected,False,A,B,A,6673,6931,radio receiver boys,charger smart,1.06,0.41,1.2228348970961802,0.7373538108423319
+test-00605,corrected,False,A,B,A,7287,7194,Diffusers black,Tulip Champagne Glasses classic,0.66,0.4,0.8645831519053777,0.47607138805619703
+test-00606,retained,False,A,A,A,7478,7637,merchant vessels wonderful,grab bar stone,4.0,1.8,3.6865370780193,2.7610886939755868
+test-00607,retained,False,A,A,A,6609,7020,Tools & Home Improvement Lamps & Light Fixtures Ceiling Fans & Accessories Ceiling Fan Lights ornate,Health & Personal Care Health Care Alternative Medicine Sound Therapy model,4.64,2.05,7.865609488647534,1.8178532523906585
+test-00608,corrected,False,B,A,B,7945,7248,bagpipe kitchen,diffusing screen long,0.88,1.54,0.4351644727600135,2.7182816077147627
+test-00609,retained,True,B,B,B,7411,6726,stuffed hippopotamus tall,distributor cam unique,0.3,0.64,0.5901705259070509,1.412983106889409
+test-00610,corrected,False,A,B,A,7018,6899,racing shell easy,scraper wood,2.43,0.85,2.2359976334474885,0.8282199188823873
+test-00611,retained,False,A,A,A,7151,7066,stealth fighter shallow,Weather Monitors orange,4.7,0.18,7.623610274378278,0.13639673531645133
+test-00612,corrected,True,A,B,A,7455,6617,booster amplifier delicate,alarm clock carved,0.66,0.33,0.5107500348368632,0.46323017048839543
+test-00613,retained,False,A,A,A,7030,7436,tote bag standard,chemical balance slender,1.2,0.19,1.5855596737844695,0.23201866635205334
+test-00614,corrected,False,A,B,A,6818,7537,Dessert Bowls light,Clipboards blue,5.0,0.49,1.8902681194810884,1.424065312682699
+test-00615,retained,False,B,B,B,7626,6568,ballpoint simple,soap dispenser kids,0.04,0.35,0.12713572663715056,0.44722766027480515
+test-00616,corrected,True,A,B,A,6732,6724,Potpourris powerful,tip-top table silly,0.48,0.04,0.3221260502785499,0.198456085302785
+test-00617,corrected,False,A,B,A,7963,7112,alarm clock round,Tools & Home Improvement Electrical Light Bulbs Specialty Light Bulbs discount,0.5,0.1,0.7489653658089657,0.09157243755872142
+test-00618,retained,False,B,B,B,7520,6801,scythe marble,Meat kettle,2.0,9.5,2.6657057676636713,8.504750398950502
+test-00619,retained,False,A,A,A,7498,6846,sweep-second curved,Toys & Games Hobbies Radio Control Cars discount,2.0,0.24,1.9050936178127968,0.14406366524238348
+test-00620,retained,True,B,B,B,6570,7074,sport car plastic,pendulum clock curved,0.59,2.41,2.325069318072025,3.6293825295036504
+test-00621,retained,False,A,A,A,7118,7768,Travel Mugs green,Small Parts Envelopes ornate,0.81,0.3,0.5947993669627278,0.319619204523867
+test-00622,retained,False,B,B,B,6647,6968,penny bank well made,shopping bag skinny,1.15,2.2,0.6041660657224992,3.278873669435737
+test-00623,retained,False,A,A,A,7092,7360,matrix black,microphone translucent,2.0,0.2,4.112628972666761,0.29329906280777246
+test-00624,corrected,False,A,B,A,7008,7922,gyro horizon powerful,wok yellow,2.4,1.6,2.6039542855879683,2.398875294057996
+test-00625,retained,False,A,A,A,6831,7242,Closet Storage Boxes popular,wet cell green,11.95,0.5,8.115290772908487,0.319619204523867
+test-00626,retained,False,B,B,B,7089,6868,alarm orange,drinking glass shallow,0.31,0.75,0.3678794822621095,0.8478606657142456
+test-00627,corrected,False,A,B,A,7759,6942,Roasting Pans steel,steel baby,9.1,0.5,6.030772044401106,0.9362076803481258
+test-00628,corrected,False,A,B,A,7956,7472,table lamp girls,soap dispenser powerful,3.4,1.1,3.0088637338289486,1.2074087891635923
+test-00629,retained,False,B,B,B,7800,7947,flick knife high quality,horse-drawn vehicle green,0.24,0.72,0.30025441654154233,0.5971272626835835
+test-00630,retained,False,A,A,A,7866,7541,air cleaner light,double bass big,11.0,0.54,6.887357219379342,0.9619254303321225
+test-00631,retained,False,B,B,B,7177,7817,vacuum bottle square,thermos bottle silver,1.4,3.1,0.9189967814556623,1.6681558892463575
+test-00632,retained,False,A,A,A,7657,7919,filament beautiful,flag glass,2.2,0.2,1.9579049758657807,0.2887519106650235
+test-00633,retained,False,A,A,A,7354,7117,gondola ceramic,Rice Cookers orange,6.2,3.09,3.3829564237041962,2.218597001928029
+test-00634,retained,True,B,B,B,7162,6615,small ship womens,Tools & Home Improvement Building Supplies Building Materials Tiles Glass Tiles steel,1.54,2.33,1.4408517049217324,2.893596020751634
+test-00635,regressed,True,B,B,A,6773,7476,solar panel short,Camping Plates wooden,0.3,0.5,0.4950358907100782,0.34559077904227037
+test-00636,corrected,False,A,B,A,6776,6901,stewing pan authentic,LGB sturdy,7.9,0.9,6.887357219379342,0.5810207700067891
+test-00637,retained,False,B,B,B,6641,7371,weather ship marble,Sports & Outdoors Outdoor Recreation Camping & Hiking Backpack Accessories Pack Covers powerful,0.61,2.65,0.41039915892850853,1.7966745703906035
+test-00638,retained,False,B,B,B,7800,7881,flick knife high quality,"Home, Garden & Pets Vacuums, Cleaning & Storage Storage & Organization Garage Storage & Organization Ski Storage Racks brand name",0.24,0.45,0.30025441654154233,0.5331746303235263
+test-00639,retained,False,B,B,B,6531,6693,Business Cards beautiful,alpenstock well made,0.26,1.6,0.1509774230219172,1.935094904100025
+test-00640,corrected,False,A,B,A,7681,6715,cookware thick,Tools & Home Improvement Electrical Light Bulbs High Intensity Discharge Bulbs standard,1.8,0.03,1.935094904100025,0.1407264251338984
+test-00641,retained,False,B,B,B,7708,7532,bass full,Paper Roll Cutters quality,0.25,1.23,0.28650482642765057,1.6199931951660358
+test-00642,corrected,False,B,A,B,7026,7300,FAE steel,camera lens slick,0.47,1.75,0.4402940190394018,1.486589212541908
+test-00643,retained,False,B,B,B,6721,7849,Coin Purses charming,water tank molded,0.2,2.45,0.09015273190195616,3.128722982500859
+test-00644,retained,False,A,A,A,7478,7326,merchant vessels wonderful,afterburner kids,4.0,0.33,3.6865370780193,0.30498273866936093
+test-00645,retained,False,A,A,A,6704,7820,music stand generic,energizer brown,0.7,0.45,1.4924074117227626,0.37955717749094253
+test-00646,retained,False,B,B,B,7147,7491,baton inexpensive,land line kitchen,0.05,3.75,0.1385446601250913,2.9162907478085818
+test-00647,retained,False,A,A,A,7519,7010,analog-digital converter medium,p-n junction wide,1.83,0.15,2.084178809545619,0.1429425498419782
+test-00648,retained,False,B,B,B,6886,7666,Drawing Media brown,mustard agent solid,0.05,1.76,0.13963128451321924,2.1252859129307433
+test-00649,retained,False,B,B,B,6688,7008,whiskey bottle toy,gyro horizon powerful,0.8,2.4,0.4779346748503138,2.6039542855879683
+test-00650,retained,False,B,B,B,7291,6745,cargo container powerful,single-reed instrument hollow,0.35,0.81,0.1175813344701115,1.2604203784220744
+test-00651,retained,False,B,B,B,6621,7721,oil lamp blue,dry mop scale,0.45,9.0,1.030484720831601,5.577551617209266
+test-00652,retained,False,B,B,B,7003,7900,disk blue,HEPA Air Purifiers fancy,0.26,5.5,0.2129122760130818,4.446811822578948
+test-00653,retained,False,B,B,B,6996,7074,billy powerful,pendulum clock curved,0.22,2.41,0.24126123994088003,3.6293825295036504
+test-00654,still_wrong,True,B,A,A,7435,7117,fanjet engine brass,Rice Cookers orange,2.2,3.09,3.9550765028722905,2.218597001928029
+test-00655,corrected,False,A,B,A,7155,7039,Tools & Home Improvement Power & Hand Tools Hand Tools Hammers Claw Hammers hollow,pocket comb best,1.67,0.13,1.486589212541908,0.09596709400202674
+test-00656,retained,False,B,B,B,6975,6818,Sports & Outdoors Other Sports Martial Arts Weapons Batons solid,Dessert Bowls light,0.11,5.0,0.09157243755872142,1.8902681194810884
+test-00657,still_wrong,True,A,B,B,7291,7374,cargo container powerful,tappet medium,0.35,0.18,0.1175813344701115,0.5587622264125949
+test-00658,corrected,False,A,B,A,7376,7854,Kitchen Accessories ceramic,jaw hand made,0.59,0.45,0.9060752665737315,0.4668633539886035
+test-00659,corrected,False,A,B,A,7020,6568,Health & Personal Care Health Care Alternative Medicine Sound Therapy model,soap dispenser kids,2.05,0.35,1.8178532523906585,0.44722766027480515
+test-00660,retained,False,B,B,B,7070,7771,schoolbag premium,energizer clever,1.54,5.38,1.2240296269822353,6.030772044401106
+test-00661,regressed,True,B,B,A,6592,6738,target acquisition system medium,tea maker square,0.99,1.3,0.8011719875504817,0.5352614396106092
+test-00662,corrected,False,A,B,A,7276,7715,Verey pistol wide,gas fixture straight,1.1,0.8,1.3965212155264548,0.5067752986137797
+test-00663,corrected,True,B,A,B,7025,6999,thermos bottle green,streetlight generic,0.2,0.5,0.3171319104486417,0.5127490197996951
+test-00664,corrected,False,A,B,A,7287,7010,Diffusers black,p-n junction wide,0.66,0.15,0.8645831519053777,0.1429425498419782
+test-00665,corrected,True,A,B,A,7138,7241,knuckles kitchen,stuffed tiger authentic,0.88,0.35,0.8855183660343244,0.2887519106650235
+test-00666,corrected,False,B,A,B,7524,7690,Travel Mugs green,electrical distributor vintage,0.65,3.0,0.599464371841054,2.1672033007287577
+test-00667,retained,False,B,B,B,7542,7803,Welding Hammers small,passenger train ,0.2,0.85,0.15822299520068045,1.2324256385491972
+test-00668,retained,False,A,A,A,7671,6914,Bleachers dark,Pad Holders beautiful,0.2,0.06,0.459625256267976,0.10539921905615537
+test-00669,retained,True,B,B,B,7416,7464,wrist pin slender,hair tonic quaint,0.25,0.79,0.18498141037984206,0.6994773516518564
+test-00670,retained,False,A,A,A,7602,7104,Candles & Home Scents baby,jet heavy,1.75,1.15,0.7872119334661354,0.42674762076819134
+test-00671,retained,False,A,A,A,6687,7623,tractor large,zoom lens standard,2.05,1.31,1.882898716011792,0.7964913568461423
+test-00672,retained,False,A,A,A,7634,7860,bypass full,first gear huge,0.8,0.33,1.5458080969909096,0.291016578447069
+test-00673,retained,False,B,B,B,6858,6677,stuffed giraffe bright,radiator slick,0.55,4.0,0.6558159667693613,5.038898260670574
+test-00674,retained,False,A,A,A,6996,6912,billy powerful,Technical Pens full,0.22,0.09,0.24126123994088003,0.16581625690895407
+test-00675,retained,False,A,A,A,7886,7909,wheelbarrow kids,Sports & Outdoors Hunting & Fishing Hunting Air Guns discount,7.5,0.63,13.172416411671733,2.325069318072025
+test-00676,retained,False,B,B,B,6694,7258,binoculars high quality,cistern tall,1.97,6.06,0.9307380901961428,4.17739426120074
+test-00677,corrected,False,A,B,A,7879,6894,snare yellow,destroyer escort make,9.0,1.21,9.788908130126833,1.8392813323771011
+test-00678,regressed,False,B,B,A,7050,6995,Grill Pans fine,steering wheel classic,2.45,3.66,3.3305086660640857,3.128722982500859
+test-00679,still_wrong,True,A,B,B,7370,7405,floppy realistic,menorah premium,0.88,0.4,0.8773410999888707,3.08021671168827
+test-00680,corrected,False,A,B,A,7346,7163,Storage Crates red,Yarn red,0.39,0.22,1.2324256385491972,0.9234950501996677
+test-00681,retained,False,B,B,B,7066,7020,Weather Monitors orange,Health & Personal Care Health Care Alternative Medicine Sound Therapy model,0.18,2.05,0.13639673531645133,1.8178532523906585
+test-00682,retained,False,B,B,B,7412,6749,Index & Business Card Files common,automobile unique,0.01,0.98,0.09301448932808826,1.5855596737844695
+test-00683,retained,False,B,B,B,7149,7709,push-bike light,remote terminal old,0.25,3.13,0.4437473189038811,2.158754224794926
+test-00684,corrected,False,A,B,A,6809,7171,roller bearing simple,coalhole generic,1.1,0.3,0.8915924585536652,0.19235023000606633
+test-00685,retained,True,A,A,A,6691,7311,shades glass,master key smart,8.0,1.75,1.0272192756777612,0.5147558863743535
+test-00686,still_wrong,True,A,B,B,7768,6560,Small Parts Envelopes ornate,Mint Julep Cups authentic,0.3,0.2,0.319619204523867,0.5832948623287524
+test-00687,retained,False,B,B,B,7411,6985,stuffed hippopotamus tall,omelette pan blue,0.3,10.4,0.5901705259070509,7.865609488647534
+test-00688,retained,False,B,B,B,6797,7129,PC board powerful,File Folders wooden,0.07,6.0,0.09596709400202674,3.9550765028722905
+test-00689,retained,False,A,A,A,7080,7891,chute-the-chute best,file server plastic,0.28,0.13,0.4368676493920408,0.11396373601301239
+test-00690,corrected,False,A,B,A,7301,7489,induction coil portable,radio large,5.8,1.06,11.092286592459589,0.7697274944271382
+test-00691,still_wrong,False,A,B,B,6790,7715,Graph & Data Pads narrow,gas fixture straight,1.59,0.8,0.34559077904227037,0.5067752986137797
+test-00692,retained,False,A,A,A,6871,7292,Ribbon Microphones common,Ice Tongs commodity,2.0,0.25,1.9502716733088978,0.2302130728818505
+test-00693,corrected,False,A,B,A,7404,7228,rotor coil quality,"Home, Garden & Pets Home Appliances Humidifier Parts & Accessories Replacement Belts wooden",2.5,0.44,2.0438674687339904,0.6648438784332105
+test-00694,retained,False,B,B,B,7699,7431,sorter simple,solar telescope modern,0.15,0.84,0.15455775942366992,1.6878196109669958
+test-00695,retained,False,A,A,A,6625,7780,trash bin orange,Sashimi Knives standard,0.97,0.28,2.465374611364857,0.26291158324245645
+test-00696,corrected,True,A,B,A,7712,7774,tin white,stuffed monkey popular,0.81,0.48,0.8082445323350098,0.3402328954453201
+test-00697,retained,False,A,A,A,7394,6889,wall clock plain,cat box metal,1.7,0.55,2.9854482065079413,0.42674762076819134
+test-00698,retained,False,B,B,B,6996,6746,billy powerful,parer strong,0.22,2.73,0.24126123994088003,1.296626171414462
+test-00699,retained,False,B,B,B,6999,7545,streetlight generic,local oscillator square,0.5,1.36,0.5127490197996951,2.4082644514100573
+test-00700,corrected,False,A,B,A,7491,7563,land line kitchen,Sports & Outdoors Other Sports Equestrian Sports Horse Care Equipment Hoof Care ,3.75,2.2,2.9162907478085818,1.4408517049217324
+test-00701,corrected,False,A,B,A,7338,6605,door stop green,readout fine,0.5,0.11,0.2284215478208103,0.1291378287541794
+test-00702,regressed,False,B,B,A,7616,7278,Mint Julep Cups authentic,wide-body dark,0.33,0.56,0.7402396760661873,0.48546104285586406
+test-00703,retained,True,B,B,B,7269,7064,"Home, Garden & Pets Furniture & Décor Furniture Kids' Furniture Step Stools fat",toilet table violet,0.6,2.57,1.7688198240053343,2.1087466746290424
+test-00704,retained,False,A,A,A,7174,7501,schoolbag boys,tower discount,0.7,0.49,0.9593455635064867,0.5587622264125949
+test-00705,retained,False,A,A,A,7868,7261,vase top,coolant system sturdy,2.2,0.88,2.893596020751634,0.9396424650511519
+test-00706,corrected,False,A,B,A,7019,7657,roadster wooden,filament beautiful,10.0,2.2,11.092286592459589,1.9579049758657807
+test-00707,corrected,False,A,B,A,7181,7001,high-hat cymbal metal,idiot box standard,2.87,0.35,2.4944354340522166,0.2431534582580844
+test-00708,retained,False,B,B,B,6599,6820,ewer fat,Electronics Accessories & Supplies Office Electronics Accessories Ink & Toner Laser Printer Ink & Toner kitchen,0.02,1.6,0.06595714911018574,2.4557630356199245
+test-00709,retained,False,B,B,B,6983,7339,pocketknife big,vacuum bag narrow,0.21,1.13,0.16452586597629482,0.5587622264125949
+test-00710,corrected,False,B,A,B,7118,7862,Travel Mugs green,LCD brown,0.81,2.0,0.5947993669627278,2.7182816077147627
+test-00711,corrected,False,A,B,A,7482,6873,ignition coil top,Microscope Accessories realistic,1.2,0.41,0.7330459144930532,0.3171319104486417
+test-00712,retained,False,A,A,A,7929,7156,mailsorter strange,Surge Protectors quality,1.83,1.4,2.133604002551972,0.666143635714433
+test-00713,still_wrong,True,A,B,B,7115,6919,passive matrix display single,maze miniature,0.3,0.12,0.2096113847889987,0.504799589756391
+test-00714,corrected,False,A,B,A,6606,7512,pottery square,security system wide,0.98,0.22,0.9440112569757764,0.18936810009425709
+test-00715,retained,False,B,B,B,7102,6840,pillbox handsome,round steel,0.08,0.8,0.083377651677884,1.681239345505345
+test-00716,retained,False,A,A,A,7528,6672,groover narrow,Steak Sets yellow,2.0,0.06,1.5518583997618172,0.09015273190195616
+test-00717,retained,False,B,B,B,6541,7684,Baby Products Baby Toys Electronic Toys powerful,convertible scale,0.3,1.1,0.15822299520068045,1.4982487545524776
+test-00718,retained,False,B,B,B,6881,7151,moneybag girls,stealth fighter shallow,0.13,4.7,0.1291378287541794,7.623610274378278
+test-00719,retained,False,A,A,A,7336,6907,nosewheel red,Tools & Home Improvement Building Supplies Building Materials Roofing Vents Roof Vents tall,5.0,4.0,7.217889851305568,3.8333915736941675
+test-00720,retained,False,B,B,B,6914,6779,Pad Holders beautiful,Bells delicate,0.06,0.75,0.10539921905615537,1.0870809411324287
+test-00721,corrected,False,A,B,A,6660,7686,earthenware wide,Food Savers full,1.46,0.3,1.539781676221469,0.30498273866936093
+test-00722,corrected,False,A,B,A,6903,7652,Jig Saw Blades solid,Sports & Outdoors Boating & Water Sports Wakeboarding Lines steel,4.19,1.19,2.3433054150756703,1.4324340244590763
+test-00723,corrected,False,A,B,A,7258,7814,cistern tall,savings bank yellow,6.06,0.2,4.17739426120074,0.9257524415171081
+test-00724,retained,False,B,B,B,6741,6602,sonar smart,bidet violet,0.06,0.51,0.16452586597629482,0.17789488335145315
+test-00725,corrected,False,B,A,B,6551,7253,bird big,butt shaft old,0.35,3.0,0.9609865109905826,2.1419547185322534
+test-00726,corrected,True,A,B,A,6703,7357,dressing table charming,stuffed kitten tall,0.77,0.3,1.0982851125431266,0.45604844661058874
+test-00727,corrected,False,A,B,A,6602,7144,bidet violet,dog high quality,0.51,0.15,0.17789488335145315,0.08469065377669605
+test-00728,retained,False,A,A,A,7818,6556,Roasting Pans steel,pillbox popular,3.25,0.08,4.481689047471681,0.0691225012899848
+test-00729,retained,False,B,B,B,6807,6829,recording system huge,slice modern,0.62,6.2,0.7035878717293782,5.491079954948248
+test-00730,retained,False,B,B,B,7484,7166,Sports & Outdoors Paintball & Airsoft Airsoft Protective Gear iron,field-effect transistor silver,0.22,10.0,0.5127490197996951,13.590554742650841
+test-00731,corrected,False,A,B,A,6719,7512,Venturi tube inexpensive,security system wide,0.75,0.22,1.2156908128353625,0.18936810009425709
+test-00732,corrected,False,A,B,A,6831,7673,Closet Storage Boxes popular,brake system new,11.95,1.4,8.115290772908487,4.446811822578948
+test-00733,retained,False,A,A,A,6943,6542,spade medium,cologne water well made,1.04,0.28,0.5167705232919886,0.3510330532959801
+test-00734,retained,False,A,A,A,7525,7520,Furniture green,scythe marble,4.0,2.0,3.8937590011084904,2.6657057676636713
+test-00735,retained,False,B,B,B,7001,7559,idiot box standard,dustmop discount,0.35,2.39,0.2431534582580844,1.5041127428629242
+test-00736,retained,False,B,B,B,7124,6959,mail red,Cookie Jars white,1.35,3.7,1.1265284039347478,1.6199931951660358
+test-00737,still_wrong,True,A,B,B,7575,7131,wreck expensive,Health & Personal Care Household Supplies Light Bulbs High Intensity Discharge Bulbs blue,0.46,0.2,0.20798019458874412,0.585577801586628
+test-00738,corrected,False,B,A,B,6796,7063,fuel-air bomb short,mailbox fine,0.4,7.0,0.4950358907100782,6.320194837551344
+test-00739,retained,False,B,B,B,6965,6959,Cash Bags mens,Cookie Jars white,0.88,3.7,0.4931059666017967,1.6199931951660358
+test-00740,regressed,True,B,B,A,7539,7288,Toys & Games Sports & Outdoor Play Pools & Water Fun Lawn Water Slides well made,"Cake, Pie & Pastry Servers light",1.1,2.5,0.9762390270523702,0.5373563581828229
+test-00741,retained,False,B,B,B,6723,7472,Grill Scrapers ingenious,soap dispenser powerful,0.59,1.1,0.40089233640216304,1.2074087891635923
+test-00742,retained,False,B,B,B,6805,7070,hookup green,schoolbag premium,0.4,1.54,0.5587622264125949,1.2240296269822353
+test-00743,corrected,False,A,B,A,7293,7512,"Home, Garden & Pets Furniture & Décor Lighting Specialty Lighting Novelty Lamps yellow",security system wide,2.0,0.22,1.9965212859257946,0.18936810009425709
+test-00744,corrected,True,A,B,A,7708,6652,bass full,Soufflé Dishes generic,0.25,0.06,0.28650482642765057,0.1232241760324108
+test-00745,corrected,False,A,B,A,7063,7447,mailbox fine,sump pump brass,7.0,0.9,6.320194837551344,0.45073532839280867
+test-00746,retained,False,A,A,A,7428,7015,in-basket orange,monocle solid,0.92,0.08,1.7688198240053343,0.07711172547389296
+test-00747,retained,False,A,A,A,6550,6632,Skillets little,metronome dark,3.0,1.08,8.504750398950502,1.184055264907082
+test-00748,retained,True,A,A,A,6783,7454,lead authentic,Switches slick,5.29,3.22,3.0562466041079333,2.7610886939755868
+test-00749,corrected,False,A,B,A,7855,6849,gasoline engine unique,return key hollow,1.6,0.02,3.6293825295036504,0.04825527845501749
+test-00750,corrected,True,A,B,A,6907,7905,Tools & Home Improvement Building Supplies Building Materials Roofing Vents Roof Vents tall,garbage can charming,4.0,2.4,3.8333915736941675,3.3305086660640857
+test-00751,retained,False,B,B,B,7090,6762,timer kitchen,gasoline tank bright,0.2,2.25,0.2145821966721603,2.1087466746290424
+test-00752,retained,False,A,A,A,7483,7429,Education & Crafts authentic,oil lamp green,2.75,2.0,1.1199467990792922,1.0388205289034045
+test-00753,retained,False,B,B,B,7626,6841,ballpoint simple,Electronics Marine Electronics Subwoofers special,0.04,11.2,0.12713572663715056,3.278873669435737
+test-00754,retained,False,B,B,B,6961,7000,Kurdistan glass,Toys & Games Puzzles Jigsaw Puzzles Panoramic Puzzles scale,0.18,0.33,0.08602433488017848,0.7387953674463308
+test-00755,corrected,False,B,A,B,6803,7750,stove easy,Toys & Games Learning & Education Electronic Learning real,0.63,3.0,1.1112314832186656,1.1221363349138862
+test-00756,retained,False,A,A,A,7406,7944,electric fan black,oil lamp wood,5.67,2.0,8.24308772728254,1.184055264907082
+test-00757,retained,False,A,A,A,6842,7705,small computer system interface iron,Yarn dark,9.5,0.31,13.379850984935384,0.5331746303235263
+test-00758,retained,False,B,B,B,7860,7635,first gear huge,foil kitchen,0.33,1.43,0.291016578447069,1.521842736989809
+test-00759,retained,True,B,B,B,7178,7309,mailsorter silver,Tools & Home Improvement Power & Hand Tools Hand Tools Tool Sets Spark-free Tool Sets portable,2.0,4.4,1.701057286207016,2.9162907478085818
+test-00760,retained,False,B,B,B,7009,6970,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,Tools & Home Improvement Storage & Home Organization portable,0.65,9.8,0.5008712377852649,13.590554742650841
+test-00761,retained,False,B,B,B,6761,7278,ship's boat glass,wide-body dark,0.35,0.56,0.32719873222104445,0.48546104285586406
+test-00762,corrected,True,A,B,A,7024,7337,meter kitchen,developer purple,1.25,0.33,1.0103683118349323,0.3537862027149912
+test-00763,retained,False,B,B,B,7418,7779,push-down store discount,laundry basket popular,0.34,0.6,0.4911835111633158,0.8837905544461184
+test-00764,retained,True,A,A,A,7586,7249,winch standard,bird shot wood,2.0,0.4,2.0200553351424575,0.7063416733948575
+test-00765,retained,False,A,A,A,6796,6852,fuel-air bomb short,Electronics Camera & Photo Film Cameras hand made,0.4,0.04,0.4950358907100782,0.11575840825801498
+test-00766,regressed,True,B,B,A,7767,7202,wastebin purple,Bread Boxes purple,3.3,4.41,5.198850227681073,3.601137929811734
+test-00767,corrected,True,A,B,A,7878,7045,Baby Products Bathing & Skin Care Soaps & Cleansers Hypoallergenic Cleansers oak,"Home, Garden & Pets Pet Supplies Houses & Habitats Accessories Kennel Food & Water Cups common",2.1,0.41,1.39107677571596,0.5067752986137797
+test-00768,corrected,False,A,B,A,7142,7364,Sports & Outdoors Boating & Water Sports Surfing Surfboard Racks sturdy,mobile home modern,0.45,0.15,0.4816831886835015,0.33495805078657204
+test-00769,retained,False,B,B,B,7962,7264,pew thick,grinder dark,1.73,10.0,7.389056770107361,8.24308772728254
+test-00770,retained,False,B,B,B,7130,7353,EDS silver,Potpourris round,0.15,5.1,0.38403128943921006,4.845861396500035
+test-00771,retained,False,B,B,B,6992,6767,emitter generic,cooking pan common,0.22,1.2,0.19385883655441752,1.7346077360045093
+test-00772,regressed,True,B,B,A,7389,7368,holdall plastic,"Toys & Games Action Figures Statues, Maquettes & Busts mens",1.08,2.3,2.012180132344743,1.380251362611411
+test-00773,retained,False,B,B,B,7259,7400,stapler metal,till wide,0.9,3.04,0.6294614641426453,2.0760535221192717
+test-00774,corrected,False,A,B,A,6746,6761,parer strong,ship's boat glass,2.73,0.35,1.296626171414462,0.32719873222104445
+test-00775,corrected,True,A,B,A,7554,7781,Electronics Computers & Accessories Networking Products Switches best,megaphone toy,0.64,0.14,0.9087337970683871,0.5310959962650226
+test-00776,retained,False,B,B,B,6588,6749,brooder generic,automobile unique,0.43,0.98,0.5415709006951002,1.5855596737844695
+test-00777,retained,False,B,B,B,6978,6730,Credit Card Holders steel,cereal bowl stone,0.2,4.14,0.12131377011564688,1.8537071764778554
+test-00778,corrected,False,B,A,B,7225,7721,push button big,dry mop scale,2.1,9.0,1.9125503106591846,5.577551617209266
+test-00779,still_wrong,True,A,B,B,7267,7607,mould girls,knuckles ,0.3,0.11,0.16974848016677435,0.5924804170357254
+test-00780,corrected,False,A,B,A,6805,7891,hookup green,file server plastic,0.4,0.13,0.5587622264125949,0.11396373601301239
+test-00781,retained,False,B,B,B,7375,7351,cardcase top,desktop slick,0.05,4.1,0.1175813344701115,3.744591255570808
+test-00782,retained,False,B,B,B,7884,7850,luggage beautiful,Bottle Accessories generic,0.2,8.5,0.29329906280777246,9.05326131593696
+test-00783,retained,False,A,A,A,6863,6822,soup bowl ornate,taping large,2.0,0.45,3.2029187058657405,1.191013633477561
+test-00784,regressed,True,A,A,B,7453,7431,drawer premium,solar telescope modern,1.4,0.84,0.8098247349663905,1.6878196109669958
+test-00785,retained,False,B,B,B,7758,7947,antiperspirant translucent,horse-drawn vehicle green,0.2,0.72,0.16452586597629482,0.5971272626835835
+test-00786,retained,False,B,B,B,6869,7868,Bendable Figures premium,vase top,0.29,2.2,0.5310959962650226,2.893596020751634
+test-00787,retained,False,A,A,A,7346,7267,Storage Crates red,mould girls,0.39,0.3,1.2324256385491972,0.16974848016677435
+test-00788,corrected,False,A,B,A,7072,7835,wastepaper basket make,steamer baby,3.65,0.32,6.4700731303598396,0.34290132091136305
+test-00789,corrected,False,A,B,A,7002,7484,minute gun delicate,Sports & Outdoors Paintball & Airsoft Airsoft Protective Gear iron,13.01,0.22,13.172416411671733,0.5127490197996951
+test-00790,corrected,False,A,B,A,6894,6662,destroyer escort make,gun case brand name,1.21,0.11,1.8392813323771011,0.14748001915342285
+test-00791,corrected,True,A,B,A,7529,7686,point-and-shoot camera glass,Food Savers full,0.47,0.3,0.38403128943921006,0.30498273866936093
+test-00792,retained,False,A,A,A,7754,7867,grandfather clock cheap,hurricane lamp long,3.09,0.94,3.924297657485508,0.9216930355441451
+test-00793,corrected,False,B,A,B,6560,6897,Mint Julep Cups authentic,electric organ kitchen,0.2,5.1,0.5832948623287524,3.3045903982324063
+test-00794,retained,False,B,B,B,7608,6792,ram orange,automatic firearm orange,0.04,7.1,0.09901341088673675,7.74366325770818
+test-00795,retained,False,A,A,A,7500,6897,waste-paper basket better,electric organ kitchen,9.0,5.1,4.516839581309487,3.3045903982324063
+test-00796,retained,False,A,A,A,6610,6902,Toys & Games Games Educational Games Geography & History Games Geography Games high quality,Casserole Spoons glass,4.54,1.95,5.6212974038301375,1.021716831981275
+test-00797,retained,False,B,B,B,6639,6960,distributor point mens,Beauty Skin Care Face Face Treatments brand name,0.05,0.29,0.16974848016677435,0.30260936680878947
+test-00798,retained,False,A,A,A,7657,7189,filament beautiful,Beauty Bath & Body Bath Minerals & Salts toy,2.2,1.13,1.9579049758657807,0.3722158928197272
+test-00799,corrected,False,A,B,A,6953,7607,Margarita Glasses boys,knuckles ,11.0,0.11,0.620914173469141,0.5924804170357254
+test-00800,corrected,False,A,B,A,7718,7807,trumpet delux,"Home, Garden & Pets Patio, Lawn & Garden Gardening Sprayers fake",8.0,2.0,6.4700731303598396,3.032462500265929
+test-00801,retained,False,B,B,B,6541,6794,Baby Products Baby Toys Electronic Toys powerful,Filing Crates & Posting Tubs violet,0.3,4.0,0.15822299520068045,3.8634572749307594
+test-00802,regressed,True,B,B,A,7296,6675,tin can girls,musical box fancy,0.91,1.98,1.9809839976863088,1.7966745703906035
+test-00803,retained,False,B,B,B,7710,7332,Duct Tape unique,Office Products Office Furniture & Lighting Office Lighting Desk Lamps simple,0.1,10.0,0.4168620197164004,11.266964636852629
+test-00804,retained,False,A,A,A,6808,7292,thermos flask unique,Ice Tongs commodity,0.74,0.25,0.7202730560619179,0.2302130728818505
+test-00805,corrected,False,A,B,A,7077,7039,buckle fat,pocket comb best,0.95,0.13,1.1353638861937116,0.09596709400202674
+test-00806,retained,False,B,B,B,7661,6747,Salt Shakers nice,rotor coil quality,0.3,3.7,0.43857752040730597,2.3433054150756703
+test-00807,retained,False,B,B,B,7360,7121,microphone translucent,B-flat clarinet nice,0.2,1.76,0.29329906280777246,3.032462500265929
+test-00808,retained,False,B,B,B,7872,7035,Time Cards colorful,ballot box well made,0.77,1.5,0.6282332667694694,0.8747745673363378
+test-00809,retained,False,A,A,A,6610,7805,Toys & Games Games Educational Games Geography & History Games Geography Games high quality,electric clock easy,4.54,0.48,5.6212974038301375,0.9984295614745611
+test-00810,retained,False,B,B,B,6987,6953,dog sleigh black,Margarita Glasses boys,0.31,11.0,0.2798679153516722,0.620914173469141
+test-00811,corrected,False,B,A,B,7271,6982,clutch bag quality,Davy lamp brass,1.1,3.2,0.6481755614227849,1.9579049758657807
+test-00812,retained,False,A,A,A,7437,6998,tote silly,hair spray medium,2.9,0.2,1.701057286207016,0.2548226479767089
+test-00813,retained,False,A,A,A,6779,6761,Bells delicate,ship's boat glass,0.75,0.35,1.0870809411324287,0.32719873222104445
+test-00814,retained,False,B,B,B,7608,7198,ram orange,patrol wagon toy,0.04,2.1,0.09901341088673675,2.4176897311522842
+test-00815,regressed,True,A,A,B,7070,7362,schoolbag premium,Toilet Paper Storage white,1.54,0.88,1.2240296269822353,3.1043754395350396
+test-00816,retained,False,B,B,B,7821,7269,panoramic sight high quality,"Home, Garden & Pets Furniture & Décor Furniture Kids' Furniture Step Stools fat",0.33,0.6,0.5087587723651925,1.7688198240053343
+test-00817,corrected,True,B,A,B,7045,7380,"Home, Garden & Pets Pet Supplies Houses & Habitats Accessories Kennel Food & Water Cups common",drinking glass fancy,0.41,0.7,0.5067752986137797,0.6065306631389771
+test-00818,retained,False,A,A,A,7147,6729,baton inexpensive,lead pencil strong,0.05,0.01,0.1385446601250913,0.051367481474817366
+test-00819,corrected,False,A,B,A,7868,7651,vase top,router hand made,2.2,1.2,2.893596020751634,2.782744106502737
+test-00820,retained,False,B,B,B,7395,7510,alarm clock blue,furnishing green,0.5,4.0,0.28427520929536093,6.4700731303598396
+test-00821,retained,False,A,A,A,7522,6840,scoop curved,round steel,3.0,0.8,4.309998464373749,1.681239345505345
+test-00822,retained,False,B,B,B,7493,7482,Thermometers & Timers cheap,ignition coil top,0.49,1.2,0.19235023000606633,0.7330459144930532
+test-00823,retained,False,B,B,B,7644,6989,zoom lens standard,in-tray dark,0.21,0.5,0.2302130728818505,0.29329906280777246
+test-00824,retained,False,B,B,B,7249,6860,bird shot wood,"Home, Garden & Pets Kitchen & Dining Kitchen Knives & Cutlery Accessories Specialty Knives Cheese Knives genious",0.4,1.34,0.7063416733948575,1.1863703074283594
+test-00825,retained,False,A,A,A,6642,6672,"Home, Garden & Pets Home Appliances Small Appliances Deep Fryers skinny",Steak Sets yellow,11.0,0.06,3.8937590011084904,0.09015273190195616
+test-00826,regressed,True,A,A,B,6635,6563,flat file nice,throwing stick smart,0.7,0.5,0.6368813489432965,0.771232335401155
+test-00827,corrected,True,B,A,B,7174,6915,schoolbag boys,Tools & Home Improvement Lamps & Light Fixtures Lamps scale,0.7,1.83,0.9593455635064867,2.2800985992925566
+test-00828,retained,False,B,B,B,6627,7467,overdrive better,snare orange,1.38,12.0,1.588659477140653,7.74366325770818
+test-00829,retained,False,B,B,B,7079,6539,videocassette violet,Mini Processors standard,1.13,2.8,0.7216811473302838,2.6657057676636713
+test-00830,retained,False,A,A,A,7322,7936,Spice Racks quality,eggwhisk red,5.87,0.3,3.6865370780193,0.2284215478208103
+test-00831,retained,False,A,A,A,7254,6699,time capsule glass,parallel port ingenious,5.3,0.25,3.436230294933144,0.3870433086245895
+test-00832,corrected,False,A,B,A,7505,6762,Accent Plates shallow,gasoline tank bright,5.8,2.25,4.243178109989657,2.1087466746290424
+test-00833,retained,False,B,B,B,6694,6752,binoculars high quality,Sports & Outdoors Boating & Water Sports Boating Boat Plumbing Water Pressure Pumps ,1.97,6.9,0.9307380901961428,5.891069693264422
+test-00834,retained,False,B,B,B,6964,7353,Binder Index Dividers hand made,Potpourris round,0.77,5.1,0.29329906280777246,4.845861396500035
+test-00835,retained,False,B,B,B,6992,7943,emitter generic,Cheese Servers classic,0.22,4.0,0.19385883655441752,2.2359976334474885
+test-00836,retained,False,B,B,B,7038,7654,gear lever ugly,diesel-electric glass,0.1,3.31,0.32976503524902057,4.660219607120837
+test-00837,retained,False,B,B,B,7708,7482,bass full,ignition coil top,0.25,1.2,0.28650482642765057,0.7330459144930532
+test-00838,retained,False,A,A,A,6938,6621,Office Products Office Electronics Fax Machines discount,oil lamp blue,12.0,0.45,10.584333506364336,1.030484720831601
+test-00839,retained,False,A,A,A,7624,7531,searing iron medium,cashbox skinny,5.3,0.44,4.481689047471681,0.37955717749094253
+test-00840,corrected,True,A,B,A,7681,7513,cookware thick,black box ingenious,1.8,0.88,1.935094904100025,0.7174649340345967
+test-00841,retained,False,A,A,A,6707,7599,Money Handling Products sturdy,Beauty Makeup Nails Nail Polish translucent,5.3,0.12,3.0088637338289486,0.1407264251338984
+test-00842,corrected,False,A,B,A,7153,6822,Dead-Blow Hammers heavy,taping large,3.75,0.45,2.2099473027431755,1.191013633477561
+test-00843,retained,False,A,A,A,6677,7195,radiator slick,stuffed penguin hand made,4.0,2.0,5.038898260670574,0.5479547764130532
+test-00844,retained,False,B,B,B,6975,7193,Sports & Outdoors Other Sports Martial Arts Weapons Batons solid,overnighter orange,0.11,8.0,0.09157243755872142,6.995818323442118
+test-00845,corrected,False,A,B,A,7403,7046,ceramic ware ceramic,roost steel,2.9,0.23,4.048868851719652,0.3246524622840884
+test-00846,still_wrong,True,B,A,A,6876,6865,tankard easy,fuel cell small,0.81,1.8,1.4635417809330882,0.5310959962650226
+test-00847,retained,False,A,A,A,6552,7465,double boiler top,rubber mallet large,3.0,1.8,2.4176897311522842,1.882898716011792
+test-00848,retained,False,A,A,A,6557,7867,Wine Decanters boys,hurricane lamp long,3.0,0.94,3.65784770858091,0.9216930355441451
+test-00849,retained,False,B,B,B,6673,7183,radio receiver boys,garden spade large,1.06,2.0,1.2228348970961802,4.845861396500035
+test-00850,corrected,False,B,A,B,6933,7634,Taping Supplies narrow,bypass full,0.35,0.8,0.791837948501674,1.5458080969909096
+test-00851,retained,False,A,A,A,7098,6732,pickle barrel mens,Potpourris powerful,2.6,0.48,1.3748702135753343,0.3221260502785499
+test-00852,regressed,True,A,A,B,7271,7909,clutch bag quality,Sports & Outdoors Hunting & Fishing Hunting Air Guns discount,1.1,0.63,0.6481755614227849,2.325069318072025
+test-00853,corrected,False,A,B,A,7197,6617,"Home, Garden & Pets Kitchen & Dining Small Appliances Deep Fryers ceramic",alarm clock carved,4.98,0.33,3.8634572749307594,0.46323017048839543
+test-00854,retained,True,B,B,B,7198,7593,patrol wagon toy,body lotion full,2.1,8.2,2.4176897311522842,3.4094889887700326
+test-00855,retained,False,B,B,B,6662,7543,gun case brand name,solar thermal system big,0.11,11.65,0.14748001915342285,5.078419554291424
+test-00856,still_wrong,False,B,A,A,6963,6889,Taping Supplies narrow,cat box metal,0.41,0.55,1.1817450144303563,0.42674762076819134
+test-00857,retained,False,B,B,B,7697,7541,Coin Purses white,double bass big,0.08,0.54,0.12131377011564688,0.9619254303321225
+test-00858,retained,False,B,B,B,7105,7543,CD burner little,solar thermal system big,0.75,11.65,0.7803233087798311,5.078419554291424
+test-00859,still_wrong,True,A,B,B,6790,6563,Graph & Data Pads narrow,throwing stick smart,1.59,0.5,0.34559077904227037,0.771232335401155
+test-00860,retained,False,B,B,B,7074,6628,pendulum clock curved,sterilizer broad,2.41,10.0,3.6293825295036504,7.989475090435219
+test-00861,corrected,False,A,B,A,6937,6648,electric clock ceramic,File Folders hollow,1.85,1.21,2.1005252458867663,1.329969775623605
+test-00862,regressed,False,B,B,A,7882,6539,grinder premium,Mini Processors standard,2.1,2.8,2.676138773824772,2.6657057676636713
+test-00863,corrected,False,A,B,A,7361,6678,share steel,"Home, Garden & Pets Patio, Lawn & Garden Outdoor Décor Decorative Fences strong",7.5,2.4,7.865609488647534,2.523839098555373
+test-00864,retained,False,A,A,A,7296,7939,tin can girls,shoehorn generic,0.91,0.44,1.9809839976863088,0.34290132091136305
+test-00865,retained,False,B,B,B,6875,7091,tugboat high quality,pedestal ,0.6,4.8,0.5832948623287524,2.8045695592380593
+test-00866,corrected,False,A,B,A,7616,6692,Mint Julep Cups authentic,sharpener light,0.33,0.02,0.7402396760661873,0.09596709400202674
+test-00867,corrected,False,B,A,B,7638,7585,poppet brown,"Home, Garden & Pets Home Appliances Small Appliances Coffee, Tea & Espresso Appliances Beverage Warmers sturdy",0.45,2.6,0.5587622264125949,2.5938028268555047
+test-00868,corrected,True,B,A,B,7712,6694,tin white,binoculars high quality,0.81,1.97,0.8082445323350098,0.9307380901961428
+test-00869,corrected,False,A,B,A,7221,6638,Cheese Knives white,color television system hand held,0.5,0.23,0.8193706697188303,0.16711677336663738
+test-00870,corrected,False,A,B,A,7265,6645,rush candle quality,pliers smart,1.4,0.15,0.8739208044255042,0.47236660243706935
+test-00871,retained,False,A,A,A,7183,6895,garden spade large,aerofoil wonderful,2.0,0.88,4.845861396500035,0.29791784219740586
+test-00872,retained,False,A,A,A,7614,7050,omelet pan light,Grill Pans fine,5.4,2.45,3.8634572749307594,3.3305086660640857
+test-00873,retained,False,B,B,B,7231,6937,Personal Groomers better,electric clock ceramic,0.5,1.85,0.3510330532959801,2.1005252458867663
+test-00874,regressed,False,B,B,A,7583,6616,spool translucent,timepiece brand name,0.5,0.65,0.6356386871084834,0.5653487510592692
+test-00875,corrected,False,B,A,B,6660,7117,earthenware wide,Rice Cookers orange,1.46,3.09,1.539781676221469,2.218597001928029
+test-00876,retained,False,B,B,B,7147,7668,baton inexpensive,corbel standard,0.05,7.0,0.1385446601250913,3.601137929811734
+test-00877,still_wrong,False,A,B,B,7143,6935,scaler fine,speaker unit hand made,2.2,0.42,0.522862158096904,0.6282332667694694
+test-00878,retained,False,B,B,B,6961,6730,Kurdistan glass,cereal bowl stone,0.18,4.14,0.08602433488017848,1.8537071764778554
+test-00879,retained,False,B,B,B,7326,6636,afterburner kids,sidesaddle simple,0.33,0.5,0.30498273866936093,0.6245629895674574
+test-00880,retained,False,A,A,A,7354,6594,gondola ceramic,lead-acid battery handsome,6.2,3.15,3.3829564237041962,1.7143989873148588
+test-00881,retained,False,A,A,A,6671,7419,linac glass,Self-Tanners & Bronzers newest,3.0,0.99,1.3042458750272825,0.7008449011406193
+test-00882,corrected,False,A,B,A,6705,7964,gyro huge,butter knife skiny,1.76,0.15,2.9854482065079413,0.08602433488017848
+test-00883,regressed,False,B,B,A,7408,7901,satellite TV simple,Health & Personal Care Personal Care Oral Hygiene Mouthwash delicate,0.51,1.2,0.784142890574824,0.7035878717293782
+test-00884,corrected,False,A,B,A,6856,7902,electronic organ huge,ladder truck ,4.41,1.56,5.239625842347827,1.1364730166436399
+test-00885,corrected,False,A,B,A,6965,7913,Cash Bags mens,glasses case long,0.88,0.3,0.4931059666017967,0.33495805078657204
+test-00886,corrected,True,A,B,A,7747,6723,English horn powerful,Grill Scrapers ingenious,0.77,0.59,0.4351644727600135,0.40089233640216304
+test-00887,retained,False,A,A,A,7643,7438,electric scale,biteplate plain,8.95,0.65,6.887357219379342,0.42674762076819134
+test-00888,retained,False,A,A,A,7270,7950,Maps brown,Mechanical Pencils smart,2.8,0.02,2.4944354340522166,0.07243975846209605
+test-00889,regressed,True,B,B,A,7418,6587,push-down store discount,"Home, Garden & Pets Home Appliances Air Conditioners & Fans Household Fans Window Fans high quality",0.34,0.5,0.4911835111633158,0.3780774151486081
+test-00890,retained,False,B,B,B,7103,6953,Tools & Home Improvement Electrical Terminals & Kits Flag Terminals solid,Margarita Glasses boys,0.1,11.0,0.19235023000606633,0.620914173469141
+test-00891,retained,False,A,A,A,7796,7038,Filing Crates & Posting Tubs violet,gear lever ugly,4.0,0.1,4.017360269137704,0.32976503524902057
+test-00892,retained,False,A,A,A,6933,6715,Taping Supplies narrow,Tools & Home Improvement Electrical Light Bulbs High Intensity Discharge Bulbs standard,0.35,0.03,0.791837948501674,0.1407264251338984
+test-00893,retained,False,B,B,B,6931,6543,charger smart,airplane propeller imported,0.41,2.5,0.7373538108423319,6.030772044401106
+test-00894,corrected,False,B,A,B,7548,7190,tape drive medium,bearing wall commodity,0.55,0.9,0.45073532839280867,1.3615092124007
+test-00895,corrected,False,A,B,A,7337,7386,developer purple,tank destroyer steel,0.33,0.22,0.3537862027149912,0.21125539049028952
+test-00896,corrected,False,A,B,A,7418,6596,push-down store discount,poor box steel,0.34,0.08,0.4911835111633158,0.07832605453935766
+test-00897,retained,False,A,A,A,7443,7803,Electronics Accessories & Supplies Office Electronics Accessories Printer Supplies Printer Roll Holders red,passenger train ,3.2,0.85,1.306795698182388,1.2324256385491972
+test-00898,corrected,False,A,B,A,7596,6942,Clothing Women's hand held,steel baby,1.14,0.5,1.029730261923576,0.9362076803481258
+test-00899,retained,False,B,B,B,7589,7498,"Home, Garden & Pets Patio, Lawn & Garden Picnic Baskets & Accessories Picnic Backpacks plastic",sweep-second curved,0.57,2.0,0.771232335401155,1.9050936178127968
+test-00900,retained,False,B,B,B,7691,6808,Gaming Mice kids,thermos flask unique,0.29,0.74,0.46504323459728425,0.7202730560619179
+test-00901,corrected,True,A,B,A,7639,7936,torque wrench beautiful,eggwhisk red,1.43,0.3,0.7132733424022872,0.2284215478208103
+test-00902,regressed,True,B,B,A,6582,6632,synthesizer small,metronome dark,0.82,1.08,1.72110896518122,1.184055264907082
+test-00903,corrected,False,A,B,A,6863,7925,soup bowl ornate,Shoes Handbags cute,2.0,1.6,3.2029187058657405,1.6681558892463575
+test-00904,retained,False,B,B,B,7152,7568,bogie brand name,hockey puck ceramic,0.1,0.76,0.10705901909885046,0.3722158928197272
+test-00905,still_wrong,True,A,B,B,6818,7092,Dessert Bowls light,matrix black,5.0,2.0,1.8902681194810884,4.112628972666761
+test-00906,retained,False,B,B,B,7003,7646,disk blue,wet cell light,0.26,2.3,0.2129122760130818,2.1672033007287577
+test-00907,retained,False,B,B,B,7260,7578,Shovels charming,tripper steel,0.2,0.8,0.19691167001720755,0.8495182609752205
+test-00908,still_wrong,False,A,B,B,6964,7661,Binder Index Dividers hand made,Salt Shakers nice,0.77,0.3,0.29329906280777246,0.43857752040730597
+test-00909,retained,False,B,B,B,7214,7826,Office Products Office & School Supplies Education & Crafts Filing Products File & Folder Accessories Expanding Files smart,caravan small,1.92,6.0,2.573617561873104,6.125743015272698
+test-00910,retained,False,B,B,B,6568,7053,soap dispenser kids,Jewelry Towers popular,0.35,0.91,0.44722766027480515,2.1756855763347542
+test-00911,retained,False,A,A,A,6693,6656,alpenstock well made,Beauty Hair Care Hair & Scalp Treatments brand name,1.6,0.64,1.935094904100025,0.47052497301432145
+test-00912,corrected,False,A,B,A,6922,7172,Tools & Home Improvement Appliances Clothes Dryers cheap,Health & Personal Care Diet & Nutrition Vitamins & Supplements Minerals Boron easy,0.25,0.1,1.3325700311832667,0.4950358907100782
+test-00913,retained,True,B,B,B,7411,7017,stuffed hippopotamus tall,lightship square,0.3,0.9,0.5901705259070509,1.0431409957022688
+test-00914,retained,False,B,B,B,7708,6551,bass full,bird big,0.25,0.35,0.28650482642765057,0.9609865109905826
+test-00915,retained,False,B,B,B,6729,6721,lead pencil strong,Coin Purses charming,0.01,0.2,0.051367481474817366,0.09015273190195616
+test-00916,retained,False,B,B,B,7936,7796,eggwhisk red,Filing Crates & Posting Tubs violet,0.3,4.0,0.2284215478208103,4.017360269137704
+test-00917,retained,False,A,A,A,7874,7032,Bar Code Scanners popular,junction barrier womens,1.1,0.1,1.161153617647928,0.11943296889639958
+test-00918,retained,False,B,B,B,7122,6850,Cutting & Measuring Devices charming,chute-the-chute make,0.15,0.48,0.19385883655441752,0.6065306631389771
+test-00919,corrected,False,A,B,A,7624,7854,searing iron medium,jaw hand made,5.3,0.45,4.481689047471681,0.4668633539886035
+test-00920,corrected,False,A,B,A,7238,7339,black kettle,vacuum bag narrow,2.5,1.13,2.2359976334474885,0.5587622264125949
+test-00921,retained,False,A,A,A,7528,6770,groover narrow,Keepsakes little,2.0,0.03,1.5518583997618172,0.07473923932348137
+test-00922,regressed,True,A,A,B,7878,6767,Baby Products Bathing & Skin Care Soaps & Cleansers Hypoallergenic Cleansers oak,cooking pan common,2.1,1.2,1.39107677571596,1.7346077360045093
+test-00923,retained,False,A,A,A,6544,6911,Circular Saw Accessories orange,open-end wrench classic,2.43,0.45,3.573114173695532,1.4692698464792553
+test-00924,retained,False,A,A,A,7180,6935,metal drum shallow,speaker unit hand made,4.95,0.42,2.7396013875865464,0.6282332667694694
+test-00925,retained,False,B,B,B,7875,7898,wine bottle real,lobster pot large,2.88,9.0,1.897666378388155,10.751012749579445
+test-00926,retained,False,A,A,A,6707,7705,Money Handling Products sturdy,Yarn dark,5.3,0.31,3.0088637338289486,0.5331746303235263
+test-00927,corrected,True,B,A,B,7127,7454,teacup old,Switches slick,0.9,3.22,2.1087466746290424,2.7610886939755868
+test-00928,corrected,False,A,B,A,7043,7366,air gun realistic,flambeau small,3.4,0.45,0.996511766830531,0.22664394599714188
+test-00929,retained,True,B,B,B,7779,7803,laundry basket popular,passenger train ,0.6,0.85,0.8837905544461184,1.2324256385491972
+test-00930,retained,False,B,B,B,6823,7064,iris smart,toilet table violet,0.06,2.57,0.07358051647071133,2.1087466746290424
+test-00931,corrected,False,A,B,A,6938,7484,Office Products Office Electronics Fax Machines discount,Sports & Outdoors Paintball & Airsoft Airsoft Protective Gear iron,12.0,0.22,10.584333506364336,0.5127490197996951
+test-00932,corrected,False,A,B,A,7397,7791,power takeoff orange,Health & Personal Care Personal Care Eye Care Contact Lens Care Cases little,1.1,0.33,2.2800985992925566,0.08602433488017848
+test-00933,corrected,False,B,A,B,6670,7882,telephone dial tall,grinder premium,1.3,2.1,2.1170003076069137,2.676138773824772
+test-00934,corrected,False,A,B,A,7460,7578,Construction Staplers wide,tripper steel,5.1,0.8,5.038898260670574,0.8495182609752205
+test-00935,retained,False,B,B,B,7763,7518,Scissors blue,push-button radio discount,0.29,6.0,0.4217758897612579,5.845224130051669
+test-00936,retained,False,B,B,B,7708,6847,bass full,Tools & Home Improvement Safety & Security Work Safety Equipment & Gear Hardhats quality,0.25,0.6,0.28650482642765057,0.9366648613269699
+test-00937,retained,False,A,A,A,7294,7763,waste-paper basket better,Scissors blue,8.7,0.29,6.173788026531636,0.4217758897612579
+test-00938,still_wrong,True,A,B,B,7218,7357,switch engine well made,stuffed kitten tall,0.63,0.3,0.3171319104486417,0.45604844661058874
+test-00939,retained,False,A,A,A,7602,6844,Candles & Home Scents baby,sailboat tiny,1.75,0.26,0.7872119334661354,0.2691463453263826
+test-00940,retained,False,B,B,B,6933,6831,Taping Supplies narrow,Closet Storage Boxes popular,0.35,11.95,0.791837948501674,8.115290772908487
+test-00941,retained,False,B,B,B,7674,7393,cocktail shaker purple,mattock short,1.1,5.0,0.5500994451408616,4.516839581309487
+test-00942,retained,False,B,B,B,7017,7343,lightship square,Tools & Home Improvement Power & Hand Tools Hand Tools Hammers special,0.9,5.5,1.0431409957022688,6.271010674933232
+test-00943,retained,False,B,B,B,6707,7759,Money Handling Products sturdy,Roasting Pans steel,5.3,9.1,3.0088637338289486,6.030772044401106
+test-00944,retained,False,A,A,A,6676,6641,thong old,weather ship marble,1.4,0.61,1.0258409341140888,0.41039915892850853
+test-00945,retained,False,A,A,A,7453,7218,drawer premium,switch engine well made,1.4,0.63,0.8098247349663905,0.3171319104486417
+test-00946,retained,False,B,B,B,7025,7830,thermos bottle green,add-in green,0.2,4.0,0.3171319104486417,2.9162907478085818
+test-00947,retained,False,B,B,B,6621,7704,oil lamp blue,Baby Products Diapering Changing Tables special,0.45,1.55,1.030484720831601,1.882898716011792
+test-00948,retained,False,A,A,A,6784,7003,sugar shell green,disk blue,4.0,0.26,2.4366521509303567,0.2129122760130818
+test-00949,retained,False,B,B,B,7003,6894,disk blue,destroyer escort make,0.26,1.21,0.2129122760130818,1.8392813323771011
+test-00950,corrected,False,A,B,A,6592,7722,target acquisition system medium,puncher hand held,0.99,0.14,0.8011719875504817,0.24891970006731584
+test-00951,retained,False,B,B,B,7130,6936,EDS silver,scratcher wonderful,0.15,9.7,0.38403128943921006,4.922172346138484
+test-00952,retained,False,B,B,B,7697,6947,Coin Purses white,crackle tall,0.08,0.35,0.12131377011564688,0.32976503524902057
+test-00953,corrected,False,A,B,A,7900,7490,HEPA Air Purifiers fancy,Binder Pouches simple,5.5,0.31,4.446811822578948,0.2145821966721603
+test-00954,corrected,True,B,A,B,7260,7923,Shovels charming,handsaw simple,0.2,0.35,0.19691167001720755,0.2145821966721603
+test-00955,retained,False,B,B,B,7163,7180,Yarn red,metal drum shallow,0.22,4.95,0.9234950501996677,2.7396013875865464
+test-00956,retained,False,B,B,B,7105,7646,CD burner little,wet cell light,0.75,2.3,0.7803233087798311,2.1672033007287577
+test-00957,retained,False,B,B,B,7891,7446,file server plastic,Office Products Office Furniture & Lighting Office Lighting Desk Lamps medium,0.13,10.0,0.11396373601301239,11.092286592459589
+test-00958,retained,False,A,A,A,7529,7032,point-and-shoot camera glass,junction barrier womens,0.47,0.1,0.38403128943921006,0.11943296889639958
+test-00959,retained,False,B,B,B,7051,7030,minicar premium,tote bag standard,0.08,1.2,0.291016578447069,1.5855596737844695
+test-00960,corrected,False,A,B,A,7261,7280,coolant system sturdy,Tools & Home Improvement Building Supplies Building Materials Windows Casement Windows black,0.88,0.16,0.9396424650511519,0.1509774230219172
+test-00961,retained,False,A,A,A,6712,7192,Baby Products Feeding Pacifiers & Accessories green,scriber big,0.93,0.27,0.7972695630287312,0.14748001915342285
+test-00962,retained,False,B,B,B,7427,6532,spot-weld solid,Electronics Televisions & Video Satellite Television Antennas big,0.1,0.35,0.16581625690895407,0.5609491756531326
+test-00963,retained,False,B,B,B,7621,7424,Serveware blue,automatic choke square,4.41,10.0,3.436230294933144,8.372897633066568
+test-00964,corrected,True,A,B,A,7151,7435,stealth fighter shallow,fanjet engine brass,4.7,2.2,7.623610274378278,3.9550765028722905
+test-00965,retained,False,B,B,B,6530,7141,ignition coil large,Speaker Cables white,2.0,10.0,1.7077149163134449,4.446811822578948
+test-00966,retained,True,B,B,B,7296,7420,tin can girls,display panel oak,0.91,1.35,1.9809839976863088,2.4557630356199245
+test-00967,retained,False,B,B,B,7623,7098,zoom lens standard,pickle barrel mens,1.31,2.6,0.7964913568461423,1.3748702135753343
+test-00968,retained,False,B,B,B,7145,6966,exercise device marble,valve-in-head engine square,0.75,9.0,0.29791784219740586,8.24308772728254
+test-00969,corrected,False,A,B,A,7505,6673,Accent Plates shallow,radio receiver boys,5.8,1.06,4.243178109989657,1.2228348970961802
+test-00970,corrected,True,B,A,B,7484,6719,Sports & Outdoors Paintball & Airsoft Airsoft Protective Gear iron,Venturi tube inexpensive,0.22,0.75,0.5127490197996951,1.2156908128353625
+test-00971,retained,False,A,A,A,7946,7697,stator old,Coin Purses white,2.35,0.08,1.7688198240053343,0.12131377011564688
+test-00972,retained,False,A,A,A,7537,7693,Clipboards blue,closeup lens fine,0.49,0.1,1.424065312682699,0.12131377011564688
+test-00973,retained,False,A,A,A,6610,6662,Toys & Games Games Educational Games Geography & History Games Geography Games high quality,gun case brand name,4.54,0.11,5.6212974038301375,0.14748001915342285
+test-00974,corrected,False,A,B,A,7201,6605,Health & Personal Care Personal Care Oral Hygiene Power Toothbrushes Battery Powered red,readout fine,1.2,0.11,0.24506054621544074,0.1291378287541794
+test-00975,still_wrong,True,B,A,A,6843,6818,Sports & Outdoors Outdoor Recreation Camping & Hiking Backpacks & Bags External Frame Backpacks short,Dessert Bowls light,1.54,5.0,1.935094904100025,1.8902681194810884
+test-00976,retained,False,A,A,A,7163,6724,Yarn red,tip-top table silly,0.22,0.04,0.9234950501996677,0.198456085302785
+test-00977,retained,False,B,B,B,7114,7117,free weight plastic,Rice Cookers orange,0.22,3.09,0.09747834474684133,2.218597001928029
+test-00978,retained,False,B,B,B,7009,7404,Toys & Games Hobbies Trains HO Scale Accessories Train Signals skiny,rotor coil quality,0.65,2.5,0.5008712377852649,2.0438674687339904
+test-00979,retained,False,B,B,B,6639,6815,distributor point mens,riding light huge,0.05,2.04,0.16974848016677435,2.3709274264110114
+test-00980,corrected,False,A,B,A,7824,7114,bicycle seat wide,free weight plastic,2.35,0.22,2.244749247068837,0.09747834474684133
+test-00981,still_wrong,False,A,B,B,6676,6779,thong old,Bells delicate,1.4,0.75,1.0258409341140888,1.0870809411324287
+test-00982,retained,False,B,B,B,6729,7838,lead pencil strong,foot lever mens,0.01,0.44,0.051367481474817366,0.6431314575727751
+test-00983,corrected,True,B,A,B,7188,7730,charger iron,scientific instrument square,0.72,1.51,0.5008712377852649,0.6753136308582248
+test-00984,retained,False,A,A,A,7654,6715,diesel-electric glass,Tools & Home Improvement Electrical Light Bulbs High Intensity Discharge Bulbs standard,3.31,0.03,4.660219607120837,0.1407264251338984
+test-00985,retained,False,A,A,A,7836,7632,mariner's compass better,lead-acid battery square,12.0,1.5,13.379850984935384,0.8290290941421459
+test-00986,retained,False,B,B,B,6591,7067,bath oil clever,Ice-Cream Machines steel,0.5,12.0,0.524908526794988,5.665386575450163
+test-00987,corrected,True,A,B,A,7394,6904,wall clock plain,reactor sturdy,1.7,0.9,2.9854482065079413,0.9330131991639286
+test-00988,regressed,True,A,A,B,6691,7107,shades glass,backlighting authentic,8.0,3.1,1.0272192756777612,1.5518583997618172
+test-00989,retained,False,B,B,B,7130,6597,EDS silver,deflector wood,0.15,0.6,0.38403128943921006,0.781848948503947
+test-00990,retained,False,B,B,B,6975,6538,Sports & Outdoors Other Sports Martial Arts Weapons Batons solid,gyro horizon brand name,0.11,2.05,0.09157243755872142,2.1756855763347542
+test-00991,retained,False,A,A,A,7544,7427,public address system little,spot-weld solid,3.31,0.1,2.8710780322525977,0.16581625690895407
+test-00992,retained,False,A,A,A,6848,6948,brasier real,ash-pan wide,6.83,0.19,4.922172346138484,0.4402940190394018
+test-00993,retained,False,B,B,B,7951,6793,hygrometer small,teapot hand held,0.1,0.36,0.1121968842945518,0.33495805078657204
+test-00994,corrected,False,B,A,B,7092,7900,matrix black,HEPA Air Purifiers fancy,2.0,5.5,4.112628972666761,4.446811822578948
+test-00995,retained,False,B,B,B,7857,7685,lead-acid battery wooden,medicine cabinet wood,3.15,11.0,1.3992515146585291,12.182495443855514
+test-00996,corrected,False,A,B,A,7003,7268,disk blue,ultraviolet lamp ceramic,0.26,0.19,0.2129122760130818,0.18069631443179024
+test-00997,retained,False,A,A,A,7406,7491,electric fan black,land line kitchen,5.67,3.75,8.24308772728254,2.9162907478085818
+test-00998,retained,False,B,B,B,7669,6684,Tools & Home Improvement Lamps & Light Fixtures Light Fixtures Track Lighting plain,Fungicide ,0.1,1.27,0.08081239444613314,1.2865358214415763
+test-00999,corrected,False,B,A,B,7267,7415,mould girls,Jewelry Children's Jewelry Boys' Jewelry beautiful,0.3,1.54,0.16974848016677435,1.5548923675121262

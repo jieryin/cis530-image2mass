@@ -1,0 +1,36 @@
+{
+  "examples": 1000,
+  "correct": 886,
+  "coverage": 1.0,
+  "accuracy": 0.886,
+  "macro_f1": 0.8859981759708154,
+  "per_class": {
+    "A": {
+      "precision": 0.882,
+      "recall": 0.8891129032258065,
+      "f1": 0.8855421686746987,
+      "support": 496
+    },
+    "B": {
+      "precision": 0.89,
+      "recall": 0.8829365079365079,
+      "f1": 0.8864541832669321,
+      "support": 504
+    }
+  },
+  "confusion_matrix": {
+    "A": {
+      "A": 441,
+      "B": 55
+    },
+    "B": {
+      "A": 59,
+      "B": 445
+    }
+  },
+  "objects": 869,
+  "object_log_mse": 0.08445612352532271,
+  "object_mae_lb": 0.736270298463353,
+  "object_rmse_lb": 1.2949324954735777,
+  "elapsed_seconds": 83.66543469997123
+}

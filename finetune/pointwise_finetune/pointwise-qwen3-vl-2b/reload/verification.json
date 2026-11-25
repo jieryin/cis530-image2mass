@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "controlled_resume_from_step": 10,
+  "final_step": 20,
+  "matching_pair_predictions": 32,
+  "matching_object_weights": 63,
+  "mass_head_and_lora_saved": true,
+  "optimizer_scheduler_rng_loaded": true,
+  "loss_first_5_mean": 0.9407787386739983,
+  "loss_last_5_mean": 0.8240473400115661,
+  "gradient_norm_min": 130.0251922607422,
+  "gradient_norm_max": 2864.047607421875,
+  "peak_allocated_gib": 4.1295084953308105,
+  "mean_update_seconds": 2.5111061400093604,
+  "projected_full_training_seconds": 6800.779029225325,
+  "expected_full_updates": 2607
+}

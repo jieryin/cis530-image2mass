@@ -1,0 +1,91 @@
+{
+  "experiment": "Qwen3-VL-2B pointwise mass fine-tuning",
+  "tag": "pointwise-qwen3-vl-2b-seed42-20261125",
+  "release_url": "https://github.com/jieryin/cis530-image2mass/releases/tag/pointwise-qwen3-vl-2b-seed42-20261125",
+  "created_at_utc": "2026-11-25T21:19:24+00:00",
+  "source_commit": "d65197f1ca61232231573b78011799932bea3537",
+  "assets": [
+    {
+      "name": "pointwise-qwen3-vl-2b-seed42-results.zip",
+      "url": "https://github.com/jieryin/cis530-image2mass/releases/download/pointwise-qwen3-vl-2b-seed42-20261125/pointwise-qwen3-vl-2b-seed42-results.zip",
+      "bytes": 222599963,
+      "sha256": "438ed1dff56f0f29d910b631f96a3db20ba5b59d47036da1b2b117a6379109c7"
+    },
+    {
+      "name": "artifact_manifest.csv",
+      "url": "https://github.com/jieryin/cis530-image2mass/releases/download/pointwise-qwen3-vl-2b-seed42-20261125/artifact_manifest.csv",
+      "bytes": 21233,
+      "sha256": "99237d700cc60e5d59dcb3bac0e876bf7e9283ec9397e5e510b73ea77263ded9"
+    },
+    {
+      "name": "SHA256SUMS",
+      "url": "https://github.com/jieryin/cis530-image2mass/releases/download/pointwise-qwen3-vl-2b-seed42-20261125/SHA256SUMS",
+      "bytes": 197,
+      "sha256": "2549a7a7201a1a9a7559a13caa7f3aa557ba9d92ce180a4dd772261006c19cf4"
+    }
+  ],
+  "archive": {
+    "file_count": 176,
+    "uncompressed_bytes": 335037638,
+    "training_state_files": [
+      "full/checkpoints/checkpoint-00002607-epoch_complete-7ed3b8bd25ae4707bf8886de5a15157a/training_state.pt",
+      "full/checkpoints/checkpoint-00002607-train-6beb33f9d2094cf2a1b8b39475ec2c94/training_state.pt",
+      "pilot/checkpoints/checkpoint-00000020-epoch_complete-eefd3d4ad5a442b5befe7b48aba1ebdc/training_state.pt",
+      "pilot/checkpoints/checkpoint-00000020-train-fce36d5701fe4ed6824aaddb2581e16b/training_state.pt"
+    ],
+    "adapter_files": [
+      "full/best/adapter_model.safetensors",
+      "full/checkpoints/checkpoint-00002607-epoch_complete-7ed3b8bd25ae4707bf8886de5a15157a/adapter_model.safetensors",
+      "full/checkpoints/checkpoint-00002607-train-6beb33f9d2094cf2a1b8b39475ec2c94/adapter_model.safetensors",
+      "full/last/adapter_model.safetensors",
+      "pilot/best/adapter_model.safetensors",
+      "pilot/checkpoints/checkpoint-00000020-epoch_complete-eefd3d4ad5a442b5befe7b48aba1ebdc/adapter_model.safetensors",
+      "pilot/checkpoints/checkpoint-00000020-train-fce36d5701fe4ed6824aaddb2581e16b/adapter_model.safetensors",
+      "pilot/last/adapter_model.safetensors"
+    ],
+    "mass_head_tensors_by_adapter": {
+      "full/best/adapter_model.safetensors": [
+        "base_model.model.mass_head.bias",
+        "base_model.model.mass_head.weight"
+      ],
+      "full/checkpoints/checkpoint-00002607-epoch_complete-7ed3b8bd25ae4707bf8886de5a15157a/adapter_model.safetensors": [
+        "base_model.model.mass_head.bias",
+        "base_model.model.mass_head.weight"
+      ],
+      "full/checkpoints/checkpoint-00002607-train-6beb33f9d2094cf2a1b8b39475ec2c94/adapter_model.safetensors": [
+        "base_model.model.mass_head.bias",
+        "base_model.model.mass_head.weight"
+      ],
+      "full/last/adapter_model.safetensors": [
+        "base_model.model.mass_head.bias",
+        "base_model.model.mass_head.weight"
+      ],
+      "pilot/best/adapter_model.safetensors": [
+        "base_model.model.mass_head.bias",
+        "base_model.model.mass_head.weight"
+      ],
+      "pilot/checkpoints/checkpoint-00000020-epoch_complete-eefd3d4ad5a442b5befe7b48aba1ebdc/adapter_model.safetensors": [
+        "base_model.model.mass_head.bias",
+        "base_model.model.mass_head.weight"
+      ],
+      "pilot/checkpoints/checkpoint-00000020-train-fce36d5701fe4ed6824aaddb2581e16b/adapter_model.safetensors": [
+        "base_model.model.mass_head.bias",
+        "base_model.model.mass_head.weight"
+      ],
+      "pilot/last/adapter_model.safetensors": [
+        "base_model.model.mass_head.bias",
+        "base_model.model.mass_head.weight"
+      ]
+    },
+    "zip_testzip": "passed",
+    "all_archived_sha256_verified": true
+  },
+  "readable_repository_copied_file_count": 68,
+  "excluded": [
+    "Python/tool caches",
+    "*.lock",
+    "pending checkpoint directories",
+    "temporary files"
+  ],
+  "recovery": "Extract the ZIP, restore matching source/model/data and run with --resume pointing to the full run directory. best/last are inference-only. Mass heads are saved within each adapter_model.safetensors via PEFT modules_to_save."
+}

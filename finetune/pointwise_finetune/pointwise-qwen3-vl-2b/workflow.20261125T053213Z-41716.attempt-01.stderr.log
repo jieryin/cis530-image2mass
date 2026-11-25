@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\angie\cis530\pointwise-results\workflow.py", line 214, in <module>
+    main()
+  File "D:\angie\cis530\pointwise-results\workflow.py", line 174, in main
+    train_run("full")
+  File "D:\angie\cis530\pointwise-results\workflow.py", line 98, in train_run
+    call(stage, args)
+  File "D:\angie\cis530\pointwise-results\workflow.py", line 63, in call
+    raise RuntimeError(f"{stage} exited {code}; see {OUT / (stage + '.stderr.log')}")
+RuntimeError: full exited 3221225786; see D:\angie\cis530\pointwise-results\full.stderr.log
