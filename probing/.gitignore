@@ -1,0 +1,3 @@
+# Hidden-state features are about 2.4 GB; regenerate them with probing.extract.
+features/
+pilot/
