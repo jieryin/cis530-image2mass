@@ -1,0 +1,32 @@
+{
+  "supervisor_pid": 17688,
+  "started_at": "2026-11-27T04:23:37+00:00",
+  "python": "D:\\angie\\cis530\\.venv\\Scripts\\pythonw.exe",
+  "source": "D:\\angie\\cis530\\cis530-image2mass",
+  "workflow": "D:\\angie\\cis530\\probing-run\\workflow.py",
+  "max_retries": 3,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-11-27T04:23:37+00:00",
+      "stdout": "D:\\angie\\cis530\\probing-run\\workflow.20261127T042337Z-17688.attempt-01.stdout.log",
+      "stderr": "D:\\angie\\cis530\\probing-run\\workflow.20261127T042337Z-17688.attempt-01.stderr.log",
+      "pid": 12260,
+      "exit_code": 0,
+      "finished_at": "2026-11-27T04:40:37+00:00"
+    }
+  ],
+  "status": "complete",
+  "heartbeat_at": "2026-11-27T04:40:37+00:00",
+  "keep_awake": false,
+  "stop_requested": false,
+  "progress": {
+    "pilot": {}
+  },
+  "attempt": 1,
+  "child_pid": null,
+  "exit_code": 0,
+  "message": "Workflow exited successfully.",
+  "finished_at": "2026-11-27T04:40:37+00:00",
+  "keep_awake_released_at": "2026-11-27T04:40:37+00:00"
+}

@@ -1,0 +1,182 @@
+{
+  "dev": {
+    "agreement": 0.989,
+    "mismatches": [
+      {
+        "pair_id": "dev-00050",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 39.75,
+        "b_logit": 39.75
+      },
+      {
+        "pair_id": "dev-00093",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 36.75,
+        "b_logit": 36.75
+      },
+      {
+        "pair_id": "dev-00178",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 37.5,
+        "b_logit": 37.5
+      },
+      {
+        "pair_id": "dev-00260",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 37.5,
+        "b_logit": 37.5
+      },
+      {
+        "pair_id": "dev-00303",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 40.0,
+        "b_logit": 40.0
+      },
+      {
+        "pair_id": "dev-00438",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 39.25,
+        "b_logit": 39.25
+      },
+      {
+        "pair_id": "dev-00574",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 39.0,
+        "b_logit": 39.0
+      },
+      {
+        "pair_id": "dev-00677",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 41.25,
+        "b_logit": 41.25
+      },
+      {
+        "pair_id": "dev-00870",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 37.75,
+        "b_logit": 37.75
+      },
+      {
+        "pair_id": "dev-00921",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 37.5,
+        "b_logit": 37.5
+      },
+      {
+        "pair_id": "dev-00964",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 37.25,
+        "b_logit": 37.25
+      }
+    ],
+    "all_mismatches_are_ab_ties": true
+  },
+  "test": {
+    "agreement": 0.987,
+    "mismatches": [
+      {
+        "pair_id": "test-00018",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 35.75,
+        "b_logit": 35.75
+      },
+      {
+        "pair_id": "test-00029",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 39.75,
+        "b_logit": 39.75
+      },
+      {
+        "pair_id": "test-00031",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 39.0,
+        "b_logit": 39.0
+      },
+      {
+        "pair_id": "test-00101",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 37.0,
+        "b_logit": 37.0
+      },
+      {
+        "pair_id": "test-00317",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 36.75,
+        "b_logit": 36.75
+      },
+      {
+        "pair_id": "test-00432",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 37.25,
+        "b_logit": 37.25
+      },
+      {
+        "pair_id": "test-00457",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 38.25,
+        "b_logit": 38.25
+      },
+      {
+        "pair_id": "test-00496",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 36.25,
+        "b_logit": 36.25
+      },
+      {
+        "pair_id": "test-00501",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 39.75,
+        "b_logit": 39.75
+      },
+      {
+        "pair_id": "test-00545",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 40.0,
+        "b_logit": 40.0
+      },
+      {
+        "pair_id": "test-00690",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 39.25,
+        "b_logit": 39.25
+      },
+      {
+        "pair_id": "test-00780",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 37.5,
+        "b_logit": 37.5
+      },
+      {
+        "pair_id": "test-00980",
+        "saved_pred": "A",
+        "logit_pred": "B",
+        "a_logit": 40.0,
+        "b_logit": 40.0
+      }
+    ],
+    "all_mismatches_are_ab_ties": true
+  }
+}

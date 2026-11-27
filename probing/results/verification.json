@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": 8000,
+    "dev": 1000,
+    "test": 1000
+  },
+  "feature_shape_per_pair": [
+    29,
+    2048
+  ],
+  "features_finite": true,
+  "dev_test_zero_shot_agreement": {
+    "dev": 0.989,
+    "test": 0.987
+  },
+  "selection_uses_dev_only": true,
+  "rescored_predictions_match": true,
+  "source_commit": "0a2817bc7c9caa8195864d4d54835099b4ec60c9"
+}
