@@ -1,0 +1,40 @@
+{
+  "selected": {
+    "layer": 19,
+    "name": "layer_19",
+    "l2": 0.01,
+    "dev_log_loss": 0.3758230860016085,
+    "train_accuracy": 0.900125,
+    "dev_accuracy": 0.843,
+    "test_accuracy": 0.851,
+    "dev_volume_wrong_accuracy": 0.41899441340782123,
+    "test_volume_wrong_accuracy": 0.4166666666666667
+  },
+  "dims_only": {
+    "name": "dims_only",
+    "l2": 0.1,
+    "dev_log_loss": 0.41704157029350725,
+    "train_accuracy": 0.834125,
+    "dev_accuracy": 0.826,
+    "test_accuracy": 0.833,
+    "dev_volume_wrong_accuracy": 0.061452513966480445,
+    "test_volume_wrong_accuracy": 0.041666666666666664
+  },
+  "model_answer": {
+    "name": "model_answer",
+    "l2": null,
+    "dev_log_loss": 1.4594424813494213,
+    "train_accuracy": 0.53075,
+    "dev_accuracy": 0.535,
+    "test_accuracy": 0.53,
+    "dev_volume_wrong_accuracy": 0.5027932960893855,
+    "test_volume_wrong_accuracy": 0.44047619047619047
+  },
+  "l2_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ]
+}

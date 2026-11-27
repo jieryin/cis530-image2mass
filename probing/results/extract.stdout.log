@@ -1,0 +1,26 @@
+dev: 1000 pairs
+  500/1000
+  1000/1000
+dev: done in 79s, zero-shot agreement 0.989
+test: 1000 pairs
+  500/1000
+  1000/1000
+test: done in 79s, zero-shot agreement 0.987
+train: 8000 pairs
+  500/8000
+  1000/8000
+  1500/8000
+  2000/8000
+  2500/8000
+  3000/8000
+  3500/8000
+  4000/8000
+  4500/8000
+  5000/8000
+  5500/8000
+  6000/8000
+  6500/8000
+  7000/8000
+  7500/8000
+  8000/8000
+train: done in 636s, zero-shot agreement None

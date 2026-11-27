@@ -1,0 +1,20 @@
+{
+  "exit_code": 0,
+  "seconds": 19.45299999997951,
+  "command": [
+    "D:\\angie\\cis530\\.venv\\Scripts\\pythonw.exe",
+    "-u",
+    "-m",
+    "probing.extract",
+    "--splits",
+    "dev",
+    "--limit",
+    "8",
+    "--root",
+    "D:\\angie\\cis530\\amazon_data_10k",
+    "--features",
+    "D:\\angie\\cis530\\probing-run\\pilot\\features",
+    "--output",
+    "D:\\angie\\cis530\\probing-run\\pilot\\output"
+  ]
+}

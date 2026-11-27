@@ -1,3 +1,6 @@
 # Keep Qwen source bytes stable for recorded inference source checksums.
 qwen_strong_baseline/*.py text eol=lf
 qwen_strong_baseline/**/*.py text eol=lf
+# Preserve archived artifact bytes for the SHA-256 manifest.
+probing/results/** -text
+probing/results/**/*.npz filter=lfs diff=lfs merge=lfs -text

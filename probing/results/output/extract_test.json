@@ -1,0 +1,101 @@
+{
+  "split": "test",
+  "pairs": 1000,
+  "feature_shape": [
+    1000,
+    29,
+    2048
+  ],
+  "elapsed_seconds": 78.70871270005591,
+  "zero_shot_agreement": 0.987,
+  "answer_token_ids": [
+    32,
+    33
+  ],
+  "model_metadata": {
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "dtype": "bfloat16",
+    "device": "cuda:0",
+    "batch_size": 1,
+    "attention_implementation": "sdpa",
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 32,
+    "pointwise_format_constraint": "positive_json_number_v1",
+    "pairwise_format_constraint": null,
+    "preprocessing": "AutoProcessor defaults at model revision; no custom resize/crop",
+    "versions": {
+      "python": "3.11.9",
+      "torch": "2.10.0+cu128",
+      "torchvision": "0.25.0+cu128",
+      "transformers": "4.57.3",
+      "accelerate": "1.11.0",
+      "huggingface-hub": "0.36.0",
+      "numpy": "1.26.4",
+      "Pillow": "12.0.0",
+      "lz4": "4.4.5",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.22.2"
+    },
+    "cuda_version": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_total_memory_bytes": 25756696576,
+    "image_processor": {
+      "_processor_class": "Qwen3VLProcessor",
+      "size": {
+        "longest_edge": 16777216,
+        "shortest_edge": 65536
+      },
+      "min_pixels": null,
+      "max_pixels": null,
+      "patch_size": 16,
+      "temporal_patch_size": 2,
+      "merge_size": 2,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_processor_type": "Qwen2VLImageProcessorFast",
+      "crop_size": null,
+      "pad_size": null,
+      "do_resize": true,
+      "default_to_square": true,
+      "resample": 3,
+      "do_center_crop": null,
+      "do_rescale": true,
+      "rescale_factor": 0.00392156862745098,
+      "do_normalize": true,
+      "do_pad": null,
+      "do_convert_rgb": true,
+      "return_tensors": null,
+      "data_format": "channels_first",
+      "input_data_format": null,
+      "device": null,
+      "disable_grouping": null
+    },
+    "chat_template_sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4",
+    "generation": {
+      "do_sample": false,
+      "num_beams": 1,
+      "max_new_tokens": 32,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "use_cache": true,
+      "pointwise_prefix_allowed_tokens_fn": "positive_json_number_v1",
+      "pairwise_prefix_allowed_tokens_fn": null
+    },
+    "training": false,
+    "trainable_parameters": 0,
+    "parameter_versions_unchanged": true,
+    "timing": "CUDA synchronized; includes preprocessing, transfer, generation and decode; excludes download/loading",
+    "peak_memory": "torch.cuda.max_memory_allocated on cuda:0, reset before each call"
+  }
+}
